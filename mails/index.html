@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="de-CH"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="noindex, nofollow">
+<title>Drei Mails · Taverne zum Schäfli</title>
+<link rel="icon" href="../assets/zeichen/lamm.svg">
+<style>
+@font-face{font-family:'Petrona';font-weight:100 900;font-display:swap;src:url('../assets/schrift/Petrona-var.woff2') format('woff2')}
+@font-face{font-family:'Instrument Sans';font-weight:400 600;font-display:swap;src:url('../assets/schrift/InstrumentSans-normal-400_600.woff2') format('woff2')}
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
+body{margin:0;background:#301916;color:#fbfaf7;font:400 17px/1.6 'Instrument Sans',system-ui,sans-serif;--rand:clamp(20px,4.6vw,76px)}
+header.kopf{padding:clamp(56px,8vw,120px) var(--rand) clamp(30px,4vw,60px);text-align:center}
+header.kopf img{width:clamp(50px,5.9vw,92px);height:auto}
+h1{margin:clamp(14px,1.6vw,24px) 0 0;font:460 clamp(2rem,4.6vw,4.2rem)/1.08 'Petrona',Georgia,serif}h1 em{font-style:normal;color:#d3b794}
+header.kopf p{max-width:60ch;margin:clamp(18px,2.1vw,32px) auto 0;color:rgba(240,234,225,.86)}
+main{padding:0 0 clamp(60px,8vw,120px)}
+.band{display:flex;gap:clamp(20px,2.4vw,40px);align-items:flex-start;overflow-x:auto;overscroll-behavior-x:contain;scroll-snap-type:x mandatory;scroll-padding-inline:var(--rand);padding:4px var(--rand) 34px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+.band::-webkit-scrollbar{display:none}
+.band:focus-visible{outline:2px solid #d3b794;outline-offset:-2px}
+.mb{flex:0 0 clamp(300px,34vw,520px);scroll-snap-align:start}
+.mb:last-child{margin-inline-end:var(--rand)}
+.mb-ueber{display:flex;gap:16px;align-items:flex-start;margin:0 4px 18px}
+.mb-nr{font:400 2.3rem/.9 'Petrona',Georgia,serif;color:#d3b794}
+.mb-ueber__t{display:flex;flex-direction:column;gap:5px;min-width:0}
+.mb-ueber__t b{font:460 1.3rem/1.2 'Petrona',Georgia,serif}
+.mb-ueber__t small{font-size:.86rem;line-height:1.4;color:rgba(240,234,225,.74)}
+.mb-ueber__t small span{display:inline-block;min-width:5.4em;font:400 10px/1.4 ui-monospace,Menlo,monospace;letter-spacing:.16em;text-transform:uppercase;color:#d3b794}
+.mb-blatt{position:relative;height:640px;border-radius:20px;overflow:hidden;background:#f0eae1;box-shadow:0 0 0 1px rgba(211,183,148,.3),0 40px 50px -30px rgba(0,0,0,.9);-webkit-mask-image:linear-gradient(#000000 68%,transparent);mask-image:linear-gradient(#000000 68%,transparent)}
+.mb.auf .mb-blatt{-webkit-mask-image:none;mask-image:none}
+.mb-in{position:relative}.mb-in table{max-width:100%}
+.mb-ganz{position:relative;margin:-30px 0 0;text-align:center}
+.mb.auf .mb-ganz{margin-top:22px}
+.mb-kn{display:inline-flex;align-items:center;gap:12px;padding:8px 8px 8px 22px;border:0;border-radius:999px;cursor:pointer;font:400 11.5px/1 ui-monospace,Menlo,monospace;letter-spacing:.16em;text-transform:uppercase;color:#fbfaf7;
+  background:linear-gradient(180deg,#7d433a,#452520 60%,#2a1512);box-shadow:inset 0 1px 0 rgba(255,255,255,.16),0 0 0 1px rgba(211,183,148,.38),0 14px 22px -12px rgba(0,0,0,.8)}
+.mb-kn i{display:grid;place-items:center;width:30px;height:30px;border-radius:50%;color:#2a292b;background:linear-gradient(180deg,#f5f3ef,#e6ddd0 55%,#d3b794);box-shadow:inset 0 1px 0 rgba(255,255,255,.6)}
+.mb-kn svg{width:14px;height:14px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.mb-kn .z,.mb.auf .mb-kn .a{display:none}.mb.auf .mb-kn .z{display:inline}.mb.auf .mb-kn svg{transform:rotate(180deg)}
+.mb-kn:focus-visible{outline:2px solid #e6ddd0;outline-offset:3px}
+.pfeile{display:flex;justify-content:center;gap:14px;margin-top:4px}
+.pf{width:52px;height:52px;border:0;border-radius:50%;cursor:pointer;display:grid;place-items:center;color:#2a292b;background:linear-gradient(180deg,#f5f3ef,#e6ddd0 55%,#d3b794);box-shadow:inset 0 1px 0 rgba(255,255,255,.7),0 12px 20px -10px rgba(0,0,0,.7)}
+.pf svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.pf:disabled{opacity:.35;cursor:default}
+footer{padding:26px var(--rand) 40px;text-align:center;font-size:.92rem;color:rgba(240,234,225,.6);border-top:1px solid rgba(211,183,148,.2)}
+footer a{color:#e6ddd0}
+@media (max-width:760px){.mb{flex-basis:calc(100vw - 2 * var(--rand))}.pfeile{display:none}}
+@media (hover:none){.pfeile{display:none}}
+</style><script src="/besuch.js?v=3c4c57a56e" defer></script><script src="/verweil.js?v=5881fd455d" defer></script></head>
+<body>
+<header class="kopf"><img src="img/zeichen.png?v=b83ed751" alt="" width="72"><h1>Drei Mails,<br><em>wie aus der Stube geschrieben.</em></h1>
+<p>Was ein Gast nach einer Anfrage von Ihnen bekommt, kommt im Kleid der neuen Seite. Drei Fälle als Idee. Namen, Daten und Beträge sind Beispielwerte, Telefon, Adresse und Zeiten sind Ihre.</p></header>
+<main><div class="band" id="mband" tabindex="0" aria-label="Die drei Mails, zum Blättern"><article class="mb">
+  <header class="mb-ueber"><span class="mb-nr">01</span><span class="mb-ueber__t"><b>Ihr Abend</b><small><span>Von</span> Taverne zum Schäfli · kontakt@schaefli-wigoltingen.ch</small><small><span>Wann</span> Gleich nach der Anfrage auf «Ihr Abend»</small><small><span>Betreff</span> Ihr Abend im Schäfli ist bei uns</small></span></header>
+  <div class="mb-blatt"><div class="mb-in">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#f0eae1"><tr><td align="center" style="padding:24px 12px">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="width:100%;max-width:600px;background:#fbfaf7;border-radius:22px;overflow:hidden">
+  <tr><td align="center" style="background:#452520;padding:34px 30px 30px">
+    <img src="img/zeichen.png?v=b83ed751" width="46" alt="" style="display:block;border:0;width:46px;height:auto;margin:0 auto 14px">
+    <div style="font:400 15px/1.2 Georgia,'Times New Roman',serif;letter-spacing:.3em;color:#fbfaf7">SCHÄFLI</div>
+    <div style="margin-top:7px;font:400 10.5px/1.2 'Helvetica Neue',Helvetica,Arial,sans-serif;letter-spacing:.24em;text-transform:uppercase;color:#d3b794">Taverne zum Schäfli · Wigoltingen</div>
+    <h1 style="margin:28px 0 0;font:400 clamp(28px,7.4vw,36px)/1.15 Georgia,'Times New Roman',serif;color:#fbfaf7">Ihr Abend<br><span style="color:#d3b794">in der Stube.</span></h1>
+  </td></tr>
+  <tr><td style="padding:34px clamp(22px,6vw,40px) 8px"><p style="margin:0 0 14px;font:400 20px/1.3 'Helvetica Neue',Helvetica,Arial,sans-serif;color:#2a292b">Liebe Frau Keller</p><p style="margin:0 0 14px;font:400 16px/1.62 'Helvetica Neue',Helvetica,Arial,sans-serif;color:#3b3436">Vielen Dank, Ihre Anfrage ist bei uns angekommen. Wir prüfen den Tisch und melden uns persönlich mit der Bestätigung.</p><p style="margin:0 0 14px;font:400 16px/1.62 'Helvetica Neue',Helvetica,Arial,sans-serif;color:#3b3436">Den Wein zu Ihrem Menü stimmt Fabian Mennel gern mit Ihnen ab. Die ganze Weinkarte finden Sie schon jetzt auf unserer Seite.</p><p style="margin:0 0 14px;font:400 16px/1.62 'Helvetica Neue',Helvetica,Arial,sans-serif;color:#3b3436">Geht es am Telefon schneller, erreichen Sie uns unter +41 52 763 11 72.</p></td></tr>
+  <tr><td style="padding:6px 28px 6px"><img src="img/stube-ofen.jpg?v=104f069f" width="544" alt="Ein gedeckter Tisch vor dem Kachelofen und dem Buffet aus Holz" style="display:block;border:0;width:100%;height:auto;border-radius:16px"></td></tr>
+  <tr><td style="padding:10px 28px 6px"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#452520;border-radius:16px">
+    <tr><td style="padding:22px 26px 12px"><div style="font:400 10.5px/1.2 'Helvetica Neue',Helvetica,Arial,sans-serif;letter-spacing:.2em;text-transform:uppercase;color:#d3b794;padding-bottom:12px">Ihre Anfrage · Beispielwerte</div>
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="padding:11px 0;border-top:1px solid #743f36;font:400 11px/1.3 'Helvetica Neue',Helvetica,Arial,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:#e6ddd0;width:38%">Tag</td><td style="padding:11px 0;border-top:1px solid #743f36;font:400 16px/1.35 'Helvetica Neue',Helvetica,Arial,sans-serif;color:#fbfaf7">Samstag, 7. November 2026</td></tr><tr><td style="padding:11px 0;border-top:1px solid #743f36;font:400 11px/1.3 'Helvetica Neue',Helvetica,Arial,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:#e6ddd0;width:38%">Uhrzeit</td><td style="padding:11px 0;border-top:1px solid #743f36;font:400 16px/1.35 'Helvetica Neue',Helvetica,Arial,sans-serif;color:#fbfaf7">19:00 Uhr</td></tr><tr><td style="padding:11px 0;border-top:1px solid #743f36;font:400 11px/1.3 'Helvetica Neue',Helvetica,Arial,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:#e6ddd0;width:38%">Personen</td><td style="padding:11px 0;border-top:1px solid #743f36;font:400 16px/1.35 'Helvetica Neue',Helvetica,Arial,sans-serif;color:#fbfaf7">4</td></tr><tr><td style="padding:11px 0;border-top:1px solid #743f36;font:400 11px/1.3 'Helvetica Neue',Helvetica,Arial,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:#e6ddd0;width:38%">Menü</td><td style="padding:11px 0;border-top:1px solid #743f36;font:400 16px/1.35 'Helvetica Neue',Helvetica,Arial,sans-serif;color:#fbfaf7">Menu Degustation, 6 Gänge, CHF 295</td></tr><tr><td style="padding:11px 0;border-top:1px solid #743f36;font:400 11px/1.3 'Helvetica Neue',Helvetica,Arial,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:#e6ddd0;width:38%">Wein</td><td style="padding:11px 0;border-top:1px solid #743f36;font:400 16px/1.35 'Helvetica Neue',Helvetica,Arial,sans-serif;color:#fbfaf7">begleitet von Fabian Mennel</td></tr></table></td></tr></table></td></tr>
+  <tr><td align="center" style="padding:26px 40px 8px"><a href="../wein.html" style="display:inline-block;padding:16px 30px;border-radius:999px;background:#452520;font:400 12px/1 'Helvetica Neue',Helvetica,Arial,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#fbfaf7;text-decoration:none">Die Weinkarte ansehen &nbsp;↗</a></td></tr>
+  <tr><td style="padding:14px 40px 30px"><p style="margin:0;font:400 15px/1.6 'Helvetica Neue',Helvetica,Arial,sans-serif;color:#6e3c34;text-align:center">Mittwoch bis Samstag: Restaurant 11:30 – 14:30 Uhr und 18:00 – 23:00 Uhr; Bar 17:00 – 01:00 Uhr. Sonntag bis Dienstag geschlossen.</p>
+    <img src="img/christian.jpg?v=e8a8a434" width="520" alt="Christian Kuchler vor der Taverne zum Schäfli" style="display:block;border:0;width:100%;max-width:520px;height:auto;margin:26px auto 0;border-radius:16px">
+    <p style="margin:16px 0 0;font:400 17px/1.4 'Helvetica Neue',Helvetica,Arial,sans-serif;color:#2a292b;text-align:center">Herzlich, Christian Kuchler, Fabian Mennel und das Team</p></td></tr>
+  <tr><td align="center" style="background:#301916;padding:26px 30px"><div style="font:400 13px/1.4 Georgia,'Times New Roman',serif;letter-spacing:.24em;color:#fbfaf7">TAVERNE ZUM SCHÄFLI</div>
+    <div style="margin-top:8px;font:400 13px/1.6 'Helvetica Neue',Helvetica,Arial,sans-serif;color:#e6ddd0">Oberdorfstrasse 8 · 8556 Wigoltingen<br><span style="color:#e6ddd0">+41 52 763 11 72</span> · <span style="color:#e6ddd0">kontakt@schaefli-wigoltingen.ch</span></div></td></tr>
+</table>
+</td></tr></table>
+</div></div>
+  <p class="mb-ganz"><button type="button" class="mb-kn" aria-expanded="false"><span class="a">Ganze Mail</span><span class="z">Weniger zeigen</span><i><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 6l4 4 4-4"/></svg></i></button></p>
+</article><article class="mb">
+  <header class="mb-ueber"><span class="mb-nr">02</span><span class="mb-ueber__t"><b>Ihre Feier</b><small><span>Von</span> Taverne zum Schäfli · kontakt@schaefli-wigoltingen.ch</small><small><span>Wann</span> Gleich nach der Anfrage für eine Feier</small><small><span>Betreff</span> Ihre Anfrage für eine Feier ist bei uns</small></span></header>
+  <div class="mb-blatt"><div class="mb-in">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#f0eae1"><tr><td align="center" style="padding:24px 12px">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="width:100%;max-width:600px;background:#fbfaf7;border-radius:22px;overflow:hidden">
+  <tr><td align="center" style="background:#452520;padding:34px 30px 30px">
+    <img src="img/zeichen.png?v=b83ed751" width="46" alt="" style="display:block;border:0;width:46px;height:auto;margin:0 auto 14px">
+    <div style="font:400 15px/1.2 Georgia,'Times New Roman',serif;letter-spacing:.3em;color:#fbfaf7">SCHÄFLI</div>
+    <div style="margin-top:7px;font:400 10.5px/1.2 'Helvetica Neue',Helvetica,Arial,sans-serif;letter-spacing:.24em;text-transform:uppercase;color:#d3b794">Taverne zum Schäfli · Wigoltingen</div>
+    <h1 style="margin:28px 0 0;font:400 clamp(28px,7.4vw,36px)/1.15 Georgia,'Times New Roman',serif;color:#fbfaf7">Ihre Feier<br><span style="color:#d3b794">im Festsaal.</span></h1>
+  </td></tr>
+  <tr><td style="padding:34px clamp(22px,6vw,40px) 8px"><p style="margin:0 0 14px;font:400 20px/1.3 'Helvetica Neue',Helvetica,Arial,sans-serif;color:#2a292b">Lieber Herr Brunner</p><p style="margin:0 0 14px;font:400 16px/1.62 'Helvetica Neue',Helvetica,Arial,sans-serif;color:#3b3436">Vielen Dank für Ihre Anfrage. Wir melden uns persönlich, besprechen das Menü mit Ihnen und richten uns nach Ihren Wünschen.</p><p style="margin:0 0 14px;font:400 16px/1.62 'Helvetica Neue',Helvetica,Arial,sans-serif;color:#3b3436">Im Festsaal haben Gruppen von 12 bis 30 Personen Platz. Die Menüs lassen sich erweitern oder verkürzen, mindestens vier Gänge.</p><p style="margin:0 0 14px;font:400 16px/1.62 'Helvetica Neue',Helvetica,Arial,sans-serif;color:#3b3436">Gibt es Allergien oder ein Gericht, das auf keinen Fall fehlen darf, schreiben Sie es uns gern dazu.</p></td></tr>
+  <tr><td style="padding:6px 28px 6px"><img src="img/tafel.jpg?v=a5927202" width="544" alt="Eine lange gedeckte Tafel in einem Saal mit Holzdecke" style="display:block;border:0;width:100%;height:auto;border-radius:16px"></td></tr>
+  <tr><td style="padding:10px 28px 6px"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#452520;border-radius:16px">
+    <tr><td style="padding:22px 26px 12px"><div style="font:400 10.5px/1.2 'Helvetica Neue',Helvetica,Arial,sans-serif;letter-spacing:.2em;text-transform:uppercase;color:#d3b794;padding-bottom:12px">Ihre Anfrage · Beispielwerte</div>
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="padding:11px 0;border-top:1px solid #743f36;font:400 11px/1.3 'Helvetica Neue',Helvetica,Arial,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:#e6ddd0;width:38%">Datum</td><td style="padding:11px 0;border-top:1px solid #743f36;font:400 16px/1.35 'Helvetica Neue',Helvetica,Arial,sans-serif;color:#fbfaf7">Freitag, 4. Dezember 2026</td></tr><tr><td style="padding:11px 0;border-top:1px solid #743f36;font:400 11px/1.3 'Helvetica Neue',Helvetica,Arial,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:#e6ddd0;width:38%">Personen</td><td style="padding:11px 0;border-top:1px solid #743f36;font:400 16px/1.35 'Helvetica Neue',Helvetica,Arial,sans-serif;color:#fbfaf7">24</td></tr><tr><td style="padding:11px 0;border-top:1px solid #743f36;font:400 11px/1.3 'Helvetica Neue',Helvetica,Arial,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:#e6ddd0;width:38%">Raum</td><td style="padding:11px 0;border-top:1px solid #743f36;font:400 16px/1.35 'Helvetica Neue',Helvetica,Arial,sans-serif;color:#fbfaf7">Festsaal</td></tr><tr><td style="padding:11px 0;border-top:1px solid #743f36;font:400 11px/1.3 'Helvetica Neue',Helvetica,Arial,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:#e6ddd0;width:38%">Menü</td><td style="padding:11px 0;border-top:1px solid #743f36;font:400 16px/1.35 'Helvetica Neue',Helvetica,Arial,sans-serif;color:#fbfaf7">Menü 1, CHF 270 je Person</td></tr></table></td></tr></table></td></tr>
+  <tr><td align="center" style="padding:26px 40px 8px"><a href="../feiern.html#menues" style="display:inline-block;padding:16px 30px;border-radius:999px;background:#452520;font:400 12px/1 'Helvetica Neue',Helvetica,Arial,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#fbfaf7;text-decoration:none">Die Menüvorschläge ansehen &nbsp;↗</a></td></tr>
+  <tr><td style="padding:14px 40px 30px"><p style="margin:0;font:400 15px/1.6 'Helvetica Neue',Helvetica,Arial,sans-serif;color:#6e3c34;text-align:center">Für Fragen erreichen Sie uns unter +41 52 763 11 72.</p>
+    <img src="img/christian.jpg?v=e8a8a434" width="520" alt="Christian Kuchler vor der Taverne zum Schäfli" style="display:block;border:0;width:100%;max-width:520px;height:auto;margin:26px auto 0;border-radius:16px">
+    <p style="margin:16px 0 0;font:400 17px/1.4 'Helvetica Neue',Helvetica,Arial,sans-serif;color:#2a292b;text-align:center">Herzlich, Christian Kuchler, Fabian Mennel und das Team</p></td></tr>
+  <tr><td align="center" style="background:#301916;padding:26px 30px"><div style="font:400 13px/1.4 Georgia,'Times New Roman',serif;letter-spacing:.24em;color:#fbfaf7">TAVERNE ZUM SCHÄFLI</div>
+    <div style="margin-top:8px;font:400 13px/1.6 'Helvetica Neue',Helvetica,Arial,sans-serif;color:#e6ddd0">Oberdorfstrasse 8 · 8556 Wigoltingen<br><span style="color:#e6ddd0">+41 52 763 11 72</span> · <span style="color:#e6ddd0">kontakt@schaefli-wigoltingen.ch</span></div></td></tr>
+</table>
+</td></tr></table>
+</div></div>
+  <p class="mb-ganz"><button type="button" class="mb-kn" aria-expanded="false"><span class="a">Ganze Mail</span><span class="z">Weniger zeigen</span><i><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 6l4 4 4-4"/></svg></i></button></p>
+</article><article class="mb">
+  <header class="mb-ueber"><span class="mb-nr">03</span><span class="mb-ueber__t"><b>Ihr Gutschein</b><small><span>Von</span> Taverne zum Schäfli · kontakt@schaefli-wigoltingen.ch</small><small><span>Wann</span> Nach der Bestellung des Gutscheins</small><small><span>Betreff</span> Ihr Gutschein ist unterwegs</small></span></header>
+  <div class="mb-blatt"><div class="mb-in">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#f0eae1"><tr><td align="center" style="padding:24px 12px">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="width:100%;max-width:600px;background:#fbfaf7;border-radius:22px;overflow:hidden">
+  <tr><td align="center" style="background:#452520;padding:34px 30px 30px">
+    <img src="img/zeichen.png?v=b83ed751" width="46" alt="" style="display:block;border:0;width:46px;height:auto;margin:0 auto 14px">
+    <div style="font:400 15px/1.2 Georgia,'Times New Roman',serif;letter-spacing:.3em;color:#fbfaf7">SCHÄFLI</div>
+    <div style="margin-top:7px;font:400 10.5px/1.2 'Helvetica Neue',Helvetica,Arial,sans-serif;letter-spacing:.24em;text-transform:uppercase;color:#d3b794">Taverne zum Schäfli · Wigoltingen</div>
+    <h1 style="margin:28px 0 0;font:400 clamp(28px,7.4vw,36px)/1.15 Georgia,'Times New Roman',serif;color:#fbfaf7">Ihr Gutschein<br><span style="color:#d3b794">ist unterwegs.</span></h1>
+  </td></tr>
+  <tr><td style="padding:34px clamp(22px,6vw,40px) 8px"><p style="margin:0 0 14px;font:400 20px/1.3 'Helvetica Neue',Helvetica,Arial,sans-serif;color:#2a292b">Liebe Frau Keller</p><p style="margin:0 0 14px;font:400 16px/1.62 'Helvetica Neue',Helvetica,Arial,sans-serif;color:#3b3436">Vielen Dank für Ihre Bestellung. Der Gutschein ist versandbereit und geht heute an die Adresse, die Sie uns angegeben haben.</p><p style="margin:0 0 14px;font:400 16px/1.62 'Helvetica Neue',Helvetica,Arial,sans-serif;color:#3b3436">Eingelöst wird er bei uns in Wigoltingen oder, wenn Sie es so gewählt haben, auch in der Wirtschaft am Schlössli in Bottighofen.</p></td></tr>
+  <tr><td style="padding:6px 28px 6px"><img src="img/champagner.jpg?v=72b66255" width="544" alt="Eine Flasche Laurent-Perrier Blanc de Blancs und ein Glas auf dem gedeckten Tisch" style="display:block;border:0;width:100%;height:auto;border-radius:16px"></td></tr>
+  <tr><td style="padding:10px 28px 6px"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#452520;border-radius:16px">
+    <tr><td style="padding:22px 26px 12px"><div style="font:400 10.5px/1.2 'Helvetica Neue',Helvetica,Arial,sans-serif;letter-spacing:.2em;text-transform:uppercase;color:#d3b794;padding-bottom:12px">Ihr Gutschein · Beispielwerte</div>
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="padding:11px 0;border-top:1px solid #743f36;font:400 11px/1.3 'Helvetica Neue',Helvetica,Arial,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:#e6ddd0;width:38%">Für</td><td style="padding:11px 0;border-top:1px solid #743f36;font:400 16px/1.35 'Helvetica Neue',Helvetica,Arial,sans-serif;color:#fbfaf7">Anna und Luca</td></tr><tr><td style="padding:11px 0;border-top:1px solid #743f36;font:400 11px/1.3 'Helvetica Neue',Helvetica,Arial,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:#e6ddd0;width:38%">Von</td><td style="padding:11px 0;border-top:1px solid #743f36;font:400 16px/1.35 'Helvetica Neue',Helvetica,Arial,sans-serif;color:#fbfaf7">Mama</td></tr><tr><td style="padding:11px 0;border-top:1px solid #743f36;font:400 11px/1.3 'Helvetica Neue',Helvetica,Arial,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:#e6ddd0;width:38%">Betrag</td><td style="padding:11px 0;border-top:1px solid #743f36;font:400 16px/1.35 'Helvetica Neue',Helvetica,Arial,sans-serif;color:#fbfaf7">Menu Degustation, CHF 295</td></tr><tr><td style="padding:11px 0;border-top:1px solid #743f36;font:400 11px/1.3 'Helvetica Neue',Helvetica,Arial,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:#e6ddd0;width:38%">Einlösbar</td><td style="padding:11px 0;border-top:1px solid #743f36;font:400 16px/1.35 'Helvetica Neue',Helvetica,Arial,sans-serif;color:#fbfaf7">In beiden Häusern</td></tr></table></td></tr></table></td></tr>
+  <tr><td align="center" style="padding:26px 40px 8px"><a href="../index.html" style="display:inline-block;padding:16px 30px;border-radius:999px;background:#452520;font:400 12px/1 'Helvetica Neue',Helvetica,Arial,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#fbfaf7;text-decoration:none">Einen Tisch reservieren &nbsp;↗</a></td></tr>
+  <tr><td style="padding:14px 40px 30px"><p style="margin:0;font:400 15px/1.6 'Helvetica Neue',Helvetica,Arial,sans-serif;color:#6e3c34;text-align:center">Fragen dazu beantworten wir gern unter +41 52 763 11 72.</p>
+    <img src="img/christian.jpg?v=e8a8a434" width="520" alt="Christian Kuchler vor der Taverne zum Schäfli" style="display:block;border:0;width:100%;max-width:520px;height:auto;margin:26px auto 0;border-radius:16px">
+    <p style="margin:16px 0 0;font:400 17px/1.4 'Helvetica Neue',Helvetica,Arial,sans-serif;color:#2a292b;text-align:center">Herzlich, Christian Kuchler, Fabian Mennel und das Team</p></td></tr>
+  <tr><td align="center" style="background:#301916;padding:26px 30px"><div style="font:400 13px/1.4 Georgia,'Times New Roman',serif;letter-spacing:.24em;color:#fbfaf7">TAVERNE ZUM SCHÄFLI</div>
+    <div style="margin-top:8px;font:400 13px/1.6 'Helvetica Neue',Helvetica,Arial,sans-serif;color:#e6ddd0">Oberdorfstrasse 8 · 8556 Wigoltingen<br><span style="color:#e6ddd0">+41 52 763 11 72</span> · <span style="color:#e6ddd0">kontakt@schaefli-wigoltingen.ch</span></div></td></tr>
+</table>
+</td></tr></table>
+</div></div>
+  <p class="mb-ganz"><button type="button" class="mb-kn" aria-expanded="false"><span class="a">Ganze Mail</span><span class="z">Weniger zeigen</span><i><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 6l4 4 4-4"/></svg></i></button></p>
+</article></div>
+<div class="pfeile"><button type="button" class="pf" data-r="-1" aria-label="Vorige Mail"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M10 3 5 8l5 5"/></svg></button><button type="button" class="pf" data-r="1" aria-label="Nächste Mail"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="m6 3 5 5-5 5"/></svg></button></div></main>
+<footer>Entwurf von Robert Reff, Tasty Studios. Stand 21.10.2026. <a href="../werkbank/index.html#papier">Zurück zu «Alles auf einen Blick»</a></footer>
+<script>
+(function () {
+  /* die Mail steht in der Seite; zu sieht man den oberen Teil, auf die ganze Mail, sofort */
+  var ms = [].slice.call(document.querySelectorAll('.mb'));
+  function lage(m) { var bl = m.querySelector('.mb-blatt'), i = bl.querySelector('.mb-in'); bl.style.height = (m.classList.contains('auf') ? i.scrollHeight : Math.min(640, i.scrollHeight)) + 'px'; }
+  ms.forEach(function (m) {
+    var k = m.querySelector('.mb-kn');
+    [].forEach.call(m.querySelectorAll('img'), function (im) { if (!im.complete) im.addEventListener('load', function () { lage(m); }, { once: true }); });
+    lage(m);
+    k.addEventListener('click', function () { var auf = m.classList.toggle('auf'); k.setAttribute('aria-expanded', auf); lage(m); if (!auf) m.scrollIntoView({ block: 'nearest' }); });
+  });
+  var rt = 0; addEventListener('resize', function () { clearTimeout(rt); rt = setTimeout(function () { ms.forEach(lage); kl(); }, 120); });
+  /* Pfeile am Laptop blättern das Band um eine Mail */
+  var b = document.getElementById('mband'), p = document.querySelectorAll('.pf');
+  function schritt() { return ms[0].getBoundingClientRect().width + parseFloat(getComputedStyle(b).columnGap || 0); }
+  function kl() { p[0].disabled = b.scrollLeft < 4; p[1].disabled = b.scrollLeft > b.scrollWidth - b.clientWidth - 4; }
+  [].forEach.call(p, function (x) { x.addEventListener('click', function () { b.scrollBy({ left: +x.dataset.r * schritt(), behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' }); }); });
+  b.addEventListener('scroll', kl, { passive: true }); kl();
+})();
+</script>
+</body></html>

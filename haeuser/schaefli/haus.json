@@ -1,0 +1,7 @@
+{
+ "kennung": "schaefli",
+ "name": "Taverne zum Schäfli",
+ "welt": "land",
+ "quelle": "~/Desktop/Website-Projekte/Taverne zum Schäfli Wigoltingen",
+ "hinweis": "Restaurant im Riegelhaus in Wigoltingen TG, keine Zimmer, nur Deutsch (EN/FR/IT folgen). Welt aus _kette/05-markenbauer/marke.json (welt: land). Angelegt 21.10.2026 vom Bau-Chat Le Bureau. Die Quelle wird nur gelesen, nie beschrieben."
+}

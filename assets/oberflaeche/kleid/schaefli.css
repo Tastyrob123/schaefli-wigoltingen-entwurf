@@ -1,0 +1,110 @@
+/* kleid/schaefli.css · Taverne zum Schäfli Wigoltingen · Farbwelt A «Riegel und Kalk» (marke.json, Station 5, Robert 19.10.2026 «a»),
+   Werte aus der Website des Hauses (website/assets/css/schaefli.css :root, 21.10.2026):
+   Ochsenblut als dunkle Fläche (#301916 tief · #452520 dunkel · #7D433A Riegel), Kalk als Raum (#F5F3EF · #F0EAE1 · #E6DDD0), Schildgold als Linie und Zeichen
+   (#B38346, hell #D3B794), Schrift Schmiedeeisen #2A292B, leise #6a5a55. Wappenrot #D23A2A nur als Marke «Entwurf», Ladengrün #5B6B49 für «Gespeichert».
+   Titel Petrona 460 (aus der Wortmarke 2016 abgeleitet), Lauf Instrument Sans, Kleinzeilen DM Mono in Versalien.
+   Eigene Form des Hauses: das Riegelwerk. Flächen stehen wie Gefache zwischen Balken (feine Fuge in Ochsenblut), die Raute der Brüstung ist das einzige
+   Ornament, das Lamm das einzige Zeichen; Knöpfe kantig wie ein Balken (7 px) wie auf der Website. Keine Einkerbungen, keine Punkt-Etiketten. Rahmen: Die Bühne. */
+@font-face{font-family:'Schaefli Sans';font-weight:400 600;font-display:swap;src:url('../../schrift/InstrumentSans-normal-400_600.woff2') format('woff2')}
+@font-face{font-family:'Schaefli Mono';font-weight:400;font-display:swap;src:url('../../schrift/DMMono-normal-400.woff2') format('woff2')}
+@font-face{font-family:'Petrona';font-weight:100 900;font-display:swap;src:url('../../schrift/Petrona-var.woff2') format('woff2')}
+:root{
+  --wo-sans:'Schaefli Sans',system-ui,-apple-system,'Segoe UI',sans-serif; --wo-mono:'Schaefli Mono',ui-monospace,'SF Mono',Menlo,monospace;
+  --wo-e1:cubic-bezier(.22,1,.36,1); --wo-e2:cubic-bezier(.32,.72,0,1);
+  --wo-nacht:#452520; --wo-nacht2:#7D433A; --wo-tief:#301916;
+  --wo-g1:#EFE2CB; --wo-g2:#D3B794; --wo-g3:#B38346;
+  --wo-gold:#D3B794; --wo-akzent:#7D433A;
+  --wo-papier:#F0EAE1; --wo-papier2:#E6DDD0; --wo-blatt:#F5F3EF; --wo-weiss:#FBFAF7;
+  --wo-tinte:#2A292B; --wo-leise:#6a5a55; --wo-linie:rgba(48,25,22,.13); --wo-linie-d:rgba(211,183,148,.32);
+  --wo-punkt:#D23A2A; --wo-gut:#5B6B49;
+  --wo-titel:'Petrona',Georgia,serif; --wo-titel-g:460; --wo-titel-ls:-.005em;
+  --wo-r1:12px; --wo-r2:9px; --wo-r3:7px; --wo-rk:999px;
+  --wo-tapete:#301916 url('/assets/zeichen/tapete-a-dunkel.svg') 0 0/168px 168px;
+  --wo-tapete-fein:var(--wo-tapete);
+  --sf-fuge:#7D433A; --sf-gold:#B38346;
+}
+
+/* ================= Taverne zum Schäfli · Riegel und Kalk ================= */
+/* Titel in Petrona wie die Website: normale Schreibung, Betonung über die Farbe (auf Hell Riegelrot), nie fett */
+.wo-sb__h,.wo-zw{font-family:var(--wo-titel);font-weight:460;letter-spacing:-.005em}
+.wo-zw em{font-style:normal;color:var(--wo-akzent)}
+/* Robert 20.10.2026 (Fehlerbuch 10a, Schlössli): auf dunkler Fläche ist jede Titelzeile hell; die Betonung kommt aus der Schriftstärke */
+.wo-sb .wo-sb__h em,[data-wo-rahmen] .wo-sb .wo-sb__h em,#ansicht .wo-sb .wo-sb__h em,body .wo-sb .wo-sb__h em{font-style:normal;color:#fff;font-weight:340}
+
+/* Gefache: helle Flächen tragen oben eine Fuge in Ochsenblut wie der Balken über einem Gefach */
+.wo-lage,.wo-ag,.wo-det__kopf{border-top:2px solid var(--sf-fuge)}
+[data-wo-rahmen="buehne"] .wo-kopf{border-bottom:1px solid rgba(211,183,148,.38)}
+/* Die Bühne: links unten der Balken in Ochsenblut mit goldener Kante, an ihm sitzt das Haus */
+[data-wo-rahmen="buehne"] .wo-sb{border-bottom:6px solid var(--wo-nacht2);box-shadow:inset 0 -1px 0 rgba(211,183,148,.45),0 0 0 1px var(--wo-linie-d),0 40px 60px -40px rgba(30,10,8,.75)}
+/* Über den Abschnittstiteln: kurzer Balken, in der Mitte die Raute der Brüstung (statt Kreis, Kerbe oder Punkt) */
+.wo-zw::before{content:'';display:block;width:84px;height:14px;margin-bottom:12px;
+  background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='84' height='14'%3E%3Cpath d='M0 7h33M51 7h33' stroke='%237D433A' stroke-opacity='.6'/%3E%3Cpath d='M42 1l6 6-6 6-6-6z' fill='none' stroke='%23B38346' stroke-width='1.3'/%3E%3Cpath d='M42 4.6l2.4 2.4-2.4 2.4-2.4-2.4z' fill='%237D433A'/%3E%3C/svg%3E") no-repeat}
+/* Fotos warm wie Kalk in der Abendsonne, unten leicht ins Ochsenblut */
+.wo-sb__foto::after{background:linear-gradient(0deg,rgba(48,25,22,.45),transparent 55%)}
+/* Zeichen in Kacheln: Raute statt Kreis (das Fachwerk), aufrecht stehendes Zeichen darin */
+.wo-lg__z,.wo-ag__z{border-radius:5px}
+.wo-bk__t small,.wo-mk{color:var(--wo-akzent)}
+.wo-re.wo-an,.wo-re[aria-current="true"],.wo-re[aria-current="page"]{background:linear-gradient(180deg,#7D433A,#452520)}
+
+/* Knöpfe kantig wie ein Balken (Radius 7 px), wie die Knöpfe der Website; der runde Pfeil-Knauf bleibt (Fehlerbuch 10a «Knopf des Rahmens») */
+.wo-kn:not(.wo-kn--rund){border-radius:7px}
+.wo-kn--gold{background:linear-gradient(180deg,#F4EADB 0%,#D3B794 48%,#B38346 100%);box-shadow:inset 0 1px 0 rgba(255,250,240,.75),inset 0 -1px 0 rgba(90,55,20,.45),0 14px 26px -14px rgba(48,25,22,.7),0 3px 8px -3px rgba(48,25,22,.35)}
+.wo-kn--dunkel{background:linear-gradient(180deg,#8f4c42 0%,#7D433A 46%,#5c2f28 100%);box-shadow:inset 0 1px 0 rgba(255,236,220,.28),inset 0 -1px 0 rgba(30,10,8,.45),0 16px 30px -16px rgba(48,25,22,.7),0 3px 8px -3px rgba(48,25,22,.35)}
+.wo-kn--hell{background:linear-gradient(180deg,#fbf8f2 0%,#efe7da 52%,#e2d6c4 100%)}
+[data-wo-rahmen="buehne"] .wo-leiste{border-radius:12px}
+
+/* Ecke oben links in allen Werkzeugen gleich (M24): das Lamm im Ring aus Ochsenblut mit goldener Kante, darunter Bereich · Haus */
+.wo-marke-w{position:relative;padding-left:60px!important;min-height:46px}
+.wo-marke-w::before{content:'';position:absolute;left:0;top:50%;width:46px;height:46px;margin-top:-23px;border-radius:50%;
+  background:radial-gradient(circle at 50% 38%,#8f4c42,#452520 74%);box-shadow:inset 0 0 0 1px rgba(211,183,148,.8),inset 0 0 0 4px rgba(48,25,22,.5),0 6px 14px -8px rgba(0,0,0,.8)}
+.wo-marke-w .wo-zeichen{position:absolute;left:12px;top:50%;width:22px;height:28px;max-width:none;margin-top:-14px;color:#EFE2CB}
+.wo-marke-w b{font-family:var(--wo-titel);font-weight:460}
+.wo-marke-w small{color:rgba(211,183,148,.9)!important}
+
+/* Auftritt der Bühne wie bei den abgenommenen Häusern (Fehlerbuch 10a): Foto schwebt 40 px von unten und zoomt von 1,06 auf 1,
+   Zier, Titel, Satz und Knöpfe folgen 40 px von unten, 0,85 s, Staffel 0,12 s. Nur transform, deckend. */
+@keyframes woAufFoto{from{translate:0 40px;scale:1.06}}
+@keyframes woAuf{from{translate:0 40px}}
+@media screen and (prefers-reduced-motion:no-preference){
+  html:not(.still) .wo-sb__foto{animation:woAufFoto .85s cubic-bezier(.22,.61,.36,1) both}
+  html:not(.still) :is(.wo-sb__zier,.wo-sb__h,.wo-sb__satz,.wo-sb__kn){animation:woAuf .85s cubic-bezier(.22,.61,.36,1) both}
+  html:not(.still) .wo-sb__zier{animation-delay:.12s}
+  html:not(.still) .wo-sb__h{animation-delay:.24s}
+  html:not(.still) .wo-sb__satz{animation-delay:.36s}
+  html:not(.still) .wo-sb__kn{animation-delay:.48s}
+}
+
+/* Untere Leiste (Fehlerbuch 10a): der Titel bricht nie um; wird es eng, verschwindet erst der Satz, dann die Beschriftung der Knöpfe */
+.wo-leiste__t b{white-space:nowrap}
+
+/* Kopf bei wenig Breite (Fehlerbuch 10a): der Titel in der Mitte nimmt nur den freien Platz, wird kleiner und kürzt notfalls mit «…»; er überdeckt nie einen Knopf */
+/* gilt ab 901 px bei jeder Breite (Gastgeber 21.10.2026: bei 1440 lief «Vom Team nachgetragen» unter einen Zusatzknopf im Kopf); kleiner und Knöpfe nur mit Zeichen erst bis 1240 */
+@media (min-width:901px){
+  .wo-kopf{grid-template-columns:auto minmax(0,1fr) auto}
+  .wo-kopf__mitte{min-width:0;max-width:100%}
+  .wo-kopf__mitte b,.wo-kopf__mitte small{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:100%}
+}
+@media (min-width:901px) and (max-width:1240px){
+  .wo-kopf__mitte b{font-size:18px}
+  .wo-kopf .wo-kn--gold.wo-kn--klein>span{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+  .wo-kopf .wo-kn--gold.wo-kn--klein{padding:0;gap:0;width:auto}
+}
+
+/* Zierzeile im Startbild: bleibt auf einer Zeile und kürzt mit «…», statt am Rand abgeschnitten zu werden (Handy) */
+.wo-sb__zier{min-width:0;max-width:100%}
+.wo-sb__zier span{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+/* Zierzeile im Startbild (Demo-Check 21.10.2026, Auftrag Oberchef): bei 901–1240 px wurde sie in mehreren Werkzeugen gekürzt («Der Gastgeber · Taverne zum…»,
+   «Die Hausdruckerei · Wirtschaft am…»). Jetzt bricht sie um, wenn der Platz nicht reicht; wo sie passt, bleibt sie eine Zeile. */
+.wo-sb__zier span{white-space:normal;overflow:visible;text-overflow:clip;line-height:1.6}
+@media (max-width:1240px){.wo-sb__zier i{display:none}}   /* die Linie daneben gibt ihren Platz dem Text */
+
+/* Luft unter der Bühne (Fehlerbuch 10a, 20.10.2026): mindestens 30 px bis zu den ersten Kacheln, am Handy 24 px; gemeldet vom Hausbuch 21.10.2026 */
+.wo-sb{margin-bottom:34px}
+@media (max-width:760px){.wo-sb{margin-bottom:24px}}
+
+/* Schrift optisch mittig in Knöpfen und Pillen (Robert 29.10.2026: «Die Schriften in deinen Buttons sitzen IMMER falsch»; Messlauf-Regel text-mitte, gemessen in Chromium und WebKit).
+   text-box schneidet die Zeile auf Versalhöhe und Grundlinie zu, dann zentriert der Knopf genau die Buchstaben; wo der Text ohne eigenes Element im Knopf steht, ein gemessener Ausgleich. */
+.wo-kn>span,.wo-re>span,.wo-kopf__ber>span{text-box:trim-both cap alphabetic}
+.wo-re .wo-zahl{display:block;height:auto;padding:7px;line-height:1;text-align:center;text-box:trim-both cap alphabetic}
+.ansicht>button,.wahl3>button{text-box:trim-both cap alphabetic}
+@supports not (text-box:trim-both cap alphabetic){.wo-kn>span,.wo-re>span,.wo-kopf__ber>span{position:relative;top:.05em}}

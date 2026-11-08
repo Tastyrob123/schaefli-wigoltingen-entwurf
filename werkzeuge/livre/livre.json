@@ -1,0 +1,4013 @@
+{
+ "haus": "Taverne zum Schäfli",
+ "ort": "Wigoltingen",
+ "fotos": [
+  {
+   "k": "giebel",
+   "t": {
+    "de": "Die Taverne zum Schäfli von vorn mit dem Giebel im Sommer"
+   },
+   "b": "haus",
+   "s": "sommer",
+   "f": "quer",
+   "w": 2528,
+   "h": 1696,
+   "art": "ki",
+   "q": "Anhänger und Sonnenschirm mit KI entfernt (Higgsfield). Vorlage: Foto von Lokolia, CC BY-SA 4.0, Wikimedia Commons, 2017. Nur Platzhalter bis zu einem eigenen Foto des Hauses",
+   "u": "https://commons.wikimedia.org/wiki/File%3AZum_Sch%C3%A4fli_Oberdorfstrasse_8_Wigoltingen_P1020322.jpg",
+   "ue": true,
+   "alt": false,
+   "vn": true,
+   "fl": "../../assets/img/giebel-2528.webp",
+   "fm": "../../assets/img/giebel-1200.webp",
+   "fs": "../../assets/img/giebel-480.webp"
+  },
+  {
+   "k": "himmel",
+   "t": {
+    "de": "Die Taverne zum Schäfli von vorn unter blauem Himmel"
+   },
+   "b": "haus",
+   "s": "sommer",
+   "f": "quer",
+   "w": 2600,
+   "h": 2254,
+   "art": "ki",
+   "q": "Haus tiefer gesetzt und Himmel darüber mit KI ergänzt (Higgsfield); Vorlage nach Bildvergleich dieselbe Ansicht wie «strasse». Vorlage: Foto von Lokolia, CC BY-SA 4.0, Wikimedia Commons, 2017. Nur Platzhalter bis zu einem eigenen Foto des Hauses",
+   "u": "https://commons.wikimedia.org/wiki/File%3AZum_Sch%C3%A4fli_Oberdorfstrasse_8_Wigoltingen_P1020324.jpg",
+   "ue": false,
+   "alt": false,
+   "vn": false,
+   "fl": "../../assets/img/himmel-2600.webp",
+   "fm": "../../assets/img/himmel-1200.webp",
+   "fs": "../../assets/img/himmel-480.webp"
+  },
+  {
+   "k": "fassade",
+   "t": {
+    "de": "Das Riegelhaus der Taverne zum Schäfli an der Oberdorfstrasse in Wigoltingen, links an der Wand der gemalte Name"
+   },
+   "b": "haus",
+   "s": "jahr",
+   "f": "quer",
+   "w": 4200,
+   "h": 2800,
+   "art": "frei",
+   "q": "JoachimKohler-HB, CC BY-SA 4.0, Wikimedia Commons, 2021",
+   "u": "https://commons.wikimedia.org/wiki/File%3ATaverne_zum_Sch%C3%A4fli_in_Wigoltingen_TG.jpg",
+   "ue": false,
+   "alt": false,
+   "vn": false,
+   "fl": "../../assets/img/fassade-4200.webp",
+   "fm": "../../assets/img/fassade-1200.webp",
+   "fs": "../../assets/img/fassade-480.webp"
+  },
+  {
+   "k": "tuer",
+   "t": {
+    "de": "Christian Kuchler lehnt im Türrahmen aus Weinkisten"
+   },
+   "b": "team",
+   "s": "jahr",
+   "f": "hoch",
+   "w": 2500,
+   "h": 3750,
+   "art": "haus",
+   "q": "Website des Hauses (schaefli-wigoltingen.ch); Rechte beim Haus oder bei den genannten Fotografen",
+   "u": "https://images.squarespace-cdn.com/content/v1/6658400914e1a73880bcb76d/28c378cc-75c6-4695-b329-4be2045ab6c8/FHF_1090.jpg",
+   "ue": false,
+   "alt": false,
+   "vn": false,
+   "fl": "../../assets/img/tuer-2000.webp",
+   "fm": "../../assets/img/tuer-1200.webp",
+   "fs": "../../assets/img/tuer-480.webp"
+  },
+  {
+   "k": "stube-gast",
+   "t": {
+    "de": "Die Gaststube mit Holztäfer, gerahmten Bildern und weiss gedeckten Tischen"
+   },
+   "b": "stuben",
+   "s": "jahr",
+   "f": "quer",
+   "w": 2304,
+   "h": 1536,
+   "art": "haus",
+   "q": "Website des Hauses (schaefli-wigoltingen.ch), Foto Fabian Haefeli; Rechte beim Haus oder bei den genannten Fotografen",
+   "u": "https://images.squarespace-cdn.com/content/v1/6658400914e1a73880bcb76d/ddd9dbd3-bb23-410a-a810-ecc10f3aa318/49D29B1D-2F99-4E1D-AC5A-273C2E23A57D.jpeg",
+   "ue": false,
+   "alt": false,
+   "vn": false,
+   "fl": "../../assets/img/stube-gast-2304.webp",
+   "fm": "../../assets/img/stube-gast-1200.webp",
+   "fs": "../../assets/img/stube-gast-480.webp"
+  },
+  {
+   "k": "stube-gelb",
+   "t": {
+    "de": "Eine helle Stube mit Täfer, Bildern an der Wand und einem gedeckten Tisch am Fenster"
+   },
+   "b": "stuben",
+   "s": "jahr",
+   "f": "quer",
+   "w": 3232,
+   "h": 2155,
+   "art": "haus",
+   "q": "Website des Hauses (schaefli-wigoltingen.ch), Foto Fabian Haefeli; Rechte beim Haus oder bei den genannten Fotografen. Licht und Schärfe mit KI nachgeschärft",
+   "u": "https://images.squarespace-cdn.com/content/v1/6658400914e1a73880bcb76d/d2848ac9-2a0b-4eef-ba35-5a4978564ac0/8B4B94E2-0208-43B3-860D-07C87EC78022.jpeg",
+   "ue": true,
+   "alt": false,
+   "vn": true,
+   "fl": "../../assets/img/stube-gelb-2304.webp",
+   "fm": "../../assets/img/stube-gelb-1200.webp",
+   "fs": "../../assets/img/stube-gelb-480.webp"
+  },
+  {
+   "k": "stube-ofen",
+   "t": {
+    "de": "Ein gedeckter Tisch vor dem Kachelofen und dem Buffet aus Holz"
+   },
+   "b": "stuben",
+   "s": "jahr",
+   "f": "quer",
+   "w": 2304,
+   "h": 1536,
+   "art": "haus",
+   "q": "Website des Hauses (schaefli-wigoltingen.ch), Foto Fabian Haefeli; Rechte beim Haus oder bei den genannten Fotografen",
+   "u": "https://images.squarespace-cdn.com/content/v1/6658400914e1a73880bcb76d/f3f464e3-eb40-4db4-841e-bbad5df05817/E3D2F627-FF4E-4BD1-963A-51B831F86150.jpeg",
+   "ue": false,
+   "alt": false,
+   "vn": false,
+   "fl": "../../assets/img/stube-ofen-2304.webp",
+   "fm": "../../assets/img/stube-ofen-1200.webp",
+   "fs": "../../assets/img/stube-ofen-480.webp"
+  },
+  {
+   "k": "stube-weiss",
+   "t": {
+    "de": "Eine weisse Stube mit Parkett, Anrichte und gedeckten Tischen"
+   },
+   "b": "stuben",
+   "s": "jahr",
+   "f": "quer",
+   "w": 2304,
+   "h": 1536,
+   "art": "haus",
+   "q": "Website des Hauses (schaefli-wigoltingen.ch), Foto Fabian Haefeli; Rechte beim Haus oder bei den genannten Fotografen",
+   "u": "https://images.squarespace-cdn.com/content/v1/6658400914e1a73880bcb76d/efffe97b-3ce5-4180-aa26-a399d69df419/94075C14-C0D2-4B09-97EA-5396B3EB56C8.jpeg",
+   "ue": false,
+   "alt": false,
+   "vn": false,
+   "fl": "../../assets/img/stube-weiss-2304.webp",
+   "fm": "../../assets/img/stube-weiss-1200.webp",
+   "fs": "../../assets/img/stube-weiss-480.webp"
+  },
+  {
+   "k": "bogen",
+   "t": {
+    "de": "Ein alter Bilderbogen im schwarzen Rahmen an der Holzwand, daneben ein Kleiderhaken"
+   },
+   "b": "stuben",
+   "s": "jahr",
+   "f": "hoch",
+   "w": 2500,
+   "h": 3333,
+   "art": "haus",
+   "q": "Website des Hauses (schaefli-wigoltingen.ch); Rechte beim Haus oder bei den genannten Fotografen",
+   "u": "https://images.squarespace-cdn.com/content/v1/6658400914e1a73880bcb76d/8b5c44ca-28f9-4757-949f-d92570df16aa/IMG_9225.jpeg",
+   "ue": false,
+   "alt": false,
+   "vn": false,
+   "fl": "../../assets/img/bogen-1600.webp",
+   "fm": "../../assets/img/bogen-1200.webp",
+   "fs": "../../assets/img/bogen-480.webp"
+  },
+  {
+   "k": "teller-muschel",
+   "t": {
+    "de": "Jakobsmuschel, Kaviar, Kräuter-Beurre-Blanc"
+   },
+   "b": "teller",
+   "s": "jahr",
+   "f": "quadrat",
+   "w": 1668,
+   "h": 1668,
+   "art": "haus",
+   "q": "Website des Hauses (schaefli-wigoltingen.ch); Rechte beim Haus oder bei den genannten Fotografen",
+   "u": "https://images.squarespace-cdn.com/content/v1/6658400914e1a73880bcb76d/7aa08e40-78f2-4f83-b83a-29442f8e6a17/IMG_0376.jpg",
+   "ue": false,
+   "alt": false,
+   "vn": false,
+   "fl": "../../assets/img/teller-muschel-1600.webp",
+   "fm": "../../assets/img/teller-muschel-1200.webp",
+   "fs": "../../assets/img/teller-muschel-480.webp"
+  },
+  {
+   "k": "teller-ente",
+   "t": {
+    "de": "Entenleber und Rhabarber"
+   },
+   "b": "teller",
+   "s": "jahr",
+   "f": "quadrat",
+   "w": 2499,
+   "h": 2499,
+   "art": "haus",
+   "q": "Website des Hauses (schaefli-wigoltingen.ch); Rechte beim Haus oder bei den genannten Fotografen",
+   "u": "https://images.squarespace-cdn.com/content/v1/6658400914e1a73880bcb76d/b3f2e61c-07de-46a6-9f82-cfc0e71ee735/IMG_0384.jpg",
+   "ue": false,
+   "alt": false,
+   "vn": false,
+   "fl": "../../assets/img/teller-ente-2000.webp",
+   "fm": "../../assets/img/teller-ente-1200.webp",
+   "fs": "../../assets/img/teller-ente-480.webp"
+  },
+  {
+   "k": "vater",
+   "t": {
+    "de": "Wolfgang Kuchler in der Jacke mit seinen Initialen vor dem Haus"
+   },
+   "b": "team",
+   "s": "jahr",
+   "f": "hoch",
+   "w": 2441,
+   "h": 3661,
+   "art": "haus",
+   "q": "Website des Hauses (schaefli-wigoltingen.ch), Foto Fabian Haefeli; Rechte beim Haus oder bei den genannten Fotografen",
+   "u": "https://images.squarespace-cdn.com/content/v1/6658400914e1a73880bcb76d/850c4951-0923-483b-bab1-778cbf9a3b87/_FHF5587.jpg",
+   "ue": false,
+   "alt": false,
+   "vn": false,
+   "fl": "../../assets/img/vater-1800.webp",
+   "fm": "../../assets/img/vater-1200.webp",
+   "fs": "../../assets/img/vater-480.webp"
+  },
+  {
+   "k": "hand",
+   "t": {
+    "de": "Eine Hand richtet mit dem Löffel einen Teller an"
+   },
+   "b": "kueche",
+   "s": "jahr",
+   "f": "hoch",
+   "w": 1179,
+   "h": 1748,
+   "art": "haus",
+   "q": "Website des Hauses (schaefli-wigoltingen.ch); Rechte beim Haus oder bei den genannten Fotografen",
+   "u": "https://images.squarespace-cdn.com/content/v1/6658400914e1a73880bcb76d/6b9524d6-28e3-4d3b-8cd1-819d6b7e98e4/IMG_1956.jpeg",
+   "ue": false,
+   "alt": false,
+   "vn": false,
+   "fl": "../../assets/img/hand-1179.webp",
+   "fm": "../../assets/img/hand-1179.webp",
+   "fs": "../../assets/img/hand-480.webp"
+  },
+  {
+   "k": "schild",
+   "t": {
+    "de": "Das Wirtshausschild aus Schmiedeeisen mit dem Lamm und der Fahne am Haus"
+   },
+   "b": "haus",
+   "s": "jahr",
+   "f": "quer",
+   "w": 4000,
+   "h": 3000,
+   "art": "frei",
+   "q": "JoachimKohler-HB, CC BY-SA 4.0, Wikimedia Commons, 2021",
+   "u": "https://commons.wikimedia.org/wiki/File%3AWirtshausschild_der_Taverne_zum_Sch%C3%A4fli_in_Wigoltingen_TG.jpg",
+   "ue": false,
+   "alt": false,
+   "vn": false,
+   "fl": "../../assets/img/schild-2600.webp",
+   "fm": "../../assets/img/schild-1200.webp",
+   "fs": "../../assets/img/schild-480.webp"
+  },
+  {
+   "k": "hof",
+   "t": {
+    "de": "Die lange gedeckte Tafel im Hinterhof unter den Sonnenschirmen"
+   },
+   "b": "feste",
+   "s": "sommer",
+   "f": "quer",
+   "w": 3232,
+   "h": 2155,
+   "art": "haus",
+   "q": "Website des Hauses (schaefli-wigoltingen.ch), Foto Fabian Haefeli; Rechte beim Haus oder bei den genannten Fotografen. Licht und Schärfe mit KI nachgeschärft",
+   "u": "https://images.squarespace-cdn.com/content/v1/6658400914e1a73880bcb76d/64209dc6-5170-4bf6-9356-cd78a065329b/77C23C04-C8A0-4A40-878B-D2507FDCAB77.jpeg",
+   "ue": true,
+   "alt": false,
+   "vn": true,
+   "fl": "../../assets/img/hof-2304.webp",
+   "fm": "../../assets/img/hof-1200.webp",
+   "fs": "../../assets/img/hof-480.webp"
+  },
+  {
+   "k": "einschenken",
+   "t": {
+    "de": "Schaumwein wird aus der Flasche ins Glas eingeschenkt"
+   },
+   "b": "wein",
+   "s": "jahr",
+   "f": "quer",
+   "w": 3232,
+   "h": 2155,
+   "art": "haus",
+   "q": "Website des Hauses (schaefli-wigoltingen.ch), Foto Digitale Massarbeit / Tanja und Simon Kurt; Rechte beim Haus oder bei den genannten Fotografen. Licht und Schärfe mit KI nachgeschärft",
+   "u": "https://images.squarespace-cdn.com/content/v1/6658400914e1a73880bcb76d/7ccf4e0c-a2eb-4bf8-a7a2-7cc45dbd1ee5/BE589680-AD07-4925-AD55-7246B547B4A0.jpeg",
+   "ue": true,
+   "alt": false,
+   "vn": true,
+   "fl": "../../assets/img/einschenken-2304.webp",
+   "fm": "../../assets/img/einschenken-1200.webp",
+   "fs": "../../assets/img/einschenken-480.webp"
+  },
+  {
+   "k": "zigarren",
+   "t": {
+    "de": "Zigarren in einer Holzschublade"
+   },
+   "b": "bar",
+   "s": "jahr",
+   "f": "hoch",
+   "w": 2500,
+   "h": 3333,
+   "art": "haus",
+   "q": "Website des Hauses (schaefli-wigoltingen.ch); Rechte beim Haus oder bei den genannten Fotografen",
+   "u": "https://images.squarespace-cdn.com/content/v1/6658400914e1a73880bcb76d/41f1b060-3b9a-4971-b1ad-5fb4f7d68a3d/IMG_9508.jpeg",
+   "ue": false,
+   "alt": false,
+   "vn": false,
+   "fl": "../../assets/img/zigarren-1800.webp",
+   "fm": "../../assets/img/zigarren-1200.webp",
+   "fs": "../../assets/img/zigarren-480.webp"
+  },
+  {
+   "k": "bar",
+   "t": {
+    "de": "Die Bar mit Hockern und beleuchtetem Regal"
+   },
+   "b": "bar",
+   "s": "jahr",
+   "f": "hoch",
+   "w": 2500,
+   "h": 3333,
+   "art": "haus",
+   "q": "Website des Hauses (schaefli-wigoltingen.ch); Rechte beim Haus oder bei den genannten Fotografen",
+   "u": "https://images.squarespace-cdn.com/content/v1/6658400914e1a73880bcb76d/266fc0c1-313c-48c4-a5e7-48cd0c3279a7/IMG_9505.jpeg",
+   "ue": false,
+   "alt": false,
+   "vn": false,
+   "fl": "../../assets/img/bar-1800.webp",
+   "fm": "../../assets/img/bar-1200.webp",
+   "fs": "../../assets/img/bar-480.webp"
+  },
+  {
+   "k": "urkunden",
+   "t": {
+    "de": "Die Wand mit den gerahmten Urkunden im Haus"
+   },
+   "b": "stuben",
+   "s": "jahr",
+   "f": "quadrat",
+   "w": 1536,
+   "h": 1536,
+   "art": "haus",
+   "q": "Website des Hauses (schaefli-wigoltingen.ch); Rechte beim Haus oder bei den genannten Fotografen",
+   "u": "https://images.squarespace-cdn.com/content/v1/6658400914e1a73880bcb76d/1726155121830-DLTO01K39JGJK98MXAKC/514C582B-A014-4602-8B94-581235C26EA6.jpg",
+   "ue": false,
+   "alt": false,
+   "vn": false,
+   "fl": "../../assets/img/urkunden-1536.webp",
+   "fm": "../../assets/img/urkunden-1200.webp",
+   "fs": "../../assets/img/urkunden-480.webp"
+  },
+  {
+   "k": "tafel",
+   "t": {
+    "de": "Eine lange gedeckte Tafel in einem Saal mit Holzdecke"
+   },
+   "b": "stuben",
+   "s": "jahr",
+   "f": "quer",
+   "w": 2500,
+   "h": 1875,
+   "art": "haus",
+   "q": "Website des Hauses (schaefli-wigoltingen.ch); Rechte beim Haus oder bei den genannten Fotografen",
+   "u": "https://images.squarespace-cdn.com/content/v1/6658400914e1a73880bcb76d/e278b361-9e6a-401a-936b-ba794a86c353/IMG_8589.jpeg",
+   "ue": false,
+   "alt": false,
+   "vn": false,
+   "fl": "../../assets/img/tafel-2500.webp",
+   "fm": "../../assets/img/tafel-1200.webp",
+   "fs": "../../assets/img/tafel-480.webp"
+  },
+  {
+   "k": "party",
+   "t": {
+    "de": "Die Kitchen Party am Abend vor dem Haus, Gäste im farbigen Licht"
+   },
+   "b": "feste",
+   "s": "sommer",
+   "f": "hoch",
+   "w": 1179,
+   "h": 1504,
+   "art": "haus",
+   "q": "Website des Hauses (schaefli-wigoltingen.ch); Rechte beim Haus oder bei den genannten Fotografen",
+   "u": "https://images.squarespace-cdn.com/content/v1/6658400914e1a73880bcb76d/6db15f07-cfee-4b86-b568-ad14a0210fb4/IMG_3651.jpeg",
+   "ue": false,
+   "alt": false,
+   "vn": false,
+   "fl": "../../assets/img/party-1179.webp",
+   "fm": "../../assets/img/party-1179.webp",
+   "fs": "../../assets/img/party-480.webp"
+  },
+  {
+   "k": "nacht",
+   "t": {
+    "de": "Das Riegelhaus am Abend mit Licht in den Fenstern"
+   },
+   "b": "haus",
+   "s": "jahr",
+   "f": "quer",
+   "w": 3232,
+   "h": 2156,
+   "art": "haus",
+   "q": "Website des Hauses (schaefli-wigoltingen.ch); Rechte beim Haus oder bei den genannten Fotografen. Licht und Schärfe mit KI nachgeschärft",
+   "u": "https://images.squarespace-cdn.com/content/v1/6658400914e1a73880bcb76d/a8804605-ef97-4620-8d87-ebbec9c7e0c0/IMG_0293.jpeg",
+   "ue": true,
+   "alt": false,
+   "vn": true,
+   "fl": "../../assets/img/nacht-2000.webp",
+   "fm": "../../assets/img/nacht-1200.webp",
+   "fs": "../../assets/img/nacht-480.webp"
+  },
+  {
+   "k": "stube-abend",
+   "t": {
+    "de": "Die Gaststube mit Holztäfer und gedeckten Tischen am Abend"
+   },
+   "b": "stuben",
+   "s": "jahr",
+   "f": "quer",
+   "w": 2304,
+   "h": 1536,
+   "art": "haus",
+   "q": "Website des Hauses (schaefli-wigoltingen.ch), Foto Fabian Haefeli; Rechte beim Haus oder bei den genannten Fotografen",
+   "u": "https://images.squarespace-cdn.com/content/v1/6658400914e1a73880bcb76d/dcbb1e1c-b77f-444e-beeb-be3bb0bb1a37/81267F4E-F499-4243-8E32-A3951488E9E9.jpeg",
+   "ue": false,
+   "alt": false,
+   "vn": false,
+   "fl": "../../assets/img/stube-abend-2304.webp",
+   "fm": "../../assets/img/stube-abend-1200.webp",
+   "fs": "../../assets/img/stube-abend-480.webp"
+  },
+  {
+   "k": "pass-scampi",
+   "t": {
+    "de": "Scampi mit Thai-Curry-Nage, die Sauce wird angegossen"
+   },
+   "b": "teller",
+   "s": "jahr",
+   "f": "hoch",
+   "w": 2500,
+   "h": 3750,
+   "art": "haus",
+   "q": "Website des Hauses (schaefli-wigoltingen.ch), Foto David Schnapp; Rechte beim Haus oder bei den genannten Fotografen",
+   "u": "https://images.squarespace-cdn.com/content/v1/6658400914e1a73880bcb76d/57bc5c97-10e7-471f-8e88-593c7860b0d6/IMG_0381.jpeg",
+   "ue": false,
+   "alt": false,
+   "vn": false,
+   "fl": "../../assets/img/pass-scampi-1800.webp",
+   "fm": "../../assets/img/pass-scampi-1200.webp",
+   "fs": "../../assets/img/pass-scampi-480.webp"
+  },
+  {
+   "k": "pass-schnitzel",
+   "t": {
+    "de": "Ein paniertes Schnitzel mit Zitrone, Preiselbeeren und Kartoffeln"
+   },
+   "b": "teller",
+   "s": "jahr",
+   "f": "hoch",
+   "w": 2500,
+   "h": 3750,
+   "art": "haus",
+   "q": "Website des Hauses (schaefli-wigoltingen.ch); Rechte beim Haus oder bei den genannten Fotografen",
+   "u": "https://images.squarespace-cdn.com/content/v1/6658400914e1a73880bcb76d/6bf3394d-4da9-4786-9129-7ae2fdd7a471/Schaefli_Juni2025-28-15.jpeg",
+   "ue": false,
+   "alt": false,
+   "vn": false,
+   "fl": "../../assets/img/pass-schnitzel-1600.webp",
+   "fm": "../../assets/img/pass-schnitzel-1200.webp",
+   "fs": "../../assets/img/pass-schnitzel-480.webp"
+  },
+  {
+   "k": "pass-dessert",
+   "t": {
+    "de": "Ein Dessert mit Erdbeeren, einer grünen Kugel und einem Gitter aus Zucker"
+   },
+   "b": "teller",
+   "s": "jahr",
+   "f": "hoch",
+   "w": 2500,
+   "h": 3750,
+   "art": "haus",
+   "q": "Website des Hauses (schaefli-wigoltingen.ch); Rechte beim Haus oder bei den genannten Fotografen",
+   "u": "https://images.squarespace-cdn.com/content/v1/6658400914e1a73880bcb76d/179fa5cc-d87a-4d63-86a9-d34e9bc92cf1/Schaefli_Juni2025-43-19.jpeg",
+   "ue": false,
+   "alt": false,
+   "vn": false,
+   "fl": "../../assets/img/pass-dessert-1800.webp",
+   "fm": "../../assets/img/pass-dessert-1200.webp",
+   "fs": "../../assets/img/pass-dessert-480.webp"
+  },
+  {
+   "k": "pass-korb",
+   "t": {
+    "de": "Ein Gericht im Bambuskorb"
+   },
+   "b": "teller",
+   "s": "jahr",
+   "f": "hoch",
+   "w": 2500,
+   "h": 3750,
+   "art": "haus",
+   "q": "Website des Hauses (schaefli-wigoltingen.ch); Rechte beim Haus oder bei den genannten Fotografen",
+   "u": "https://images.squarespace-cdn.com/content/v1/6658400914e1a73880bcb76d/dea6a946-2d27-42cc-884b-ee4aa53cad28/Schaefli_Juni2025-7-4.jpeg",
+   "ue": false,
+   "alt": false,
+   "vn": false,
+   "fl": "../../assets/img/pass-korb-1600.webp",
+   "fm": "../../assets/img/pass-korb-1200.webp",
+   "fs": "../../assets/img/pass-korb-480.webp"
+  },
+  {
+   "k": "weinwand",
+   "t": {
+    "de": "Die Weinschränke im Haus, davor die rote Aufschnittmaschine und ein Bartisch"
+   },
+   "b": "wein",
+   "s": "jahr",
+   "f": "quer",
+   "w": 2304,
+   "h": 1536,
+   "art": "haus",
+   "q": "Website des Hauses (schaefli-wigoltingen.ch), Foto Fabian Haefeli; Rechte beim Haus oder bei den genannten Fotografen",
+   "u": "https://images.squarespace-cdn.com/content/v1/6658400914e1a73880bcb76d/0b78966f-758e-4224-875a-a2349c6e2066/57B762F1-4DA2-4AA6-89BB-2F16F8D9B62F.jpeg",
+   "ue": false,
+   "alt": false,
+   "vn": false,
+   "fl": "../../assets/img/weinwand-2304.webp",
+   "fm": "../../assets/img/weinwand-1200.webp",
+   "fs": "../../assets/img/weinwand-480.webp"
+  },
+  {
+   "k": "champagner",
+   "t": {
+    "de": "Eine Flasche Laurent-Perrier Blanc de Blancs und ein Glas auf dem gedeckten Tisch"
+   },
+   "b": "wein",
+   "s": "jahr",
+   "f": "quadrat",
+   "w": 1536,
+   "h": 1536,
+   "art": "haus",
+   "q": "Website des Hauses (schaefli-wigoltingen.ch); Rechte beim Haus oder bei den genannten Fotografen",
+   "u": "https://images.squarespace-cdn.com/content/v1/6658400914e1a73880bcb76d/092551e8-6bc9-4f71-a919-a667deb8e534/6C9BCBE0-3530-4C9B-BD71-29DB35EF1C0C.jpg",
+   "ue": false,
+   "alt": false,
+   "vn": false,
+   "fl": "../../assets/img/champagner-1536.webp",
+   "fm": "../../assets/img/champagner-1200.webp",
+   "fs": "../../assets/img/champagner-480.webp"
+  },
+  {
+   "k": "kopf-karte",
+   "t": {
+    "de": "Hamachi, Kaffir-Limette, Yuzu"
+   },
+   "b": "teller",
+   "s": "jahr",
+   "f": "quadrat",
+   "w": 1614,
+   "h": 1614,
+   "art": "haus",
+   "q": "Website des Hauses (schaefli-wigoltingen.ch); Rechte beim Haus oder bei den genannten Fotografen",
+   "u": "https://images.squarespace-cdn.com/content/v1/6658400914e1a73880bcb76d/2e5aeb29-82ab-4c72-bd3a-a972535e0e7d/IMG_0377.jpg",
+   "ue": false,
+   "alt": false,
+   "vn": false,
+   "fl": "../../assets/img/kopf-karte-1600.webp",
+   "fm": "../../assets/img/kopf-karte-1200.webp",
+   "fs": "../../assets/img/kopf-karte-480.webp"
+  },
+  {
+   "k": "kopf-wein",
+   "t": {
+    "de": "Ein gedeckter Tisch mit Weingläsern und Blumen am Fenster"
+   },
+   "b": "stuben",
+   "s": "jahr",
+   "f": "quer",
+   "w": 3232,
+   "h": 2155,
+   "art": "haus",
+   "q": "Website des Hauses (schaefli-wigoltingen.ch), Foto Fabian Haefeli; Rechte beim Haus oder bei den genannten Fotografen. Licht und Schärfe mit KI nachgeschärft",
+   "u": "https://images.squarespace-cdn.com/content/v1/6658400914e1a73880bcb76d/b913a57a-6952-4bb3-9a22-c768229c67b4/B18E8724-8C31-423A-AA11-5DC1BAAADF52.jpeg",
+   "ue": true,
+   "alt": false,
+   "vn": true,
+   "fl": "../../assets/img/kopf-wein-2304.webp",
+   "fm": "../../assets/img/kopf-wein-1200.webp",
+   "fs": "../../assets/img/kopf-wein-480.webp"
+  },
+  {
+   "k": "kopf-bar",
+   "t": {
+    "de": "Die Bar & Smokers Lounge mit gedeckten Tischen unter der Holzdecke"
+   },
+   "b": "bar",
+   "s": "jahr",
+   "f": "hoch",
+   "w": 2500,
+   "h": 3333,
+   "art": "haus",
+   "q": "Website des Hauses (schaefli-wigoltingen.ch); Rechte beim Haus oder bei den genannten Fotografen",
+   "u": "https://images.squarespace-cdn.com/content/v1/6658400914e1a73880bcb76d/24f897d5-0671-47e2-8b8c-c982c0f22a1f/IMG_9501.jpeg",
+   "ue": false,
+   "alt": false,
+   "vn": false,
+   "fl": "../../assets/img/kopf-bar-2000.webp",
+   "fm": "../../assets/img/kopf-bar-1200.webp",
+   "fs": "../../assets/img/kopf-bar-480.webp"
+  },
+  {
+   "k": "kopf-haus",
+   "t": {
+    "de": "Das Riegelhaus der Taverne zum Schäfli mit dem Giebel zur Strasse"
+   },
+   "b": "haus",
+   "s": "jahr",
+   "f": "quer",
+   "w": 4000,
+   "h": 2500,
+   "art": "frei",
+   "q": "JoachimKohler-HB, CC BY-SA 4.0, Wikimedia Commons, 2021",
+   "u": "https://commons.wikimedia.org/wiki/File%3ATaverne_zum_Sch%C3%A4fli_in_Wigoltingen.jpg",
+   "ue": false,
+   "alt": false,
+   "vn": false,
+   "fl": "../../assets/img/kopf-haus-3200.webp",
+   "fm": "../../assets/img/kopf-haus-1200.webp",
+   "fs": "../../assets/img/kopf-haus-480.webp"
+  },
+  {
+   "k": "kopf-kontakt",
+   "t": {
+    "de": "Die Taverne zum Schäfli an der Oberdorfstrasse 8 im Sommer"
+   },
+   "b": "haus",
+   "s": "sommer",
+   "f": "quer",
+   "w": 4000,
+   "h": 2665,
+   "art": "frei",
+   "q": "Lokolia, CC BY-SA 4.0, Wikimedia Commons, 2017",
+   "u": "https://commons.wikimedia.org/wiki/File%3AZum_Sch%C3%A4fli_Oberdorfstrasse_8_Wigoltingen_P1020320.jpg",
+   "ue": false,
+   "alt": false,
+   "vn": false,
+   "fl": "../../assets/img/kopf-kontakt-3200.webp",
+   "fm": "../../assets/img/kopf-kontakt-1200.webp",
+   "fs": "../../assets/img/kopf-kontakt-480.webp"
+  },
+  {
+   "k": "kopf-anlaesse",
+   "t": {
+    "de": "Flaschen von Laurent-Perrier im Eiskübel an einem Fest"
+   },
+   "b": "feste",
+   "s": "jahr",
+   "f": "quadrat",
+   "w": 1534,
+   "h": 1567,
+   "art": "haus",
+   "q": "Website des Hauses (schaefli-wigoltingen.ch); Rechte beim Haus oder bei den genannten Fotografen. Auf der Website auch unter «kuebel»",
+   "u": "https://images.squarespace-cdn.com/content/v1/6658400914e1a73880bcb76d/688c009f-fdf3-4294-b550-36931d774a5b/IMG_3652.jpeg",
+   "ue": false,
+   "alt": false,
+   "vn": false,
+   "fl": "../../assets/img/kopf-anlaesse-1534.webp",
+   "fm": "../../assets/img/kopf-anlaesse-1200.webp",
+   "fs": "../../assets/img/kopf-anlaesse-480.webp"
+  },
+  {
+   "k": "kopf-feiern",
+   "t": {
+    "de": "Die Terrasse mit gedeckten Tischen unter Sonnenschirmen"
+   },
+   "b": "feste",
+   "s": "sommer",
+   "f": "quer",
+   "w": 2304,
+   "h": 1536,
+   "art": "haus",
+   "q": "Website des Hauses (schaefli-wigoltingen.ch), Foto Fabian Haefeli; Rechte beim Haus oder bei den genannten Fotografen",
+   "u": "https://images.squarespace-cdn.com/content/v1/6658400914e1a73880bcb76d/5fa24cb2-f225-405f-8a62-878578524580/09F0D22F-7292-4CC8-BE7B-417202F62349.jpeg",
+   "ue": false,
+   "alt": false,
+   "vn": false,
+   "fl": "../../assets/img/kopf-feiern-2304.webp",
+   "fm": "../../assets/img/kopf-feiern-1200.webp",
+   "fs": "../../assets/img/kopf-feiern-480.webp"
+  },
+  {
+   "k": "barhocker",
+   "t": {
+    "de": "Hochtische und Barhocker an der Kalkwand der Bar"
+   },
+   "b": "bar",
+   "s": "jahr",
+   "f": "hoch",
+   "w": 2500,
+   "h": 3333,
+   "art": "haus",
+   "q": "Website des Hauses (schaefli-wigoltingen.ch); Rechte beim Haus oder bei den genannten Fotografen",
+   "u": "https://images.squarespace-cdn.com/content/v1/6658400914e1a73880bcb76d/ae33662e-6759-4f81-b48a-f5bb8d270775/IMG_9503.jpeg",
+   "ue": false,
+   "alt": false,
+   "vn": false,
+   "fl": "../../assets/img/barhocker-1600.webp",
+   "fm": "../../assets/img/barhocker-1200.webp",
+   "fs": "../../assets/img/barhocker-480.webp"
+  },
+  {
+   "k": "aschenbecher",
+   "t": {
+    "de": "Eine Zigarre im Aschenbecher auf dem Tisch der Smokers Lounge"
+   },
+   "b": "bar",
+   "s": "jahr",
+   "f": "hoch",
+   "w": 2500,
+   "h": 3333,
+   "art": "haus",
+   "q": "Website des Hauses (schaefli-wigoltingen.ch); Rechte beim Haus oder bei den genannten Fotografen",
+   "u": "https://images.squarespace-cdn.com/content/v1/6658400914e1a73880bcb76d/2c1ce7ad-fbd9-406e-b9bc-529222a49153/IMG_9475.jpeg",
+   "ue": false,
+   "alt": false,
+   "vn": false,
+   "fl": "../../assets/img/aschenbecher-2500.webp",
+   "fm": "../../assets/img/aschenbecher-1200.webp",
+   "fs": "../../assets/img/aschenbecher-480.webp"
+  },
+  {
+   "k": "spirituosen",
+   "t": {
+    "de": "Spirituosen im Regal der Bar"
+   },
+   "b": "bar",
+   "s": "jahr",
+   "f": "hoch",
+   "w": 2500,
+   "h": 3333,
+   "art": "haus",
+   "q": "Website des Hauses (schaefli-wigoltingen.ch); Rechte beim Haus oder bei den genannten Fotografen",
+   "u": "https://images.squarespace-cdn.com/content/v1/6658400914e1a73880bcb76d/0a8d9985-58db-4c1d-870a-28bdf8d06c16/IMG_9510.jpeg",
+   "ue": false,
+   "alt": false,
+   "vn": false,
+   "fl": "../../assets/img/spirituosen-1600.webp",
+   "fm": "../../assets/img/spirituosen-1200.webp",
+   "fs": "../../assets/img/spirituosen-480.webp"
+  },
+  {
+   "k": "rochelt",
+   "t": {
+    "de": "Die Digestifs von Rochelt in einer Holzkiste"
+   },
+   "b": "bar",
+   "s": "jahr",
+   "f": "hoch",
+   "w": 2500,
+   "h": 3333,
+   "art": "haus",
+   "q": "Website des Hauses (schaefli-wigoltingen.ch); Rechte beim Haus oder bei den genannten Fotografen",
+   "u": "https://images.squarespace-cdn.com/content/v1/6658400914e1a73880bcb76d/be526578-fe50-43e6-8288-37999e770df2/IMG_9208.jpeg",
+   "ue": false,
+   "alt": false,
+   "vn": false,
+   "fl": "../../assets/img/rochelt-1600.webp",
+   "fm": "../../assets/img/rochelt-1200.webp",
+   "fs": "../../assets/img/rochelt-480.webp"
+  },
+  {
+   "k": "humidor",
+   "t": {
+    "de": "Camacho-Zigarren im offenen Humidor der Smokers Lounge"
+   },
+   "b": "bar",
+   "s": "jahr",
+   "f": "hoch",
+   "w": 2500,
+   "h": 3333,
+   "art": "haus",
+   "q": "Website des Hauses (schaefli-wigoltingen.ch); Rechte beim Haus oder bei den genannten Fotografen",
+   "u": "https://images.squarespace-cdn.com/content/v1/6658400914e1a73880bcb76d/50c75298-744d-46f1-844d-324e9ec19f76/IMG_9507.jpeg",
+   "ue": false,
+   "alt": false,
+   "vn": false,
+   "fl": "../../assets/img/humidor-2000.webp",
+   "fm": "../../assets/img/humidor-1200.webp",
+   "fs": "../../assets/img/humidor-480.webp"
+  },
+  {
+   "k": "bar-feuer",
+   "t": {
+    "de": "Das Feuer im Cheminée der Bar"
+   },
+   "b": "bar",
+   "s": "jahr",
+   "f": "quer",
+   "w": 800,
+   "h": 550,
+   "art": "haus",
+   "q": "Frühere Website des Hauses (2016), aus dem Web-Archiv (archive.org); Rechte beim Haus",
+   "u": "https://web.archive.org/web/20190501084643/https://schaefli-wigoltingen.ch/wp-content/uploads/2016/06/Momente_erleben.jpg",
+   "ue": false,
+   "alt": false,
+   "vn": false,
+   "fl": "../../assets/img/bar-feuer-800.webp",
+   "fm": "../../assets/img/bar-feuer-800.webp",
+   "fs": "../../assets/img/bar-feuer-480.webp"
+  },
+  {
+   "k": "christian",
+   "t": {
+    "de": "Christian Kuchler in der Kochjacke vor dem Haus"
+   },
+   "b": "team",
+   "s": "jahr",
+   "f": "hoch",
+   "w": 2500,
+   "h": 3750,
+   "art": "haus",
+   "q": "Website des Hauses (schaefli-wigoltingen.ch); Rechte beim Haus oder bei den genannten Fotografen",
+   "u": "https://images.squarespace-cdn.com/content/v1/6658400914e1a73880bcb76d/2130bfa8-69ff-4c11-ad1a-34c863ebc9bd/FHF_1081.jpg",
+   "ue": false,
+   "alt": false,
+   "vn": false,
+   "fl": "../../assets/img/christian-1800.webp",
+   "fm": "../../assets/img/christian-1200.webp",
+   "fs": "../../assets/img/christian-480.webp"
+  },
+  {
+   "k": "luftbild",
+   "t": {
+    "de": "Wigoltingen von Süden aus 400 Metern, Luftbild von Walter Mittelholzer, 1924"
+   },
+   "b": "geschichte",
+   "s": "jahr",
+   "f": "quer",
+   "w": 3840,
+   "h": 2657,
+   "art": "frei",
+   "q": "Walter Mittelholzer, Public domain, Wikimedia Commons, 1924",
+   "u": "https://commons.wikimedia.org/wiki/File%3AETH-BIB-Wigoltingen_v._S._aus_400_m-Inlandfl%C3%BCge-LBS_MH01-004101.tif",
+   "ue": false,
+   "alt": true,
+   "vn": false,
+   "fl": "../../assets/img/luftbild-3200.webp",
+   "fm": "../../assets/img/luftbild-1200.webp",
+   "fs": "../../assets/img/luftbild-480.webp"
+  },
+  {
+   "k": "stube-holz",
+   "t": {
+    "de": "Eine Stube mit Holztäfer, Bildern und gedecktem Tisch"
+   },
+   "b": "stuben",
+   "s": "jahr",
+   "f": "hoch",
+   "w": 1536,
+   "h": 2304,
+   "art": "haus",
+   "q": "Website des Hauses (schaefli-wigoltingen.ch), Foto Fabian Haefeli; Rechte beim Haus oder bei den genannten Fotografen",
+   "u": "https://images.squarespace-cdn.com/content/v1/6658400914e1a73880bcb76d/f415a36b-942d-4e39-9d47-5d3b43a76767/D08E1A41-BA0A-41D4-8664-07DA10BC8D41.jpeg",
+   "ue": false,
+   "alt": false,
+   "vn": false,
+   "fl": "../../assets/img/stube-holz-1536.webp",
+   "fm": "../../assets/img/stube-holz-1200.webp",
+   "fs": "../../assets/img/stube-holz-480.webp"
+  },
+  {
+   "k": "uhr",
+   "t": {
+    "de": "Eine alte Wanduhr an der Holzwand, daneben gerahmte Bilder"
+   },
+   "b": "stuben",
+   "s": "jahr",
+   "f": "hoch",
+   "w": 2500,
+   "h": 3333,
+   "art": "haus",
+   "q": "Website des Hauses (schaefli-wigoltingen.ch); Rechte beim Haus oder bei den genannten Fotografen",
+   "u": "https://images.squarespace-cdn.com/content/v1/6658400914e1a73880bcb76d/2a99d27c-acb6-4b9f-a2e4-bf6a797df789/IMG_9209.jpeg",
+   "ue": false,
+   "alt": false,
+   "vn": false,
+   "fl": "../../assets/img/uhr-1600.webp",
+   "fm": "../../assets/img/uhr-1200.webp",
+   "fs": "../../assets/img/uhr-480.webp"
+  },
+  {
+   "k": "terrasse",
+   "t": {
+    "de": "Tische auf der Terrasse unter den Sonnenschirmen"
+   },
+   "b": "feste",
+   "s": "sommer",
+   "f": "hoch",
+   "w": 1536,
+   "h": 2304,
+   "art": "haus",
+   "q": "Website des Hauses (schaefli-wigoltingen.ch), Foto Fabian Haefeli; Rechte beim Haus oder bei den genannten Fotografen",
+   "u": "https://images.squarespace-cdn.com/content/v1/6658400914e1a73880bcb76d/65e5830b-d4fa-40cc-bd48-3c727d0c7783/A1565E25-1EBA-4206-8AF2-8A639895B4DD.jpeg",
+   "ue": false,
+   "alt": false,
+   "vn": false,
+   "fl": "../../assets/img/terrasse-1536.webp",
+   "fm": "../../assets/img/terrasse-1200.webp",
+   "fs": "../../assets/img/terrasse-480.webp"
+  },
+  {
+   "k": "trueffel",
+   "t": {
+    "de": "Weisse Trüffel mit dem Trüffelhobel"
+   },
+   "b": "teller",
+   "s": "jahr",
+   "f": "quer",
+   "w": 3216,
+   "h": 2152,
+   "art": "haus",
+   "q": "Foto der Website des Hauses. Mit KI hochgerechnet (Higgsfield), gegen das Original geprüft",
+   "u": "",
+   "ue": true,
+   "alt": false,
+   "vn": true,
+   "fl": "../../assets/img/trueffel-2000.webp",
+   "fm": "../../assets/img/trueffel-1200.webp",
+   "fs": "../../assets/img/trueffel-480.webp"
+  },
+  {
+   "k": "teller-gruen",
+   "t": {
+    "de": "Ein angerichteter Teller mit Kräutersauce und Gemüse"
+   },
+   "b": "teller",
+   "s": "jahr",
+   "f": "hoch",
+   "w": 2500,
+   "h": 3626,
+   "art": "haus",
+   "q": "Website des Hauses (schaefli-wigoltingen.ch); Rechte beim Haus oder bei den genannten Fotografen",
+   "u": "https://images.squarespace-cdn.com/content/v1/6658400914e1a73880bcb76d/aaad58b6-11f3-4ce7-a372-93d1ab4b0854/Schaefli_Juni2025-9-6.jpeg",
+   "ue": false,
+   "alt": false,
+   "vn": false,
+   "fl": "../../assets/img/teller-gruen-1600.webp",
+   "fm": "../../assets/img/teller-gruen-1200.webp",
+   "fs": "../../assets/img/teller-gruen-480.webp"
+  },
+  {
+   "k": "teller-fisch",
+   "t": {
+    "de": "Fisch auf orangefarbener Sauce mit Granatapfel und Erbsen"
+   },
+   "b": "teller",
+   "s": "jahr",
+   "f": "hoch",
+   "w": 2500,
+   "h": 3750,
+   "art": "haus",
+   "q": "Website des Hauses (schaefli-wigoltingen.ch); Rechte beim Haus oder bei den genannten Fotografen",
+   "u": "https://images.squarespace-cdn.com/content/v1/6658400914e1a73880bcb76d/6735382f-0f5f-41c0-83bb-a9d875130480/Schaefli_Juni2025-40-18.jpeg",
+   "ue": false,
+   "alt": false,
+   "vn": false,
+   "fl": "../../assets/img/teller-fisch-1600.webp",
+   "fm": "../../assets/img/teller-fisch-1200.webp",
+   "fs": "../../assets/img/teller-fisch-480.webp"
+  },
+  {
+   "k": "donatsch",
+   "t": {
+    "de": "Martin Donatsch an den Holzfässern"
+   },
+   "b": "feste",
+   "s": "jahr",
+   "f": "hoch",
+   "w": 2500,
+   "h": 3750,
+   "art": "haus",
+   "q": "Website des Hauses (schaefli-wigoltingen.ch); Rechte beim Haus oder bei den genannten Fotografen",
+   "u": "https://images.squarespace-cdn.com/content/v1/6658400914e1a73880bcb76d/59a025e6-8532-4214-85fe-2548a90a0396/IMG_0987.jpeg",
+   "ue": false,
+   "alt": false,
+   "vn": false,
+   "fl": "../../assets/img/donatsch-1600.webp",
+   "fm": "../../assets/img/donatsch-1200.webp",
+   "fs": "../../assets/img/donatsch-480.webp"
+  },
+  {
+   "k": "team-service",
+   "t": {
+    "de": "Ein Mitarbeiter im Service mit Weste vor dem Haus"
+   },
+   "b": "team",
+   "s": "jahr",
+   "f": "hoch",
+   "w": 2228,
+   "h": 3095,
+   "art": "haus",
+   "q": "Website des Hauses (schaefli-wigoltingen.ch); Rechte beim Haus oder bei den genannten Fotografen",
+   "u": "https://images.squarespace-cdn.com/content/v1/6658400914e1a73880bcb76d/0015e5e8-b0b7-4e3d-87c7-fbac9adaddf1/IMG_2654.jpeg",
+   "ue": false,
+   "alt": false,
+   "vn": false,
+   "fl": "../../assets/img/team-service-1600.webp",
+   "fm": "../../assets/img/team-service-1200.webp",
+   "fs": "../../assets/img/team-service-480.webp"
+  },
+  {
+   "k": "team-kueche",
+   "t": {
+    "de": "Ein Koch in der Kochjacke im Hof"
+   },
+   "b": "team",
+   "s": "jahr",
+   "f": "hoch",
+   "w": 2500,
+   "h": 3750,
+   "art": "haus",
+   "q": "Website des Hauses (schaefli-wigoltingen.ch); Rechte beim Haus oder bei den genannten Fotografen",
+   "u": "https://images.squarespace-cdn.com/content/v1/6658400914e1a73880bcb76d/08ad3ed8-f724-41b2-90f0-ba3d1a019378/FHF_0901.jpg",
+   "ue": false,
+   "alt": false,
+   "vn": false,
+   "fl": "../../assets/img/team-kueche-1600.webp",
+   "fm": "../../assets/img/team-kueche-1200.webp",
+   "fs": "../../assets/img/team-kueche-480.webp"
+  },
+  {
+   "k": "team-empfang",
+   "t": {
+    "de": "Eine Mitarbeiterin im Hof vor dem Haus"
+   },
+   "b": "team",
+   "s": "jahr",
+   "f": "hoch",
+   "w": 2500,
+   "h": 3750,
+   "art": "haus",
+   "q": "Website des Hauses (schaefli-wigoltingen.ch); Rechte beim Haus oder bei den genannten Fotografen",
+   "u": "https://images.squarespace-cdn.com/content/v1/6658400914e1a73880bcb76d/2bda6f2a-cce8-4e84-89fa-1c056fcfb874/FHF_0892.jpg",
+   "ue": false,
+   "alt": false,
+   "vn": false,
+   "fl": "../../assets/img/team-empfang-1600.webp",
+   "fm": "../../assets/img/team-empfang-1200.webp",
+   "fs": "../../assets/img/team-empfang-480.webp"
+  },
+  {
+   "k": "strasse",
+   "t": {
+    "de": "Die Taverne zum Schäfli von der Oberdorfstrasse aus, davor die Parkplätze"
+   },
+   "b": "haus",
+   "s": "sommer",
+   "f": "quer",
+   "w": 4000,
+   "h": 2668,
+   "art": "frei",
+   "q": "Lokolia, CC BY-SA 4.0, Wikimedia Commons, 2017",
+   "u": "https://commons.wikimedia.org/wiki/File%3AZum_Sch%C3%A4fli_Oberdorfstrasse_8_Wigoltingen_P1020324.jpg",
+   "ue": false,
+   "alt": false,
+   "vn": false,
+   "fl": "../../assets/img/strasse-2600.webp",
+   "fm": "../../assets/img/strasse-1200.webp",
+   "fs": "../../assets/img/strasse-480.webp"
+  },
+  {
+   "k": "pass-orange",
+   "t": {
+    "de": "Ein Gericht auf orangefarbener Sauce mit Kräutern"
+   },
+   "b": "teller",
+   "s": "jahr",
+   "f": "hoch",
+   "w": 2500,
+   "h": 3750,
+   "art": "haus",
+   "q": "Website des Hauses (schaefli-wigoltingen.ch); Rechte beim Haus oder bei den genannten Fotografen",
+   "u": "https://images.squarespace-cdn.com/content/v1/6658400914e1a73880bcb76d/f61ce3d2-88f2-4818-b56c-1a9e7d58382d/Schaefli_Juni2025-21-11.jpeg",
+   "ue": false,
+   "alt": false,
+   "vn": false,
+   "fl": "../../assets/img/pass-orange-2500.webp",
+   "fm": "../../assets/img/pass-orange-1200.webp",
+   "fs": "../../assets/img/pass-orange-480.webp"
+  },
+  {
+   "k": "pass-fleisch",
+   "t": {
+    "de": "Zwei Teller mit Fleisch und Gemüse in tiefen Schalen"
+   },
+   "b": "teller",
+   "s": "jahr",
+   "f": "hoch",
+   "w": 2500,
+   "h": 3750,
+   "art": "haus",
+   "q": "Website des Hauses (schaefli-wigoltingen.ch); Rechte beim Haus oder bei den genannten Fotografen",
+   "u": "https://images.squarespace-cdn.com/content/v1/6658400914e1a73880bcb76d/97e72453-68aa-40c9-846d-97222c607da4/Schaefli_Juni2025-18-9.jpeg",
+   "ue": false,
+   "alt": false,
+   "vn": false,
+   "fl": "../../assets/img/pass-fleisch-1600.webp",
+   "fm": "../../assets/img/pass-fleisch-1200.webp",
+   "fs": "../../assets/img/pass-fleisch-480.webp"
+  },
+  {
+   "k": "k-kaviar",
+   "t": {
+    "de": "Kaviar auf grüner Sauce in einem tiefen Teller"
+   },
+   "b": "teller",
+   "s": "jahr",
+   "f": "hoch",
+   "w": 2500,
+   "h": 3750,
+   "art": "haus",
+   "q": "Website des Hauses (schaefli-wigoltingen.ch); Rechte beim Haus oder bei den genannten Fotografen",
+   "u": "https://images.squarespace-cdn.com/content/v1/6658400914e1a73880bcb76d/11bb5e33-98eb-449b-b562-4c32ecd3fd66/Schaefli_Juni2025-14-7.jpeg",
+   "ue": false,
+   "alt": false,
+   "vn": false,
+   "fl": "../../assets/img/k-kaviar-1600.webp",
+   "fm": "../../assets/img/k-kaviar-1200.webp",
+   "fs": "../../assets/img/k-kaviar-480.webp"
+  },
+  {
+   "k": "k-zwei",
+   "t": {
+    "de": "Ein kleiner Gruss auf der Serviette und ein Teller mit Gemüse"
+   },
+   "b": "teller",
+   "s": "jahr",
+   "f": "hoch",
+   "w": 2500,
+   "h": 3883,
+   "art": "haus",
+   "q": "Website des Hauses (schaefli-wigoltingen.ch); Rechte beim Haus oder bei den genannten Fotografen",
+   "u": "https://images.squarespace-cdn.com/content/v1/6658400914e1a73880bcb76d/344f456d-581e-4933-b9ec-05c613132824/Schaefli_Juni2025-5-3.jpeg",
+   "ue": false,
+   "alt": false,
+   "vn": false,
+   "fl": "../../assets/img/k-zwei-1600.webp",
+   "fm": "../../assets/img/k-zwei-1200.webp",
+   "fs": "../../assets/img/k-zwei-480.webp"
+  },
+  {
+   "k": "k-paar",
+   "t": {
+    "de": "Zwei Teller mit kleinen Gängen auf dem weissen Tischtuch"
+   },
+   "b": "teller",
+   "s": "jahr",
+   "f": "hoch",
+   "w": 2500,
+   "h": 3750,
+   "art": "haus",
+   "q": "Website des Hauses (schaefli-wigoltingen.ch); Rechte beim Haus oder bei den genannten Fotografen. Auf der Website auch unter «kopf-abend»",
+   "u": "https://images.squarespace-cdn.com/content/v1/6658400914e1a73880bcb76d/61054794-aa5b-429c-a69a-c5ef2a7e0610/Schaefli_Juni2025-2-1.jpeg",
+   "ue": false,
+   "alt": false,
+   "vn": false,
+   "fl": "../../assets/img/k-paar-1600.webp",
+   "fm": "../../assets/img/k-paar-1200.webp",
+   "fs": "../../assets/img/k-paar-480.webp"
+  },
+  {
+   "k": "k-artischocke",
+   "t": {
+    "de": "Ein Teller mit Fisch, dahinter eine Artischocke"
+   },
+   "b": "teller",
+   "s": "jahr",
+   "f": "hoch",
+   "w": 2500,
+   "h": 3750,
+   "art": "haus",
+   "q": "Website des Hauses (schaefli-wigoltingen.ch); Rechte beim Haus oder bei den genannten Fotografen",
+   "u": "https://images.squarespace-cdn.com/content/v1/6658400914e1a73880bcb76d/7382c602-2a81-4453-b8ef-024e433686a4/Schaefli_Juni2025-22-12.jpeg",
+   "ue": false,
+   "alt": false,
+   "vn": false,
+   "fl": "../../assets/img/k-artischocke-1600.webp",
+   "fm": "../../assets/img/k-artischocke-1200.webp",
+   "fs": "../../assets/img/k-artischocke-480.webp"
+  },
+  {
+   "k": "k-drei",
+   "t": {
+    "de": "Drei Gänge von oben auf dem weissen Tischtuch"
+   },
+   "b": "teller",
+   "s": "jahr",
+   "f": "hoch",
+   "w": 1536,
+   "h": 2304,
+   "art": "haus",
+   "q": "Website des Hauses (schaefli-wigoltingen.ch), Foto David Schnapp; Rechte beim Haus oder bei den genannten Fotografen",
+   "u": "https://images.squarespace-cdn.com/content/v1/6658400914e1a73880bcb76d/74a1dcc0-0b3b-4533-938f-6222b404c922/CE619042-07DB-4204-99C1-2B8CC2152A75.jpeg",
+   "ue": false,
+   "alt": false,
+   "vn": false,
+   "fl": "../../assets/img/k-drei-1536.webp",
+   "fm": "../../assets/img/k-drei-1200.webp",
+   "fs": "../../assets/img/k-drei-480.webp"
+  },
+  {
+   "k": "k-oben",
+   "t": {
+    "de": "Drei kleine Gerichte von oben"
+   },
+   "b": "teller",
+   "s": "jahr",
+   "f": "hoch",
+   "w": 2500,
+   "h": 3750,
+   "art": "haus",
+   "q": "Website des Hauses (schaefli-wigoltingen.ch); Rechte beim Haus oder bei den genannten Fotografen",
+   "u": "https://images.squarespace-cdn.com/content/v1/6658400914e1a73880bcb76d/7ea90d1a-4137-44f1-9fe9-751514920813/Schaefli_Juni2025-27-14.jpeg",
+   "ue": false,
+   "alt": false,
+   "vn": false,
+   "fl": "../../assets/img/k-oben-1600.webp",
+   "fm": "../../assets/img/k-oben-1200.webp",
+   "fs": "../../assets/img/k-oben-480.webp"
+  },
+  {
+   "k": "k-fisch",
+   "t": {
+    "de": "Fisch mit Beilagen in kleinen Schalen von oben"
+   },
+   "b": "teller",
+   "s": "jahr",
+   "f": "hoch",
+   "w": 1179,
+   "h": 1752,
+   "art": "haus",
+   "q": "Website des Hauses (schaefli-wigoltingen.ch); Rechte beim Haus oder bei den genannten Fotografen",
+   "u": "https://images.squarespace-cdn.com/content/v1/6658400914e1a73880bcb76d/26cba54d-02db-4330-a0dc-86d97c483b23/IMG_1960.jpeg",
+   "ue": false,
+   "alt": false,
+   "vn": false,
+   "fl": "../../assets/img/k-fisch-1179.webp",
+   "fm": "../../assets/img/k-fisch-1179.webp",
+   "fs": "../../assets/img/k-fisch-480.webp"
+  },
+  {
+   "k": "team-koch",
+   "t": {
+    "de": "Ein Koch in der Kochjacke im Hof"
+   },
+   "b": "team",
+   "s": "jahr",
+   "f": "hoch",
+   "w": 2500,
+   "h": 3750,
+   "art": "haus",
+   "q": "Website des Hauses (schaefli-wigoltingen.ch); Rechte beim Haus oder bei den genannten Fotografen",
+   "u": "https://images.squarespace-cdn.com/content/v1/6658400914e1a73880bcb76d/275f335e-669f-4c89-ac76-c308c07d5534/FHF_0884.jpg",
+   "ue": false,
+   "alt": false,
+   "vn": false,
+   "fl": "../../assets/img/team-koch-1600.webp",
+   "fm": "../../assets/img/team-koch-1200.webp",
+   "fs": "../../assets/img/team-koch-480.webp"
+  },
+  {
+   "k": "team-schwarz",
+   "t": {
+    "de": "Ein Mitarbeiter im schwarzen Hemd im Hof"
+   },
+   "b": "team",
+   "s": "jahr",
+   "f": "hoch",
+   "w": 2441,
+   "h": 3661,
+   "art": "haus",
+   "q": "Website des Hauses (schaefli-wigoltingen.ch), Foto Fabian Haefeli; Rechte beim Haus oder bei den genannten Fotografen",
+   "u": "https://images.squarespace-cdn.com/content/v1/6658400914e1a73880bcb76d/701d7c7a-664e-4a58-9c8c-c2984cc71f7d/_FHF5637.jpg",
+   "ue": false,
+   "alt": false,
+   "vn": false,
+   "fl": "../../assets/img/team-schwarz-1600.webp",
+   "fm": "../../assets/img/team-schwarz-1200.webp",
+   "fs": "../../assets/img/team-schwarz-480.webp"
+  },
+  {
+   "k": "team-jung",
+   "t": {
+    "de": "Ein Mitarbeiter in Schwarz auf der Terrasse"
+   },
+   "b": "team",
+   "s": "jahr",
+   "f": "hoch",
+   "w": 1067,
+   "h": 1600,
+   "art": "haus",
+   "q": "Website des Hauses (schaefli-wigoltingen.ch); Rechte beim Haus oder bei den genannten Fotografen",
+   "u": "https://images.squarespace-cdn.com/content/v1/6658400914e1a73880bcb76d/d464a856-c375-447d-b4b8-69ec14568c6c/15+-+FHF_2757.jpg",
+   "ue": false,
+   "alt": false,
+   "vn": false,
+   "fl": "../../assets/img/team-jung-1067.webp",
+   "fm": "../../assets/img/team-jung-1067.webp",
+   "fs": "../../assets/img/team-jung-480.webp"
+  },
+  {
+   "k": "team-anzug",
+   "t": {
+    "de": "Ein Mitarbeiter im Anzug im Hof"
+   },
+   "b": "team",
+   "s": "jahr",
+   "f": "hoch",
+   "w": 2441,
+   "h": 3661,
+   "art": "haus",
+   "q": "Website des Hauses (schaefli-wigoltingen.ch), Foto Fabian Haefeli; Rechte beim Haus oder bei den genannten Fotografen",
+   "u": "https://images.squarespace-cdn.com/content/v1/6658400914e1a73880bcb76d/b8211ed4-a924-4d40-8c2f-88a3d5cb963f/_FHF5612.jpg",
+   "ue": false,
+   "alt": false,
+   "vn": false,
+   "fl": "../../assets/img/team-anzug-1600.webp",
+   "fm": "../../assets/img/team-anzug-1200.webp",
+   "fs": "../../assets/img/team-anzug-480.webp"
+  },
+  {
+   "k": "donatsch-wein",
+   "t": {
+    "de": "Domaine Donatsch 2013 Privée Pinot Noir Malans"
+   },
+   "b": "wein",
+   "s": "jahr",
+   "f": "quadrat",
+   "w": 1563,
+   "h": 1563,
+   "art": "haus",
+   "q": "Website des Hauses (schaefli-wigoltingen.ch); Rechte beim Haus oder bei den genannten Fotografen",
+   "u": "https://images.squarespace-cdn.com/content/v1/6658400914e1a73880bcb76d/4594cd53-7a50-414f-8b52-60cdfa08f889/Design+ohne+Titel.jpg",
+   "ue": false,
+   "alt": false,
+   "vn": false,
+   "fl": "../../assets/img/donatsch-wein-1563.webp",
+   "fm": "../../assets/img/donatsch-wein-1200.webp",
+   "fs": "../../assets/img/donatsch-wein-480.webp"
+  },
+  {
+   "k": "vorarlberg",
+   "t": {
+    "de": "Das Bild zum Anlass «Der Vorarlberg zu Gast»"
+   },
+   "b": "feste",
+   "s": "jahr",
+   "f": "hoch",
+   "w": 776,
+   "h": 900,
+   "art": "haus",
+   "q": "Website des Hauses (schaefli-wigoltingen.ch); Rechte beim Haus oder bei den genannten Fotografen",
+   "u": "https://images.squarespace-cdn.com/content/v1/6658400914e1a73880bcb76d/3457ead0-ca0c-4b33-a65b-b5955adda169/Pasted+Graphic+29.png",
+   "ue": false,
+   "alt": false,
+   "vn": false,
+   "fl": "../../assets/img/vorarlberg-776.webp",
+   "fm": "../../assets/img/vorarlberg-776.webp",
+   "fs": "../../assets/img/vorarlberg-480.webp"
+  },
+  {
+   "k": "haus-tag-warm",
+   "t": {
+    "de": "Das Riegelhaus am Tag mit grünen Läden"
+   },
+   "b": "haus",
+   "s": "sommer",
+   "f": "quer",
+   "w": 1476,
+   "h": 984,
+   "art": "haus",
+   "q": "Foto der Website des Hauses (Fahrni Andreas Fotograf BR/SWB). Farben warm abgestimmt (Robert 20.10.2026). Auf der Website auch unter «haus-tag»",
+   "u": "",
+   "ue": false,
+   "alt": false,
+   "vn": false,
+   "fl": "../../assets/img/haus-tag-warm-1476.webp",
+   "fm": "../../assets/img/haus-tag-warm-1200.webp",
+   "fs": "../../assets/img/haus-tag-warm-480.webp"
+  },
+  {
+   "k": "luftbild-nah",
+   "t": {
+    "de": "Wigoltingen von Südosten aus 50 Metern, Luftbild von Walter Mittelholzer, 1925"
+   },
+   "b": "geschichte",
+   "s": "jahr",
+   "f": "quer",
+   "w": 3840,
+   "h": 2656,
+   "art": "frei",
+   "q": "Walter Mittelholzer, Public domain, Wikimedia Commons, 1925",
+   "u": "https://commons.wikimedia.org/wiki/File%3AETH-BIB-Wigoltingen_v._S._O._aus_50_m-Inlandfl%C3%BCge-LBS_MH01-004628.tif",
+   "ue": false,
+   "alt": true,
+   "vn": false,
+   "fl": "../../assets/img/luftbild-nah-3200.webp",
+   "fm": "../../assets/img/luftbild-nah-1200.webp",
+   "fs": "../../assets/img/luftbild-nah-480.webp"
+  },
+  {
+   "k": "dorf-band",
+   "t": {
+    "de": "Das Thurtal mit dem Seerücken"
+   },
+   "b": "dorf",
+   "s": "jahr",
+   "f": "quer",
+   "w": 3840,
+   "h": 624,
+   "art": "frei",
+   "q": "Walter45, CC BY-SA 3.0, Wikimedia Commons, 2008",
+   "u": "https://commons.wikimedia.org/wiki/File%3AThurtal_mit_Seer%C3%BCcken-01.jpg",
+   "ue": false,
+   "alt": false,
+   "vn": false,
+   "fl": "../../assets/img/dorf-band-3840.webp",
+   "fm": "../../assets/img/dorf-band-1200.webp",
+   "fs": "../../assets/img/dorf-band-480.webp"
+  },
+  {
+   "k": "dorf-5",
+   "t": {
+    "de": "Das Nachbarhaus an der Oberdorfstrasse 5"
+   },
+   "b": "dorf",
+   "s": "jahr",
+   "f": "quer",
+   "w": 3840,
+   "h": 2160,
+   "art": "frei",
+   "q": "JoachimKohler-HB, CC BY-SA 4.0, Wikimedia Commons, 2021",
+   "u": "https://commons.wikimedia.org/wiki/File%3AOberdorfstrasse_5_in_Wigoltingen_TG.jpg",
+   "ue": false,
+   "alt": false,
+   "vn": false,
+   "fl": "../../assets/img/dorf-5-2600.webp",
+   "fm": "../../assets/img/dorf-5-1200.webp",
+   "fs": "../../assets/img/dorf-5-480.webp"
+  },
+  {
+   "k": "dorf-17",
+   "t": {
+    "de": "Das Nachbarhaus an der Oberdorfstrasse 17"
+   },
+   "b": "dorf",
+   "s": "jahr",
+   "f": "quer",
+   "w": 3840,
+   "h": 2880,
+   "art": "frei",
+   "q": "JoachimKohler-HB, CC BY-SA 4.0, Wikimedia Commons, 2021",
+   "u": "https://commons.wikimedia.org/wiki/File%3AOberdorfstrasse_17_in_Wigoltingen_TG.jpg",
+   "ue": false,
+   "alt": false,
+   "vn": false,
+   "fl": "../../assets/img/dorf-17-2600.webp",
+   "fm": "../../assets/img/dorf-17-1200.webp",
+   "fs": "../../assets/img/dorf-17-480.webp"
+  },
+  {
+   "k": "dorf-riegel",
+   "t": {
+    "de": "Riegelhäuser im Dorf Wigoltingen"
+   },
+   "b": "dorf",
+   "s": "jahr",
+   "f": "quer",
+   "w": 3000,
+   "h": 2019,
+   "art": "frei",
+   "q": "André Corboz, CC BY-SA 4.0, Wikimedia Commons",
+   "u": "https://commons.wikimedia.org/wiki/File%3AWigoltingen._Case_tradizionali.jpg",
+   "ue": false,
+   "alt": false,
+   "vn": false,
+   "fl": "../../assets/img/dorf-riegel-2400.webp",
+   "fm": "../../assets/img/dorf-riegel-1200.webp",
+   "fs": "../../assets/img/dorf-riegel-480.webp"
+  },
+  {
+   "k": "dorf-schloss",
+   "t": {
+    "de": "Schloss Altenklingen bei Wigoltingen"
+   },
+   "b": "dorf",
+   "s": "jahr",
+   "f": "hoch",
+   "w": 2059,
+   "h": 3000,
+   "art": "frei",
+   "q": "André Corboz, CC BY-SA 4.0, Wikimedia Commons",
+   "u": "https://commons.wikimedia.org/wiki/File%3AWigoltingen._Veduta_del_castello_di_Altenklingen.jpg",
+   "ue": false,
+   "alt": false,
+   "vn": false,
+   "fl": "../../assets/img/dorf-schloss-2000.webp",
+   "fm": "../../assets/img/dorf-schloss-1200.webp",
+   "fs": "../../assets/img/dorf-schloss-480.webp"
+  },
+  {
+   "k": "dorf-alpen",
+   "t": {
+    "de": "Das Thurtal bei Opfershofen, im Vordergrund ein Rapsfeld, dahinter die Alpen"
+   },
+   "b": "dorf",
+   "s": "sommer",
+   "f": "quer",
+   "w": 3000,
+   "h": 2000,
+   "art": "frei",
+   "q": "JoachimKohler-HB, CC BY-SA 4.0, Wikimedia Commons",
+   "u": "https://commons.wikimedia.org/wiki/File%3AOpfershofen%2C_Thurtal_und_Alpenkette.jpg",
+   "ue": false,
+   "alt": false,
+   "vn": false,
+   "fl": "../../assets/img/dorf-alpen-3000.webp",
+   "fm": "../../assets/img/dorf-alpen-1200.webp",
+   "fs": "../../assets/img/dorf-alpen-480.webp"
+  },
+  {
+   "k": "dorf-kirche",
+   "t": {
+    "de": "Die Kirche St. Georg in Wigoltingen mit spitzem Turm"
+   },
+   "b": "dorf",
+   "s": "jahr",
+   "f": "hoch",
+   "w": 3200,
+   "h": 4000,
+   "art": "frei",
+   "q": "JoachimKohler-HB, CC BY-SA 4.0, Wikimedia Commons",
+   "u": "https://commons.wikimedia.org/wiki/File%3AKirche_St._Georg_in_Wigoltingen_TG.jpg",
+   "ue": false,
+   "alt": false,
+   "vn": false,
+   "fl": "../../assets/img/dorf-kirche-2000.webp",
+   "fm": "../../assets/img/dorf-kirche-1200.webp",
+   "fs": "../../assets/img/dorf-kirche-480.webp"
+  },
+  {
+   "k": "dorf-burg",
+   "t": {
+    "de": "Schloss Altenklingen mit seinen Treppengiebeln über den Bäumen"
+   },
+   "b": "dorf",
+   "s": "jahr",
+   "f": "quer",
+   "w": 5472,
+   "h": 3648,
+   "art": "frei",
+   "q": "JoachimKohler-HB, CC BY-SA 4.0, Wikimedia Commons",
+   "u": "https://commons.wikimedia.org/wiki/File%3ASchloss_Altenklingen_im_Thurgau_%282017%29.jpg",
+   "ue": false,
+   "alt": false,
+   "vn": false,
+   "fl": "../../assets/img/dorf-burg-2600.webp",
+   "fm": "../../assets/img/dorf-burg-1200.webp",
+   "fs": "../../assets/img/dorf-burg-480.webp"
+  },
+  {
+   "k": "dorf-nebel",
+   "t": {
+    "de": "Das Thurtal im Nebel, Herbst 1984"
+   },
+   "b": "geschichte",
+   "s": "winter",
+   "f": "quer",
+   "w": 3009,
+   "h": 2007,
+   "art": "frei",
+   "q": "Christian Boss 1965, CC BY 4.0, Wikimedia Commons, 1984",
+   "u": "https://commons.wikimedia.org/wiki/File%3ADas_Thurtal_im_Nebel%2C_Herbst_1984.jpg",
+   "ue": false,
+   "alt": false,
+   "vn": false,
+   "fl": "../../assets/img/dorf-nebel-2400.webp",
+   "fm": "../../assets/img/dorf-nebel-1200.webp",
+   "fs": "../../assets/img/dorf-nebel-480.webp"
+  },
+  {
+   "k": "schloessli-haus",
+   "t": {
+    "de": "Die Wirtschaft am Schlössli im ehemaligen Hafenmeistergebäude in Bottighofen"
+   },
+   "b": "familie",
+   "s": "jahr",
+   "f": "quer",
+   "w": 3840,
+   "h": 2560,
+   "art": "frei",
+   "q": "JoachimKohler-HB, CC BY-SA 4.0, Wikimedia Commons, 2016",
+   "u": "https://commons.wikimedia.org/wiki/File%3ABar_Wirtschaft_%22Schl%C3%B6ssli%22_am_Bodensee_in_Bottighofen_TG_%282016%29.jpg",
+   "ue": false,
+   "alt": false,
+   "vn": false,
+   "fl": "../../assets/img/schloessli-haus-2400.webp",
+   "fm": "../../assets/img/schloessli-haus-1200.webp",
+   "fs": "../../assets/img/schloessli-haus-480.webp"
+  },
+  {
+   "k": "kopf-kontakt2",
+   "t": {
+    "de": "Die Taverne zum Schäfli mit dem Giebel im Sommer"
+   },
+   "b": "haus",
+   "s": "sommer",
+   "f": "quer",
+   "w": 4000,
+   "h": 2665,
+   "art": "frei",
+   "q": "Lokolia, CC BY-SA 4.0, Wikimedia Commons, 2017",
+   "u": "https://commons.wikimedia.org/wiki/File%3AZum_Sch%C3%A4fli_Oberdorfstrasse_8_Wigoltingen_P1020322.jpg",
+   "ue": false,
+   "alt": false,
+   "vn": false,
+   "fl": "../../assets/img/kopf-kontakt2-3200.webp",
+   "fm": "../../assets/img/kopf-kontakt2-1200.webp",
+   "fs": "../../assets/img/kopf-kontakt2-480.webp"
+  },
+  {
+   "k": "ko-nacht",
+   "t": {
+    "de": "Die Taverne zum Schäfli zur blauen Stunde mit Licht in den Fenstern"
+   },
+   "b": "haus",
+   "s": "jahr",
+   "f": "quer",
+   "w": 3136,
+   "h": 2156,
+   "art": "haus",
+   "q": "Frühere Website des Hauses (2018), aus dem Web-Archiv (archive.org); Rechte beim Haus. Licht und Schärfe mit KI nachgeschärft",
+   "u": "https://web.archive.org/web/20190501084558/https://schaefli-wigoltingen.ch/wp-content/uploads/2018/01/ambiente_01.jpg",
+   "ue": true,
+   "alt": false,
+   "vn": true,
+   "fl": "../../assets/img/ko-nacht-1600.webp",
+   "fm": "../../assets/img/ko-nacht-1200.webp",
+   "fs": "../../assets/img/ko-nacht-480.webp"
+  },
+  {
+   "k": "ko-giebel",
+   "t": {
+    "de": "Der Giebel der Taverne zum Schäfli mit Fensterläden und Blumen"
+   },
+   "b": "haus",
+   "s": "sommer",
+   "f": "quadrat",
+   "w": 828,
+   "h": 828,
+   "art": "haus",
+   "q": "Website des Hauses (schaefli-wigoltingen.ch); Rechte beim Haus oder bei den genannten Fotografen",
+   "u": "https://images.squarespace-cdn.com/content/v1/6658400914e1a73880bcb76d/b5014f96-5251-437e-88c0-eba26034e77c/IMG_0374.jpg",
+   "ue": false,
+   "alt": false,
+   "vn": false,
+   "fl": "../../assets/img/ko-giebel-800.webp",
+   "fm": "../../assets/img/ko-giebel-800.webp",
+   "fs": "../../assets/img/ko-giebel-480.webp"
+  },
+  {
+   "k": "ko-aussen",
+   "t": {
+    "de": "Die Taverne zum Schäfli über Eck an der Strasse"
+   },
+   "b": "haus",
+   "s": "jahr",
+   "f": "quer",
+   "w": 3136,
+   "h": 2156,
+   "art": "haus",
+   "q": "Frühere Website des Hauses (2016), aus dem Web-Archiv (archive.org); Rechte beim Haus. Licht und Schärfe mit KI nachgeschärft",
+   "u": "https://web.archive.org/web/20190501084638/https://schaefli-wigoltingen.ch/wp-content/uploads/2016/06/Taverne_aussen.jpg",
+   "ue": true,
+   "alt": false,
+   "vn": true,
+   "fl": "../../assets/img/ko-aussen-1200.webp",
+   "fm": "../../assets/img/ko-aussen-1200.webp",
+   "fs": "../../assets/img/ko-aussen-480.webp"
+  },
+  {
+   "k": "ko-menue10",
+   "t": {
+    "de": "Ein angerichteter Teller mit gelber Haube auf dunklem Grund"
+   },
+   "b": "teller",
+   "s": "jahr",
+   "f": "quer",
+   "w": 3136,
+   "h": 2156,
+   "art": "haus",
+   "q": "Frühere Website des Hauses (2016), aus dem Web-Archiv (archive.org); Rechte beim Haus. Licht und Schärfe mit KI nachgeschärft. Auf der Website auch unter «ab-menue-10»",
+   "u": "https://web.archive.org/web/20190501090531/https://schaefli-wigoltingen.ch/wp-content/uploads/2016/06/Menue10.jpg",
+   "ue": true,
+   "alt": false,
+   "vn": true,
+   "fl": "../../assets/img/ko-menue10-1200.webp",
+   "fm": "../../assets/img/ko-menue10-1200.webp",
+   "fs": "../../assets/img/ko-menue10-480.webp"
+  },
+  {
+   "k": "ko-menue9",
+   "t": {
+    "de": "Ein Teller mit Gemüse und Beeren im Kreis, die Sauce wird angegossen"
+   },
+   "b": "teller",
+   "s": "jahr",
+   "f": "quer",
+   "w": 3136,
+   "h": 2156,
+   "art": "haus",
+   "q": "Frühere Website des Hauses (2016), aus dem Web-Archiv (archive.org); Rechte beim Haus. Licht und Schärfe mit KI nachgeschärft",
+   "u": "https://web.archive.org/web/20190501090424/https://schaefli-wigoltingen.ch/wp-content/uploads/2016/06/Menue9.jpg",
+   "ue": true,
+   "alt": false,
+   "vn": true,
+   "fl": "../../assets/img/ko-menue9-1200.webp",
+   "fm": "../../assets/img/ko-menue9-1200.webp",
+   "fs": "../../assets/img/ko-menue9-480.webp"
+  },
+  {
+   "k": "ko-glaeser",
+   "t": {
+    "de": "Weissweingläser, eine Flasche und Nüsse auf dem dunklen Tisch"
+   },
+   "b": "bar",
+   "s": "jahr",
+   "f": "quer",
+   "w": 750,
+   "h": 350,
+   "art": "haus",
+   "q": "Frühere Website des Hauses (2016), aus dem Web-Archiv (archive.org); Rechte beim Haus",
+   "u": "https://web.archive.org/web/20181205122826/https://www.schaefli-wigoltingen.ch/wp-content/uploads/2016/06/Chillen-Bar.jpg",
+   "ue": false,
+   "alt": false,
+   "vn": false,
+   "fl": "../../assets/img/ko-glaeser-750.webp",
+   "fm": "../../assets/img/ko-glaeser-750.webp",
+   "fs": "../../assets/img/ko-glaeser-480.webp"
+  },
+  {
+   "k": "ko-gaessli",
+   "t": {
+    "de": "Ein Riegelhaus am Gässliweg in Wigoltingen"
+   },
+   "b": "dorf",
+   "s": "jahr",
+   "f": "quer",
+   "w": 3000,
+   "h": 2250,
+   "art": "frei",
+   "q": "JoachimKohler-HB, CC BY-SA 4.0, Wikimedia Commons",
+   "u": "https://commons.wikimedia.org/wiki/File%3AWigoltingen_-_G%C3%A4ssliweg_2.jpg",
+   "ue": false,
+   "alt": false,
+   "vn": false,
+   "fl": "../../assets/img/ko-gaessli-3000.webp",
+   "fm": "../../assets/img/ko-gaessli-1200.webp",
+   "fs": "../../assets/img/ko-gaessli-480.webp"
+  },
+  {
+   "k": "ko-riegel2",
+   "t": {
+    "de": "Das Riegelhaus an der Oberdorfstrasse 2 in Wigoltingen"
+   },
+   "b": "dorf",
+   "s": "jahr",
+   "f": "quer",
+   "w": 3000,
+   "h": 2000,
+   "art": "frei",
+   "q": "JoachimKohler-HB, CC BY-SA 4.0, Wikimedia Commons",
+   "u": "https://commons.wikimedia.org/wiki/File%3AWigoltingen_TG_-_Riegelhaus_Oberdorfstr._2.jpg",
+   "ue": false,
+   "alt": false,
+   "vn": false,
+   "fl": "../../assets/img/ko-riegel2-3000.webp",
+   "fm": "../../assets/img/ko-riegel2-1200.webp",
+   "fs": "../../assets/img/ko-riegel2-480.webp"
+  },
+  {
+   "k": "ko-herbst",
+   "t": {
+    "de": "Herbst im Thurgau, Blick von Illhart ins Thurtal"
+   },
+   "b": "dorf",
+   "s": "winter",
+   "f": "hoch",
+   "w": 2094,
+   "h": 3000,
+   "art": "frei",
+   "q": "Christian Boss 1965, CC BY 4.0, Wikimedia Commons",
+   "u": "https://commons.wikimedia.org/wiki/File%3AHerbst_im_Thurgau%2C_Blick_von_Illhart_nach_Lipperswil_und_ins_Thurtal%2C_S%C3%A4gerei_Straub%2C_Herbst_1989.jpg",
+   "ue": false,
+   "alt": false,
+   "vn": false,
+   "fl": "../../assets/img/ko-herbst-2000.webp",
+   "fm": "../../assets/img/ko-herbst-1200.webp",
+   "fs": "../../assets/img/ko-herbst-480.webp"
+  },
+  {
+   "k": "ko-waeldi",
+   "t": {
+    "de": "Eine Landstrasse über den Seerücken bei Wäldi, dahinter die Alpen"
+   },
+   "b": "dorf",
+   "s": "jahr",
+   "f": "quer",
+   "w": 3000,
+   "h": 1875,
+   "art": "frei",
+   "q": "JoachimKohler-HB, CC BY-SA 4.0, Wikimedia Commons",
+   "u": "https://commons.wikimedia.org/wiki/File%3ASeer%C3%BCcken_s%C3%BCdlich_W%C3%A4ldi_TG.jpg",
+   "ue": false,
+   "alt": false,
+   "vn": false,
+   "fl": "../../assets/img/ko-waeldi-3000.webp",
+   "fm": "../../assets/img/ko-waeldi-1200.webp",
+   "fs": "../../assets/img/ko-waeldi-480.webp"
+  },
+  {
+   "k": "ko-thur",
+   "t": {
+    "de": "Die Eschikofer Brücke über die Thur"
+   },
+   "b": "dorf",
+   "s": "jahr",
+   "f": "quer",
+   "w": 3000,
+   "h": 2250,
+   "art": "frei",
+   "q": "Jag9889, CC BY-SA 4.0, Wikimedia Commons",
+   "u": "https://commons.wikimedia.org/wiki/File%3AEschikofer_Br%C3%BCcke_%C3%BCber_die_Thur%2C_Bonau_TG_%E2%80%93_Amlikon-Bissegg_TG_20190801-jag9889.jpg",
+   "ue": false,
+   "alt": false,
+   "vn": false,
+   "fl": "../../assets/img/ko-thur-2000.webp",
+   "fm": "../../assets/img/ko-thur-1200.webp",
+   "fs": "../../assets/img/ko-thur-480.webp"
+  },
+  {
+   "k": "ko-boltsh",
+   "t": {
+    "de": "Ein Feldweg im Thurtal bei Boltshausen"
+   },
+   "b": "dorf",
+   "s": "jahr",
+   "f": "quer",
+   "w": 3000,
+   "h": 1688,
+   "art": "frei",
+   "q": "JoachimKohler-HB, CC BY-SA 4.0, Wikimedia Commons",
+   "u": "https://commons.wikimedia.org/wiki/File%3AThurtal_und_Ottenberg_bei_Boltshausen.jpg",
+   "ue": false,
+   "alt": false,
+   "vn": false,
+   "fl": "../../assets/img/ko-boltsh-3000.webp",
+   "fm": "../../assets/img/ko-boltsh-1200.webp",
+   "fs": "../../assets/img/ko-boltsh-480.webp"
+  },
+  {
+   "k": "ko-kamin",
+   "t": {
+    "de": "Die Lounge mit dem Cheminée im Abendlicht"
+   },
+   "b": "bar",
+   "s": "jahr",
+   "f": "quer",
+   "w": 3136,
+   "h": 2156,
+   "art": "haus",
+   "q": "Frühere Website des Hauses (2016), aus dem Web-Archiv (archive.org); Rechte beim Haus. Licht und Schärfe mit KI nachgeschärft",
+   "u": "https://web.archive.org/web/20190501083217/https://schaefli-wigoltingen.ch/wp-content/uploads/2016/06/Chemine.jpg",
+   "ue": true,
+   "alt": false,
+   "vn": true,
+   "fl": "../../assets/img/ko-kamin-1200.webp",
+   "fm": "../../assets/img/ko-kamin-1200.webp",
+   "fs": "../../assets/img/ko-kamin-480.webp"
+  },
+  {
+   "k": "ko-stube",
+   "t": {
+    "de": "Die Stube mit weiss gedeckten Tischen, Täfer und Buffet"
+   },
+   "b": "stuben",
+   "s": "jahr",
+   "f": "quer",
+   "w": 747,
+   "h": 516,
+   "art": "haus",
+   "q": "Schweiz Tourismus (myswitzerland.com), Bild des Eintrags des Hauses, vom Haus geliefert. Auf der Website auch unter «a-gaststube»",
+   "u": "https://www.myswitzerland.com/de-ch/erlebnisse/essen-trinken/restaurant/taverne-zum-schaefli/",
+   "ue": false,
+   "alt": false,
+   "vn": false,
+   "fl": "../../assets/img/ko-stube-747.webp",
+   "fm": "../../assets/img/ko-stube-747.webp",
+   "fs": "../../assets/img/ko-stube-480.webp"
+  },
+  {
+   "k": "a-gedeck-karte",
+   "t": {
+    "de": "Ein gedeckter Tisch mit Menükarte, Weingläsern und Kerze"
+   },
+   "b": "stuben",
+   "s": "jahr",
+   "f": "quer",
+   "w": 3136,
+   "h": 2156,
+   "art": "haus",
+   "q": "Frühere Website des Hauses (2018), aus dem Web-Archiv (archive.org); Rechte beim Haus. Licht und Schärfe mit KI nachgeschärft",
+   "u": "https://web.archive.org/web/20190501084601/https://schaefli-wigoltingen.ch/wp-content/uploads/2018/01/ambiente_08.jpg",
+   "ue": true,
+   "alt": false,
+   "vn": true,
+   "fl": "../../assets/img/a-gedeck-karte-1600.webp",
+   "fm": "../../assets/img/a-gedeck-karte-1200.webp",
+   "fs": "../../assets/img/a-gedeck-karte-480.webp"
+  },
+  {
+   "k": "a-tisch-weiss",
+   "t": {
+    "de": "Ein weiss gedeckter Tisch mit Gläsern und Tellern in der Stube"
+   },
+   "b": "stuben",
+   "s": "jahr",
+   "f": "quer",
+   "w": 3391,
+   "h": 2160,
+   "art": "haus",
+   "q": "Frühere Website des Hauses (2016), aus dem Web-Archiv (archive.org); Rechte beim Haus. Licht und Schärfe mit KI nachgeschärft",
+   "u": "https://web.archive.org/web/20181205161745/https://schaefli-wigoltingen.ch/wp-content/uploads/2016/06/Ambiente-Schaefli.jpg",
+   "ue": true,
+   "alt": false,
+   "vn": true,
+   "fl": "../../assets/img/a-tisch-weiss-1200.webp",
+   "fm": "../../assets/img/a-tisch-weiss-1200.webp",
+   "fs": "../../assets/img/a-tisch-weiss-480.webp"
+  },
+  {
+   "k": "a-team",
+   "t": {
+    "de": "Das Team der Taverne zum Schäfli vor dem alten Holztor"
+   },
+   "b": "team",
+   "s": "jahr",
+   "f": "quer",
+   "w": 800,
+   "h": 550,
+   "art": "haus",
+   "q": "Frühere Website des Hauses (2023), aus dem Web-Archiv (archive.org); Rechte beim Haus",
+   "u": "https://web.archive.org/web/20230707172330/https://schaefli-wigoltingen.ch/wp-content/uploads/2023/01/leidenschaft.jpg",
+   "ue": false,
+   "alt": false,
+   "vn": false,
+   "fl": "../../assets/img/a-team-800.webp",
+   "fm": "../../assets/img/a-team-800.webp",
+   "fs": "../../assets/img/a-team-480.webp"
+  },
+  {
+   "k": "a-team-gehen",
+   "t": {
+    "de": "Das Team geht gemeinsam vor dem Holztor auf die Kamera zu"
+   },
+   "b": "team",
+   "s": "jahr",
+   "f": "quer",
+   "w": 800,
+   "h": 549,
+   "art": "haus",
+   "q": "Frühere Website des Hauses (2023), aus dem Web-Archiv (archive.org); Rechte beim Haus",
+   "u": "https://web.archive.org/web/20230708135852/https://schaefli-wigoltingen.ch/wp-content/uploads/2023/01/jobs.jpg",
+   "ue": false,
+   "alt": false,
+   "vn": false,
+   "fl": "../../assets/img/a-team-gehen-800.webp",
+   "fm": "../../assets/img/a-team-gehen-800.webp",
+   "fs": "../../assets/img/a-team-gehen-480.webp"
+  },
+  {
+   "k": "a-kochen-live",
+   "t": {
+    "de": "Köche bei der Arbeit in der Küche"
+   },
+   "b": "kueche",
+   "s": "jahr",
+   "f": "quer",
+   "w": 800,
+   "h": 550,
+   "art": "haus",
+   "q": "Frühere Website des Hauses (2016), aus dem Web-Archiv (archive.org); Rechte beim Haus",
+   "u": "https://web.archive.org/web/20190501083144/https://schaefli-wigoltingen.ch/wp-content/uploads/2016/06/Kochen-live2.jpg",
+   "ue": false,
+   "alt": false,
+   "vn": false,
+   "fl": "../../assets/img/a-kochen-live-800.webp",
+   "fm": "../../assets/img/a-kochen-live-800.webp",
+   "fs": "../../assets/img/a-kochen-live-480.webp"
+  },
+  {
+   "k": "a-kochen-pass",
+   "t": {
+    "de": "Ein Koch richtet in der Küche an, im Hintergrund die Töpfe"
+   },
+   "b": "kueche",
+   "s": "jahr",
+   "f": "quer",
+   "w": 800,
+   "h": 550,
+   "art": "haus",
+   "q": "Frühere Website des Hauses (2016), aus dem Web-Archiv (archive.org); Rechte beim Haus",
+   "u": "https://web.archive.org/web/20190501084548/https://schaefli-wigoltingen.ch/wp-content/uploads/2016/06/Kochen-live.jpg",
+   "ue": false,
+   "alt": false,
+   "vn": false,
+   "fl": "../../assets/img/a-kochen-pass-800.webp",
+   "fm": "../../assets/img/a-kochen-pass-800.webp",
+   "fs": "../../assets/img/a-kochen-pass-480.webp"
+  },
+  {
+   "k": "a-prunier",
+   "t": {
+    "de": "Der dunkle Raum La Table Prunier mit Weinschrank und Lammzeichen"
+   },
+   "b": "stuben",
+   "s": "jahr",
+   "f": "quer",
+   "w": 800,
+   "h": 550,
+   "art": "haus",
+   "q": "Frühere Website des Hauses (2016), aus dem Web-Archiv (archive.org); Rechte beim Haus",
+   "u": "https://web.archive.org/web/20190501084608/https://schaefli-wigoltingen.ch/wp-content/uploads/2016/06/La_Table_Prunier.jpg",
+   "ue": false,
+   "alt": false,
+   "vn": false,
+   "fl": "../../assets/img/a-prunier-800.webp",
+   "fm": "../../assets/img/a-prunier-800.webp",
+   "fs": "../../assets/img/a-prunier-480.webp"
+  },
+  {
+   "k": "a-weinmann",
+   "t": {
+    "de": "Ein Mann im Anzug mit einer Weinflasche im Weinkeller"
+   },
+   "b": "wein",
+   "s": "jahr",
+   "f": "quer",
+   "w": 800,
+   "h": 549,
+   "art": "haus",
+   "q": "Frühere Website des Hauses (2023), aus dem Web-Archiv (archive.org); Rechte beim Haus",
+   "u": "https://web.archive.org/web/20230707170327/https://schaefli-wigoltingen.ch/wp-content/uploads/2023/01/leidenschaft_07.jpg",
+   "ue": false,
+   "alt": false,
+   "vn": false,
+   "fl": "../../assets/img/a-weinmann-800.webp",
+   "fm": "../../assets/img/a-weinmann-800.webp",
+   "fs": "../../assets/img/a-weinmann-480.webp"
+  },
+  {
+   "k": "a-champagner-kiste",
+   "t": {
+    "de": "Champagnerflaschen und Gläser in einer Holzkiste"
+   },
+   "b": "wein",
+   "s": "jahr",
+   "f": "quer",
+   "w": 800,
+   "h": 550,
+   "art": "haus",
+   "q": "Frühere Website des Hauses (2016), aus dem Web-Archiv (archive.org); Rechte beim Haus",
+   "u": "https://web.archive.org/web/20190501084622/https://schaefli-wigoltingen.ch/wp-content/uploads/2016/06/erlesene_Getr%C3%A4nke.jpg",
+   "ue": false,
+   "alt": false,
+   "vn": false,
+   "fl": "../../assets/img/a-champagner-kiste-800.webp",
+   "fm": "../../assets/img/a-champagner-kiste-800.webp",
+   "fs": "../../assets/img/a-champagner-kiste-480.webp"
+  },
+  {
+   "k": "a-koch-hoch",
+   "t": {
+    "de": "Ein Koch richtet konzentriert in der Küche an"
+   },
+   "b": "kueche",
+   "s": "jahr",
+   "f": "hoch",
+   "w": 550,
+   "h": 800,
+   "art": "haus",
+   "q": "Frühere Website des Hauses (2023), aus dem Web-Archiv (archive.org); Rechte beim Haus",
+   "u": "https://web.archive.org/web/20230707170326/https://schaefli-wigoltingen.ch/wp-content/uploads/2023/01/leidenschaft_06.jpg",
+   "ue": false,
+   "alt": false,
+   "vn": false,
+   "fl": "../../assets/img/a-koch-hoch-550.webp",
+   "fm": "../../assets/img/a-koch-hoch-550.webp",
+   "fs": "../../assets/img/a-koch-hoch-480.webp"
+  },
+  {
+   "k": "a-cocktail",
+   "t": {
+    "de": "Ein Espresso Martini im warmen Licht der Bar"
+   },
+   "b": "bar",
+   "s": "jahr",
+   "f": "hoch",
+   "w": 2156,
+   "h": 3136,
+   "art": "haus",
+   "q": "Frühere Website des Hauses (2023), aus dem Web-Archiv (archive.org); Rechte beim Haus. Licht und Schärfe mit KI nachgeschärft",
+   "u": "https://web.archive.org/web/20230707172333/https://schaefli-wigoltingen.ch/wp-content/uploads/2023/01/leidenschaft_12.jpg",
+   "ue": true,
+   "alt": false,
+   "vn": true,
+   "fl": "../../assets/img/a-cocktail-1200.webp",
+   "fm": "../../assets/img/a-cocktail-1200.webp",
+   "fs": "../../assets/img/a-cocktail-480.webp"
+  },
+  {
+   "k": "a-kueche-zwei",
+   "t": {
+    "de": "Eine Köchin und ein Koch lachen gemeinsam in der Küche"
+   },
+   "b": "kueche",
+   "s": "jahr",
+   "f": "quer",
+   "w": 800,
+   "h": 550,
+   "art": "haus",
+   "q": "Frühere Website des Hauses (2023), aus dem Web-Archiv (archive.org); Rechte beim Haus",
+   "u": "https://web.archive.org/web/20230707170327/https://schaefli-wigoltingen.ch/wp-content/uploads/2023/01/leidenschaft_04.jpg",
+   "ue": false,
+   "alt": false,
+   "vn": false,
+   "fl": "../../assets/img/a-kueche-zwei-800.webp",
+   "fm": "../../assets/img/a-kueche-zwei-800.webp",
+   "fs": "../../assets/img/a-kueche-zwei-480.webp"
+  },
+  {
+   "k": "a-zigarre",
+   "t": {
+    "de": "Eine Zigarre wird angezündet"
+   },
+   "b": "bar",
+   "s": "jahr",
+   "f": "hoch",
+   "w": 550,
+   "h": 800,
+   "art": "haus",
+   "q": "Frühere Website des Hauses (2023), aus dem Web-Archiv (archive.org); Rechte beim Haus",
+   "u": "https://web.archive.org/web/20230707172332/https://schaefli-wigoltingen.ch/wp-content/uploads/2023/01/leidenschaft_10.jpg",
+   "ue": false,
+   "alt": false,
+   "vn": false,
+   "fl": "../../assets/img/a-zigarre-550.webp",
+   "fm": "../../assets/img/a-zigarre-550.webp",
+   "fs": "../../assets/img/a-zigarre-480.webp"
+  },
+  {
+   "k": "a-anrichten",
+   "t": {
+    "de": "Ein Koch füllt in der Küche Teller ab"
+   },
+   "b": "kueche",
+   "s": "jahr",
+   "f": "quer",
+   "w": 800,
+   "h": 550,
+   "art": "haus",
+   "q": "Frühere Website des Hauses (2018), aus dem Web-Archiv (archive.org); Rechte beim Haus",
+   "u": "https://web.archive.org/web/20190501084553/https://schaefli-wigoltingen.ch/wp-content/uploads/2018/01/leidenschaft_05.jpg",
+   "ue": false,
+   "alt": false,
+   "vn": false,
+   "fl": "../../assets/img/a-anrichten-800.webp",
+   "fm": "../../assets/img/a-anrichten-800.webp",
+   "fs": "../../assets/img/a-anrichten-480.webp"
+  },
+  {
+   "k": "a-sauce",
+   "t": {
+    "de": "Eine Sauce wird in der Pfanne aufgeschlagen"
+   },
+   "b": "kueche",
+   "s": "jahr",
+   "f": "quer",
+   "w": 800,
+   "h": 550,
+   "art": "haus",
+   "q": "Frühere Website des Hauses (2018), aus dem Web-Archiv (archive.org); Rechte beim Haus",
+   "u": "https://web.archive.org/web/20190501084555/https://schaefli-wigoltingen.ch/wp-content/uploads/2018/01/leidenschaft_04.jpg",
+   "ue": false,
+   "alt": false,
+   "vn": false,
+   "fl": "../../assets/img/a-sauce-800.webp",
+   "fm": "../../assets/img/a-sauce-800.webp",
+   "fs": "../../assets/img/a-sauce-480.webp"
+  },
+  {
+   "k": "a-bar-hocker",
+   "t": {
+    "de": "Die Bar mit Hockern unter dem Holzbalken"
+   },
+   "b": "bar",
+   "s": "jahr",
+   "f": "quer",
+   "w": 800,
+   "h": 550,
+   "art": "haus",
+   "q": "Frühere Website des Hauses (2016), aus dem Web-Archiv (archive.org); Rechte beim Haus",
+   "u": "https://web.archive.org/web/20190501084619/https://schaefli-wigoltingen.ch/wp-content/uploads/2016/06/Bar_Treffpunkt.jpg",
+   "ue": false,
+   "alt": false,
+   "vn": false,
+   "fl": "../../assets/img/a-bar-hocker-800.webp",
+   "fm": "../../assets/img/a-bar-hocker-800.webp",
+   "fs": "../../assets/img/a-bar-hocker-480.webp"
+  },
+  {
+   "k": "a-bar-einschenken",
+   "t": {
+    "de": "Eine Mitarbeiterin schenkt an der Bar ein"
+   },
+   "b": "bar",
+   "s": "jahr",
+   "f": "quer",
+   "w": 800,
+   "h": 550,
+   "art": "haus",
+   "q": "Frühere Website des Hauses (2018), aus dem Web-Archiv (archive.org); Rechte beim Haus",
+   "u": "https://web.archive.org/web/20190501084602/https://schaefli-wigoltingen.ch/wp-content/uploads/2018/01/leidenschaft_01.jpg",
+   "ue": false,
+   "alt": false,
+   "vn": false,
+   "fl": "../../assets/img/a-bar-einschenken-800.webp",
+   "fm": "../../assets/img/a-bar-einschenken-800.webp",
+   "fs": "../../assets/img/a-bar-einschenken-480.webp"
+  },
+  {
+   "k": "a-teller-pfanne",
+   "t": {
+    "de": "Ein gratiniertes Gericht in der schwarzen Pfanne"
+   },
+   "b": "teller",
+   "s": "jahr",
+   "f": "hoch",
+   "w": 550,
+   "h": 800,
+   "art": "haus",
+   "q": "Frühere Website des Hauses (2023), aus dem Web-Archiv (archive.org); Rechte beim Haus",
+   "u": "https://web.archive.org/web/20230707172332/https://schaefli-wigoltingen.ch/wp-content/uploads/2023/01/leidenschaft_02.jpg",
+   "ue": false,
+   "alt": false,
+   "vn": false,
+   "fl": "../../assets/img/a-teller-pfanne-550.webp",
+   "fm": "../../assets/img/a-teller-pfanne-550.webp",
+   "fs": "../../assets/img/a-teller-pfanne-480.webp"
+  },
+  {
+   "k": "a-lampe",
+   "t": {
+    "de": "Eine Lampe mit gewelltem Glasschirm im Biedermeierstübli"
+   },
+   "b": "stuben",
+   "s": "jahr",
+   "f": "quer",
+   "w": 3136,
+   "h": 2156,
+   "art": "haus",
+   "q": "Frühere Website des Hauses (2016), aus dem Web-Archiv (archive.org); Rechte beim Haus. Licht und Schärfe mit KI nachgeschärft",
+   "u": "https://web.archive.org/web/20190501083202/https://schaefli-wigoltingen.ch/wp-content/uploads/2016/06/Bidermeierstuebli.jpg",
+   "ue": true,
+   "alt": false,
+   "vn": true,
+   "fl": "../../assets/img/a-lampe-1600.webp",
+   "fm": "../../assets/img/a-lampe-1200.webp",
+   "fs": "../../assets/img/a-lampe-480.webp"
+  },
+  {
+   "k": "a-bar-regal",
+   "t": {
+    "de": "Die Bar mit Flaschenregal und Gläsern"
+   },
+   "b": "bar",
+   "s": "jahr",
+   "f": "quer",
+   "w": 3136,
+   "h": 2156,
+   "art": "haus",
+   "q": "Frühere Website des Hauses (2016), aus dem Web-Archiv (archive.org); Rechte beim Haus. Licht und Schärfe mit KI nachgeschärft",
+   "u": "https://web.archive.org/web/20190501083224/https://schaefli-wigoltingen.ch/wp-content/uploads/2016/06/Bar.jpg",
+   "ue": true,
+   "alt": false,
+   "vn": true,
+   "fl": "../../assets/img/a-bar-regal-1600.webp",
+   "fm": "../../assets/img/a-bar-regal-1200.webp",
+   "fs": "../../assets/img/a-bar-regal-480.webp"
+  },
+  {
+   "k": "a-teller-hoch",
+   "t": {
+    "de": "Ein farbiges Gericht in einem tiefen Teller"
+   },
+   "b": "teller",
+   "s": "jahr",
+   "f": "hoch",
+   "w": 550,
+   "h": 800,
+   "art": "haus",
+   "q": "Frühere Website des Hauses (2023), aus dem Web-Archiv (archive.org); Rechte beim Haus",
+   "u": "https://web.archive.org/web/20230707172328/https://schaefli-wigoltingen.ch/wp-content/uploads/2023/01/leidenschaft_03.jpg",
+   "ue": false,
+   "alt": false,
+   "vn": false,
+   "fl": "../../assets/img/a-teller-hoch-550.webp",
+   "fm": "../../assets/img/a-teller-hoch-550.webp",
+   "fs": "../../assets/img/a-teller-hoch-480.webp"
+  },
+  {
+   "k": "a-stube-bilder",
+   "t": {
+    "de": "Eine Stube mit vielen gerahmten Bildern und gedeckten Tischen"
+   },
+   "b": "stuben",
+   "s": "jahr",
+   "f": "quer",
+   "w": 800,
+   "h": 550,
+   "art": "haus",
+   "q": "Frühere Website des Hauses (2016), aus dem Web-Archiv (archive.org); Rechte beim Haus",
+   "u": "https://web.archive.org/web/20190501084639/https://schaefli-wigoltingen.ch/wp-content/uploads/2016/06/Platz_fuer_zwei.jpg",
+   "ue": false,
+   "alt": false,
+   "vn": false,
+   "fl": "../../assets/img/a-stube-bilder-800.webp",
+   "fm": "../../assets/img/a-stube-bilder-800.webp",
+   "fs": "../../assets/img/a-stube-bilder-480.webp"
+  },
+  {
+   "k": "a-vater-sohn",
+   "t": {
+    "de": "Wolfgang und Christian Kuchler vor dem Holztor"
+   },
+   "b": "team",
+   "s": "jahr",
+   "f": "quer",
+   "w": 800,
+   "h": 550,
+   "art": "haus",
+   "q": "Frühere Website des Hauses (2016), aus dem Web-Archiv (archive.org); Rechte beim Haus",
+   "u": "https://web.archive.org/web/20220310120546/https://www.schaefli-wigoltingen.ch/wp-content/uploads/2016/06/Wolfgang-und-Christian-Kuchler.jpg",
+   "ue": false,
+   "alt": false,
+   "vn": false,
+   "fl": "../../assets/img/a-vater-sohn-800.webp",
+   "fm": "../../assets/img/a-vater-sohn-800.webp",
+   "fs": "../../assets/img/a-vater-sohn-480.webp"
+  },
+  {
+   "k": "a-ruesten",
+   "t": {
+    "de": "Karotten werden auf dem Brett geschnitten"
+   },
+   "b": "kueche",
+   "s": "jahr",
+   "f": "quer",
+   "w": 800,
+   "h": 550,
+   "art": "haus",
+   "q": "Frühere Website des Hauses (2016), aus dem Web-Archiv (archive.org); Rechte beim Haus",
+   "u": "https://web.archive.org/web/20190501084625/https://schaefli-wigoltingen.ch/wp-content/uploads/2016/06/Gemuese_ruesten.jpg",
+   "ue": false,
+   "alt": false,
+   "vn": false,
+   "fl": "../../assets/img/a-ruesten-800.webp",
+   "fm": "../../assets/img/a-ruesten-800.webp",
+   "fs": "../../assets/img/a-ruesten-480.webp"
+  },
+  {
+   "k": "a-keller-regal",
+   "t": {
+    "de": "Der Weinkeller mit Regalen voller Flaschen"
+   },
+   "b": "wein",
+   "s": "jahr",
+   "f": "quer",
+   "w": 800,
+   "h": 549,
+   "art": "haus",
+   "q": "Frühere Website des Hauses (2023), aus dem Web-Archiv (archive.org); Rechte beim Haus",
+   "u": "https://web.archive.org/web/20230707172328/https://schaefli-wigoltingen.ch/wp-content/uploads/2023/01/leidenschaft_08.jpg",
+   "ue": false,
+   "alt": false,
+   "vn": false,
+   "fl": "../../assets/img/a-keller-regal-800.webp",
+   "fm": "../../assets/img/a-keller-regal-800.webp",
+   "fs": "../../assets/img/a-keller-regal-480.webp"
+  },
+  {
+   "k": "a-flutes",
+   "t": {
+    "de": "Champagner wird in vier Gläser eingeschenkt"
+   },
+   "b": "wein",
+   "s": "jahr",
+   "f": "quer",
+   "w": 3136,
+   "h": 2156,
+   "art": "haus",
+   "q": "Frühere Website des Hauses (2016), aus dem Web-Archiv (archive.org); Rechte beim Haus. Licht und Schärfe mit KI nachgeschärft",
+   "u": "https://web.archive.org/web/20190501084617/https://schaefli-wigoltingen.ch/wp-content/uploads/2016/06/erlesene_Weine.jpg",
+   "ue": true,
+   "alt": false,
+   "vn": true,
+   "fl": "../../assets/img/a-flutes-1600.webp",
+   "fm": "../../assets/img/a-flutes-1200.webp",
+   "fs": "../../assets/img/a-flutes-480.webp"
+  },
+  {
+   "k": "a-humidor",
+   "t": {
+    "de": "Der beleuchtete Humidor mit Zigarren"
+   },
+   "b": "bar",
+   "s": "jahr",
+   "f": "quer",
+   "w": 800,
+   "h": 550,
+   "art": "haus",
+   "q": "Frühere Website des Hauses (2016), aus dem Web-Archiv (archive.org); Rechte beim Haus",
+   "u": "https://web.archive.org/web/20190501084635/https://schaefli-wigoltingen.ch/wp-content/uploads/2016/06/fuer_wahre_Kenner.jpg",
+   "ue": false,
+   "alt": false,
+   "vn": false,
+   "fl": "../../assets/img/a-humidor-800.webp",
+   "fm": "../../assets/img/a-humidor-800.webp",
+   "fs": "../../assets/img/a-humidor-480.webp"
+  },
+  {
+   "k": "a-sommeliere",
+   "t": {
+    "de": "Eine Sommelière mit Flasche und Glas in der Stube"
+   },
+   "b": "wein",
+   "s": "jahr",
+   "f": "quer",
+   "w": 800,
+   "h": 550,
+   "art": "haus",
+   "q": "Frühere Website des Hauses (2023), aus dem Web-Archiv (archive.org); Rechte beim Haus",
+   "u": "https://web.archive.org/web/20230707172331/https://schaefli-wigoltingen.ch/wp-content/uploads/2023/01/leidenschaft_09.jpg",
+   "ue": false,
+   "alt": false,
+   "vn": false,
+   "fl": "../../assets/img/a-sommeliere-800.webp",
+   "fm": "../../assets/img/a-sommeliere-800.webp",
+   "fs": "../../assets/img/a-sommeliere-480.webp"
+  },
+  {
+   "k": "a-weinkisten",
+   "t": {
+    "de": "Eine Wand aus alten Weinkisten mit Tür"
+   },
+   "b": "wein",
+   "s": "jahr",
+   "f": "quer",
+   "w": 800,
+   "h": 550,
+   "art": "haus",
+   "q": "Frühere Website des Hauses (2016), aus dem Web-Archiv (archive.org); Rechte beim Haus",
+   "u": "https://web.archive.org/web/20190501083209/https://schaefli-wigoltingen.ch/wp-content/uploads/2016/06/Edler_Schatzraum.jpg",
+   "ue": false,
+   "alt": false,
+   "vn": false,
+   "fl": "../../assets/img/a-weinkisten-800.webp",
+   "fm": "../../assets/img/a-weinkisten-800.webp",
+   "fs": "../../assets/img/a-weinkisten-480.webp"
+  },
+  {
+   "k": "a-teig",
+   "t": {
+    "de": "Ein Koch knetet Teig auf dem Arbeitstisch"
+   },
+   "b": "kueche",
+   "s": "jahr",
+   "f": "quer",
+   "w": 800,
+   "h": 550,
+   "art": "haus",
+   "q": "Frühere Website des Hauses (2016), aus dem Web-Archiv (archive.org); Rechte beim Haus",
+   "u": "https://web.archive.org/web/20190501083141/https://schaefli-wigoltingen.ch/wp-content/uploads/2016/06/Teig_kneten.jpg",
+   "ue": false,
+   "alt": false,
+   "vn": false,
+   "fl": "../../assets/img/a-teig-800.webp",
+   "fm": "../../assets/img/a-teig-800.webp",
+   "fs": "../../assets/img/a-teig-480.webp"
+  },
+  {
+   "k": "a-stube-portraits",
+   "t": {
+    "de": "Eine Stube mit Porträts an der Täferwand und gedeckten Tischen"
+   },
+   "b": "stuben",
+   "s": "jahr",
+   "f": "quer",
+   "w": 800,
+   "h": 550,
+   "art": "haus",
+   "q": "Frühere Website des Hauses (2018), aus dem Web-Archiv (archive.org); Rechte beim Haus",
+   "u": "https://web.archive.org/web/20190501084626/https://schaefli-wigoltingen.ch/wp-content/uploads/2018/01/ambiente_07.jpg",
+   "ue": false,
+   "alt": false,
+   "vn": false,
+   "fl": "../../assets/img/a-stube-portraits-800.webp",
+   "fm": "../../assets/img/a-stube-portraits-800.webp",
+   "fs": "../../assets/img/a-stube-portraits-480.webp"
+  },
+  {
+   "k": "a-stube-hell",
+   "t": {
+    "de": "Eine helle Stube mit weiss gedeckten Tischen"
+   },
+   "b": "stuben",
+   "s": "jahr",
+   "f": "quer",
+   "w": 800,
+   "h": 550,
+   "art": "haus",
+   "q": "Frühere Website des Hauses (2018), aus dem Web-Archiv (archive.org); Rechte beim Haus",
+   "u": "https://web.archive.org/web/20190501084615/https://schaefli-wigoltingen.ch/wp-content/uploads/2018/01/ambiente_04.jpg",
+   "ue": false,
+   "alt": false,
+   "vn": false,
+   "fl": "../../assets/img/a-stube-hell-800.webp",
+   "fm": "../../assets/img/a-stube-hell-800.webp",
+   "fs": "../../assets/img/a-stube-hell-480.webp"
+  },
+  {
+   "k": "a-tafel-lang",
+   "t": {
+    "de": "Eine lange, festlich gedeckte Tafel in der Stube"
+   },
+   "b": "stuben",
+   "s": "jahr",
+   "f": "quer",
+   "w": 4096,
+   "h": 2816,
+   "art": "haus",
+   "q": "Frühere Website des Hauses (2018), aus dem Web-Archiv (archive.org); Rechte beim Haus. Licht und Schärfe mit KI nachgeschärft",
+   "u": "https://web.archive.org/web/20190501083200/https://schaefli-wigoltingen.ch/wp-content/uploads/2018/01/ambiente_11.jpg",
+   "ue": true,
+   "alt": false,
+   "vn": true,
+   "fl": "../../assets/img/a-tafel-lang-2000.webp",
+   "fm": "../../assets/img/a-tafel-lang-1200.webp",
+   "fs": "../../assets/img/a-tafel-lang-480.webp"
+  },
+  {
+   "k": "a-keller-flasche",
+   "t": {
+    "de": "Eine Flasche wird aus dem Weinregal gezogen"
+   },
+   "b": "wein",
+   "s": "jahr",
+   "f": "quer",
+   "w": 800,
+   "h": 550,
+   "art": "haus",
+   "q": "Frühere Website des Hauses (2016), aus dem Web-Archiv (archive.org); Rechte beim Haus",
+   "u": "https://web.archive.org/web/20190501084616/https://schaefli-wigoltingen.ch/wp-content/uploads/2016/06/Weinkeller.jpg",
+   "ue": false,
+   "alt": false,
+   "vn": false,
+   "fl": "../../assets/img/a-keller-flasche-800.webp",
+   "fm": "../../assets/img/a-keller-flasche-800.webp",
+   "fs": "../../assets/img/a-keller-flasche-480.webp"
+  },
+  {
+   "k": "a-christian-tisch",
+   "t": {
+    "de": "Christian Kuchler am Tisch in der Stube"
+   },
+   "b": "team",
+   "s": "jahr",
+   "f": "hoch",
+   "w": 550,
+   "h": 799,
+   "art": "haus",
+   "q": "Frühere Website des Hauses (2023), aus dem Web-Archiv (archive.org); Rechte beim Haus",
+   "u": "https://web.archive.org/web/20230708085909/https://schaefli-wigoltingen.ch/wp-content/uploads/2023/01/geniessen.jpg",
+   "ue": false,
+   "alt": false,
+   "vn": false,
+   "fl": "../../assets/img/a-christian-tisch-550.webp",
+   "fm": "../../assets/img/a-christian-tisch-550.webp",
+   "fs": "../../assets/img/a-christian-tisch-480.webp"
+  },
+  {
+   "k": "a-christian-sitzt",
+   "t": {
+    "de": "Christian Kuchler sitzt in der Stube auf dem Boden"
+   },
+   "b": "team",
+   "s": "jahr",
+   "f": "hoch",
+   "w": 550,
+   "h": 800,
+   "art": "haus",
+   "q": "Frühere Website des Hauses (2023), aus dem Web-Archiv (archive.org); Rechte beim Haus",
+   "u": "https://web.archive.org/web/20230707164301/https://schaefli-wigoltingen.ch/wp-content/uploads/2023/01/ueber-uns.jpg",
+   "ue": false,
+   "alt": false,
+   "vn": false,
+   "fl": "../../assets/img/a-christian-sitzt-550.webp",
+   "fm": "../../assets/img/a-christian-sitzt-550.webp",
+   "fs": "../../assets/img/a-christian-sitzt-480.webp"
+  },
+  {
+   "k": "a-teller-schale",
+   "t": {
+    "de": "Ein Gericht mit Blüten in einer weissen Schale"
+   },
+   "b": "teller",
+   "s": "jahr",
+   "f": "hoch",
+   "w": 550,
+   "h": 800,
+   "art": "haus",
+   "q": "Frühere Website des Hauses (2023), aus dem Web-Archiv (archive.org); Rechte beim Haus",
+   "u": "https://web.archive.org/web/20230707170326/https://schaefli-wigoltingen.ch/wp-content/uploads/2023/01/leidenschaft_05.jpg",
+   "ue": false,
+   "alt": false,
+   "vn": false,
+   "fl": "../../assets/img/a-teller-schale-550.webp",
+   "fm": "../../assets/img/a-teller-schale-550.webp",
+   "fs": "../../assets/img/a-teller-schale-480.webp"
+  },
+  {
+   "k": "a-menue-5",
+   "t": {
+    "de": "Ein Fisch auf grüner Sauce von oben"
+   },
+   "b": "teller",
+   "s": "jahr",
+   "f": "quer",
+   "w": 3136,
+   "h": 2156,
+   "art": "haus",
+   "q": "Frühere Website des Hauses (2016), aus dem Web-Archiv (archive.org); Rechte beim Haus. Licht und Schärfe mit KI nachgeschärft",
+   "u": "https://web.archive.org/web/20190501090315/https://schaefli-wigoltingen.ch/wp-content/uploads/2016/06/Menue5.jpg",
+   "ue": true,
+   "alt": false,
+   "vn": true,
+   "fl": "../../assets/img/a-menue-5-1200.webp",
+   "fm": "../../assets/img/a-menue-5-1200.webp",
+   "fs": "../../assets/img/a-menue-5-480.webp"
+  },
+  {
+   "k": "a-menue-2",
+   "t": {
+    "de": "Ein Dessert mit Früchten und Eis"
+   },
+   "b": "teller",
+   "s": "jahr",
+   "f": "quer",
+   "w": 800,
+   "h": 550,
+   "art": "haus",
+   "q": "Frühere Website des Hauses (2016), aus dem Web-Archiv (archive.org); Rechte beim Haus",
+   "u": "https://web.archive.org/web/20190501090503/https://schaefli-wigoltingen.ch/wp-content/uploads/2016/06/Menue2.jpg",
+   "ue": false,
+   "alt": false,
+   "vn": false,
+   "fl": "../../assets/img/a-menue-2-800.webp",
+   "fm": "../../assets/img/a-menue-2-800.webp",
+   "fs": "../../assets/img/a-menue-2-480.webp"
+  },
+  {
+   "k": "a-kreativ-11",
+   "t": {
+    "de": "Ein Dessert mit Mango und Schokolade"
+   },
+   "b": "teller",
+   "s": "jahr",
+   "f": "quer",
+   "w": 3136,
+   "h": 2156,
+   "art": "haus",
+   "q": "Frühere Website des Hauses (2018), aus dem Web-Archiv (archive.org); Rechte beim Haus. Licht und Schärfe mit KI nachgeschärft",
+   "u": "https://web.archive.org/web/20190501090302/https://schaefli-wigoltingen.ch/wp-content/uploads/2018/01/kreativ_11.jpg",
+   "ue": true,
+   "alt": false,
+   "vn": true,
+   "fl": "../../assets/img/a-kreativ-11-1200.webp",
+   "fm": "../../assets/img/a-kreativ-11-1200.webp",
+   "fs": "../../assets/img/a-kreativ-11-480.webp"
+  },
+  {
+   "k": "a-pralinen",
+   "t": {
+    "de": "Pralinen und Gebäck auf einer Schieferplatte"
+   },
+   "b": "teller",
+   "s": "jahr",
+   "f": "quer",
+   "w": 3136,
+   "h": 2156,
+   "art": "haus",
+   "q": "Frühere Website des Hauses (2018), aus dem Web-Archiv (archive.org); Rechte beim Haus. Licht und Schärfe mit KI nachgeschärft",
+   "u": "https://web.archive.org/web/20190501090305/https://schaefli-wigoltingen.ch/wp-content/uploads/2018/01/kreativ_05.jpg",
+   "ue": true,
+   "alt": false,
+   "vn": true,
+   "fl": "../../assets/img/a-pralinen-1200.webp",
+   "fm": "../../assets/img/a-pralinen-1200.webp",
+   "fs": "../../assets/img/a-pralinen-480.webp"
+  },
+  {
+   "k": "a-fleisch",
+   "t": {
+    "de": "Rosa gebratenes Fleisch mit Kräutern und Sauce"
+   },
+   "b": "teller",
+   "s": "jahr",
+   "f": "quer",
+   "w": 3136,
+   "h": 2156,
+   "art": "haus",
+   "q": "Frühere Website des Hauses (2018), aus dem Web-Archiv (archive.org); Rechte beim Haus. Licht und Schärfe mit KI nachgeschärft",
+   "u": "https://web.archive.org/web/20190501090628/https://schaefli-wigoltingen.ch/wp-content/uploads/2018/01/kreativ_01.jpg",
+   "ue": true,
+   "alt": false,
+   "vn": true,
+   "fl": "../../assets/img/a-fleisch-1600.webp",
+   "fm": "../../assets/img/a-fleisch-1200.webp",
+   "fs": "../../assets/img/a-fleisch-480.webp"
+  },
+  {
+   "k": "a-roulade",
+   "t": {
+    "de": "Eine Lachsroulade mit Kräutern"
+   },
+   "b": "teller",
+   "s": "jahr",
+   "f": "quer",
+   "w": 3136,
+   "h": 2156,
+   "art": "haus",
+   "q": "Frühere Website des Hauses (2018), aus dem Web-Archiv (archive.org); Rechte beim Haus. Licht und Schärfe mit KI nachgeschärft",
+   "u": "https://web.archive.org/web/20190501090531/https://schaefli-wigoltingen.ch/wp-content/uploads/2018/01/kreativ_15.jpg",
+   "ue": true,
+   "alt": false,
+   "vn": true,
+   "fl": "../../assets/img/a-roulade-1200.webp",
+   "fm": "../../assets/img/a-roulade-1200.webp",
+   "fs": "../../assets/img/a-roulade-480.webp"
+  },
+  {
+   "k": "a-giessen",
+   "t": {
+    "de": "Rosa gebratenes Fleisch auf Püree mit Sauce"
+   },
+   "b": "teller",
+   "s": "jahr",
+   "f": "quer",
+   "w": 3136,
+   "h": 2156,
+   "art": "haus",
+   "q": "Frühere Website des Hauses (2018), aus dem Web-Archiv (archive.org); Rechte beim Haus. Licht und Schärfe mit KI nachgeschärft",
+   "u": "https://web.archive.org/web/20190501090410/https://schaefli-wigoltingen.ch/wp-content/uploads/2018/01/kreativ_17.jpg",
+   "ue": true,
+   "alt": false,
+   "vn": true,
+   "fl": "../../assets/img/a-giessen-1200.webp",
+   "fm": "../../assets/img/a-giessen-1200.webp",
+   "fs": "../../assets/img/a-giessen-480.webp"
+  },
+  {
+   "k": "a-kreativ",
+   "t": {
+    "de": "Eine Sauce wird über ein Gericht im weissen Teller gegossen"
+   },
+   "b": "teller",
+   "s": "jahr",
+   "f": "quer",
+   "w": 800,
+   "h": 550,
+   "art": "haus",
+   "q": "Frühere Website des Hauses (2023), aus dem Web-Archiv (archive.org); Rechte beim Haus",
+   "u": "https://web.archive.org/web/20230708190349/https://schaefli-wigoltingen.ch/wp-content/uploads/2023/01/kreativ.jpg",
+   "ue": false,
+   "alt": false,
+   "vn": false,
+   "fl": "../../assets/img/a-kreativ-800.webp",
+   "fm": "../../assets/img/a-kreativ-800.webp",
+   "fs": "../../assets/img/a-kreativ-480.webp"
+  },
+  {
+   "k": "a-grill",
+   "t": {
+    "de": "Öl wird über Fisch auf dem Grill gegossen"
+   },
+   "b": "kueche",
+   "s": "jahr",
+   "f": "quer",
+   "w": 800,
+   "h": 550,
+   "art": "haus",
+   "q": "Frühere Website des Hauses (2018), aus dem Web-Archiv (archive.org); Rechte beim Haus",
+   "u": "https://web.archive.org/web/20190501084636/https://schaefli-wigoltingen.ch/wp-content/uploads/2018/01/leidenschaft_07.jpg",
+   "ue": false,
+   "alt": false,
+   "vn": false,
+   "fl": "../../assets/img/a-grill-800.webp",
+   "fm": "../../assets/img/a-grill-800.webp",
+   "fs": "../../assets/img/a-grill-480.webp"
+  },
+  {
+   "k": "a-fisch-gruen",
+   "t": {
+    "de": "Ein Fisch auf grüner Sauce mit Kräutern"
+   },
+   "b": "teller",
+   "s": "jahr",
+   "f": "quer",
+   "w": 1920,
+   "h": 780,
+   "art": "haus",
+   "q": "Frühere Website des Hauses (2016), aus dem Web-Archiv (archive.org); Rechte beim Haus",
+   "u": "https://web.archive.org/web/20171021235210/http://www.schaefli-wigoltingen.ch/wp-content/uploads/2016/07/Start3d.jpg",
+   "ue": false,
+   "alt": false,
+   "vn": false,
+   "fl": "../../assets/img/a-fisch-gruen-1920.webp",
+   "fm": "../../assets/img/a-fisch-gruen-1200.webp",
+   "fs": "../../assets/img/a-fisch-gruen-480.webp"
+  },
+  {
+   "k": "a-kranz",
+   "t": {
+    "de": "Ein Kranz aus Gemüse und Blüten, Sauce wird angegossen"
+   },
+   "b": "teller",
+   "s": "jahr",
+   "f": "quer",
+   "w": 1920,
+   "h": 780,
+   "art": "haus",
+   "q": "Frühere Website des Hauses (2017), aus dem Web-Archiv (archive.org); Rechte beim Haus",
+   "u": "https://web.archive.org/web/20171107164825/http://www.schaefli-wigoltingen.ch/wp-content/uploads/2017/10/Start1d.jpg",
+   "ue": false,
+   "alt": false,
+   "vn": false,
+   "fl": "../../assets/img/a-kranz-1920.webp",
+   "fm": "../../assets/img/a-kranz-1200.webp",
+   "fs": "../../assets/img/a-kranz-480.webp"
+  },
+  {
+   "k": "a-lachs-vanille",
+   "t": {
+    "de": "Lachs mit einer Vanilleschote im weissen Teller"
+   },
+   "b": "teller",
+   "s": "jahr",
+   "f": "quer",
+   "w": 1920,
+   "h": 780,
+   "art": "haus",
+   "q": "Frühere Website des Hauses (2017), aus dem Web-Archiv (archive.org); Rechte beim Haus",
+   "u": "https://web.archive.org/web/20171107165922/http://www.schaefli-wigoltingen.ch/wp-content/uploads/2017/10/Start2d.jpg",
+   "ue": false,
+   "alt": false,
+   "vn": false,
+   "fl": "../../assets/img/a-lachs-vanille-1920.webp",
+   "fm": "../../assets/img/a-lachs-vanille-1200.webp",
+   "fs": "../../assets/img/a-lachs-vanille-480.webp"
+  },
+  {
+   "k": "a-terrine",
+   "t": {
+    "de": "Eine Terrine mit Kräutern, grüne Sauce wird angegossen"
+   },
+   "b": "teller",
+   "s": "jahr",
+   "f": "quer",
+   "w": 1920,
+   "h": 780,
+   "art": "haus",
+   "q": "Frühere Website des Hauses (2016), aus dem Web-Archiv (archive.org); Rechte beim Haus",
+   "u": "https://web.archive.org/web/20171022035613/http://www.schaefli-wigoltingen.ch/wp-content/uploads/2016/07/Start4d.jpg",
+   "ue": false,
+   "alt": false,
+   "vn": false,
+   "fl": "../../assets/img/a-terrine-1920.webp",
+   "fm": "../../assets/img/a-terrine-1200.webp",
+   "fs": "../../assets/img/a-terrine-480.webp"
+  },
+  {
+   "k": "m-haus-blau",
+   "t": {
+    "de": "Die Taverne zum Schäfli am Abend unter blauem Himmel"
+   },
+   "b": "haus",
+   "s": "jahr",
+   "f": "quadrat",
+   "w": 1080,
+   "h": 1080,
+   "art": "fremd",
+   "q": "Guide Michelin, Seite des Hauses; ob das Haus das Foto geliefert hat, ist nicht belegt. Vor jeder Verwendung beim Haus nachfragen",
+   "u": "https://guide.michelin.com/ch/de/thurgau/wigoltingen/restaurant/taverne-zum-schafli",
+   "ue": false,
+   "alt": false,
+   "vn": false,
+   "fl": "../../assets/img/m-haus-blau-1080.webp",
+   "fm": "../../assets/img/m-haus-blau-1080.webp",
+   "fs": "../../assets/img/m-haus-blau-480.webp"
+  },
+  {
+   "k": "m-teller-1",
+   "t": {
+    "de": "Ein Gericht mit Blüten in einer weissen Schale"
+   },
+   "b": "teller",
+   "s": "jahr",
+   "f": "quadrat",
+   "w": 1080,
+   "h": 1080,
+   "art": "fremd",
+   "q": "Guide Michelin, Seite des Hauses; ob das Haus das Foto geliefert hat, ist nicht belegt. Vor jeder Verwendung beim Haus nachfragen",
+   "u": "https://guide.michelin.com/ch/de/thurgau/wigoltingen/restaurant/taverne-zum-schafli",
+   "ue": false,
+   "alt": false,
+   "vn": false,
+   "fl": "../../assets/img/m-teller-1-1080.webp",
+   "fm": "../../assets/img/m-teller-1-1080.webp",
+   "fs": "../../assets/img/m-teller-1-480.webp"
+  },
+  {
+   "k": "m-teller-2",
+   "t": {
+    "de": "Ein Gericht in einer weissen Schale, darüber feine Späne"
+   },
+   "b": "teller",
+   "s": "jahr",
+   "f": "quadrat",
+   "w": 1080,
+   "h": 1080,
+   "art": "fremd",
+   "q": "Guide Michelin, Seite des Hauses; ob das Haus das Foto geliefert hat, ist nicht belegt. Vor jeder Verwendung beim Haus nachfragen",
+   "u": "https://guide.michelin.com/ch/de/thurgau/wigoltingen/restaurant/taverne-zum-schafli",
+   "ue": false,
+   "alt": false,
+   "vn": false,
+   "fl": "../../assets/img/m-teller-2-1080.webp",
+   "fm": "../../assets/img/m-teller-2-1080.webp",
+   "fs": "../../assets/img/m-teller-2-480.webp"
+  },
+  {
+   "k": "kt-menue-7",
+   "t": {
+    "de": "Ein kleines Gericht im tiefen Teller, daneben eine Jakobsmuschel in der Schale"
+   },
+   "b": "teller",
+   "s": "jahr",
+   "f": "quer",
+   "w": 3136,
+   "h": 2156,
+   "art": "haus",
+   "q": "Frühere Website des Hauses (2016), aus dem Web-Archiv (archive.org); Rechte beim Haus. Licht und Schärfe mit KI nachgeschärft",
+   "u": "https://web.archive.org/web/20190501090515/https://schaefli-wigoltingen.ch/wp-content/uploads/2016/06/Menue7.jpg",
+   "ue": true,
+   "alt": false,
+   "vn": true,
+   "fl": "../../assets/img/kt-menue-7-1200.webp",
+   "fm": "../../assets/img/kt-menue-7-1200.webp",
+   "fs": "../../assets/img/kt-menue-7-480.webp"
+  },
+  {
+   "k": "kt-menue-12",
+   "t": {
+    "de": "Ein getoastetes Brioche mit Crème, Sauce wird angegossen"
+   },
+   "b": "teller",
+   "s": "jahr",
+   "f": "quer",
+   "w": 3136,
+   "h": 2156,
+   "art": "haus",
+   "q": "Frühere Website des Hauses (2016), aus dem Web-Archiv (archive.org); Rechte beim Haus. Licht und Schärfe mit KI nachgeschärft",
+   "u": "https://web.archive.org/web/20190501090536/https://schaefli-wigoltingen.ch/wp-content/uploads/2016/06/Menue12.jpg",
+   "ue": true,
+   "alt": false,
+   "vn": true,
+   "fl": "../../assets/img/kt-menue-12-1600.webp",
+   "fm": "../../assets/img/kt-menue-12-1200.webp",
+   "fs": "../../assets/img/kt-menue-12-480.webp"
+  },
+  {
+   "k": "kt-menue-1",
+   "t": {
+    "de": "Kaviar auf einem hellen Schaum im tiefen Glasteller"
+   },
+   "b": "teller",
+   "s": "jahr",
+   "f": "quer",
+   "w": 3136,
+   "h": 2156,
+   "art": "haus",
+   "q": "Frühere Website des Hauses (2016), aus dem Web-Archiv (archive.org); Rechte beim Haus. Licht und Schärfe mit KI nachgeschärft. Auf der Website auch unter «ab-menue-1»",
+   "u": "https://web.archive.org/web/20190501090545/https://schaefli-wigoltingen.ch/wp-content/uploads/2016/06/Menue1.jpg",
+   "ue": true,
+   "alt": false,
+   "vn": true,
+   "fl": "../../assets/img/kt-menue-1-1200.webp",
+   "fm": "../../assets/img/kt-menue-1-1200.webp",
+   "fs": "../../assets/img/kt-menue-1-480.webp"
+  },
+  {
+   "k": "kt-menue-3",
+   "t": {
+    "de": "Ein Tatar mit Gemüse auf dem Glasteller, dahinter ein kleines Glas"
+   },
+   "b": "teller",
+   "s": "jahr",
+   "f": "quer",
+   "w": 3136,
+   "h": 2156,
+   "art": "haus",
+   "q": "Frühere Website des Hauses (2016), aus dem Web-Archiv (archive.org); Rechte beim Haus. Licht und Schärfe mit KI nachgeschärft. Auf der Website auch unter «ab-menue-3»",
+   "u": "https://web.archive.org/web/20190501090249/https://schaefli-wigoltingen.ch/wp-content/uploads/2016/06/Menue3.jpg",
+   "ue": true,
+   "alt": false,
+   "vn": true,
+   "fl": "../../assets/img/kt-menue-3-1200.webp",
+   "fm": "../../assets/img/kt-menue-3-1200.webp",
+   "fs": "../../assets/img/kt-menue-3-480.webp"
+  },
+  {
+   "k": "kt-menue-4",
+   "t": {
+    "de": "Ein Gericht mit Fisch, Pilzen und Sauce auf dem weissen Teller"
+   },
+   "b": "teller",
+   "s": "jahr",
+   "f": "quer",
+   "w": 3136,
+   "h": 2156,
+   "art": "haus",
+   "q": "Frühere Website des Hauses (2016), aus dem Web-Archiv (archive.org); Rechte beim Haus. Licht und Schärfe mit KI nachgeschärft. Auf der Website auch unter «ab-menue-4»",
+   "u": "https://web.archive.org/web/20190501090508/https://schaefli-wigoltingen.ch/wp-content/uploads/2016/06/Menue4.jpg",
+   "ue": true,
+   "alt": false,
+   "vn": true,
+   "fl": "../../assets/img/kt-menue-4-1200.webp",
+   "fm": "../../assets/img/kt-menue-4-1200.webp",
+   "fs": "../../assets/img/kt-menue-4-480.webp"
+  },
+  {
+   "k": "kt-menue-6",
+   "t": {
+    "de": "Ein Hummerschwanz mit Gemüse im weissen Teller"
+   },
+   "b": "teller",
+   "s": "jahr",
+   "f": "quer",
+   "w": 3136,
+   "h": 2156,
+   "art": "haus",
+   "q": "Frühere Website des Hauses (2016), aus dem Web-Archiv (archive.org); Rechte beim Haus. Licht und Schärfe mit KI nachgeschärft. Auf der Website auch unter «ab-menue-6»",
+   "u": "https://web.archive.org/web/20190501090412/https://schaefli-wigoltingen.ch/wp-content/uploads/2016/06/Menue6.jpg",
+   "ue": true,
+   "alt": false,
+   "vn": true,
+   "fl": "../../assets/img/kt-menue-6-2000.webp",
+   "fm": "../../assets/img/kt-menue-6-1200.webp",
+   "fs": "../../assets/img/kt-menue-6-480.webp"
+  },
+  {
+   "k": "kt-kreativ-8",
+   "t": {
+    "de": "Eine Terrine mit Birne und Crumble auf dunklem Teller"
+   },
+   "b": "teller",
+   "s": "jahr",
+   "f": "quer",
+   "w": 800,
+   "h": 550,
+   "art": "haus",
+   "q": "Frühere Website des Hauses (2018), aus dem Web-Archiv (archive.org); Rechte beim Haus. Auf der Website auch unter «ab-kreativ-08»",
+   "u": "https://web.archive.org/web/20190501090613/https://schaefli-wigoltingen.ch/wp-content/uploads/2018/01/kreativ_08.jpg",
+   "ue": false,
+   "alt": false,
+   "vn": false,
+   "fl": "../../assets/img/kt-kreativ-8-800.webp",
+   "fm": "../../assets/img/kt-kreativ-8-800.webp",
+   "fs": "../../assets/img/kt-kreativ-8-480.webp"
+  },
+  {
+   "k": "kt-kreativ-21",
+   "t": {
+    "de": "Fisch mit feinen Gemüsestreifen, Sauce wird angegossen"
+   },
+   "b": "teller",
+   "s": "jahr",
+   "f": "quer",
+   "w": 3136,
+   "h": 2156,
+   "art": "haus",
+   "q": "Frühere Website des Hauses (2018), aus dem Web-Archiv (archive.org); Rechte beim Haus. Licht und Schärfe mit KI nachgeschärft. Auf der Website auch unter «hs-kreativ-21», «ab-kreativ-21»",
+   "u": "https://web.archive.org/web/20190501090329/https://schaefli-wigoltingen.ch/wp-content/uploads/2018/01/kreativ_21.jpg",
+   "ue": true,
+   "alt": false,
+   "vn": true,
+   "fl": "../../assets/img/kt-kreativ-21-1200.webp",
+   "fm": "../../assets/img/kt-kreativ-21-1200.webp",
+   "fs": "../../assets/img/kt-kreativ-21-480.webp"
+  },
+  {
+   "k": "kt-kreativ-24",
+   "t": {
+    "de": "Ein langes Gericht mit Gemüse und Kernen auf dem Glasteller"
+   },
+   "b": "teller",
+   "s": "jahr",
+   "f": "quer",
+   "w": 3136,
+   "h": 2156,
+   "art": "haus",
+   "q": "Frühere Website des Hauses (2018), aus dem Web-Archiv (archive.org); Rechte beim Haus. Licht und Schärfe mit KI nachgeschärft. Auf der Website auch unter «ab-kreativ-24»",
+   "u": "https://web.archive.org/web/20190501090440/https://schaefli-wigoltingen.ch/wp-content/uploads/2018/01/kreativ_24.jpg",
+   "ue": true,
+   "alt": false,
+   "vn": true,
+   "fl": "../../assets/img/kt-kreativ-24-1200.webp",
+   "fm": "../../assets/img/kt-kreativ-24-1200.webp",
+   "fs": "../../assets/img/kt-kreativ-24-480.webp"
+  },
+  {
+   "k": "hs-wolfgang",
+   "t": {
+    "de": "Wolfgang Kuchler in der Kochjacke vor der alten Holzwand"
+   },
+   "b": "team",
+   "s": "jahr",
+   "f": "hoch",
+   "w": 550,
+   "h": 800,
+   "art": "haus",
+   "q": "Frühere Website des Hauses (2023), aus dem Web-Archiv (archive.org); Rechte beim Haus",
+   "u": "https://web.archive.org/web/20230709105739/https://schaefli-wigoltingen.ch/wp-content/uploads/2023/01/Wolfgang-Kuchler.jpg",
+   "ue": false,
+   "alt": false,
+   "vn": false,
+   "fl": "../../assets/img/hs-wolfgang-550.webp",
+   "fm": "../../assets/img/hs-wolfgang-550.webp",
+   "fs": "../../assets/img/hs-wolfgang-480.webp"
+  },
+  {
+   "k": "hs-christian",
+   "t": {
+    "de": "Christian Kuchler mit verschränkten Armen vor der alten Holzwand"
+   },
+   "b": "team",
+   "s": "jahr",
+   "f": "hoch",
+   "w": 550,
+   "h": 800,
+   "art": "haus",
+   "q": "Frühere Website des Hauses (2023), aus dem Web-Archiv (archive.org); Rechte beim Haus",
+   "u": "https://web.archive.org/web/20230709044012/https://schaefli-wigoltingen.ch/wp-content/uploads/2023/01/Christian-Kuchler.jpg",
+   "ue": false,
+   "alt": false,
+   "vn": false,
+   "fl": "../../assets/img/hs-christian-550.webp",
+   "fm": "../../assets/img/hs-christian-550.webp",
+   "fs": "../../assets/img/hs-christian-480.webp"
+  },
+  {
+   "k": "hs-pinzette",
+   "t": {
+    "de": "Ein Gericht wird mit der Pinzette vollendet"
+   },
+   "b": "kueche",
+   "s": "jahr",
+   "f": "quer",
+   "w": 3136,
+   "h": 2152,
+   "art": "haus",
+   "q": "Frühere Website des Hauses (2023), aus dem Web-Archiv (archive.org); Rechte beim Haus. Licht und Schärfe mit KI nachgeschärft. Auf der Website auch unter «ab-leidenschaft-01»",
+   "u": "https://web.archive.org/web/20230707172328/https://schaefli-wigoltingen.ch/wp-content/uploads/2023/01/leidenschaft_01.jpg",
+   "ue": true,
+   "alt": false,
+   "vn": true,
+   "fl": "../../assets/img/hs-pinzette-1200.webp",
+   "fm": "../../assets/img/hs-pinzette-1200.webp",
+   "fs": "../../assets/img/hs-pinzette-480.webp"
+  },
+  {
+   "k": "hs-haus-sw",
+   "t": {
+    "de": "Das Riegelhaus am Abend in Schwarzweiss, frühere Website des Hauses"
+   },
+   "b": "geschichte",
+   "s": "jahr",
+   "f": "quer",
+   "w": 435,
+   "h": 314,
+   "art": "haus",
+   "q": "Frühere Website des Hauses, aus dem Web-Archiv (archive.org); Rechte beim Haus",
+   "u": "https://web.archive.org/web/20070313145457/http://www.schaefli-wigoltingen.ch:80/images/start_sw.jpg",
+   "ue": false,
+   "alt": false,
+   "vn": false,
+   "fl": "../../assets/img/hs-haus-sw-435.webp",
+   "fm": "../../assets/img/hs-haus-sw-435.webp",
+   "fs": "../../assets/img/hs-haus-sw-435.webp"
+  },
+  {
+   "k": "ab-rezepte",
+   "t": {
+    "de": "Ein Gericht mit Pilzen und Sauce im weissen Teller"
+   },
+   "b": "teller",
+   "s": "jahr",
+   "f": "quer",
+   "w": 800,
+   "h": 549,
+   "art": "haus",
+   "q": "Frühere Website des Hauses (2023), aus dem Web-Archiv (archive.org); Rechte beim Haus",
+   "u": "https://web.archive.org/web/20230709062918/https://schaefli-wigoltingen.ch/wp-content/uploads/2023/01/rezepte.jpg",
+   "ue": false,
+   "alt": false,
+   "vn": false,
+   "fl": "../../assets/img/ab-rezepte-800.webp",
+   "fm": "../../assets/img/ab-rezepte-800.webp",
+   "fs": "../../assets/img/ab-rezepte-480.webp"
+  },
+  {
+   "k": "w-fabian",
+   "t": {
+    "de": "Fabian Mennel, Restaurantleiter und Sommelier, vor dem Holztor"
+   },
+   "b": "team",
+   "s": "jahr",
+   "f": "hoch",
+   "w": 550,
+   "h": 800,
+   "art": "haus",
+   "q": "Frühere Website des Hauses (2023), aus dem Web-Archiv (archive.org); Rechte beim Haus",
+   "u": "https://web.archive.org/web/20230708220824/https://schaefli-wigoltingen.ch/wp-content/uploads/2023/01/Fabian-Mennel.jpg",
+   "ue": false,
+   "alt": false,
+   "vn": false,
+   "fl": "../../assets/img/w-fabian-550.webp",
+   "fm": "../../assets/img/w-fabian-550.webp",
+   "fs": "../../assets/img/w-fabian-480.webp"
+  }
+ ],
+ "dateien": [
+  {
+   "k": "zeichen",
+   "var": [
+    {
+     "k": "tief",
+     "grund": "hell",
+     "dateien": [
+      "taverne-zum-schaefli-lamm-tief.svg",
+      "taverne-zum-schaefli-lamm-tief.png"
+     ],
+     "px": [
+      800,
+      1015
+     ]
+    },
+    {
+     "k": "riegel",
+     "grund": "hell",
+     "dateien": [
+      "taverne-zum-schaefli-lamm-riegel.svg",
+      "taverne-zum-schaefli-lamm-riegel.png"
+     ],
+     "px": [
+      800,
+      1015
+     ]
+    },
+    {
+     "k": "gold",
+     "grund": "dunkel",
+     "dateien": [
+      "taverne-zum-schaefli-lamm-gold.svg",
+      "taverne-zum-schaefli-lamm-gold.png"
+     ],
+     "px": [
+      800,
+      1015
+     ]
+    },
+    {
+     "k": "weiss",
+     "grund": "dunkel",
+     "dateien": [
+      "taverne-zum-schaefli-lamm-weiss.svg",
+      "taverne-zum-schaefli-lamm-weiss.png"
+     ],
+     "px": [
+      800,
+      1015
+     ]
+    }
+   ]
+  },
+  {
+   "k": "zeiger",
+   "var": [
+    {
+     "k": "farbig",
+     "grund": "hell",
+     "dateien": [
+      "taverne-zum-schaefli-wappen-farbig.svg",
+      "taverne-zum-schaefli-wappen-farbig.png"
+     ],
+     "px": [
+      900,
+      1057
+     ]
+    },
+    {
+     "k": "tief",
+     "grund": "hell",
+     "dateien": [
+      "taverne-zum-schaefli-wappen-tief.svg",
+      "taverne-zum-schaefli-wappen-tief.png"
+     ],
+     "px": [
+      900,
+      1057
+     ]
+    },
+    {
+     "k": "gold",
+     "grund": "dunkel",
+     "dateien": [
+      "taverne-zum-schaefli-wappen-gold.svg",
+      "taverne-zum-schaefli-wappen-gold.png"
+     ],
+     "px": [
+      900,
+      1057
+     ]
+    },
+    {
+     "k": "weiss",
+     "grund": "dunkel",
+     "dateien": [
+      "taverne-zum-schaefli-wappen-weiss.svg",
+      "taverne-zum-schaefli-wappen-weiss.png"
+     ],
+     "px": [
+      900,
+      1057
+     ]
+    }
+   ]
+  },
+  {
+   "k": "logo",
+   "var": [
+    {
+     "k": "original",
+     "grund": "hell",
+     "dateien": [
+      "taverne-zum-schaefli-wortmarke-original.png"
+     ],
+     "px": [
+      601,
+      306
+     ]
+    },
+    {
+     "k": "original-hell",
+     "grund": "dunkel",
+     "dateien": [
+      "taverne-zum-schaefli-wortmarke-original-hell.png"
+     ],
+     "px": [
+      601,
+      306
+     ]
+    },
+    {
+     "k": "mit-ort",
+     "grund": "hell",
+     "dateien": [
+      "taverne-zum-schaefli-wortmarke-mit-ort.png"
+     ],
+     "px": [
+      300,
+      257
+     ]
+    }
+   ]
+  },
+  {
+   "k": "name",
+   "var": [
+    {
+     "k": "tief",
+     "grund": "hell",
+     "dateien": [
+      "taverne-zum-schaefli-name-tief.svg",
+      "taverne-zum-schaefli-name-tief.png"
+     ],
+     "px": [
+      1800,
+      123
+     ]
+    },
+    {
+     "k": "weiss",
+     "grund": "dunkel",
+     "dateien": [
+      "taverne-zum-schaefli-name-weiss.svg",
+      "taverne-zum-schaefli-name-weiss.png"
+     ],
+     "px": [
+      1800,
+      123
+     ]
+    },
+    {
+     "k": "gold",
+     "grund": "dunkel",
+     "dateien": [
+      "taverne-zum-schaefli-name-gold.svg",
+      "taverne-zum-schaefli-name-gold.png"
+     ],
+     "px": [
+      1800,
+      123
+     ]
+    },
+    {
+     "k": "kurz-tief",
+     "grund": "hell",
+     "dateien": [
+      "taverne-zum-schaefli-name-kurz-tief.svg",
+      "taverne-zum-schaefli-name-kurz-tief.png"
+     ],
+     "px": [
+      1000,
+      192
+     ]
+    },
+    {
+     "k": "kurz-weiss",
+     "grund": "dunkel",
+     "dateien": [
+      "taverne-zum-schaefli-name-kurz-weiss.svg",
+      "taverne-zum-schaefli-name-kurz-weiss.png"
+     ],
+     "px": [
+      1000,
+      192
+     ]
+    },
+    {
+     "k": "kurz-gold",
+     "grund": "dunkel",
+     "dateien": [
+      "taverne-zum-schaefli-name-kurz-gold.svg",
+      "taverne-zum-schaefli-name-kurz-gold.png"
+     ],
+     "px": [
+      1000,
+      192
+     ]
+    }
+   ]
+  },
+  {
+   "k": "website",
+   "var": [
+    {
+     "k": "heute",
+     "grund": "hell",
+     "dateien": [
+      "taverne-zum-schaefli-wappen-heute.jpg"
+     ],
+     "px": [
+      1000,
+      1174
+     ]
+    }
+   ]
+  },
+  {
+   "k": "ehre",
+   "var": [
+    {
+     "k": "michelin",
+     "grund": "hell",
+     "dateien": [
+      "taverne-zum-schaefli-auszeichnung-michelin.png",
+      "taverne-zum-schaefli-auszeichnung-michelin.webp"
+     ],
+     "titel": "Guide Michelin",
+     "wert": "Zwei Sterne",
+     "px": [
+      900,
+      255
+     ]
+    },
+    {
+     "k": "gaultmillau",
+     "grund": "hell",
+     "dateien": [
+      "taverne-zum-schaefli-auszeichnung-gaultmillau.png",
+      "taverne-zum-schaefli-auszeichnung-gaultmillau.webp"
+     ],
+     "titel": "GaultMillau",
+     "wert": "18 Punkte",
+     "px": [
+      700,
+      643
+     ]
+    },
+    {
+     "k": "falstaff",
+     "grund": "hell",
+     "dateien": [
+      "taverne-zum-schaefli-auszeichnung-falstaff.svg",
+      "taverne-zum-schaefli-auszeichnung-falstaff.png"
+     ],
+     "titel": "Falstaff",
+     "wert": "98 von 100 Punkten",
+     "px": [
+      960,
+      285
+     ]
+    }
+   ]
+  },
+  {
+   "k": "tapete",
+   "var": [
+    {
+     "k": "dunkel",
+     "grund": "dunkel",
+     "dateien": [
+      "taverne-zum-schaefli-tapete-dunkel.png",
+      "taverne-zum-schaefli-tapete-dunkel.svg",
+      "taverne-zum-schaefli-tapete-dunkel.webp"
+     ],
+     "px": [
+      336,
+      336
+     ],
+     "farbe": "#301916"
+    },
+    {
+     "k": "hell",
+     "grund": "hell",
+     "dateien": [
+      "taverne-zum-schaefli-tapete-hell.png",
+      "taverne-zum-schaefli-tapete-hell.svg",
+      "taverne-zum-schaefli-tapete-hell.webp"
+     ],
+     "px": [
+      336,
+      336
+     ],
+     "farbe": "#f0eae1"
+    }
+   ]
+  },
+  {
+   "k": "farben",
+   "var": [
+    {
+     "k": "alle",
+     "grund": "hell",
+     "dateien": [
+      "taverne-zum-schaefli-farben.css",
+      "taverne-zum-schaefli-farben.json",
+      "taverne-zum-schaefli-farben.ase"
+     ]
+    }
+   ]
+  },
+  {
+   "k": "schriften",
+   "var": [
+    {
+     "k": "alle",
+     "grund": "hell",
+     "dateien": [
+      "taverne-zum-schaefli-schriften.zip"
+     ]
+    }
+   ]
+  }
+ ],
+ "farben": [
+  {
+   "k": "tief",
+   "n": "Ochsenblut tief",
+   "h": "#301916",
+   "rgb": [
+    48,
+    25,
+    22
+   ],
+   "r": "Grund der dunklen Flächen, immer mit der Rauten-Tapete",
+   "g": "dunkel",
+   "woher": "Farbwelt A «Riegel und Kalk» #301916, unverändert auf der Website"
+  },
+  {
+   "k": "dunkel",
+   "n": "Ochsenblut",
+   "h": "#452520",
+   "rgb": [
+    69,
+    37,
+    32
+   ],
+   "r": "zweite dunkle Fläche, Platten auf Ochsenblut tief",
+   "g": "dunkel",
+   "woher": "Farbwelt A «Riegel und Kalk» #452520, unverändert auf der Website"
+  },
+  {
+   "k": "riegel",
+   "n": "Riegelrot",
+   "h": "#7D433A",
+   "rgb": [
+    125,
+    67,
+    58
+   ],
+   "r": "die Balken: Fugen zwischen Bildern, Knöpfe, Betonung in Titeln auf Hell",
+   "g": "dunkel",
+   "woher": "Farbwelt A «Riegel und Kalk» #7D433A, unverändert auf der Website"
+  },
+  {
+   "k": "kalk",
+   "n": "Kalk",
+   "h": "#F5F3EF",
+   "rgb": [
+    245,
+    243,
+    239
+   ],
+   "r": "Grund der hellen Flächen",
+   "g": "hell",
+   "woher": "Farbwelt A «Riegel und Kalk» #F5F3EF, unverändert auf der Website"
+  },
+  {
+   "k": "kalk-warm",
+   "n": "Kalk warm",
+   "h": "#F0EAE1",
+   "rgb": [
+    240,
+    234,
+    225
+   ],
+   "r": "zweite helle Fläche, mit der Rauten-Tapete",
+   "g": "hell",
+   "woher": "Farbwelt A «Riegel und Kalk» #F0EAE1, unverändert auf der Website"
+  },
+  {
+   "k": "kalk-tief",
+   "n": "Kalk tief",
+   "h": "#E6DDD0",
+   "rgb": [
+    230,
+    221,
+    208
+   ],
+   "r": "Felder und Linien auf Kalk",
+   "g": "hell",
+   "woher": "Wert der Website (schaefli.css), nicht aus dem Markenbuch"
+  },
+  {
+   "k": "gold",
+   "n": "Schildgold",
+   "h": "#B38346",
+   "rgb": [
+    179,
+    131,
+    70
+   ],
+   "r": "Linie und Zeichen, das Lamm auf Dunkel",
+   "g": "gold",
+   "woher": "Farbwelt A «Riegel und Kalk» #B38346, unverändert auf der Website"
+  },
+  {
+   "k": "gold-hell",
+   "n": "Gold hell",
+   "h": "#D3B794",
+   "rgb": [
+    211,
+    183,
+    148
+   ],
+   "r": "Betonung in Titeln auf Dunkel, kleine Angaben auf Ochsenblut",
+   "g": "gold",
+   "woher": "Farbwelt A «Riegel und Kalk» #D3B794, unverändert auf der Website"
+  },
+  {
+   "k": "gold-tief",
+   "n": "Gold tief",
+   "h": "#815E32",
+   "rgb": [
+    129,
+    94,
+    50
+   ],
+   "r": "Gold auf hellen Flächen, wo Schildgold zu blass ist",
+   "g": "gold",
+   "woher": "Farbwelt A «Riegel und Kalk» #815E32, unverändert auf der Website"
+  },
+  {
+   "k": "tinte",
+   "n": "Tinte",
+   "h": "#2A292B",
+   "rgb": [
+    42,
+    41,
+    43
+   ],
+   "r": "Lesetext auf hellen Flächen, nie reines Schwarz",
+   "g": "schrift",
+   "woher": "Farbwelt A «Riegel und Kalk» #2A292B, unverändert auf der Website"
+  },
+  {
+   "k": "titel",
+   "n": "Titelrot",
+   "h": "#64362E",
+   "rgb": [
+    100,
+    54,
+    46
+   ],
+   "r": "Titel auf hellen Flächen",
+   "g": "schrift",
+   "woher": "Farbwelt A «Riegel und Kalk» #64362E, unverändert auf der Website"
+  },
+  {
+   "k": "punkt",
+   "n": "Wappengrün",
+   "h": "#6EAA3E",
+   "rgb": [
+    110,
+    170,
+    62
+   ],
+   "r": "nur als Punkt: Markierung, nie als Fläche",
+   "g": "punkt",
+   "woher": "Farbwelt A «Riegel und Kalk» #6EAA3E, unverändert auf der Website"
+  }
+ ],
+ "gruppen": [
+  {
+   "k": "dunkel",
+   "n": "Ochsenblut und Riegel",
+   "s": "Die dunklen Flächen. Aus dem Fachwerk der Fassade: die roten Balken, im Schatten tiefer. Sie tragen immer die Rauten-Tapete.",
+   "bild": "buch/bilder/riegel.webp",
+   "bild_t": "Das Fachwerk der Fassade. Aus den roten Balken kommen Riegelrot und, im Schatten tiefer, Ochsenblut."
+  },
+  {
+   "k": "hell",
+   "n": "Kalk",
+   "s": "Die hellen Flächen, auf denen gelesen wird. Aus dem Kalkputz der Gefache, leicht gewärmt.",
+   "bild": "buch/bilder/schriftzug.webp",
+   "bild_t": "Der Kalkputz der Gefache mit dem gemalten Namen. Daraus kommt Kalk, leicht gewärmt."
+  },
+  {
+   "k": "gold",
+   "n": "Schildgold",
+   "s": "Das Gold der Rosetten am Wirtshausschild: Linien, das Lamm, kleine Angaben. Zeichnet, schreibt nie den Lesetext.",
+   "bild": "buch/bilder/schild.webp",
+   "bild_t": "Das Wirtshausschild aus Schmiedeeisen. Aus seinen goldenen Rosetten kommt Schildgold."
+  },
+  {
+   "k": "schrift",
+   "n": "Schrift",
+   "s": "Tinte für den Lesetext, Titelrot für Titel. Nie reines Schwarz.",
+   "bild": "listen/schrift-t.webp",
+   "bild_t": "So stehen Tinte und Titelrot auf der Website."
+  },
+  {
+   "k": "punkt",
+   "n": "Nur als Punkt",
+   "s": "Das Grün des Wappens. Nie als Fläche.",
+   "bild": "listen/farbe-wappen.webp",
+   "bild_t": "Das Wappen des Hauses. Aus seinem Feld kommt Wappengrün, nur als Punkt."
+  }
+ ],
+ "glanz": [],
+ "groessen": {
+  "taverne-zum-schaefli-auszeichnung-falstaff.png": 18349,
+  "taverne-zum-schaefli-auszeichnung-falstaff.svg": 6432,
+  "taverne-zum-schaefli-auszeichnung-gaultmillau.png": 240563,
+  "taverne-zum-schaefli-auszeichnung-gaultmillau.webp": 201878,
+  "taverne-zum-schaefli-auszeichnung-michelin.png": 53465,
+  "taverne-zum-schaefli-auszeichnung-michelin.webp": 25844,
+  "taverne-zum-schaefli-farben.ase": 562,
+  "taverne-zum-schaefli-farben.css": 1123,
+  "taverne-zum-schaefli-farben.json": 2995,
+  "taverne-zum-schaefli-lamm-gold.png": 53449,
+  "taverne-zum-schaefli-lamm-gold.svg": 5306,
+  "taverne-zum-schaefli-lamm-riegel.png": 53460,
+  "taverne-zum-schaefli-lamm-riegel.svg": 5306,
+  "taverne-zum-schaefli-lamm-tief.png": 53180,
+  "taverne-zum-schaefli-lamm-tief.svg": 5306,
+  "taverne-zum-schaefli-lamm-weiss.png": 40082,
+  "taverne-zum-schaefli-lamm-weiss.svg": 5306,
+  "taverne-zum-schaefli-marke.zip": 1694305,
+  "taverne-zum-schaefli-name-gold.png": 31235,
+  "taverne-zum-schaefli-name-gold.svg": 9821,
+  "taverne-zum-schaefli-name-kurz-gold.png": 18459,
+  "taverne-zum-schaefli-name-kurz-gold.svg": 4192,
+  "taverne-zum-schaefli-name-kurz-tief.png": 18166,
+  "taverne-zum-schaefli-name-kurz-tief.svg": 4192,
+  "taverne-zum-schaefli-name-kurz-weiss.png": 13402,
+  "taverne-zum-schaefli-name-kurz-weiss.svg": 4192,
+  "taverne-zum-schaefli-name-tief.png": 30852,
+  "taverne-zum-schaefli-name-tief.svg": 9821,
+  "taverne-zum-schaefli-name-weiss.png": 22204,
+  "taverne-zum-schaefli-name-weiss.svg": 9821,
+  "taverne-zum-schaefli-schriften.zip": 285078,
+  "taverne-zum-schaefli-tapete-dunkel.png": 7707,
+  "taverne-zum-schaefli-tapete-dunkel.svg": 5621,
+  "taverne-zum-schaefli-tapete-dunkel.webp": 2476,
+  "taverne-zum-schaefli-tapete-hell.png": 7859,
+  "taverne-zum-schaefli-tapete-hell.svg": 5621,
+  "taverne-zum-schaefli-tapete-hell.webp": 2380,
+  "taverne-zum-schaefli-wappen-farbig.png": 90989,
+  "taverne-zum-schaefli-wappen-farbig.svg": 10045,
+  "taverne-zum-schaefli-wappen-gold.png": 70043,
+  "taverne-zum-schaefli-wappen-gold.svg": 6446,
+  "taverne-zum-schaefli-wappen-heute.jpg": 40338,
+  "taverne-zum-schaefli-wappen-tief.png": 69599,
+  "taverne-zum-schaefli-wappen-tief.svg": 6446,
+  "taverne-zum-schaefli-wappen-weiss.png": 51836,
+  "taverne-zum-schaefli-wappen-weiss.svg": 6446,
+  "taverne-zum-schaefli-wortmarke-mit-ort.png": 55172,
+  "taverne-zum-schaefli-wortmarke-original-hell.png": 47345,
+  "taverne-zum-schaefli-wortmarke-original.png": 51563
+ },
+ "bereiche": [
+  "haus",
+  "stuben",
+  "teller",
+  "kueche",
+  "team",
+  "bar",
+  "wein",
+  "feste",
+  "dorf",
+  "geschichte",
+  "familie"
+ ],
+ "schriften": [
+  {
+   "k": "t",
+   "n": "Petrona",
+   "d": "Petrona-var.woff2",
+   "r": "Titel und Name, abgeleitet aus der Wortmarke 2016",
+   "e": "460 für Titel, 470 in Versalien 0,135 em gesperrt für den Namen",
+   "p": "Herzlich willkommen im Haus der Gastlichkeit.",
+   "w": 460,
+   "bild": "listen/schrift-t.webp"
+  },
+  {
+   "k": "s",
+   "n": "Instrument Sans",
+   "d": "InstrumentSans-normal-400_600.woff2",
+   "r": "Lesetext",
+   "e": "400 bis 600, 18 px, Zeilenabstand 1,64",
+   "p": "Kochen und dabei Lebensmittel zu veredeln, wird in der «Taverne zum Schäfli» zelebriert.",
+   "w": 400,
+   "bild": "listen/schrift-s.webp"
+  },
+  {
+   "k": "m",
+   "n": "DM Mono",
+   "d": "DMMono-normal-400.woff2",
+   "r": "Kleine Angaben und Knöpfe",
+   "e": "400, Versalien, 0,14 em gesperrt",
+   "p": "Oberdorfstrasse 8 · 8556 Wigoltingen",
+   "w": 400,
+   "bild": "listen/schrift-m.webp"
+  }
+ ],
+ "namen": {
+  "zentrale": "Die Stube",
+  "website": "Der Schreibtisch",
+  "karten": "Die Tafel",
+  "gaeste": "Der Gastgeber",
+  "marke": "Das Hausbuch",
+  "besuche": "Das Besucherbuch",
+  "druck": "Die Werkstatt"
+ },
+ "zusammen": {
+  "kuebel": "kopf-anlaesse",
+  "kopf-abend": "k-paar",
+  "hs-kreativ-21": "kt-kreativ-21",
+  "ab-menue-1": "kt-menue-1",
+  "ab-menue-10": "ko-menue10",
+  "ab-menue-6": "kt-menue-6",
+  "ab-kreativ-21": "kt-kreativ-21",
+  "ab-menue-4": "kt-menue-4",
+  "ab-kreativ-24": "kt-kreativ-24",
+  "ab-leidenschaft-01": "hs-pinzette",
+  "ab-kreativ-08": "kt-kreativ-8",
+  "ab-menue-3": "kt-menue-3",
+  "haus-tag": "haus-tag-warm",
+  "a-gaststube": "ko-stube"
+ },
+ "ton": {
+  "eigene_worte": [
+   "Haus der Gastlichkeit",
+   "Herzlich willkommen",
+   "Gelebte Gastronomie",
+   "am elterlichen Herd",
+   "Marktküche",
+   "Gäste verwöhnen",
+   "aufmerksam, ohne aufdringlich",
+   "Erlebnis mit bleibender Erinnerung",
+   "Unsere Auszeichnungen gehören auch Ihnen",
+   "Riegelhaus",
+   "Stube",
+   "Festsaal",
+   "Bar & Smokers Lounge",
+   "Kitchen Party",
+   "Einen Tisch reservieren",
+   "Wir fahren Sie wieder zurück"
+  ],
+  "nicht": [
+   "Geschmacksexplosionen",
+   "fantastische Zukunft",
+   "kulinarische Highlights",
+   "Jetzt reservieren",
+   "Gourmet-Tempel",
+   "Genuss pur",
+   "ein Fest für die Sinne",
+   "unvergesslich",
+   "Statt zu … / ohne zu …",
+   "Du-Ansprache (das Cookie-Fenster duzt heute)"
+  ]
+ },
+ "stand": {
+  "fotos": 165,
+  "haus": 136,
+  "frei": 24,
+  "ki": 2,
+  "fremd": 3,
+  "partner": 0,
+  "ue": 34,
+  "vn": 34,
+  "original": 165,
+  "dateien": 49,
+  "datum": "21.10.2026"
+ }
+}

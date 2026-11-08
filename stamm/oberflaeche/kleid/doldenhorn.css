@@ -1,0 +1,47 @@
+/* kleid/doldenhorn.css · Waldhotel Doldenhorn Kandersteg · Wald und Nacht: grosse weiche Rundungen, Tannenreihe aus dem Zeichen des Hauses, Fotos wie im Nebel, nichts gerahmt. Rahmen: Die Bühne.
+   Liegt im Haus unter assets/oberflaeche/kleid/; Schriften kommen aus assets/fonts des Hauses (relativ), die Tapete aus /assets/img des Hauses (absolut, weil url() in einer Variable dort aufgelöst wird, wo die Variable benutzt wird). */
+@font-face{font-family:'W Sans';font-weight:400 600;font-display:swap;src:url('../../fonts/InstrumentSans-normal-400_600.woff2') format('woff2')}
+@font-face{font-family:'W Mono';font-weight:400;font-display:swap;src:url('../../fonts/DMMono-normal-400.woff2') format('woff2')}
+@font-face{font-family:'Titel DH';font-weight:400 700;font-display:swap;src:url('../../fonts/librecaslon-700.woff2') format('woff2')}
+:root{
+  --wo-sans:'W Sans',system-ui,-apple-system,'Segoe UI',sans-serif; --wo-mono:'W Mono',ui-monospace,'SF Mono',Menlo,monospace;
+  --wo-e1:cubic-bezier(.16,1,.3,1); --wo-e2:cubic-bezier(.32,.72,0,1);
+  --wo-nacht:#0d1621; --wo-nacht2:#142235; --wo-tief:#070c14;
+  --wo-g1:#f6ecd0; --wo-g2:#e3d2a6; --wo-g3:#b89850;
+  --wo-gold:#e3d2a6; --wo-akzent:#8d7438;
+  --wo-papier:#f1ece2; --wo-papier2:#e6dfd1; --wo-blatt:#fbf8f1; --wo-weiss:#fffdf8;
+  --wo-tinte:#0f1620; --wo-leise:#6b6456; --wo-linie:rgba(15,22,32,.11); --wo-linie-d:rgba(205,184,134,.32);
+  --wo-punkt:#a33a2a; --wo-gut:#2f6b4f;
+  --wo-titel:'Titel DH',Georgia,serif; --wo-titel-g:400; --wo-titel-ls:-.008em;
+  --wo-r1:38px; --wo-r2:30px; --wo-r3:18px; --wo-rk:999px;
+  --wo-tapete:linear-gradient(rgba(13,22,33,.72),rgba(13,22,33,.72)),url('/assets/img/tapete-gold-055.png') 0 0/150px 170px;
+  --wo-tapete-fein:url('/assets/img/tapete-gold-055.png') 0 0/150px 170px;
+}
+
+/* ================= Waldhotel Doldenhorn · Wald, Nacht, Nebel ================= */
+[data-wo-rahmen="buehne"]  .wo-sb::before,
+[data-wo-rahmen="inseln"]  .wo-sb__text::before{
+  content:'';position:absolute;left:0;right:0;bottom:0;height:70px;z-index:-1;pointer-events:none;opacity:.2;
+  background:url('doldenhorn-tannen.svg') repeat-x 0 100%/720px 48px}
+[data-wo-rahmen="inseln"]  .wo-sb__text::after{z-index:-2}
+[data-wo-rahmen="buehne"]  .wo-sb,
+[data-wo-rahmen="inseln"]  .wo-sb__text{background:radial-gradient(90% 120% at 0% 0%,rgba(160,176,196,.2),transparent 55%),var(--wo-nacht)}
+.wo-sb__foto img,
+.wo-ag__b img,
+.wo-bk__b img{filter:saturate(.84) brightness(.97)}
+.wo-sb__foto::after{background:linear-gradient(0deg,rgba(150,168,190,.28),transparent 45%),linear-gradient(180deg,rgba(7,12,20,.35),transparent 30%)!important}
+.wo-ag__b{-webkit-mask-image:linear-gradient(180deg,#000 55%,transparent);mask-image:linear-gradient(180deg,#000 55%,transparent)}
+.wo-ag__t{padding-top:10px}
+.wo-ag__z{position:static;margin-bottom:6px;width:36px;height:36px}
+.wo-bk__b{-webkit-mask-image:linear-gradient(90deg,#000 60%,transparent);mask-image:linear-gradient(90deg,#000 60%,transparent)}
+.wo-lage{position:relative;isolation:isolate}
+.wo-lage::after{content:'';position:absolute;left:0;right:0;bottom:0;height:40px;z-index:-1;opacity:.13;pointer-events:none;
+  background:url('doldenhorn-tannen.svg') repeat-x 0 100%/540px 36px}
+.wo-zw{display:flex;align-items:flex-end;gap:14px}
+.wo-zw::before{content:'';flex:none;width:20px;height:29px;margin-bottom:4px;background:url('doldenhorn-tanne.svg') no-repeat center/contain}
+.wo-mk,
+.wo-sb__zier{letter-spacing:.32em}
+.wo-kopf,
+.wo-leiste{background-color:var(--wo-nacht)}
+.wo-kopf::before{content:'';position:absolute;left:0;right:0;bottom:0;height:34px;z-index:-1;opacity:.14;pointer-events:none;
+  background:url('doldenhorn-tannen.svg') repeat-x 0 100%/480px 32px}

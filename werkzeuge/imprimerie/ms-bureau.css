@@ -1,0 +1,115 @@
+/* L’Imprimerie, Startseite im Stil von Le Bureau (Robert 12.10.2026: alle Werkzeuge «mit diesen blauen und den Buttons» wie Le Bureau).
+   Liegt über studio.css (entfernen = vorheriger Stand). Raum Marine mit Tapete, Kopfleiste als Insel mit Goldkante über die ganze Breite
+   (Zeichen + «L’Imprimerie» links, Suche, «Neu» rechts), Seitenleiste und Arbeitsfläche als Papierplatten mit Tiefe. Inhalte und Funktionen unverändert.
+   Der Editor (Kopf, Platten links und rechts, Bühne) hatte diese Form schon und bleibt, wie er ist. */
+:root{--mb-platte:linear-gradient(180deg,#f5f3ef,#f0eae1 55%,#e9e3d9);
+  --mb-platte-s:inset 0 1px 0 #fff,inset 0 0 0 1px rgba(129,94,50,.18),0 1.5px 0 rgba(120,98,70,.35),0 40px 60px -34px rgba(0,0,0,.75),0 14px 26px -16px rgba(0,0,0,.45);
+  --mb-insel:radial-gradient(120% 160% at 50% -50%,rgba(179,131,70,.22),rgba(179,131,70,0) 60%),linear-gradient(180deg,#874a41 0%,#8d4f45 30%,#7d433a 66%,#301916 100%)}
+.start.ms{grid-template-columns:282px minmax(0,1fr);grid-template-rows:72px minmax(0,1fr);background:#7d433a url('haeuser/schaefli/tapete-ui-dunkel.webp') 0 0/168px auto}
+
+/* Kopfleiste: Insel mit Tapete und Goldkante */
+.start.ms .ms-kopf{grid-column:1/3;grid-row:1;position:relative;z-index:3;isolation:isolate;gap:14px;padding:0 18px 0 22px;border-bottom:0;color:#f0eae1;
+  background:var(--mb-insel);box-shadow:inset 0 -1px 0 rgba(211,183,148,.45),0 18px 34px -20px rgba(0,0,0,.9)}
+.start.ms .ms-kopf::after{content:'';position:absolute;inset:0;z-index:-1;background:url('haeuser/schaefli/tapete-ui-dunkel.webp') 0 0/168px auto;opacity:.45;pointer-events:none}
+.start.ms .ms-kopf-zeichen{display:block;width:42px;height:42px;color:#d5ba99;filter:drop-shadow(0 1px 0 rgba(54,28,23,.9)) drop-shadow(0 3px 8px rgba(0,0,0,.55))}
+.ms-kopf-name{display:block;min-width:200px;margin-right:auto}
+.ms-kopf-name b{display:block;font:400 15px/1.1 var(--caps);letter-spacing:.24em;text-transform:uppercase;
+  background:linear-gradient(180deg,#ece6de 0%,#dcc6aa 34%,#c29b6b 52%,#9c7443 62%,#d3b692 80%,#e0d7c9 100%);-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 1px 0 rgba(0,0,0,.6))}
+.ms-kopf-name small{display:block;margin-top:6px;font:9.5px/1 var(--mono);letter-spacing:.26em;text-transform:uppercase;color:rgba(227,219,207,.7)}
+.start.ms .ms-frei{display:none}
+.start.ms .ms-suche{margin-right:auto;background:linear-gradient(180deg,#241310,#4f2a24);color:rgba(227,219,207,.8);box-shadow:inset 0 2px 5px rgba(0,0,0,.55),0 0 0 1px rgba(211,183,148,.25)}
+.start.ms .ms-suche input[type=search]{color:#f4f0eb}
+.start.ms .ms-suche input::placeholder{color:rgba(227,219,207,.5)}
+.start.ms .ms-suche kbd{color:var(--gold,#d3b794);background:rgba(211,183,148,.12)}
+
+/* Seitenleiste: Platte aus Papier */
+.start.ms .ms-leiste{grid-row:2;grid-column:1;margin:14px 0 14px 14px;padding:16px 12px 14px;border-radius:24px;color:var(--tinte);background:var(--mb-platte);box-shadow:var(--mb-platte-s)}
+.start.ms .ms-marke,.start.ms .ms-haar{display:none}
+.start.ms .ms-nav button,.start.ms .ms-fuss button{color:rgba(42,41,43,.78);font:500 17px var(--serif)}
+.start.ms .ms-nav button svg,.start.ms .ms-fuss button svg{color:var(--taupe,#815e32)}
+.start.ms .ms-nav button:hover,.start.ms .ms-fuss button:hover{color:#7d433a}
+.start.ms .ms-nav button.an{color:#f4f0eb}
+.start.ms .ms-nav button.an svg{color:#e3dbcf}
+.start.ms .ms-nav em{color:var(--taupe-tief,#64362e)}
+.start.ms .ms-nav button.an em{color:#d3b794}
+.start.ms .ms-gleiter{background:linear-gradient(180deg,#6a3831,#7d433a);box-shadow:inset 0 1px 0 rgba(245,243,239,.25),inset 0 0 0 1px rgba(211,183,148,.5),0 10px 18px -10px rgba(48,25,22,.7)}
+.start.ms .ms-fuss{border-top-color:rgba(129,94,50,.26)}
+.start.ms .ms-fuss small{color:rgba(42,41,43,.5)}
+
+/* Arbeitsfläche: Platte aus Papier auf der Tapete */
+.start.ms .start__in{grid-row:2;grid-column:2;margin:14px;border-radius:24px;background:var(--mb-platte);box-shadow:var(--mb-platte-s)}
+
+@media (max-width:900px){
+  .start.ms{grid-template-columns:1fr;grid-template-rows:64px auto minmax(0,1fr)}
+  .start.ms .ms-kopf{grid-column:1}.ms-kopf-name{display:none}
+  .start.ms .ms-leiste{grid-row:2;margin:10px 10px 0}
+  .start.ms .start__in{grid-row:3;grid-column:1;margin:10px}
+}
+
+/* Newsletter-Baukasten: Kacheln als Links (mail.html) */
+a.wo,a.ms-lnk{text-decoration:none;color:inherit}
+a.ms-lnk{color:var(--taupe-tief)}
+
+/* Meine Medien: E-Mails aus dem Newsletter-Baukasten als kleine Mail (Marine-Kopf mit Zeichen, Kopfbild, Papier mit Titel und Zeilen) */
+.mkm{--k:1;position:relative;display:flex;flex-direction:column;width:calc(128px * var(--k));height:calc(176px * var(--k));border-radius:10px;overflow:hidden;background:#f0eae1;
+  box-shadow:0 0 0 .5px rgba(77,40,33,.2),0 1px 1px rgba(0,0,0,.18),0 10px 18px -6px rgba(0,0,0,.32),0 24px 34px -18px rgba(0,0,0,.35)}
+.mkm__kopf{flex:none;display:grid;place-items:center;height:calc(38px * var(--k));color:#d3b794;background:#7d433a url('haeuser/schaefli/tapete-ui-dunkel.webp') 0 0/168px auto}
+.mkm__kopf svg{width:calc(18px * var(--k));height:calc(18px * var(--k));fill:currentColor;stroke:none}
+.mkm__bild{flex:none;height:calc(60px * var(--k));background-size:cover;background-position:center}
+.mkm__text{flex:1;display:flex;flex-direction:column;align-items:center;gap:5px;padding:10px 11px 0}
+.mkm__text b{font:500 calc(13px * var(--k))/1.15 var(--serif);color:#7d433a;text-align:center;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.mkm__text i{display:block;width:100%;height:2px;border-radius:2px;background:rgba(42,41,43,.16)}
+.mkm__text i:last-of-type{width:64%}
+.mkm__text u{display:block;width:calc(38px * var(--k));height:calc(9px * var(--k));margin-top:3px;border-radius:9px;background:#7d433a}
+
+/* Meine Medien auf Blau: Aktionen unter dem Blatt, Umbenennen-Feld dunkel, Löschen blendet aus */
+.stueck--doc{transition:opacity .4s}
+.stueck--doc.weg{opacity:0}
+.stueck--doc .doc__umbenennen{width:calc(100% - 16px);margin:8px 8px 0;height:38px;border:0;border-radius:12px;padding:0 12px;text-align:center;font:500 19px var(--serif);color:#f4f0eb;
+  background:linear-gradient(180deg,#241310,#4f2a24);box-shadow:inset 0 2px 5px rgba(0,0,0,.55),0 0 0 1.5px rgba(211,183,148,.6);outline:0}
+
+/* ---------- Alle Listen: Blatt frei auf Hell (Robert 12.10.2026, 05:50: «Blau weg, Blätter auf Hell»; ersetzt «frei auf Blau» von 04:10) ----------
+   Kein Kasten, keine Kachel: die Blätter stehen mit Schatten direkt auf dem hellen Grund der Seite. Anheben, Geradedrehen und Fächern bleiben.
+   Vorher-Stand: _qa/*-vor-hell.* */
+#start .ms-buehne{background:none;box-shadow:none;border-radius:0;padding:0;color:var(--tinte)}
+#start .kv-buehne{margin-top:10px;padding:22px 0 30px}
+#start .ms-buehne h1{color:var(--navy);text-shadow:none}
+#start .ms-buehne .start__satz,#start .start__weg .start__satz{color:rgba(42,41,43,.72)}
+#start .vb__zeile h2{color:var(--navy)}
+#start .start__zurueck{color:var(--taupe-tief)}
+#start .start__zurueck:hover{color:var(--navy)}
+#start .start__fehler{color:var(--rot)}
+#start .ms-buehne .start__nichts{color:rgba(42,41,43,.55)}
+/* Blätter: Schatten in Tinte statt Schwarz, feine Kante, damit helles Papier auf hellem Grund steht */
+#start .stueck .papier:not(.papier--schirm):not(.papier--warten){box-shadow:0 0 0 1px rgba(125,104,79,.16),0 1px 1px rgba(42,41,43,.2),0 8px 14px -6px rgba(42,41,43,.26),0 26px 36px -16px rgba(42,41,43,.36),0 54px 64px -36px rgba(42,41,43,.3)}
+#start .stueck:hover .papier--vorn:not(.papier--warten){box-shadow:0 0 0 1px rgba(125,104,79,.16),0 1px 1px rgba(42,41,43,.2),0 12px 18px -6px rgba(42,41,43,.28),0 38px 50px -18px rgba(42,41,43,.42),0 84px 90px -44px rgba(42,41,43,.36)}
+#start .stueck__satz::before{background:radial-gradient(closest-side,rgba(42,41,43,.4),rgba(42,41,43,0))}
+#start .stueck .couvert{box-shadow:inset 0 0 0 1px rgba(211,183,148,.45),0 24px 34px -14px rgba(42,41,43,.45)}
+#start .stueck .handy--ganz{box-shadow:inset 0 0 0 1.2px rgba(255,255,255,.22),inset 0 0 0 2.6px #1d0f0d,0 1px 1px rgba(42,41,43,.3),0 24px 34px -14px rgba(42,41,43,.42),0 60px 80px -36px rgba(42,41,43,.34)}
+#start .stueck:hover .handy--ganz{box-shadow:inset 0 0 0 1.2px rgba(255,255,255,.26),inset 0 0 0 2.6px #1d0f0d,0 1px 1px rgba(42,41,43,.3),0 34px 46px -16px rgba(42,41,43,.48),0 80px 90px -40px rgba(42,41,43,.38)}
+#start .stueck .papier--warten{background:linear-gradient(180deg,rgba(42,41,43,.05),rgba(42,41,43,.03));box-shadow:0 0 0 1px rgba(125,104,79,.2)}
+#start .stueck .papier--warten.papier--marine{background:linear-gradient(180deg,#6a3831,#7d433a)}
+/* Schrift unter dem Blatt in Tinte */
+#start .stueck__name,#start .stueck:hover .stueck__name,#start .zl__name,#start .stueck--vorlage .zl__name{color:var(--navy)}
+#start .stueck__format,#start .stueck--vorlage .stueck__format{color:var(--taupe-tief)}
+#start .stueck__satztext:not(.stueck__nimm),#start .stueck:hover .stueck__satztext:not(.stueck__nimm){color:rgba(42,41,43,.68)}
+#start .stueck--entwurf .stueck__satztext:not(.stueck__nimm){color:var(--taupe-tief)}
+#start .stueck__nimm,#start .stueck:hover .stueck__nimm,#start .stueck:focus-visible .stueck__nimm{color:#efebe5;background:linear-gradient(180deg,#9b6455,#7d433a);box-shadow:inset 0 1px 0 rgba(245,243,239,.26),inset 0 -2px 0 rgba(0,0,0,.4),0 8px 14px -8px rgba(42,41,43,.55)}
+/* Suche, Filter, Format, Hinweise auf Hell */
+#start .ms-buehne .start__suche svg{color:var(--taupe-tief)}
+#start .ms-buehne .start__suche input{color:var(--navy);background:linear-gradient(180deg,#fcfcfb,#f0eae1);box-shadow:inset 0 1px 0 #fff,inset 0 0 0 1px rgba(179,131,70,.35),0 14px 22px -16px rgba(42,41,43,.5)}
+#start .ms-buehne .start__suche input::placeholder{color:rgba(42,41,43,.42)}
+#start .ms-buehne .start__suche input:focus{box-shadow:inset 0 1px 0 #fff,inset 0 0 0 1.5px var(--messing),0 0 0 6px rgba(211,183,148,.2)}
+#start .ms-buehne .start__gruppen button{color:rgba(42,41,43,.78);background:linear-gradient(180deg,#fcfcfb,#eae4da);box-shadow:inset 0 1px 0 #fff,inset 0 -2px 0 rgba(125,104,79,.16),0 0 0 1px rgba(179,131,70,.3),0 8px 14px -10px rgba(42,41,43,.45)}
+#start .ms-buehne .start__gruppen button:hover{color:var(--navy)}
+#start .ms-buehne .start__gruppen button.an{color:#efebe5;background:linear-gradient(180deg,#9b6455,#7d433a);box-shadow:inset 0 1px 0 rgba(245,243,239,.26),inset 0 -2px 0 rgba(0,0,0,.4),0 8px 14px -8px rgba(42,41,43,.55)}
+#start .vb__toene button{color:rgba(42,41,43,.7);box-shadow:inset 0 0 0 1px rgba(125,104,79,.4)}
+#start .vb__toene button:hover{color:var(--navy);box-shadow:inset 0 0 0 1px rgba(125,104,79,.7)}
+#start .vb__toene button.an{color:#efebe5;background:linear-gradient(180deg,#9b6455,#7d433a);box-shadow:none}
+#start .start__format{color:var(--taupe-tief)}
+#start .start__format .hwahl-knopf,#start .start__format select{background:linear-gradient(180deg,#fcfcfb,#f0eae1)!important;color:var(--navy)!important;box-shadow:inset 0 1px 0 #fff,inset 0 0 0 1px rgba(179,131,70,.35),0 14px 22px -16px rgba(42,41,43,.5)!important}
+#start .start__direkt{box-shadow:inset 0 1px 0 #fff,inset 0 0 0 1px rgba(179,131,70,.35),0 0 0 6px rgba(211,183,148,.14),0 26px 40px -24px rgba(42,41,43,.5)}
+#start .start__hinweise{background:rgba(252,252,251,.75);box-shadow:inset 0 0 0 1px rgba(179,131,70,.3);color:rgba(42,41,43,.8)}
+#start .start__hinweise b{color:var(--navy)}
+#start .stueck--doc .doc__umbenennen{color:var(--navy);background:#fcfcfb;box-shadow:0 0 0 1.5px var(--messing)}
+#start .doc__aktionen button{box-shadow:inset 0 1px 0 rgba(245,243,239,.3),inset 0 -2px 0 rgba(0,0,0,.45),0 10px 16px -10px rgba(42,41,43,.6)}

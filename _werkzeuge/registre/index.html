@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="de-CH">
+<head><!--demo-weiche--><script src="/_demo/karte.js"></script><script src="/_demo/shim.js"></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Besuche · Taverne zum Schäfli</title><!-- der Name des Werkzeugs kommt aus dem Kleid (WO_HAUS.namen), registre.js setzt ihn -->
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#301916">
+<script src="fehler.js?v=1"></script>
+<script src="/assets/oberflaeche/kleid/schaefli.js?v=a0cc990f4a"></script>
+<script src="auftakt.js?v=1"></script>
+<link rel="icon" href="/assets/zeichen/lamm.svg" type="image/svg+xml">
+<link rel="preload" href="/assets/schrift/Petrona-var.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/schrift/InstrumentSans-normal-400_600.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/oberflaeche/grund.css?v=83bb70ebb9">
+<link rel="stylesheet" href="/assets/oberflaeche/rahmen-buehne.css?v=9939a8b6ef">
+<link rel="stylesheet" href="/assets/oberflaeche/kleid/schaefli.css?v=a03a08cd56">
+<!-- registre.css nach dem Paket: grund.css setzt im Raum (.wo-app :where(p, ul, dl …)) Abstände auf null, die Inhalte des Werkzeugs brauchen ihre eigenen -->
+<link rel="stylesheet" href="registre.css?v=2">
+<link rel="stylesheet" href="schaefli.css?v=5">
+</head>
+<body class="rg wo-app">
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><g id="zeichen"></g></defs></svg>
+<header class="wo-kopf" id="kopf"></header>
+<aside class="wo-rand" id="rand" aria-label="Bereiche"></aside>
+<main class="wo-raum" id="haupt">
+  <div class="flaeche" id="flaeche" tabindex="-1">
+    <div class="in">
+      <div class="tuer-zu" id="tuer" hidden><h1>Startet nicht.</h1><p id="tuer-t">Die Besuche liessen sich nicht laden.</p></div>
+      <div id="ansicht" aria-live="polite"><div class="lade-platz" aria-hidden="true"><i></i><i></i><i></i></div></div>
+    </div>
+  </div>
+</main>
+<footer class="wo-leiste" id="leiste"></footer>
+<div class="meldung" id="meldung" aria-live="polite"></div>
+<script src="/assets/oberflaeche/oberflaeche.js?v=e05af1a79f"></script>
+<script src="registre.js?v=4"></script>
+<script src="rundgang.js?v=2" defer></script>
+<script src="zur-werkbank.js?v=2" defer data-zw data-neben="#rand" data-luft="40" data-ueber="#leiste"></script>
+<script src="/werkzeuge/demo-aus.js?v=fbdcf4671b" defer></script></body>
+</html>

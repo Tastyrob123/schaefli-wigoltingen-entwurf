@@ -1,0 +1,38 @@
+/* pruefung.css · Anordnung der Prüfseite des Werkzeugs «website». Eigenständig: nichts hier hängt an website.css.
+   Farben, Schrift, Flächen kommen aus /stamm/welt.css. Vorsatz wsp-. */
+.wsp{min-height:100dvh;overflow-x:clip}
+.wsp-kopf{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:14px;padding:16px clamp(16px,4vw,56px)}
+.wsp-kopf__name{min-width:0;display:flex;flex-direction:column;gap:4px}
+.wsp-kopf__titel{color:var(--metall);overflow-wrap:anywhere}
+.wsp-reihe{display:flex;flex-wrap:wrap;align-items:center;gap:12px}
+.wsp-seite{max-width:980px;padding:clamp(24px,4vw,48px) clamp(16px,4vw,56px) 64px;display:flex;flex-direction:column;gap:clamp(28px,4vw,44px)}
+.wsp-satz{max-width:70ch}
+.wsp-teil{display:flex;flex-direction:column;gap:16px}
+.wsp-teil > div:first-child{display:flex;flex-direction:column;gap:8px}
+.wsp-taste{display:inline-flex;align-items:center;min-height:42px;padding:0 18px;border:0;border-radius:999px;cursor:pointer;white-space:nowrap;text-decoration:none;
+  font-family:var(--mono);font-size:var(--kn-fs);letter-spacing:var(--kn-ls);text-transform:uppercase;color:var(--tinte);background:var(--kn-h);box-shadow:var(--kn-h-s);transition:transform .25s var(--e2)}
+.wsp-taste:active{transform:translateY(2px)}
+.wsp-taste[data-scharf]{color:var(--blatt);background:var(--kn-d);box-shadow:var(--kn-d-s)}
+.wsp-punkte{padding:6px 20px}
+.wsp-wartet{padding:14px 0}
+.wsp-punkt{display:grid;grid-template-columns:28px minmax(0,1fr);gap:4px 14px;padding:14px 0;border-top:1px solid var(--linie-h)}
+.wsp-punkt:first-child{border-top:0}
+.wsp-punkt__z{grid-row:span 2;width:28px;height:28px;border-radius:50%;display:grid;place-items:center;background:var(--kuhle-h);box-shadow:var(--kuhle-h-s)}
+.wsp-punkt__z svg{width:15px;height:15px;fill:none;stroke:currentColor;stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round}
+.wsp-punkt[data-gut="nein"] .wsp-punkt__z{background:var(--tinte);color:var(--blatt);box-shadow:none}
+.wsp-punkt__t{font-weight:600;overflow-wrap:anywhere}
+.wsp-punkt__x{overflow-wrap:anywhere}
+.wsp-punkt__x a{color:inherit}
+.wsp-reparaturen{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));gap:14px}
+.wsp-rep{padding:18px 20px;display:flex;flex-direction:column;gap:10px;align-items:flex-start}
+.wsp-rep .wsp-taste{white-space:normal;text-align:left;min-height:42px;padding-block:8px;line-height:1.35;border-radius:var(--r-m)}
+.wsp-suche{max-width:460px}
+.wsp-lexikon{display:flex;flex-direction:column;gap:10px}
+.wsp-lex{padding:0;overflow:hidden}
+.wsp-lex > summary{list-style:none;cursor:pointer;padding:15px 20px;font-weight:600;overflow-wrap:anywhere}
+.wsp-lex > summary::-webkit-details-marker{display:none}
+.wsp-lex dl{padding:0 20px 18px;display:grid;grid-template-columns:minmax(0,1fr);gap:4px}
+.wsp-lex dt{margin-top:10px}
+.wsp-lex dd{overflow-wrap:anywhere}
+@media (max-width:560px){ .wsp-kopf__titel{font-size:calc(28px * var(--titel-mass))} }
+@media (prefers-reduced-motion:reduce){ .wsp-taste{transition:none} }

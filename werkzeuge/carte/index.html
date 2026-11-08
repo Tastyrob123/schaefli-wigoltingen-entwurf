@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="de-CH">
+<head><!--demo-weiche--><script src="/_demo/karte.js"></script><script src="/_demo/shim.js"></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Die Tafel · Taverne zum Schäfli</title>
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#301916">
+<script src="/assets/oberflaeche/kleid/schaefli.js?v=a0cc990f4a"></script>
+<script src="/_werkzeuge/carte/fehlermelder.js?v=2"></script>
+<script src="/_werkzeuge/carte/auftakt.js?v=2"></script>
+<link rel="icon" href="/assets/oberflaeche/kleid/schaefli-zeichen.svg" type="image/svg+xml">
+<link rel="preload" href="/assets/schrift/InstrumentSans-normal-400_600.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/schrift/Petrona-var.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/_werkzeuge/carte/carte.css?v=2">
+<link rel="stylesheet" href="/assets/oberflaeche/grund.css?v=83bb70ebb9">
+<link rel="stylesheet" href="/assets/oberflaeche/rahmen-buehne.css?v=9939a8b6ef">
+<link rel="stylesheet" href="/assets/oberflaeche/kleid/schaefli.css?v=a03a08cd56">
+<link rel="stylesheet" href="/_werkzeuge/carte/tafel.css?v=12">
+<link rel="stylesheet" href="/_werkzeuge/carte/schweben.css?v=2">
+</head>
+<body class="lc wo-app">
+<header class="wo-kopf" id="oben"></header>
+<aside class="wo-rand rand" id="rand" aria-label="Karte und Wege"></aside>
+<main class="wo-raum haupt">
+  <header class="kopf" id="kopf"></header>
+  <div class="arbeit" id="arbeit">
+    <section class="liste" id="liste" aria-label="Einträge der Karte"></section>
+    <section class="vorschau" aria-label="Vorschau der Karte">
+      <div class="vorschau__k"><div class="ansicht" role="group" aria-label="Vorschau"><button type="button" data-ansicht="karte" aria-pressed="true">Karte</button><button type="button" data-ansicht="website" aria-pressed="false">Website</button></div><div class="ansicht webwahl" id="webwahl" role="group" aria-label="Seite der Website" hidden><button type="button" data-webseite="karte.html" aria-pressed="true">Karte</button><button type="button" data-webseite="wein.html" aria-pressed="false">Wein</button><button type="button" data-webseite="bar.html" aria-pressed="false">Bar</button><button type="button" data-webseite="feiern.html" aria-pressed="false">Feiern</button><button type="button" data-webseite="index.html" aria-pressed="false">Startseite</button></div><span class="mono" id="v-zahl">Vorschau</span><span class="vorschau__w" id="v-warn" hidden></span><div class="vorschau__z"><button type="button" class="rund rund--d" data-zoom="-1" aria-label="Kleiner"><svg viewBox="0 0 14 14"><path d="M3 7h8"/></svg></button><button type="button" class="rund rund--d" data-zoom="1" aria-label="Grösser"><svg viewBox="0 0 14 14"><path d="M7 3v8M3 7h8"/></svg></button></div></div>
+      <iframe class="vorschau__f" id="vf" title="Die Karte, wie sie in der PDF steht" src="/_werkzeuge/carte/satz/blatt.html"></iframe>
+      <div class="web" id="web" hidden><iframe id="web-f" title="Die Seite der Website, auf der die Karte steht"></iframe></div>
+    </section>
+  </div>
+</main>
+<footer class="wo-leiste leiste" id="leiste" aria-live="polite"></footer>
+<div class="fenster" id="fenster" hidden></div>
+<div class="meldung" id="meldung" aria-live="polite"></div>
+<script src="/assets/oberflaeche/oberflaeche.js?v=e05af1a79f"></script>
+<script src="/_werkzeuge/carte/satz/satz.js?v=5"></script>
+<script src="/_werkzeuge/carte/carte.js?v=19"></script>
+<script src="/_werkzeuge/carte/schweben.js?v=2" data-wurzel=".haupt" data-blaetter=".vorschau__k"></script>
+<script src="/_werkzeuge/carte/rundgang.js?v=4" defer></script>
+<script src="/_werkzeuge/carte/zur-werkbank.js?v=5" defer data-zw data-neben="#rand" data-luft="40" data-ueber="#leiste"></script>
+<script src="/werkzeuge/demo-aus.js?v=fbdcf4671b" defer></script></body>
+</html>

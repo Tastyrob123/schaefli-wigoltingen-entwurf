@@ -1,0 +1,170 @@
+/* La Carte · Taverne zum Schäfli Wigoltingen — Satz der Karten (21.10.2026, satz_bau.py). Eine Datei für Vorschau, PDF und Werkbank.
+   Farben und Schriften der Website (website/assets/css/schaefli.css :root): Kalk, Ochsenblut, Gold; Petrona, Instrument Sans, DM Mono.
+   Masse in mm, Schrift in pt über --s (blatt.js passt je Seite an, damit nichts überläuft). Keine weichen Schatten, keine Verläufe über Text. */
+/* Feste Schnitte statt variabler Schriften (fonts_statisch.py): Chromium bettet variable Schriften als «Type 3» ein, die Apple-Vorschau zeigt sie weich (Werkbank 21.10.2026) */
+@font-face{font-family:Petrona;src:url('../fonts/Petrona-420.ttf') format('truetype');font-weight:420;font-style:normal;font-display:block}
+@font-face{font-family:Petrona;src:url('../fonts/Petrona-440.ttf') format('truetype');font-weight:440;font-style:normal;font-display:block}
+@font-face{font-family:Petrona;src:url('../fonts/Petrona-460.ttf') format('truetype');font-weight:460;font-style:normal;font-display:block}
+@font-face{font-family:Petrona;src:url('../fonts/Petrona-470.ttf') format('truetype');font-weight:470;font-style:normal;font-display:block}
+@font-face{font-family:Petrona;src:url('../fonts/Petrona-480.ttf') format('truetype');font-weight:480;font-style:normal;font-display:block}
+@font-face{font-family:Petrona;src:url('../fonts/Petrona-520.ttf') format('truetype');font-weight:520;font-style:normal;font-display:block}
+@font-face{font-family:Petrona;src:url('../fonts/Petrona-560.ttf') format('truetype');font-weight:560;font-style:normal;font-display:block}
+@font-face{font-family:Petrona;src:url('../fonts/Petrona-600.ttf') format('truetype');font-weight:600;font-style:normal;font-display:block}
+@font-face{font-family:'Instrument Sans';src:url('../fonts/InstrumentSans-400.ttf') format('truetype');font-weight:400;font-style:normal;font-display:block}
+@font-face{font-family:'Instrument Sans';src:url('../fonts/InstrumentSans-500.ttf') format('truetype');font-weight:500;font-style:normal;font-display:block}
+@font-face{font-family:'Instrument Sans';src:url('../fonts/InstrumentSans-600.ttf') format('truetype');font-weight:600;font-style:normal;font-display:block}
+@font-face{font-family:'DM Mono';src:url('../fonts/DMMono-normal-400.woff2') format('woff2');font-weight:400;font-style:normal;font-display:block}
+:root{--papier:#FBF8F2;--tinte:#2A292B;--leise:rgba(42,41,43,.7);--titel:#64362E;--riegel:#7D433A;--gold:#B38346;--gold-hell:#D3B794;--gold-tief:#815E32}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;background:#6d5a52;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+/* Gesperrte Versalien in Petrona höchstens .08em: ab .1em liest pdftotext Buchstabe für Buchstabe («H A N D G E S C H A B T E»), die PDF wäre nicht durchsuchbar (21.10.2026).
+   Versal-Umlaute: Petrona ohne deutsche Sonderform, sonst liegen die Punkte im PDF auf dem Buchstaben (Falle 9, Schlössli 19.10.2026) */
+.blatt{--s:1;position:relative;overflow:hidden;margin:8mm auto;background:var(--papier);color:var(--tinte);display:flex;flex-direction:column;
+  font-family:'Instrument Sans',Arial,sans-serif;font-size:calc(9.2pt*var(--s));line-height:1.42;font-feature-settings:'locl' 0;page-break-after:always;break-after:page}
+:where(.blatt) :where(h1,h2,h3,h4,p){margin:0;padding:0;font-weight:inherit}
+:where(.blatt) b{font-weight:600}   /* fester Schnitt statt synthetischem Fett */
+/* doppelter Goldrahmen wie die Karten der Website (.bar7__karte, .km__blatt) */
+.blatt::before,.blatt::after{content:'';position:absolute;pointer-events:none;border:.3mm solid var(--gold-hell)}
+.blatt::before{inset:7mm}
+.blatt::after{inset:8.6mm;border-width:.18mm;border-color:rgba(179,131,70,.55)}
+.inhalt{position:relative;z-index:1;flex:1;min-height:0;padding:15mm 24mm 4mm;display:flex;flex-direction:column}
+.ufuss2{position:relative;z-index:1;flex:none;margin:0 24mm;padding:2.6mm 0 13mm;font-family:'DM Mono',Menlo,monospace;font-size:5.8pt;letter-spacing:.2em;text-transform:uppercase;text-align:center;color:var(--gold-tief)}
+
+/* Kopf: Name des Hauses wie auf den Karten des Hauses, darunter das Lamm zwischen auslaufenden Goldlinien */
+.ts-kopf{flex:none;text-align:center;margin-bottom:calc(6mm*var(--s))}
+.ts-haus{font-family:Petrona,Georgia,serif;font-weight:480;font-size:calc(7.4pt*var(--s));letter-spacing:.08em;text-transform:uppercase;color:var(--titel);line-height:1.3}
+.ts-ort{font-family:'DM Mono',Menlo,monospace;font-size:calc(5.6pt*var(--s));letter-spacing:.3em;text-transform:uppercase;color:var(--gold-tief);margin-top:.6mm}
+.sb-orn{display:flex;align-items:center;gap:4.2mm;margin:calc(3mm*var(--s)) auto 0;width:100%}
+.sb-orn i{flex:1;height:.22mm;background:var(--gold);opacity:.85}
+.sb-orn i:first-child{-webkit-mask:linear-gradient(90deg,transparent,#000 70%);mask:linear-gradient(90deg,transparent,#000 70%)}
+.sb-orn i:last-child{-webkit-mask:linear-gradient(270deg,transparent,#000 70%);mask:linear-gradient(270deg,transparent,#000 70%)}
+.ts-lamm{display:block;width:calc(8.5mm*var(--s));height:auto;color:var(--gold);flex:none}
+.ts-kopf--klein{margin-bottom:calc(4mm*var(--s))}
+.ts-kopf--klein .ts-haus{font-size:calc(6.4pt*var(--s))}
+.ts-kopf--klein .ts-lamm{width:calc(6.5mm*var(--s))}
+
+/* Titel */
+.sb-titel{flex:none;text-align:center;font-family:Petrona,Georgia,serif;font-weight:440;font-size:calc(27pt*var(--s));line-height:1.08;color:var(--titel);letter-spacing:-.005em}
+.sb-unter{flex:none;text-align:center;font-family:'DM Mono',Menlo,monospace;font-size:calc(7pt*var(--s));letter-spacing:.24em;text-transform:uppercase;color:var(--gold-tief);margin-top:calc(2.4mm*var(--s))}
+
+/* Menü in der Mitte: Gänge in Versalien, Zeile darunter, kurzer Goldstrich dazwischen */
+.sb-folge{flex:1;min-height:0;display:flex;flex-direction:column;justify-content:center;text-align:center;padding:calc(4mm*var(--s)) 0}
+.sb-m{break-inside:avoid}
+.sb-n--gross{font-family:Petrona,Georgia,serif;font-weight:470;font-size:calc(11.6pt*var(--s));letter-spacing:.08em;text-transform:none;color:var(--tinte);line-height:1.3}
+.sb-m .sb-t{font-size:calc(9.6pt*var(--s));color:var(--leise);margin-top:calc(1.2mm*var(--s))}
+.sb-gang{display:flex;justify-content:center;padding:calc(4.4mm*var(--s)) 0}
+.sb-gang i{display:block;width:8mm;height:.22mm;background:var(--gold)}
+.sb-folge>.sb-m:first-child .sb-n--gross,.sb-menue>.sb-m:first-child .sb-n--gross{font-family:'DM Mono',Menlo,monospace;font-weight:400;font-size:calc(8pt*var(--s));letter-spacing:.3em;color:var(--gold-tief)}
+/* Unterschrift des Küchenchefs und Team */
+.sb-person{text-align:center}
+.sb-pn{font-family:Petrona,Georgia,serif;font-weight:440;font-size:calc(10.4pt*var(--s));color:var(--titel);line-height:1.25}
+.sb-pr{font-family:'DM Mono',Menlo,monospace;font-size:calc(5.8pt*var(--s));letter-spacing:.22em;text-transform:uppercase;color:var(--gold-tief);margin-top:.8mm}
+.sb-sig{flex:none;margin:calc(2mm*var(--s)) auto calc(6mm*var(--s))}
+.sb-team{flex:none;display:flex;justify-content:center;gap:calc(14mm*var(--s));padding-top:calc(4.5mm*var(--s));margin-top:calc(5mm*var(--s));border-top:.22mm solid var(--gold-hell)}
+/* Menüpreise als Marke: Angabe klein, Zahl gross, zwischen feinen Linien */
+.sb-preise{flex:none;border-top:.22mm solid var(--gold-hell);border-bottom:.22mm solid var(--gold-hell);padding:calc(3.6mm*var(--s)) 0}
+.sb-preise .sb-p,.sb-lunchpreis .sb-p,.sb-menupreis .sb-p{display:flex;justify-content:center;gap:0}
+.sb-preise .sb-p>span{flex:1;display:flex;flex-direction:column;align-items:center;gap:calc(1mm*var(--s));padding:0 3mm;text-align:center}
+.sb-preise .sb-p>span+span{border-left:.22mm solid var(--gold-hell)}
+.sb-p em{font-style:normal;font-family:'DM Mono',Menlo,monospace;font-size:calc(5.9pt*var(--s));letter-spacing:.16em;text-transform:uppercase;color:var(--gold-tief);line-height:1.35}
+.sb-preise .sb-p b{font-family:Petrona,Georgia,serif;font-weight:440;font-size:calc(19pt*var(--s));line-height:1;color:var(--riegel)}
+
+/* Karte mit Rubriken: Name links, Preis rechts mit feinen Goldpunkten, Zeile darunter */
+.sb-karte{flex:1;min-height:0;display:flex;flex-direction:column;justify-content:space-evenly}
+.sb-r{break-inside:avoid}
+.sb-h{display:flex;align-items:center;gap:4mm;font-family:Petrona,Georgia,serif;font-weight:440;font-size:calc(14pt*var(--s));color:var(--titel);margin:0 0 calc(2.6mm*var(--s));line-height:1.15}
+.sb-h::after{content:'';flex:1;height:.22mm;background:var(--gold-hell)}
+.sb-h small{font-family:'DM Mono',Menlo,monospace;font-size:calc(6.4pt*var(--s));letter-spacing:.08em;text-transform:uppercase;color:var(--gold-tief)}
+.sb-g{display:grid;grid-template-columns:minmax(0,1fr) auto;column-gap:3mm;align-items:baseline;padding:calc(1.5mm*var(--s)) 0;break-inside:avoid}
+.sb-g .sb-n{grid-column:1;display:flex;align-items:baseline;gap:2.4mm;font-family:Petrona,Georgia,serif;font-weight:480;font-size:calc(9.6pt*var(--s));letter-spacing:.08em;color:var(--tinte);line-height:1.3}
+.sb-g .sb-n::after{content:'';flex:1;min-width:6mm;border-bottom:.35mm dotted var(--gold);transform:translateY(-.8mm)}
+.sb-g .sb-p{grid-column:2;grid-row:1;font-family:Petrona,Georgia,serif;font-weight:440;font-size:calc(10.6pt*var(--s));color:var(--riegel);white-space:nowrap;text-align:right}
+.sb-g .sb-t{grid-column:1/-1;font-size:calc(8.8pt*var(--s));color:var(--leise);margin-top:calc(.5mm*var(--s))}
+.sb-g.sb-preise{display:block}
+
+/* Menüvorschläge: Kopf je Menü, Gänge mit römischer Zahl in Gold, Preis als Marke */
+.sb-brief{flex:none;max-width:142mm;margin:calc(6mm*var(--s)) auto calc(3mm*var(--s));text-align:center}
+.sb-gruss{font-size:calc(9.4pt*var(--s));color:var(--leise);line-height:1.5}
+.sb-gruss:first-child{font-family:Petrona,Georgia,serif;font-size:calc(11pt*var(--s));color:var(--titel);margin-bottom:calc(1.4mm*var(--s))}
+.sb-gruss+.sb-gruss+.sb-gruss{margin-top:calc(1.6mm*var(--s))}
+.ts--gruppen .inhalt{justify-content:space-between}
+.sb-mr{margin-top:calc(6mm*var(--s))}
+.sb-mk{display:flex;align-items:baseline;gap:3mm}
+.sb-mk .sb-h{flex:1}
+.sb-chf{font-family:'DM Mono',Menlo,monospace;font-size:calc(6pt*var(--s));letter-spacing:.2em;color:var(--gold-tief)}
+.sb-gm{grid-template-columns:9mm minmax(0,1fr) auto}
+.sb-gm .sb-rn{grid-column:1;grid-row:1;font-family:Petrona,Georgia,serif;font-weight:440;font-size:calc(10pt*var(--s));color:var(--gold)}
+.sb-gm .sb-n{grid-column:2}
+.sb-gm .sb-p{grid-column:3}
+.sb-n--satz{letter-spacing:.01em!important;font-weight:420!important;font-size:calc(10.2pt*var(--s))!important}
+.sb-n--satz small{font-family:'DM Mono',Menlo,monospace;font-size:calc(6pt*var(--s));letter-spacing:.08em;color:var(--gold-tief);margin-left:1.6mm;white-space:nowrap}
+.sb-menupreis{display:block;margin-top:calc(2.4mm*var(--s));padding-top:calc(2.6mm*var(--s));border-top:.22mm solid var(--gold-hell)}
+.sb-menupreis .sb-p>span{display:flex;align-items:baseline;gap:2.4mm;margin-left:auto}
+.sb-menupreis .sb-p{justify-content:flex-end}
+.sb-menupreis .sb-p b{font-family:Petrona,Georgia,serif;font-weight:440;font-size:calc(15pt*var(--s));color:var(--riegel)}
+.sb-menupreis .sb-p small{font-family:'DM Mono',Menlo,monospace;font-size:calc(6pt*var(--s));letter-spacing:.08em;color:var(--gold-tief)}
+
+/* Barkarte: wie die Karte auf der Bar-Seite der Website */
+.ts--bar .inhalt{justify-content:center}
+.sb-satz{flex:none;text-align:center;font-size:calc(9.8pt*var(--s));color:var(--leise);max-width:110mm;margin:calc(4mm*var(--s)) auto 0}
+.sb-karte--bar{flex:none;margin:calc(8mm*var(--s)) 6mm;padding:calc(4mm*var(--s)) 0;border-top:.22mm solid var(--gold-hell);border-bottom:.22mm solid var(--gold-hell);justify-content:flex-start}
+.sb-bar{padding:calc(3mm*var(--s)) 0}
+.sb-bar .sb-n{font-size:calc(13pt*var(--s))!important}
+.sb-bar .sb-p{font-size:calc(12pt*var(--s))}
+.sb-zeiten{flex:none;text-align:center;font-family:'DM Mono',Menlo,monospace;font-size:calc(6.6pt*var(--s));letter-spacing:.2em;text-transform:uppercase;color:var(--gold-tief)}
+
+/* A4 quer (Trüffelmenü, Mittagsmenü der Woche): mittig wie die Karten des Hauses (C08: senkrecht und waagrecht mittig, kein leerer unterer Teil) */
+.ts--quer .inhalt{padding:12mm 30mm 1mm}
+.sb-quer{flex:1 0 auto;display:flex;flex-direction:column;align-items:center;justify-content:space-evenly;text-align:center}
+.sb-oben{display:flex;flex-direction:column;align-items:center}
+.sb-zeichen svg{width:calc(10mm*var(--s));color:var(--gold)}
+.sb-oben .ts-haus{margin-top:calc(2.4mm*var(--s))}
+.sb-band{font-family:Petrona,Georgia,serif;font-weight:440;font-size:calc(26pt*var(--s));line-height:1.05;color:var(--titel);margin-top:calc(1.6mm*var(--s))}
+.sb-menue{display:flex;flex-direction:column;justify-content:center;text-align:center;padding:calc(3mm*var(--s)) 0}
+.sb-menue .sb-gang{padding:calc(3.2mm*var(--s)) 0}
+.sb-unten{display:flex;flex-direction:column;align-items:center}
+.sb-lunchpreis{display:block;padding:calc(2.4mm*var(--s)) 14mm;border-top:.22mm solid var(--gold-hell);border-bottom:.22mm solid var(--gold-hell)}
+.sb-lunchpreis .sb-p>span{display:flex;align-items:baseline;gap:3mm}
+.sb-lunchpreis .sb-p b{font-family:Petrona,Georgia,serif;font-weight:440;font-size:calc(19pt*var(--s));line-height:1;color:var(--riegel)}
+.sb-hinweis{margin-top:calc(3mm*var(--s));font-size:calc(9pt*var(--s));color:var(--leise)}
+.sb-zusatz{margin-top:calc(2.4mm*var(--s));font-size:calc(8.6pt*var(--s));color:var(--leise)}
+.sb-team--quer{border-top:0;margin-top:calc(2mm*var(--s));padding-top:0;gap:calc(12mm*var(--s))}
+
+/* Weinkarte: Art gross, Land mit Flagge, Gebiet zwischen kurzen Linien, Weingut in Versalien mit feiner Linie, Weine in Spalten */
+.sb-wk{flex:1;min-height:0;display:flex;flex-direction:column}
+.ts--wein .sb-titel{font-size:calc(24pt*var(--s));margin-bottom:calc(3mm*var(--s))}
+.sb-luft{display:block;flex:1 1 0;max-height:6mm}
+.sb-luft--ende{max-height:none;flex-grow:.0001}
+.ts-weiter{flex:none;font-family:'DM Mono',Menlo,monospace;font-size:calc(5.8pt*var(--s));letter-spacing:.2em;text-transform:uppercase;color:var(--gold-tief);text-align:center;margin-bottom:calc(2mm*var(--s))}
+.sb-wart{flex:none;text-align:center;font-family:Petrona,Georgia,serif;font-weight:440;font-size:calc(19pt*var(--s));line-height:1.1;color:var(--titel);padding-top:calc(3mm*var(--s));margin-bottom:calc(2mm*var(--s))}
+.sb-land{flex:none;display:flex;align-items:center;justify-content:center;gap:2.6mm;font-family:Petrona,Georgia,serif;font-weight:480;font-size:calc(12.5pt*var(--s));letter-spacing:.08em;text-transform:uppercase;color:var(--riegel);padding-top:calc(3mm*var(--s));margin-bottom:calc(1.4mm*var(--s))}
+.sb-flagge{display:block;width:calc(6.6mm*var(--s));height:auto;flex:none;box-shadow:0 0 0 .15mm rgba(42,41,43,.18)}
+.sb-flagge.flg--q{width:calc(4.4mm*var(--s))}
+.sb-region{flex:none;display:flex;align-items:center;justify-content:center;gap:3mm;text-align:center;font-family:Petrona,Georgia,serif;font-weight:440;font-size:calc(11pt*var(--s));line-height:1.2;color:var(--titel);padding-top:calc(2.2mm*var(--s));margin-bottom:calc(1.6mm*var(--s))}
+.sb-region::before,.sb-region::after{content:'';width:9mm;height:.22mm;background:var(--gold);flex:none}
+.sb-gut{flex:none;font-family:Petrona,Georgia,serif;font-weight:520;font-size:calc(7.6pt*var(--s));letter-spacing:.08em;text-transform:uppercase;color:var(--tinte);padding:calc(2.2mm*var(--s)) 0 calc(.9mm*var(--s));margin-bottom:calc(.8mm*var(--s));border-bottom:.18mm solid var(--gold-hell)}
+.sb-wein{flex:none;display:grid;grid-template-columns:12mm minmax(0,1fr) 16mm 15mm;column-gap:2mm;align-items:baseline;padding:calc(.55mm*var(--s)) 0;font-size:calc(8.9pt*var(--s));line-height:1.32}
+.sb-wein .j{font-family:'DM Mono',Menlo,monospace;font-size:calc(7.4pt*var(--s));color:var(--gold-tief);letter-spacing:.04em}
+.sb-wein .n{color:var(--tinte)}
+.sb-wein .f{font-family:'DM Mono',Menlo,monospace;font-size:calc(7pt*var(--s));color:var(--leise);text-align:right;white-space:nowrap}
+.sb-wein .p{font-family:Petrona,Georgia,serif;font-weight:460;font-size:calc(9.6pt*var(--s));color:var(--riegel);text-align:right;white-space:nowrap}
+.sb-wein .d{grid-column:2/4;font-size:calc(7.6pt*var(--s));color:var(--leise);font-style:normal}
+
+/* Gestalten (Fortgeschritten): Stile, die satz.js an ein Element legt */
+[data-gf]{font-family:var(--gf)!important}
+[data-gc]{color:var(--gc)!important}
+[data-ga="kursiv"]{font-style:italic!important}
+[data-ga="versal"]{text-transform:uppercase!important;letter-spacing:.08em}
+[data-ga="normal"]{text-transform:none!important;letter-spacing:0!important}
+[data-ga="medium"]{font-weight:560!important}
+[data-gal]{text-align:var(--gal)!important;justify-content:var(--gai)!important;align-items:var(--gai)}
+[data-gz]{line-height:var(--gz)!important}
+@media print{html,body{background:none}.blatt{margin:0}}
+/* Luft zwischen den Rubriken der Klassiker */
+.sb-karte>.sb-r+.sb-r{margin-top:calc(5mm*var(--s))}
+.ts--menue .sb-folge{justify-content:space-evenly}
+/* Flächen wachsen, schrumpfen aber nie: sonst läuft Inhalt unbemerkt übereinander statt dass blatt.js die Schrift einpasst */
+.sb-folge,.sb-karte,.sb-quer,.sb-wk{flex:1 0 auto;min-height:auto}
+.sb-g .sb-n:not(.sb-n--satz),.sb-n--gross{text-transform:uppercase}   /* neue Einträge stehen in Versalien wie die des Hauses */
+.ts--karte .sb-titel{margin-bottom:calc(5mm*var(--s))}
+.ts--gruppen .sb-mr{margin-top:calc(9mm*var(--s))}

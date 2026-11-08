@@ -1,0 +1,65 @@
+/* kleid/gasterntal.css · Berghotel Gasterntal · Fels, Kander, Tanne (Werte aus studio/studio.css des Hauses und _Werkzeuge/stamm/welt.css, Welt «Landhaus»):
+   Barlow Semi für Titel, DM Mono für kleine Zeilen, die Lauben-Raute des Hauses als Tapete und Zierlinie, kühle Felskanten, Fotos etwas herber,
+   Tannengrün als Akzent auf Hell, Holz als Gold auf Dunkel, Rot nur für «Entwurf». Rahmen: Die Bühne (wie die beiden anderen Häuser im Kandertal).
+   Die Werkzeuge des Gasterntal entstehen direkt mit diesem Kleid. Liegt im Haus unter assets/oberflaeche/kleid/. */
+@font-face{font-family:'W Sans';font-weight:400 600;font-display:swap;src:url('../../fonts/InstrumentSans-normal-400_600.woff2') format('woff2')}
+@font-face{font-family:'W Mono';font-weight:400;font-display:swap;src:url('../../fonts/DMMono-normal-400.woff2') format('woff2')}
+@font-face{font-family:'Titel GT';font-weight:500;font-display:swap;src:url('../../fonts/barlowsemi-500.woff2') format('woff2')}
+@font-face{font-family:'Titel GT';font-weight:600;font-display:swap;src:url('../../fonts/barlowsemi-600.woff2') format('woff2')}
+:root{
+  --wo-sans:'W Sans',system-ui,-apple-system,'Segoe UI',sans-serif; --wo-mono:'W Mono',ui-monospace,'SF Mono',Menlo,monospace;
+  --wo-e1:cubic-bezier(.16,1,.3,1); --wo-e2:cubic-bezier(.32,.72,0,1);
+  --wo-nacht:#1d2224; --wo-nacht2:#2c3136; --wo-tief:#14181a;
+  --wo-g1:#efe2cb; --wo-g2:#d6bb96; --wo-g3:#a3865c;
+  --wo-gold:#d6bb96; --wo-akzent:#3b4423;
+  --wo-papier:#e9ecec; --wo-papier2:#dde2e3; --wo-blatt:#f6f8f8; --wo-weiss:#fbfcfc;
+  --wo-tinte:#1a1f21; --wo-leise:#5f6a6e; --wo-linie:rgba(26,31,33,.12); --wo-linie-d:rgba(214,187,150,.3);
+  --wo-punkt:#c5000f; --wo-gut:#3b4423;
+  --wo-titel:'Titel GT','DIN Alternate','Arial Narrow',sans-serif; --wo-titel-g:600; --wo-titel-ls:-.012em;
+  --wo-r1:22px; --wo-r2:14px; --wo-r3:8px; --wo-rk:999px;
+  --wo-tapete:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='44' height='92'%3E%3Cg fill='%23d6bb96' fill-opacity='.09'%3E%3Cpath d='M22 14 30 46 22 78 14 46z'/%3E%3Ccircle cx='22' cy='6' r='3'/%3E%3Ccircle cx='22' cy='86' r='3'/%3E%3C/g%3E%3C/svg%3E");
+  --wo-tapete-fein:var(--wo-tapete);
+  --wo-kander:#c7cfd3;
+}
+
+/* ================= Berghotel Gasterntal · Fels, Kander, Tanne ================= */
+/* Felskante: eine kühle Linie in Kander-Grau oben auf jeder dunklen Fläche */
+[data-wo-rahmen="buehne"] .wo-sb,[data-wo-rahmen="inseln"] .wo-sb__text,.wo-lage,.wo-ag,.wo-det__kopf{border-top:2px solid rgba(199,207,211,.42)}
+[data-wo-rahmen="buehne"] .wo-kopf{border-bottom:2px solid rgba(199,207,211,.32)}
+/* Lauben-Raute als Zierlinie über den Abschnittstiteln und im Startbild */
+.wo-zw::before{content:'';display:block;width:66px;height:14px;margin-bottom:12px;
+  background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='66' height='14'%3E%3Cg fill='%233b4423'%3E%3Cpath d='M7 1 11 7 7 13 3 7z'/%3E%3Cpath d='M33 1 37 7 33 13 29 7z' fill-opacity='.6'/%3E%3Cpath d='M59 1 63 7 59 13 55 7z' fill-opacity='.3'/%3E%3C/g%3E%3C/svg%3E") no-repeat}
+.wo-zw{text-transform:none}
+.wo-sb__h{letter-spacing:-.02em}
+.wo-zw em,.wo-sb__h em{font-weight:500}
+/* Fotos herb und kühl, wie Fels im Schatten */
+.wo-sb__foto img,.wo-ag__b img,.wo-bk__b img{filter:saturate(.8) contrast(1.05)}
+.wo-sb__foto::after{background:linear-gradient(0deg,rgba(29,34,36,.45),transparent 55%)}
+/* Zeichen in Kacheln eckig wie die Raute, nicht rund */
+.wo-lg__z,.wo-ag__z{border-radius:var(--wo-r3);transform:rotate(45deg)}
+.wo-lg__z .wo-ic,.wo-ag__z .wo-ic{transform:rotate(-45deg)}
+.wo-bk__t small,.wo-mk{color:var(--wo-akzent)}
+.wo-re.wo-an,.wo-re[aria-current="true"],.wo-re[aria-current="page"]{background:linear-gradient(180deg,#4a5132,var(--wo-akzent))}
+
+/* Ecke oben links in allen sieben Werkzeugen gleich (M24, Robert 18.10.2026 17:36: «Ecken oben links bei den Tools alle so machen wie bei Bureau …
+   bei Gasterntal z. B. kein Gold benutzen, sondern was, was passt»): das Bergzeichen im Ring, darunter Bereich · Haus. Farbe: das Rot der Läden für
+   Zeichen und Ring, die Zeile darunter im Grau der Kander, kein Gold. */
+.wo-marke-w{position:relative;padding-left:60px!important;min-height:46px}   /* !important: die Werkstatt setzt ihren Knopf auf padding 0 */
+.wo-marke-w::before{content:'';position:absolute;left:0;top:50%;width:46px;height:46px;margin-top:-23px;border-radius:50%;
+  background:radial-gradient(circle at 50% 40%,#2c3136,#1d2224 72%);box-shadow:inset 0 0 0 1px rgba(197,0,15,.7),inset 0 0 0 4px rgba(20,24,26,.6),0 6px 14px -8px rgba(0,0,0,.8)}
+.wo-marke-w .wo-zeichen{position:absolute;left:11px;top:50%;width:24px;height:15px;max-width:none;margin-top:-8px;color:#c5000f}
+.wo-marke-w small{color:rgba(199,207,211,.82)!important}
+
+/* Auftritt der Bühne (Robert 18.10.2026 17:46 «da fehlen die ganzen Animationen … stell das bitte überall sicher»; Takt des Gasterntal 18:17):
+   Foto, Zierzeile, Titel, Satz und Knöpfe kommen bei jedem Öffnen einer Ansicht 40 px herauf, das Foto zoomt dabei von 1,04 auf 1.
+   0,85 s, weich auslaufend, 0,12 s auseinander, deckend, nur translate und scale (der transform der Seite bleibt unberührt). */
+@keyframes woAufFoto{from{translate:0 40px;scale:1.04}}
+@keyframes woAuf{from{translate:0 40px}}
+@media screen and (prefers-reduced-motion:no-preference){
+  html:not(.still) .wo-sb__foto{animation:woAufFoto .85s cubic-bezier(.22,.61,.36,1) both}
+  html:not(.still) :is(.wo-sb__zier,.wo-sb__h,.wo-sb__satz,.wo-sb__kn){animation:woAuf .85s cubic-bezier(.22,.61,.36,1) both}
+  html:not(.still) .wo-sb__zier{animation-delay:.12s}
+  html:not(.still) .wo-sb__h{animation-delay:.24s}
+  html:not(.still) .wo-sb__satz{animation-delay:.36s}
+  html:not(.still) .wo-sb__kn{animation-delay:.48s}
+}

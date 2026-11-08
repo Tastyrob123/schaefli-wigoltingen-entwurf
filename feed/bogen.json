@@ -1,0 +1,140 @@
+{
+ "reihen": 8,
+ "stuecke": [
+  {
+   "id": "stube-holz",
+   "r": 1,
+   "c": 1,
+   "w": 2,
+   "h": 2,
+   "art": "foto",
+   "bild": "../_quelle/website/bilder/f415a3_D08E1A41-BA0A-41D4-8664-07DA10BC8D41.jpeg"
+  },
+  {
+   "id": "tuer",
+   "r": 1,
+   "c": 3,
+   "w": 1,
+   "h": 1,
+   "art": "foto",
+   "bild": "../_quelle/website/bilder/28c378_FHF_1090.jpg"
+  },
+  {
+   "id": "pass-dessert",
+   "r": 2,
+   "c": 3,
+   "w": 1,
+   "h": 1,
+   "art": "foto",
+   "bild": "../_quelle/website/bilder/179fa5_Schaefli_Juni2025-43-19.jpeg"
+  },
+  {
+   "id": "hof",
+   "r": 3,
+   "c": 1,
+   "w": 1,
+   "h": 1,
+   "art": "foto",
+   "bild": "../_quelle/ki/geschaerft/64209d_77C23C04-C8A0-4A40-878B-D2507FDCAB77-geschaerft.jpg"
+  },
+  {
+   "id": "teller-muschel",
+   "r": 3,
+   "c": 2,
+   "w": 1,
+   "h": 1,
+   "art": "foto",
+   "bild": "../_quelle/website/bilder/7aa08e_IMG_0376.jpg"
+  },
+  {
+   "id": "tafel",
+   "r": 3,
+   "c": 3,
+   "w": 1,
+   "h": 1,
+   "art": "foto",
+   "bild": "../_quelle/website/bilder/e278b3_IMG_8589.jpeg"
+  },
+  {
+   "id": "teller-fisch",
+   "r": 4,
+   "c": 1,
+   "w": 1,
+   "h": 1,
+   "art": "foto",
+   "bild": "../_quelle/website/bilder/673538_Schaefli_Juni2025-40-18.jpeg"
+  },
+  {
+   "id": "kopf-bar",
+   "r": 4,
+   "c": 2,
+   "w": 2,
+   "h": 2,
+   "art": "foto",
+   "bild": "../_quelle/website/bilder/24f897_IMG_9501.jpeg"
+  },
+  {
+   "id": "einschenken",
+   "r": 5,
+   "c": 1,
+   "w": 1,
+   "h": 1,
+   "art": "foto",
+   "bild": "../_quelle/ki/geschaerft/7ccf4e_BE589680-AD07-4925-AD55-7246B547B4A0-geschaerft.jpg"
+  },
+  {
+   "id": "weinwand",
+   "r": 6,
+   "c": 1,
+   "w": 1,
+   "h": 1,
+   "art": "foto",
+   "bild": "../_quelle/website/bilder/0b7896_57B762F1-4DA2-4AA6-89BB-2F16F8D9B62F.jpeg"
+  },
+  {
+   "id": "uhr",
+   "r": 6,
+   "c": 2,
+   "w": 1,
+   "h": 1,
+   "art": "foto",
+   "bild": "../_quelle/website/bilder/2a99d2_IMG_9209.jpeg"
+  },
+  {
+   "id": "teller-ente",
+   "r": 6,
+   "c": 3,
+   "w": 1,
+   "h": 1,
+   "art": "foto",
+   "bild": "../_quelle/website/bilder/b3f2e6_IMG_0384.jpg"
+  },
+  {
+   "id": "k-oben",
+   "r": 7,
+   "c": 1,
+   "w": 2,
+   "h": 2,
+   "art": "foto",
+   "bild": "../_quelle/website/bilder/7ea90d_Schaefli_Juni2025-27-14.jpeg"
+  },
+  {
+   "id": "bogen",
+   "r": 7,
+   "c": 3,
+   "w": 1,
+   "h": 1,
+   "art": "foto",
+   "bild": "../_quelle/website/bilder/8b5c44_IMG_9225.jpeg"
+  },
+  {
+   "id": "vater",
+   "r": 8,
+   "c": 3,
+   "w": 1,
+   "h": 1,
+   "art": "foto",
+   "bild": "../_quelle/website/bilder/850c49__FHF5587.jpg"
+  }
+ ]
+}

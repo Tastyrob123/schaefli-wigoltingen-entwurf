@@ -1,0 +1,146 @@
+[
+ {
+  "name": "Ochsenblut tief",
+  "hex": "#301916",
+  "rgb": [
+   48,
+   25,
+   22
+  ],
+  "rolle": "Grund der dunklen Flächen, immer mit der Rauten-Tapete",
+  "gruppe": "dunkel",
+  "woher": "Farbwelt A «Riegel und Kalk» #301916, unverändert auf der Website"
+ },
+ {
+  "name": "Ochsenblut",
+  "hex": "#452520",
+  "rgb": [
+   69,
+   37,
+   32
+  ],
+  "rolle": "zweite dunkle Fläche, Platten auf Ochsenblut tief",
+  "gruppe": "dunkel",
+  "woher": "Farbwelt A «Riegel und Kalk» #452520, unverändert auf der Website"
+ },
+ {
+  "name": "Riegelrot",
+  "hex": "#7d433a",
+  "rgb": [
+   125,
+   67,
+   58
+  ],
+  "rolle": "die Balken: Fugen zwischen Bildern, Knöpfe, Betonung in Titeln auf Hell",
+  "gruppe": "dunkel",
+  "woher": "Farbwelt A «Riegel und Kalk» #7D433A, unverändert auf der Website"
+ },
+ {
+  "name": "Kalk",
+  "hex": "#f5f3ef",
+  "rgb": [
+   245,
+   243,
+   239
+  ],
+  "rolle": "Grund der hellen Flächen",
+  "gruppe": "hell",
+  "woher": "Farbwelt A «Riegel und Kalk» #F5F3EF, unverändert auf der Website"
+ },
+ {
+  "name": "Kalk warm",
+  "hex": "#f0eae1",
+  "rgb": [
+   240,
+   234,
+   225
+  ],
+  "rolle": "zweite helle Fläche, mit der Rauten-Tapete",
+  "gruppe": "hell",
+  "woher": "Farbwelt A «Riegel und Kalk» #F0EAE1, unverändert auf der Website"
+ },
+ {
+  "name": "Kalk tief",
+  "hex": "#e6ddd0",
+  "rgb": [
+   230,
+   221,
+   208
+  ],
+  "rolle": "Felder und Linien auf Kalk",
+  "gruppe": "hell",
+  "woher": "Wert der Website (schaefli.css), nicht aus dem Markenbuch"
+ },
+ {
+  "name": "Schildgold",
+  "hex": "#b38346",
+  "rgb": [
+   179,
+   131,
+   70
+  ],
+  "rolle": "Linie und Zeichen, das Lamm auf Dunkel",
+  "gruppe": "gold",
+  "woher": "Farbwelt A «Riegel und Kalk» #B38346, unverändert auf der Website"
+ },
+ {
+  "name": "Gold hell",
+  "hex": "#d3b794",
+  "rgb": [
+   211,
+   183,
+   148
+  ],
+  "rolle": "Betonung in Titeln auf Dunkel, kleine Angaben auf Ochsenblut",
+  "gruppe": "gold",
+  "woher": "Farbwelt A «Riegel und Kalk» #D3B794, unverändert auf der Website"
+ },
+ {
+  "name": "Gold tief",
+  "hex": "#815e32",
+  "rgb": [
+   129,
+   94,
+   50
+  ],
+  "rolle": "Gold auf hellen Flächen, wo Schildgold zu blass ist",
+  "gruppe": "gold",
+  "woher": "Farbwelt A «Riegel und Kalk» #815E32, unverändert auf der Website"
+ },
+ {
+  "name": "Tinte",
+  "hex": "#2a292b",
+  "rgb": [
+   42,
+   41,
+   43
+  ],
+  "rolle": "Lesetext auf hellen Flächen, nie reines Schwarz",
+  "gruppe": "schrift",
+  "woher": "Farbwelt A «Riegel und Kalk» #2A292B, unverändert auf der Website"
+ },
+ {
+  "name": "Titelrot",
+  "hex": "#64362e",
+  "rgb": [
+   100,
+   54,
+   46
+  ],
+  "rolle": "Titel auf hellen Flächen",
+  "gruppe": "schrift",
+  "woher": "Farbwelt A «Riegel und Kalk» #64362E, unverändert auf der Website"
+ },
+ {
+  "name": "Wappengrün",
+  "hex": "#6eaa3e",
+  "rgb": [
+   110,
+   170,
+   62
+  ],
+  "rolle": "nur als Punkt: Markierung, nie als Fläche",
+  "gruppe": "punkt",
+  "woher": "Farbwelt A «Riegel und Kalk» #6EAA3E, unverändert auf der Website"
+ }
+]

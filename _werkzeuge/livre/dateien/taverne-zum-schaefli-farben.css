@@ -1,0 +1,15 @@
+/* Taverne zum Schäfli · Farben der Marke (Das Hausbuch, 21.10.2026), Werte der Website (assets/css/schaefli.css) */
+:root{
+  --tief:#301916; /* Ochsenblut tief: Grund der dunklen Flächen, immer mit der Rauten-Tapete */
+  --dunkel:#452520; /* Ochsenblut: zweite dunkle Fläche, Platten auf Ochsenblut tief */
+  --riegel:#7d433a; /* Riegelrot: die Balken: Fugen zwischen Bildern, Knöpfe, Betonung in Titeln auf Hell */
+  --kalk:#f5f3ef; /* Kalk: Grund der hellen Flächen */
+  --kalk-warm:#f0eae1; /* Kalk warm: zweite helle Fläche, mit der Rauten-Tapete */
+  --kalk-tief:#e6ddd0; /* Kalk tief: Felder und Linien auf Kalk */
+  --gold:#b38346; /* Schildgold: Linie und Zeichen, das Lamm auf Dunkel */
+  --gold-hell:#d3b794; /* Gold hell: Betonung in Titeln auf Dunkel, kleine Angaben auf Ochsenblut */
+  --gold-tief:#815e32; /* Gold tief: Gold auf hellen Flächen, wo Schildgold zu blass ist */
+  --tinte:#2a292b; /* Tinte: Lesetext auf hellen Flächen, nie reines Schwarz */
+  --titel:#64362e; /* Titelrot: Titel auf hellen Flächen */
+  --punkt:#6eaa3e; /* Wappengrün: nur als Punkt: Markierung, nie als Fläche */
+}

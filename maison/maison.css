@@ -1,0 +1,316 @@
+/* La Maison · Taverne zum Schäfli, Wigoltingen (21.10.2026). Quelle für bau.py, nicht die Ausgabe. Aufbau und Wege wie La Maison der Häuser.
+   Kleid aus der Website des Hauses (website/assets/css/schaefli.css, Farbwelt A «Riegel und Kalk»): Ochsenblut (#301916 · #452520 · #7D433A Riegel),
+   Kalk (#F5F3EF · #F0EAE1 · #E6DDD0), Schildgold (#B38346, hell #D3B794), Schrift Schmiedeeisen #2A292B. Titel Petrona 460 in normaler Schreibung,
+   Lauf Instrument Sans, kleine Marken DM Mono in Versalien. Knöpfe kantig wie ein Balken (7 px) mit Tiefe in drei Stufen.
+   Die tragende Idee des Hauses: das Riegelwerk. Bilder stehen gross aneinander, getrennt nur von einer schmalen Fuge in Ochsenblut wie die Balken
+   der Fassade; die Raute der Brüstung ist das einzige Ornament, das Lamm des Wirtshausschilds das einzige Zeichen.
+   Empfang «Die Riegelwand»: links die Bühne im Balkenrahmen (in Ruhe das Haus unter dem Himmel, beim Darüberfahren die echte Vorschau, M23),
+   rechts die sechs Werkzeuge als Gefache. Nichts hüpft, nichts schwingt; Bewegung nur transform/opacity, Wechsel hart und deckend. */
+
+@font-face{font-family:'Petrona';src:url(schrift/Petrona-var.woff2) format('woff2');font-weight:100 900;font-display:block}
+@font-face{font-family:'Instrument Sans';src:url(schrift/InstrumentSans-normal-400_600.woff2) format('woff2');font-weight:400 600;font-display:block}
+@font-face{font-family:'DM Mono';src:url(schrift/DMMono-normal-400.woff2) format('woff2');font-weight:400;font-display:swap}
+@font-face{font-family:'Lauf Ersatz';src:local('Helvetica Neue'),local('Arial');size-adjust:98%}
+
+:root{
+  --tief:#301916;--dunkel:#452520;--riegel:#7D433A;--riegel-h:#8f4c42;--riegel-t:#5c2f28;
+  --kalk:#F0EAE1;--kalk2:#E6DDD0;--papier:#F5F3EF;--weiss:#FBFAF7;
+  --gold:#B38346;--gold-h:#D3B794;--gold-t:#815E32;--tinte:#2A292B;--titel-f:#64362E;
+  --leise:#6a5a55;--leise-d:rgba(245,236,224,.76);
+  --titel:'Petrona',Georgia,serif;--lauf:'Instrument Sans','Lauf Ersatz',system-ui,sans-serif;--mono:'DM Mono',ui-monospace,Menlo,monospace;
+  --rand:clamp(16px,4.6vw,76px);--rund:12px;--rund-k:7px;--fuge:clamp(6px,.6vw,9px);
+  --e1:cubic-bezier(.22,1,.36,1);--knopf:cubic-bezier(.32,.72,0,1);
+  --tap-d:url(img/tapete-dunkel.webp);--tap-h:url(img/tapete-hell.webp);
+  --raute:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14'%3E%3Cpath d='M7 1l6 6-6 6-6-6z' fill='none' stroke='%23B38346' stroke-width='1.3'/%3E%3Cpath d='M7 4.6l2.4 2.4-2.4 2.4-2.4-2.4z' fill='%237D433A'/%3E%3C/svg%3E")
+}
+
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%;scroll-behavior:auto}
+body.ma{margin:0;background:var(--kalk);color:var(--tinte);font:400 17px/1.62 var(--lauf);-webkit-font-smoothing:antialiased;overflow-x:clip}
+.ma img{display:block;max-width:100%;height:auto}
+.ma a{color:inherit}
+.ma p{margin:0}
+.ma h1,.ma h2,.ma h3{margin:0;font-weight:460}
+.ma :focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+.mono{font:400 11.5px/1.5 var(--mono);letter-spacing:.16em;text-transform:uppercase}
+.innen{max-width:1400px;margin:0 auto;padding-inline:var(--rand);position:relative}
+.dunkel{background-color:var(--tief);background-image:var(--tap-d);background-size:168px;color:#F4EADD}
+.tapete{background-color:var(--kalk);background-image:var(--tap-h);background-size:168px}
+.papier{background-color:var(--papier)}
+
+/* ---------- Startfehler-Tür (R04) ---------- */
+.m-tuer{position:fixed;inset:auto 16px 16px 16px;z-index:90;max-width:560px;margin:0 auto;padding:22px 24px;border-radius:var(--rund);background:var(--papier);color:var(--tinte);border-top:3px solid var(--riegel);box-shadow:0 30px 60px -24px rgba(48,25,22,.6)}
+.m-tuer__t{font:460 20px/1.3 var(--titel);margin-bottom:6px;color:var(--titel-f)}
+.m-tuer p+p{color:var(--leise);margin-bottom:14px}
+.m-tuer .knopf{margin:4px 8px 0 0}
+
+/* ---------- Knöpfe: kantig wie ein Balken (7 px), Tiefe in drei Stufen, runder Knauf mit Pfeil, Glanzstreif (wie die Website) ---------- */
+.knopf{position:relative;display:inline-flex;align-items:center;gap:16px;height:54px;padding:0 6px 0 24px;border-radius:var(--rund-k);overflow:hidden;border:0;cursor:pointer;
+  font:400 12px/1 var(--mono);letter-spacing:.15em;text-transform:uppercase;text-decoration:none;white-space:nowrap;color:var(--tief);
+  background:linear-gradient(180deg,#fbf8f2 0%,#efe7da 52%,#e2d6c4 100%);
+  box-shadow:inset 0 1px 0 #fff,inset 0 -1px 0 rgba(90,60,40,.28),0 16px 30px -16px rgba(20,8,6,.6),0 3px 8px -3px rgba(20,8,6,.3);
+  transition:transform .5s var(--knopf),box-shadow .5s var(--knopf)}
+.knopf::after{content:"";position:absolute;inset:0;background:linear-gradient(105deg,transparent 30%,rgba(255,240,225,.4) 48%,transparent 66%);transform:translateX(-120%);pointer-events:none}
+.knopf:hover{transform:translateY(-2px)}
+.knopf:hover::after{transform:translateX(120%);transition:transform 1.1s var(--knopf)}
+.knopf:active{transform:translateY(1px) scale(.985)}
+.knopf i{width:42px;height:42px;border-radius:50%;display:grid;place-items:center;flex:none;background:linear-gradient(180deg,var(--riegel-h),var(--riegel) 50%,var(--riegel-t));color:#F4EADD;box-shadow:inset 0 1px 0 rgba(255,236,220,.3),0 6px 12px -6px rgba(0,0,0,.6)}
+.knopf svg{width:15px;height:15px;stroke:currentColor;fill:none;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round}
+.knopf--dunkel{color:var(--weiss);background:linear-gradient(180deg,var(--riegel-h) 0%,var(--riegel) 46%,var(--riegel-t) 100%);box-shadow:inset 0 1px 0 rgba(255,236,220,.28),inset 0 -1px 0 rgba(30,10,8,.45),0 16px 30px -16px rgba(48,25,22,.7),0 3px 8px -3px rgba(48,25,22,.35)}
+.knopf--dunkel i{background:linear-gradient(180deg,#F4EADB,var(--gold-h) 55%,var(--gold));color:var(--tief)}
+.knopf--klein{height:44px;padding-left:18px;gap:12px;font-size:11.5px}
+.knopf--klein i{width:34px;height:34px}
+@media (max-width:420px){.knopf{padding-left:16px;gap:10px;font-size:11px;letter-spacing:.1em}}
+.ma .knopf{color:var(--tief)}
+.ma .knopf--dunkel{color:var(--weiss)}
+
+/* ---------- Leiste oben: Insel aus Kalk, Eck-Knöpfe (M01, M02), verschwindet beim Hinunterscrollen ---------- */
+.m-oben{position:fixed;inset:0 0 auto;z-index:50;display:flex;align-items:center;justify-content:space-between;gap:14px;padding:16px var(--rand) 0;pointer-events:none;transition:transform .6s var(--e1)}
+.m-oben>*{pointer-events:auto}
+.m-oben.weg{transform:translateY(-130%)}
+.m-insel{display:flex;align-items:center;gap:clamp(14px,1.6vw,26px);height:58px;padding:0 24px 0 6px;border-radius:var(--rund);min-width:0;overflow:hidden;
+  background:linear-gradient(180deg,rgba(251,250,247,.98),rgba(240,234,225,.98));box-shadow:inset 0 1px 0 #fff,inset 0 -2px 0 var(--riegel),0 18px 34px -22px rgba(48,25,22,.55)}
+/* M24: Ecke oben links wie in allen Werkzeugen des Hauses (oberflaeche .wo-marke-w): das Lamm im Ring, Name, darunter «Bereich · Haus» */
+.m-ecke{display:flex;align-items:center;gap:13px;text-decoration:none;color:var(--tinte);flex:none}
+.m-ecke__ring{position:relative;flex:none;width:46px;height:46px;border-radius:50%;display:grid;place-items:center;
+  background:radial-gradient(circle at 50% 38%,#8f4c42,#452520 74%);box-shadow:inset 0 0 0 1px rgba(211,183,148,.8),inset 0 0 0 4px rgba(48,25,22,.5),0 6px 14px -8px rgba(0,0,0,.8)}
+.m-ecke__z{width:22px;height:28px;color:#EFE2CB}
+.m-ecke__t{display:flex;flex-direction:column;min-width:0}
+.m-ecke__t b{font:460 18px/1.1 var(--titel);white-space:nowrap;color:var(--tinte)}
+.m-ecke__t small{font:400 9.5px/1.4 var(--mono);letter-spacing:.2em;text-transform:uppercase;color:var(--riegel);white-space:nowrap;margin-top:3px}
+.m-insel__wege{display:flex;gap:clamp(12px,1.4vw,22px)}
+.m-insel__p{position:relative;font:400 11px/1 var(--mono);letter-spacing:.14em;text-transform:uppercase;text-decoration:none;color:var(--tinte);padding:6px 0;white-space:nowrap}
+.m-insel__p::after{content:"";position:absolute;left:0;right:0;bottom:0;height:1px;background:var(--riegel);transform:scaleX(0);transform-origin:0 50%;transition:transform .5s var(--e1)}
+.m-insel__p:hover::after,.m-insel__p.an::after{transform:scaleX(1)}
+.m-insel__p.an{color:var(--riegel)}
+/* Buchstaben rollen beim Überfahren der Namen (M01) */
+.rl{display:inline-flex;overflow:hidden;height:1.2em;line-height:1.2em}
+.rl b{display:inline-block;font-weight:400;white-space:pre;text-shadow:0 1.2em 0 currentColor;transition:transform .45s var(--e1);transition-delay:calc(var(--n)*14ms)}
+.m-insel__p:hover .rl b{transform:translateY(-1.2em)}
+.m-oben__ecke{flex:none}
+.m-oben__ecke.knopf{height:46px;padding-left:18px;gap:12px}
+.m-oben__ecke.knopf i{width:36px;height:36px}
+@media (max-width:1180px){.m-insel__wege{display:none}.m-insel{padding-right:22px}}
+/* Fehlerbuch 10a (Leiste): die Namen stehen nur, wenn sie ganz zwischen die Eck-Knöpfe passen (maison.js misst und setzt .eng) */
+.m-oben.eng .m-insel__wege{display:none}.m-oben.eng .m-insel{padding-right:22px}
+@media (max-width:760px){.m-oben__ecke--l{display:none}}
+@media (max-width:480px){.m-ecke__t small{display:none}.m-oben{padding-top:12px}.m-oben__ecke.knopf{font-size:0;letter-spacing:0;gap:0;padding-left:5px;width:46px}}
+
+/* ---------- Empfang «Die Riegelwand» (M03–M06, M16, M23, Fehlerbuch 10a: Kopf, Bühne und alle sechs Werkzeuge im ersten Bild) ---------- */
+.m-empfang{position:relative;padding:clamp(96px,8vw,112px) 0 clamp(40px,4vw,60px);overflow-x:clip}
+.rw-kopf{display:flex;align-items:flex-end;justify-content:space-between;gap:20px 40px;flex-wrap:wrap}
+.rw-kopf__l{display:flex;align-items:flex-end;gap:clamp(14px,1.4vw,22px)}
+.rw-kopf__z{width:clamp(30px,2.5vw,38px);height:auto;flex:none;color:var(--riegel);margin-bottom:.35rem}
+.rw-kopf__ort{font:400 10.5px/1.4 var(--mono);letter-spacing:.2em;text-transform:uppercase;color:var(--riegel)}
+.rw-titel{margin-top:6px!important;font:460 clamp(2.4rem,4.4vw,4rem)/1 var(--titel)!important;letter-spacing:-.01em;color:var(--titel-f)}
+.rw-titel em{font-style:normal;color:var(--riegel)}
+.rw-kopf__r{display:flex;flex-direction:column;align-items:flex-end;text-align:right}
+.rw-gruss{font-size:clamp(1rem,1.1vw,1.1rem);color:var(--leise)}
+.rw-gruss span{color:var(--tinte)}
+.rw-datum{display:block;min-height:1.4em;margin-top:4px;font:400 10.5px/1.4 var(--mono);letter-spacing:.2em;text-transform:uppercase;color:var(--riegel)}
+/* die Linie mit der Raute der Brüstung (M22: feine Linie mit Raute) */
+.rw-linie{position:relative;height:1px;margin:clamp(18px,1.8vw,26px) 0 clamp(20px,2vw,28px);background:linear-gradient(90deg,var(--riegel),rgba(125,67,58,.35) 40%,rgba(125,67,58,.35) 60%,var(--riegel))}
+.rw-linie i{position:absolute;left:50%;top:50%;width:14px;height:14px;margin:-7px 0 0 -7px;background:var(--kalk) var(--raute) center/14px no-repeat;box-shadow:0 0 0 6px var(--kalk)}
+/* Zahlenzeile (M06), rechts unter dem Gruss */
+.m-zeile{display:flex;flex-wrap:wrap;justify-content:flex-end;align-items:baseline;gap:6px 18px;margin-top:12px;font:400 11px/1.4 var(--mono);letter-spacing:.16em;text-transform:uppercase;color:var(--riegel)}
+.m-zeile b{font:460 clamp(1.25rem,1.6vw,1.6rem)/1 var(--titel);letter-spacing:0;color:var(--titel-f);margin-right:7px}
+.m-zeile i{width:6px;height:6px;transform:rotate(45deg);background:var(--gold);opacity:.75;align-self:center}
+.m-zeile a{text-decoration:none;border-bottom:1px solid currentColor;padding-bottom:3px}
+.bsp{font:400 9.5px/1 var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--gold-t)}
+.dunkel .bsp{color:var(--gold-h)}
+
+/* das Feld: Bühne links, Riegelwand rechts; beide beginnen und enden auf derselben Linie (Fehlerbuch 10a) */
+.rw-feld{display:grid;grid-template-columns:minmax(0,.94fr) minmax(0,1.06fr);gap:clamp(18px,2vw,30px);align-items:stretch}
+.hz-buehne{display:flex;min-width:0}
+.hz-rahmen{position:relative;flex:1;margin:0;min-height:100%;border-radius:var(--rund);overflow:hidden;background:var(--dunkel);
+  border:var(--fuge) solid var(--riegel);box-shadow:0 40px 70px -42px rgba(48,25,22,.7),inset 0 0 0 1px rgba(211,183,148,.35)}
+.ma .hz-bild{position:absolute;inset:0;width:100%;height:100%;max-width:none;object-fit:cover;opacity:0;visibility:hidden}
+.hz-bild.an{opacity:1;visibility:visible}   /* harter, deckender Wechsel (M16, Fehlerbuch 10a: nie halb durchscheinend) */
+.hz-bild--ruhe{object-position:50% 78%}
+.hz-bild--schirm{object-position:50% 0;background:var(--papier)}
+.hz-unter{position:absolute;left:0;right:0;bottom:0;padding:16px 20px 14px;background:var(--riegel);font:400 10.5px/1.4 var(--mono);letter-spacing:.16em;text-transform:uppercase;color:#F4EADD;pointer-events:none;
+  border-top:1px solid rgba(211,183,148,.45)}
+.hz-unter span{display:none}
+.hz-unter span.an{display:block}
+.hz-platz{position:absolute;inset:0;display:none;place-items:center;text-align:center;padding:24px;background:var(--papier) var(--tap-h) 0 0/168px;color:var(--tinte)}
+.hz-platz.an{display:grid}
+.hz-platz svg{width:26px;margin:0 auto 10px;color:var(--riegel)}
+.hz-platz b{display:block;font:460 22px/1.2 var(--titel);color:var(--titel-f);margin-bottom:8px}
+.hz-platz small{display:block;margin-top:10px;font:400 10.5px/1.4 var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--leise)}
+
+/* die Riegelwand: sechs Gefache, die Fuge in Ochsenblut ist der Balken (Grundform «Riegelwand» der Website) */
+.rw-wand{min-width:0;border-radius:var(--rund);background:var(--riegel);padding:var(--fuge);box-shadow:0 40px 70px -42px rgba(48,25,22,.7),inset 0 0 0 1px rgba(211,183,148,.35)}
+.rw-gefache{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:var(--fuge);height:100%}
+.rw-g{min-width:0;display:flex}
+.rw-g a{position:relative;flex:1;display:flex;flex-direction:column;text-decoration:none;color:var(--tinte);background:var(--papier);border-radius:3px;overflow:hidden}
+.rw-b{display:block;aspect-ratio:4/3;overflow:hidden;background:var(--kalk2)}
+.rw-b img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s var(--e1)}
+.rw-t{flex:1;display:flex;flex-direction:column;gap:3px;padding:clamp(10px,1vw,14px) clamp(12px,1.1vw,16px) clamp(12px,1.1vw,16px);border-top:2px solid var(--riegel)}
+.rw-nr{font:400 9.5px/1.3 var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--riegel);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.rw-name{font:460 clamp(1.05rem,1.22vw,1.32rem)/1.12 var(--titel);color:var(--titel-f);white-space:nowrap}   /* eine Zeile: Gefache gleich gebaut (Raute ohne Platzbedarf) */
+.rw-stand{font-size:13px;line-height:1.35;color:var(--leise);min-height:2.7em;padding-right:42px}   /* Platz für zwei Zeilen: der Stand kommt nach dem Laden, nichts verrutscht (CLS) */
+.rw-stand b{font-weight:600;color:var(--tinte)}
+.hz-ring{position:absolute;right:12px;bottom:14px;width:32px;height:32px;border-radius:50%;display:grid;place-items:center;color:var(--riegel);box-shadow:inset 0 0 0 1px rgba(125,67,58,.4);transition:background-color .35s ease,color .35s ease,box-shadow .35s ease}
+.hz-ring svg{width:13px;height:13px;stroke:currentColor;fill:none;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
+/* beim Darüberfahren (M21): ruhig und edel, nichts hebt sich, nichts springt; feine Goldkante, Raute am Namen, Foto zoomt sehr langsam ein wenig */
+.rw-g a::after{content:"";position:absolute;inset:0;border-radius:3px;box-shadow:inset 0 0 0 2px var(--gold-h);opacity:0;transition:opacity .35s ease;pointer-events:none}
+.rw-g a.an::after,.rw-g a:focus-visible::after{opacity:1}
+.rw-g a.an .rw-b img{transform:scale(1.035)}
+.rw-name::after{content:"";position:absolute;display:inline-block;width:12px;height:12px;margin:.34em 0 0 9px;vertical-align:middle;background:var(--raute) center/12px no-repeat;opacity:0;transition:opacity .35s ease}
+.rw-g a.an .rw-name::after,.rw-g a:focus-visible .rw-name::after{opacity:1}
+.rw-g a.an .hz-ring,.rw-g a:focus-visible .hz-ring{background:var(--riegel);color:#fff;box-shadow:none}
+.rw-g a.gedrueckt .rw-t{background:var(--kalk)}
+.m-hilfe{margin-top:16px;font-size:14px;color:var(--leise)}
+.m-hilfe kbd{font:400 11px/1 var(--mono);padding:3px 6px;border-radius:4px;box-shadow:inset 0 0 0 1px rgba(125,67,58,.35);color:var(--tinte)}
+@media (max-width:1000px){
+  .rw-feld{grid-template-columns:1fr}
+  .hz-buehne{display:none}
+  .rw-kopf{align-items:flex-start}
+  .rw-kopf__r{align-items:flex-start;text-align:left}
+  .m-zeile{justify-content:flex-start}
+}
+@media (max-width:700px){.rw-gefache{grid-template-columns:repeat(2,minmax(0,1fr))}.m-hilfe{display:none}.rw-g .hz-ring{display:none}.rw-stand{padding-right:0}.rw-name{white-space:normal}}
+@media (max-width:420px){.rw-titel{font-size:2.2rem!important}.rw-name{font-size:1rem}.rw-stand{font-size:12.5px}}
+
+/* ---------- Laufband (M07): Namen der Werkzeuge und des Hauses, läuft nur im Bild, hält beim Überfahren ---------- */
+.m-band{overflow:hidden;background:var(--riegel);border-block:1px solid rgba(211,183,148,.4);padding:14px 0;color:#F4EADD}
+.m-band ul{display:flex;width:max-content;margin:0;padding:0;list-style:none;gap:26px;animation:m-band 70s linear infinite;animation-play-state:paused}
+.m-band.laeuft ul{animation-play-state:running}
+.m-band:hover ul{animation-play-state:paused}
+.m-band li{font:460 15px/1 var(--titel);white-space:nowrap;display:flex;align-items:center}
+.m-band li.p::before{content:"";width:6px;height:6px;transform:rotate(45deg);background:var(--gold-h)}
+@keyframes m-band{to{transform:translateX(-50%)}}
+
+/* ---------- Säle (M08, M09): je Werkzeug ein Abschnitt, schiebt sich als Platte über den vorigen ---------- */
+.m-saal{position:relative;padding:clamp(84px,9vw,148px) 0;border-radius:var(--rund) var(--rund) 0 0;margin-top:calc(var(--rund) * -1);box-shadow:0 -24px 50px -34px rgba(48,25,22,.5);overflow-x:clip}
+.m-saal__kopf{display:flex;flex-direction:column;align-items:center;text-align:center;max-width:820px;margin:0 auto}
+.m-saal__z{width:26px;height:auto;color:var(--riegel)}
+.dunkel .m-saal__z{color:var(--gold-h)}
+.m-saal__nr{margin-top:18px;font:400 11px/1.4 var(--mono);letter-spacing:.2em;text-transform:uppercase;color:var(--riegel)}
+.dunkel .m-saal__nr{color:var(--gold-h)}
+.m-saal__titel{margin-top:14px!important;font:460 clamp(2.1rem,3.9vw,3.6rem)/1.08 var(--titel)!important;color:var(--titel-f)}
+.m-saal__titel em{font-style:normal;color:var(--riegel)}
+.m-saal__satz{margin-top:18px;max-width:58ch;font-size:clamp(1rem,1.1vw,1.1rem);color:var(--leise)}
+.dunkel .m-saal__satz{color:var(--leise-d)}
+.m-saal__linie{position:relative;width:100%;height:1px;margin-top:clamp(40px,4vw,60px);background:rgba(125,67,58,.35)}
+.m-saal__linie i{position:absolute;left:50%;top:50%;width:14px;height:14px;margin:-7px 0 0 -7px;background:var(--raute) center/14px no-repeat}
+.dunkel .m-saal__linie{background:rgba(211,183,148,.35)}
+.m-saal__feld{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(0,1fr);gap:clamp(24px,3.4vw,56px);align-items:start;margin-top:clamp(36px,3.4vw,52px)}
+@media (max-width:1000px){.m-saal__feld{grid-template-columns:1fr}}
+/* Bildschirm des Werkzeugs: Fensterleiste und echte Aufnahme */
+.m-schirm{margin:0;border-radius:var(--rund);overflow:hidden;background:#fff;box-shadow:0 46px 80px -46px rgba(48,25,22,.6),0 0 0 1px rgba(48,25,22,.08)}
+.dunkel .m-schirm{box-shadow:0 46px 80px -40px rgba(0,0,0,.85),0 0 0 1px rgba(211,183,148,.25)}
+.m-schirm__leiste{display:flex;align-items:center;gap:8px;height:32px;padding:0 14px;background:linear-gradient(180deg,#FBFAF7,#EDE5DA);border-bottom:2px solid var(--riegel)}
+.m-schirm__leiste::before{content:"";width:9px;height:9px;border-radius:50%;background:#D9CCBD;box-shadow:15px 0 0 #D9CCBD,30px 0 0 #D9CCBD;margin-right:34px}
+.m-schirm__leiste span{font:400 10px/1 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--leise);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.m-schirm img{width:100%}
+.m-schirm--platz{aspect-ratio:16/10.4;display:flex;flex-direction:column}
+.m-platz{flex:1;display:grid;place-items:center;align-content:center;gap:10px;text-align:center;padding:24px;background:var(--papier) var(--tap-h) 0 0/168px;color:var(--tinte)}
+.m-platz svg{width:26px;color:var(--riegel)}
+.m-platz b{display:block;font:460 22px/1.2 var(--titel);color:var(--titel-f)}
+.m-platz p{max-width:36ch;font-size:14.5px;color:var(--leise)}
+.m-platz small{font:400 10px/1.4 var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--leise)}
+.m-schirme{display:grid;gap:clamp(18px,2vw,28px)}
+.m-schirme--zwei{grid-template-columns:1fr 1fr}
+@media (max-width:700px){.m-schirme--zwei{grid-template-columns:1fr}}
+/* Tafel «So geht’s»: helles Blatt mit Balken oben, Zeilen als Gefache */
+.m-tafel{border-radius:var(--rund);padding:clamp(22px,2.2vw,30px);background:linear-gradient(180deg,#FBFAF7,var(--papier) 60%,#F0E9DE);border-top:3px solid var(--riegel);box-shadow:inset 0 0 0 1px rgba(48,25,22,.06),0 30px 50px -34px rgba(48,25,22,.5);color:var(--tinte)}
+.m-tafel__kopf{display:flex;align-items:center;gap:12px;font:400 11px/1 var(--mono);letter-spacing:.2em;text-transform:uppercase;color:var(--riegel)}
+.m-tafel__kopf::after{content:"";flex:1;height:1px;background:linear-gradient(90deg,rgba(125,67,58,.45),rgba(125,67,58,0))}
+.m-tafel__z{display:grid;grid-template-columns:38px minmax(0,1fr);gap:14px;margin-top:16px;padding:16px;border-radius:var(--rund-k);background:#F3EDE4;box-shadow:inset 0 0 0 1px rgba(125,67,58,.12)}
+.m-tafel__z i{width:38px;height:38px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(180deg,var(--riegel-h),var(--riegel) 55%,var(--riegel-t));color:#F4EADD}
+.m-tafel__z svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
+.m-tafel__z b{display:block;font:460 18px/1.25 var(--titel);color:var(--titel-f);margin-bottom:4px}
+.m-tafel__z p{font-size:15px;line-height:1.5;color:var(--leise)}
+.m-ui{font:400 .86em/1 var(--mono);letter-spacing:.06em;color:var(--tinte);white-space:nowrap;padding:2px 6px;border-radius:4px;background:rgba(125,67,58,.1)}
+.m-tafel__stand{margin-top:18px;font-size:15px;color:var(--tinte)}
+.m-tafel__stand b{font-weight:600}
+.m-tafel .knopf{margin-top:22px}
+/* Zahlen eines Saals */
+.m-zahlen{display:flex;flex-wrap:wrap;gap:12px 34px;margin-top:20px}
+.m-zahl b{display:block;font:460 clamp(1.9rem,2.6vw,2.5rem)/1 var(--titel);color:var(--titel-f)}
+.m-zahl span{display:block;margin-top:6px;font:400 10.5px/1.3 var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--leise)}
+.dunkel .m-zahl b{color:#FBFAF7}.dunkel .m-zahl span{color:var(--gold-h)}
+.m-hinweis{font-size:14px;color:var(--leise);margin-top:14px}
+.dunkel .m-hinweis{color:var(--leise-d)}
+/* Farben des Hauses: höchstens eine Reihe (M25) */
+.m-farben{display:grid;grid-template-columns:repeat(var(--n),minmax(0,1fr));gap:clamp(6px,.8vw,12px);margin:clamp(36px,4vw,56px) 0 0;padding:0;list-style:none}
+.m-farben li{min-width:0}
+.m-farben i{display:block;aspect-ratio:1/1.1;border-radius:var(--rund-k);background:var(--c);box-shadow:inset 0 0 0 1px rgba(48,25,22,.1)}
+.m-farben b{display:block;margin-top:8px;font:400 10px/1.25 var(--mono);letter-spacing:.08em;text-transform:uppercase;overflow-wrap:anywhere}
+.m-farben span{display:block;font:400 10px/1.2 var(--mono);color:var(--leise)}
+@media (max-width:700px){.m-farben b,.m-farben span{display:none}}
+/* Weg des Gastes (Besuche) */
+.m-weg{display:grid;grid-template-columns:repeat(var(--n,4),minmax(0,1fr));gap:0;margin:0;padding:0;list-style:none;border-top:2px solid var(--riegel)}
+.m-weg li{padding:22px 18px 6px 0;border-right:1px solid rgba(125,67,58,.22)}
+.m-weg li+li{padding-left:18px}
+.m-weg li:last-child{border-right:0}
+.m-weg b{display:block;font:460 clamp(1.9rem,2.8vw,2.7rem)/1 var(--titel);color:var(--titel-f)}
+.m-weg span{display:block;margin-top:8px;font:400 11px/1.35 var(--mono);letter-spacing:.12em;text-transform:uppercase}
+.m-weg small{display:block;margin-top:6px;font-size:14px;color:var(--leise)}
+@media (max-width:700px){.m-weg{grid-template-columns:1fr 1fr}.m-weg li:nth-child(2n){border-right:0}.m-weg li:nth-child(n+3){border-top:1px solid rgba(125,67,58,.22)}.m-weg li:nth-child(odd){padding-left:0}}
+
+/* Stücke der Säle (Fehlerbuch 10a: mehr Bilder): zweiter Bildschirm, gedruckte Karten, Fotos aus dem Bildarchiv, leicht versetzt wie Blätter auf dem Tisch */
+.m-saal__links{min-width:0}
+.m-stuecke{position:relative;display:grid;gap:clamp(12px,1.4vw,22px);margin-top:clamp(-56px,-3.4vw,-28px);padding-left:clamp(28px,5vw,90px);z-index:1}
+.m-stuecke--eins{grid-template-columns:1fr}
+.m-stuecke--eins .m-schirm{width:78%;justify-self:end;box-shadow:0 50px 90px -40px rgba(48,25,22,.7),0 0 0 1px rgba(48,25,22,.08)}
+.m-stuecke--karten{grid-template-columns:.72fr 1fr .72fr;align-items:end;padding-left:clamp(16px,3vw,48px)}
+.m-stuecke--fotos{grid-template-columns:repeat(6,minmax(0,1fr));align-items:end;padding-left:0;margin-top:clamp(18px,2vw,28px)}
+.m-stueck{margin:0;border-radius:var(--rund-k);overflow:hidden;background:#fff;box-shadow:0 34px 60px -30px rgba(48,25,22,.6),0 0 0 1px rgba(48,25,22,.07)}
+.dunkel .m-stueck{box-shadow:0 40px 70px -30px rgba(0,0,0,.85),0 0 0 1px rgba(211,183,148,.22)}
+.m-stueck img{width:100%;height:auto}
+.m-stueck--blatt{border-radius:4px}
+.m-stueck--quer{border-radius:4px;margin-bottom:clamp(20px,3vw,46px)}
+.m-stueck--foto{aspect-ratio:3/4}
+.m-stueck--foto img{height:100%;object-fit:cover}
+.m-stuecke--fotos .m-stueck:nth-child(odd){margin-bottom:clamp(14px,1.6vw,26px)}
+@media (max-width:700px){.m-stuecke{padding-left:0;margin-top:16px}.m-stuecke--eins .m-schirm{width:100%}.m-stuecke--fotos{grid-template-columns:repeat(3,minmax(0,1fr))}}
+
+/* Titel auf dunklem Grund ganz weiss, Betonung über die Stärke (Fehlerbuch 10a) */
+.dunkel .m-saal__titel,.dunkel .m-saal__titel em{color:#fff}
+.dunkel .m-saal__titel em{font-weight:340}
+
+/* ---------- Fuss als Platte (M10) ---------- */
+.m-fuss{padding:clamp(56px,6vw,96px) var(--rand) clamp(40px,4vw,64px)}
+.m-fuss__platte{max-width:1400px;margin:0 auto;display:grid;grid-template-columns:auto repeat(3,minmax(0,1fr));gap:clamp(22px,3vw,48px);align-items:start;padding:clamp(26px,3vw,44px);border-radius:var(--rund);
+  background:linear-gradient(180deg,#FBFAF7,var(--papier));border-top:3px solid var(--riegel);box-shadow:0 30px 60px -40px rgba(48,25,22,.55)}
+.m-fuss__marke{display:flex;flex-direction:column;align-items:center;gap:10px;color:var(--riegel);max-width:150px;text-align:center}
+.m-fuss__wm{width:clamp(44px,4vw,58px);height:auto}
+.m-fuss__marke b{font:460 17px/1.2 var(--titel);color:var(--titel-f)}
+.m-fuss__k{font:400 11px/1.4 var(--mono);letter-spacing:.18em;text-transform:uppercase;color:var(--riegel);margin-bottom:10px!important}
+.m-fuss__spalte{display:grid;gap:6px;font-size:15px;align-content:start}
+.m-fuss__spalte a{text-decoration:none;border-bottom:1px solid rgba(125,67,58,.3);justify-self:start}
+.m-fuss__leer{color:var(--leise)}
+@media (max-width:900px){.m-fuss__platte{grid-template-columns:1fr 1fr}}
+@media (max-width:520px){.m-fuss__platte{grid-template-columns:1fr}.m-fuss__marke{align-items:flex-start;text-align:left}}
+
+/* ---------- Bewegung wie in den Zentralen der anderen Häuser (Fehlerbuch 10a): Empfang beim Öffnen mit Bühne aus 40 px und 1,04, Gefache
+   gestaffelt von unten, Fotos zoomen im Rahmen an ihren Platz; beim Scrollen Stücke 40 px, 0,85 s, 0,12 s Staffel, Bildschirme schweben aus 1,04.
+   Nur transform, deckend, kein Aufblenden. Erst wenn das Ruhebild da ist (.bereit), höchstens 1,4 s. ---------- */
+@keyframes mbAuf{from{translate:0 40px;scale:1.04}}
+@keyframes mbKachel{from{translate:0 70px}}
+@keyframes mbZoom{from{scale:1.1}}
+@keyframes mbKopf{from{translate:0 22px}}
+@media (prefers-reduced-motion:no-preference){
+  .js .rw .rw-kopf{animation:mbKopf .9s cubic-bezier(.22,.61,.36,1) .05s both}
+  .js .rw .hz-rahmen{animation:mbAuf 1s cubic-bezier(.22,.61,.36,1) .15s both}
+  .js .rw .hz-bild--ruhe{animation:mbZoom 2.4s cubic-bezier(.22,.61,.36,1) .15s both}
+  .js .rw .rw-wand{animation:mbAuf 1s cubic-bezier(.22,.61,.36,1) .2s both}
+  .js .rw .rw-g{animation:mbKachel 1.05s cubic-bezier(.22,.61,.36,1) both;animation-delay:calc(.26s + var(--i,0)*.09s)}
+  .js .rw .rw-g .rw-b img{animation:mbZoom 1.9s cubic-bezier(.22,.61,.36,1) both;animation-delay:calc(.26s + var(--i,0)*.09s)}
+  .js .rw .m-hilfe{animation:mbKopf .85s cubic-bezier(.22,.61,.36,1) .6s both}
+  .js .m-empfang:not(.bereit) :is(.rw-kopf,.hz-rahmen,.hz-bild--ruhe,.rw-wand,.rw-g,.rw-g img,.m-hilfe){animation-play-state:paused}
+  .js [data-r]{transform:translate3d(0,40px,0);transition:transform .85s cubic-bezier(.22,.61,.36,1);transition-delay:calc(var(--i,0)*120ms)}
+  .js [data-r="schweb"]:not(.da){transform:translate3d(0,60px,0) scale(1.04)}
+  .js [data-r].da{transform:none}
+  .js .m-schirm img{transform:scale(1.08);transition:transform 2.2s cubic-bezier(.22,.61,.36,1);transition-delay:calc(var(--i,0)*120ms)}
+  .js .m-schirm.da img{transform:none}
+}
+@media (prefers-reduced-motion:reduce){
+  .js [data-r]{transform:none!important;transition:none!important}
+  .m-band ul{animation:none}
+  .knopf,.knopf::after,.rl b,.rw-b img{transition:none!important}
+}
+/* schmale Rechner (1001–1180): Namen etwas kleiner, damit sie auf einer Zeile bleiben; reicht es nicht, bricht der Name um statt abgeschnitten zu werden */
+@media (min-width:1001px) and (max-width:1180px){.rw-name{font-size:.98rem;white-space:normal}}

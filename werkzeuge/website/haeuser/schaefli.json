@@ -1,0 +1,466 @@
+{
+ "_lies_mich": "Beschreibung des Hauses für das Werkzeug «website» (Le Bureau). Taverne zum Schäfli, Wigoltingen TG: Restaurant, keine Zimmer, nur Deutsch. Jeder Text, jede Zahl, jedes Foto wird aus den gebauten Seiten gelesen (website/ des Projekts). Läuft im Rahmen des Hauses: https://schaefli.tastystudios.ch/_werkzeuge/bureau/ (Taverne zum Schäfli Wigoltingen/_werkzeuge/bureau/). Angelegt 21.10.2026.",
+ "seiten": [
+  {
+   "datei": "index.html"
+  },
+  {
+   "datei": "karte.html"
+  },
+  {
+   "datei": "wein.html"
+  },
+  {
+   "datei": "bar.html"
+  },
+  {
+   "datei": "abend.html"
+  },
+  {
+   "datei": "haus.html"
+  },
+  {
+   "datei": "anlaesse.html"
+  },
+  {
+   "datei": "feiern.html"
+  },
+  {
+   "datei": "kontakt.html"
+  },
+  {
+   "datei": "kueche.html"
+  },
+  {
+   "datei": "gutschein.html",
+   "foto": "a-gedeck-karte"
+  },
+  {
+   "datei": "jobs.html"
+  },
+  {
+   "datei": "impressum.html",
+   "foto": "strasse"
+  },
+  {
+   "datei": "datenschutz.html",
+   "foto": "tuer"
+  },
+  {
+   "datei": "agb.html",
+   "foto": "giebel"
+  }
+ ],
+ "sprachen": [],
+ "kopie": {
+  "unter": "website",
+  "ordner": [
+   "assets",
+   "weinwelt"
+  ]
+ },
+ "gesperrt": [
+  {
+   "wahl": "#menue .deg__beide, #klassiker .kl5__liste, #bar .bm__k, #keller .kel__zahlen",
+   "werkzeug": "karten"
+  },
+  {
+   "wahl": "#degustation .deg__beide, #klassiker .klw__w, #mittag .km__karte",
+   "werkzeug": "karten"
+  },
+  {
+   "wahl": "#geschmack .kb-pult, #geschmack .kb-treffer, #ganze-karte, #karte .kb-tafeln",
+   "werkzeug": "karten"
+  },
+  {
+   "wahl": "#lounge .bar7__karte",
+   "werkzeug": "karten"
+  },
+  {
+   "wahl": "#menues .mm",
+   "werkzeug": "karten"
+  },
+  {
+   "wahl": "#menue-wahl .ia-menues, .ia-teller__karte, .ia-keller, .gangwein",
+   "werkzeug": "karten"
+  }
+ ],
+ "auslassen": [],
+ "vorschau": {
+  "ohne_skripte": [],
+  "zusatz_css": ".fenster{overflow:clip}@media (hover:none){[data-ws-e],img[data-ws-b]{cursor:pointer}}",
+  "_zusatz_css_tippen": "Wie Demo-Check Schlössli 21.10.2026: Safari auf iPhone/iPad löst beim Tippen auf ein Element ohne Klick-Merkmal keinen Klick aus, wenn der Hörer am Dokument sitzt. Auf Geräten ohne Maus tragen Texte und Fotos der Vorschau cursor:pointer. Am echten iPhone ungeprüft."
+ },
+ "bereiche": {
+  "zimmer": {
+   "an": false
+  },
+  "preisstufen": {
+   "an": false
+  },
+  "packages": {
+   "an": false
+  },
+  "saele": {
+   "an": false
+  },
+  "unterlagen": {
+   "an": false
+  },
+  "stellen": {
+   "an": false
+  },
+  "anlaesse": {
+   "name": "Anlässe",
+   "satz": "Jeder Anlass mit Datum, Titel, Text und Foto, dazu der nächste Termin im Kalender. Was vorbei ist, blenden Sie aus.",
+   "quellen": [
+    {
+     "seite": "anlaesse.html",
+     "jedes": "#kalender .an-kal__g",
+     "felder": [
+      {
+       "key": "titel",
+       "label": "Titel",
+       "art": "text",
+       "wo": ".an-z--nx .vers",
+       "titel": true
+      },
+      {
+       "key": "datum",
+       "label": "Datum",
+       "art": "text",
+       "wo": ".an-z--nx .an-z__d"
+      },
+      {
+       "key": "bild",
+       "label": "Foto",
+       "art": "bild",
+       "wo": ".an-kal__bild"
+      }
+     ]
+    },
+    {
+     "seite": "anlaesse.html",
+     "jedes": "#vorarlberg",
+     "felder": [
+      {
+       "key": "titel",
+       "label": "Titel",
+       "art": "text",
+       "wo": "h2",
+       "titel": true
+      },
+      {
+       "key": "datum",
+       "label": "Datum und Zeit",
+       "art": "text",
+       "wo": ".an-eb"
+      },
+      {
+       "key": "satz",
+       "label": "Text",
+       "art": "lang",
+       "wo": ".an-satz"
+      },
+      {
+       "key": "koeche",
+       "label": "Gastköche",
+       "art": "liste",
+       "wo": ".an-vor__k"
+      },
+      {
+       "key": "preis",
+       "label": "Preis",
+       "art": "zahl",
+       "wo": ".an-preis",
+       "kann_fehlen": true
+      },
+      {
+       "key": "bild",
+       "label": "Foto",
+       "art": "bild",
+       "wo": ".an-vor__bild"
+      }
+     ]
+    },
+    {
+     "seite": "anlaesse.html",
+     "jedes": "#kitchenparty",
+     "felder": [
+      {
+       "key": "titel",
+       "label": "Titel",
+       "art": "text",
+       "wo": "h2",
+       "titel": true
+      },
+      {
+       "key": "zeile",
+       "label": "Zeile darüber",
+       "art": "text",
+       "wo": ".an-eb"
+      },
+      {
+       "key": "koeche",
+       "label": "Gastköche",
+       "art": "liste",
+       "wo": ".an-kp__n"
+      },
+      {
+       "key": "bilder",
+       "label": "Fotos",
+       "art": "bilder",
+       "wo": ".an-st"
+      }
+     ]
+    },
+    {
+     "seite": "anlaesse.html",
+     "jedes": "#privee-dinner",
+     "felder": [
+      {
+       "key": "titel",
+       "label": "Titel",
+       "art": "text",
+       "wo": ".an-pr__t h2",
+       "titel": true
+      },
+      {
+       "key": "datum",
+       "label": "Datum und Zeit",
+       "art": "text",
+       "wo": ".an-pr__t .an-eb"
+      },
+      {
+       "key": "satz",
+       "label": "Text",
+       "art": "liste",
+       "wo": ".an-pr__t p"
+      },
+      {
+       "key": "bild",
+       "label": "Foto",
+       "art": "bild",
+       "wo": ".an-pr__breit"
+      }
+     ]
+    },
+    {
+     "seite": "anlaesse.html",
+     "jedes": "#kalender .an-z > a",
+     "dazu": "Im Kalender",
+     "dazu_gleich": "anfang",
+     "felder": [
+      {
+       "key": "titel",
+       "label": "Titel",
+       "art": "text",
+       "wo": ".vers",
+       "titel": true
+      },
+      {
+       "key": "datum",
+       "label": "Datum",
+       "art": "text",
+       "wo": ".an-z__d"
+      }
+     ]
+    }
+   ]
+  },
+  "team": {
+   "name": "Team",
+   "satz": "Jeder Mensch in Küche und Service mit Name und Aufgabe, so wie er auf der Seite Küche steht.",
+   "quellen": [
+    {
+     "seite": "kueche.html",
+     "jedes": "#team .kt-liste > li",
+     "felder": [
+      {
+       "key": "name",
+       "label": "Name",
+       "art": "text",
+       "wo": ".vers",
+       "titel": true
+      },
+      {
+       "key": "rolle",
+       "label": "Aufgabe",
+       "art": "text",
+       "wo": ".mono"
+      },
+      {
+       "key": "bild",
+       "label": "Foto",
+       "art": "bild",
+       "wo": "img",
+       "kann_fehlen": true
+      }
+     ],
+     "bild_ersatz": {
+      "Christian Kuchler": "christian",
+      "Wolfgang Kuchler": "vater"
+     }
+    }
+   ]
+  }
+ },
+ "kleid": {
+  "zeichen": "assets/zeichen/lamm.svg",
+  "zeichen_art": "maske",
+  "foto": "fassade"
+ },
+ "website": [
+  {
+   "key": "start",
+   "name": "Startseite",
+   "satz": "Der erste Eindruck: das Riegelhaus, die Stuben, Degustation und Klassiker, Herd, Keller, Hof, Bar, Feiern und Anlässe.",
+   "seiten": [
+    "index.html"
+   ],
+   "foto": "fassade"
+  },
+  {
+   "key": "karte",
+   "name": "Karte & Menüs",
+   "satz": "Texte und Fotos rund um Degustation, Klassiker, Mittags- und Trüffelmenü. Gerichte und Preise pflegen Sie im Werkzeug für die Karten.",
+   "seiten": [
+    "karte.html"
+   ],
+   "foto": "trueffel"
+  },
+  {
+   "key": "wein",
+   "name": "Wein & Bar",
+   "satz": "Weinwand, Länder, Bar und Smokers Lounge. Weine, Bar-Karte und Preise pflegen Sie im Werkzeug für die Karten.",
+   "seiten": [
+    "wein.html",
+    "bar.html"
+   ],
+   "foto": "weinwand"
+  },
+  {
+   "key": "abend",
+   "name": "Ihr Abend",
+   "satz": "Der Abend in fünf Schritten: Zeit, Menü, Glas, Wünsche und die Anfrage.",
+   "seiten": [
+    "abend.html"
+   ],
+   "foto": "stube-abend"
+  },
+  {
+   "key": "haus",
+   "name": "Haus & Küche",
+   "satz": "Über uns, die Geschichte seit 1983, Bilder des Hauses, das Team am Herd und die Auszeichnungen.",
+   "seiten": [
+    "haus.html",
+    "kueche.html"
+   ],
+   "foto": "stube-ofen"
+  },
+  {
+   "key": "anlaesse",
+   "name": "Anlässe",
+   "satz": "Der Kalender, Gastköche, Kitchen Party und Privée-Dinner. Was vorbei ist, blenden Sie aus.",
+   "seiten": [
+    "anlaesse.html"
+   ],
+   "foto": "party"
+  },
+  {
+   "key": "feiern",
+   "name": "Feiern",
+   "satz": "Festsaal, Catering und die Anfrage. Die Gruppenmenüs pflegen Sie im Werkzeug für die Karten.",
+   "seiten": [
+    "feiern.html"
+   ],
+   "foto": "tafel"
+  },
+  {
+   "key": "kontakt",
+   "name": "Kontakt, Gutschein & Jobs",
+   "satz": "Öffnungszeiten, Anreise, Fragen, der Gutschein für beide Häuser und offene Stellen.",
+   "seiten": [
+    "kontakt.html",
+    "gutschein.html",
+    "jobs.html"
+   ],
+   "foto": "schild"
+  },
+  {
+   "key": "recht",
+   "name": "Rechtliches",
+   "satz": "Impressum, Datenschutz und AGB im Wortlaut des Hauses.",
+   "seiten": [
+    "impressum.html",
+    "datenschutz.html",
+    "agb.html"
+   ],
+   "foto": "strasse"
+  }
+ ],
+ "angaben": [
+  {
+   "key": "telefon",
+   "label": "Telefon",
+   "art": "telefon",
+   "wert": "+41 52 763 11 72",
+   "link": "tel:+41527631172",
+   "quelle": "website/inhalt/haus.py › TELEFON"
+  },
+  {
+   "key": "mail",
+   "label": "E-Mail",
+   "art": "mail",
+   "wert": "kontakt@schaefli-wigoltingen.ch",
+   "quelle": "website/inhalt/haus.py › MAIL"
+  },
+  {
+   "key": "strasse",
+   "label": "Strasse",
+   "art": "text",
+   "wert": "Oberdorfstrasse 8",
+   "quelle": "website/inhalt/haus.py › STRASSE"
+  },
+  {
+   "key": "ort",
+   "label": "PLZ und Ort",
+   "art": "text",
+   "wert": "8556 Wigoltingen",
+   "quelle": "website/inhalt/haus.py › PLZ_ORT"
+  },
+  {
+   "key": "tage",
+   "label": "Offen",
+   "art": "text",
+   "wert": "Mittwoch bis Samstag",
+   "quelle": "website/inhalt/haus.py › TAGE"
+  },
+  {
+   "key": "ruhetage",
+   "label": "Ruhetage",
+   "art": "text",
+   "wert": "Sonntag bis Dienstag geschlossen",
+   "quelle": "website/inhalt/haus.py › RUHETAGE"
+  },
+  {
+   "key": "reservieren",
+   "label": "Tisch reservieren (Adresse)",
+   "art": "link",
+   "wert": "https://bookings.zenchef.com/results?rid=378685&pid=1001",
+   "quelle": "website/inhalt/haus.py › ZENCHEF"
+  }
+ ],
+ "google": {
+  "an": true
+ },
+ "hochladen": {
+  "an": true,
+  "ordner": "assets/img"
+ },
+ "funktionen": [
+  "leiste_klar",
+  "team_wer"
+ ],
+ "anleitung": "/_werkzeuge/bureau/anleitung.html"
+}

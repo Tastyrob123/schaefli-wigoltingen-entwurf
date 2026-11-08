@@ -1,0 +1,119 @@
+/* Das Besucherbuch · Taverne zum Schäfli: Anschluss an die Oberfläche der Häuser (21.10.2026, aus dem Schwesterhaus Schlössli übernommen). Rahmen, Kopf, Rand, Leiste und Startbild kommen aus
+   /assets/oberflaeche/ (grund.css, rahmen-buehne.css, kleid/schaefli.css). Hier steht nur, was das Besucherbuch darin eigen hat:
+   die Kennzahlen im Startbild wie die Zahlen der Tafel des Hauses, der Zeitraum auf dunklem Grund,
+   der Raum ohne eigene Scrollfläche. Geladen nach dem Kleid. Bewegung nur über transform und opacity (Regel 55). */
+
+/* Raum: die Seite scrollt als Ganzes, nie eine Fläche für sich (UMSTELLUNG.md, Prüfen Punkt 3) */
+.rg .flaeche{overflow:visible;position:relative}
+.rg .flaeche:focus{outline:0}
+.rg .in{max-width:none;margin:0;padding:0 0 40px}
+.rg .wo-raum{min-height:60vh}
+
+/* Rand: Titel und Haus unten, sonst wie das Paket */
+.rg .rand__titel{margin:4px 8px 10px;font-size:9.5px}
+.rg .rand__titel::before{display:none}
+.rg .rand__haus{margin:14px 10px 2px;padding-top:12px}
+
+/* Startbild: das gemeinsame Startbild der Oberfläche, nichts eigen gestaltet. Die vier Kennzahlen stehen wie die Zahlen der Tafel desselben Hauses
+   (_werkzeuge/carte/ .kopf__zahlen: Zahl in der Titelschrift, darunter die Marke in Mono und Holz), dazu der Zeitraum als Segment-Wahl des Pakets. */
+.wo-sb .wo-sb__kn{align-items:center}
+.wo-sb .buehne__chips{display:flex;flex-wrap:wrap;gap:26px;margin:0 0 0 12px;padding:0;list-style:none}
+.wo-sb .buehne__chips li{display:flex;flex-direction:column;list-style:none}
+.wo-sb .buehne__chips b{order:1;font:var(--wo-titel-g) 24px/1 var(--wo-titel);color:var(--wo-weiss);font-feature-settings:"lnum","tnum"}
+.wo-sb .buehne__chips span{order:2;margin-top:6px;font:400 9.5px/1.2 var(--wo-mono);letter-spacing:.18em;text-transform:uppercase;color:var(--wo-gold)}
+.wo-sb .zeitraum{order:3}
+.wo-sb .zeitraum button{color:var(--wo-leise)}
+.wo-sb .zeitraum button[aria-pressed="true"]{color:var(--wo-tinte)}
+.rg .wahl3.wo-seg{padding:4px;border-radius:var(--wo-rk);background:linear-gradient(180deg,var(--wo-papier2),var(--wo-papier))}
+.rg .wahl3.wo-seg button{height:auto;padding:9px 16px;border-radius:var(--wo-rk);font:500 13px/1 var(--wo-sans)}
+.rg .wahl3.wo-seg button.an{background:linear-gradient(180deg,var(--wo-weiss),var(--wo-blatt));color:var(--wo-tinte)}
+
+/* Leiste: WO.leiste wie in den anderen Werkzeugen; nur «Dieses Gerät zählt nicht» zeigt gedrückt einen Rand */
+.wo-leiste .wo-kn[aria-pressed="true"]{box-shadow:inset 0 0 0 1.5px var(--wo-gold)}
+
+/* Startfehler-Tür */
+.tuer-zu__kn{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}
+
+/* Meldungen über der Leiste */
+.rg .meldung{bottom:96px}
+@media (max-width:900px){
+  .rg .meldung{bottom:84px}
+  .wo-sb .buehne__chips{margin:12px 0 0;gap:20px}
+  .wo-sb .buehne__chips b{font-size:21px}
+  .wo-sb .zeitraum{width:100%;display:flex}
+  .wo-sb .zeitraum button{flex:1}
+  .detail{top:76px}
+  .wo-leiste #l-export{display:none}   /* Handy: «Als Tabelle sichern» steht unter der Besuchsliste (wie Carlton und Doldenhorn) */
+}
+
+/* Abstand unter dem Startbild (das Paket setzt keinen) */
+.rg .wo-sb{margin-bottom:34px}   /* Fehlerbuch 10a (20.10.2026): unter der Bühne mindestens 30 px Luft bis zu den ersten Kacheln */
+
+/* Robert 18.10.2026 18:58 «da kann man die texte nicht erkenen»: im Weg zur Buchung lag helle Schrift halb auf dem Balken, halb auf hellem Grund.
+   Jetzt steht die Schrift dunkel auf hellem Grund, der Balken läuft als schmale Spur darunter; lesbar bei 1 % wie bei 100 %. */
+.trichter li{padding:12px 16px 22px!important}
+.trichter li i{inset:auto 16px 9px 16px!important;height:6px!important;border-radius:3px!important;background:var(--nacht)!important}
+.trichter li::after{content:'';position:absolute;left:16px;right:16px;bottom:9px;height:6px;border-radius:3px;background:rgba(48,25,22,.1);z-index:-1}
+.trichter span,.trichter b{color:var(--tinte)!important;mix-blend-mode:normal!important}
+.trichter em{color:rgba(48,25,22,.66)!important;mix-blend-mode:normal!important}
+
+/* Handy: die Zierzeile «Le Registre · Taverne zum Schäfli» bricht um statt abgeschnitten zu enden (am Rechner passt sie in eine Zeile) */
+@media (max-width:600px){
+  .wo-sb .wo-sb__zier span{white-space:normal;overflow:visible;line-height:1.6}
+  .wo-sb .wo-sb__zier i{display:none}
+}
+
+/* Bilder in jeder Liste in der Grösse aus dem Werkzeug-Master («Bilder in jeder Liste», 20.10.2026): Listenzeile 104 × 78, Handy 72 × 54, nie die alten
+   58 × 46 (das Schlössli stand noch auf 56 × 42). Gilt für Besuche (Seite, auf der der Besuch begann, Land klein darauf), Seiten, Ranglisten und den Weg. */
+.rg .sbild{width:104px;height:78px;border-radius:var(--wo-r2)}
+.rg .mit-bild{gap:16px}
+.rg .weg .sbild{width:72px;height:54px;border-radius:var(--wo-r3)}
+.rg .besuch__b,.rg .besuch__b .sbild{width:104px;height:78px}
+.rg .besuch__b .sbild{border-radius:var(--wo-r2)}
+.rg .besuch{grid-template-columns:104px minmax(0,1fr) auto;gap:22px}   /* Spalte so breit wie das Bild, das Land ragt 8 px hinaus: Luft zum Text */
+@media (max-width:600px){
+  .rg .sbild,.rg .besuch__b,.rg .besuch__b .sbild{width:72px;height:54px}
+  .rg .weg .sbild{width:72px;height:54px}
+  .rg .besuch{grid-template-columns:72px minmax(0,1fr) auto;gap:16px}
+  .rg .mit-bild{gap:12px}
+}
+
+/* Handy: die fünf Wahlen über der Besuchsliste brachen als runder Klumpen um (3 + 2 + 1, abgerundet wie eine Pille). Jetzt ein ruhiges Raster:
+   «Alle» über die ganze Breite, darunter zwei mal zwei gleich breite Felder; Ecken wie die Knöpfe des Hauses (kantig). */
+@media (max-width:700px){
+  .rg .wahl3.wo-seg.wahl3--filter{display:grid;grid-template-columns:1fr 1fr;width:100%;border-radius:var(--wo-r1)}
+  .rg .wahl3.wo-seg.wahl3--filter button{border-radius:var(--wo-r2);white-space:normal;text-align:center;padding:11px 8px;line-height:1.25}
+  .rg .wahl3.wo-seg.wahl3--filter button:first-child{grid-column:1/-1}
+  /* Weg durch die Website: Bild über dem Namen, damit Namen wie «Bar & Smokers Lounge» nie mitten im Wort brechen (Fehlerbuch 10a: Wörter nie mitten getrennt) */
+  .rg .weg .mit-bild{flex-direction:column;align-items:flex-start;gap:8px}
+  .rg .weg .mit-bild>span{overflow-wrap:normal;word-break:normal;hyphens:manual}
+}
+
+/* Verlauf, «Woche für Woche»: bei 920–1180 px (zwei Blätter nebeneinander, Rand offen) war die Zeile 328 px breit und ragte bis zu 59 px aus dem Fenster
+   (selbst gefunden 21.10.2026, auch in der Vorlage des Schlössli). Jetzt rückt «n zur Reservation» unter den Balken, nichts ragt hinaus. */
+.rg .zwei>*{min-width:0}
+@media (min-width:701px) and (max-width:1180px){
+  .rg .wochen li{grid-template-columns:96px minmax(24px,1fr) 40px;gap:4px 10px}
+  .rg .wochen li em{grid-column:2/-1;text-align:left}
+}
+
+/* Demo-Check 21.10.2026 (selbst gefunden, Messung + Bild): seit die Listenbilder 104 × 78 gross sind, hatte der Name in den Ranglisten keinen Platz mehr.
+   «Am meisten angesehen» zeigte schon bei 1440 px «Bar & Smoker…», «Gruppen und…», bei 920–1240 px fast nur noch Bilder; «Gekommen über» kürzte auf
+   «Direkt aufg…», «Guide Mich…»; in der Besuchsliste fehlte die Dauer («5 Min. …»). Jetzt brechen Namen um (nie mitten im Wort), die Spalte mit Bild ist breiter,
+   und Blätter mit Bildlisten sowie der Vergleich stehen bei 701–1240 px untereinander (Lösung Schlössli-Demo-Check für den Vergleich). */
+.rg .rang__n{white-space:normal;overflow:visible;text-overflow:clip;overflow-wrap:normal;word-break:normal;hyphens:manual}
+.rg .rang__n small{overflow:visible;text-overflow:clip}
+.rg .rang__n .mit-bild>span{overflow-wrap:normal;word-break:normal;hyphens:manual}
+.rg .rang li:has(.mit-bild){grid-template-columns:minmax(0,2fr) minmax(48px,1fr) auto 42px}
+.rg .besuch__n b,.rg .besuch__n small{white-space:normal;overflow:visible;text-overflow:clip}
+@media (min-width:701px) and (max-width:1240px){
+  .rg .zwei:has(.vergleich),.rg .zwei:has(.rang .mit-bild){grid-template-columns:minmax(0,1fr)}
+}
+@media (max-width:600px){
+  .rg .rang li:has(.mit-bild){grid-template-columns:minmax(0,1.6fr) minmax(36px,.7fr) auto 34px}
+}
+/* Zierzeile «Das Besucherbuch · Taverne zum Schäfli» endete bei 901–1240 px als «… Taverne zum…» (Demo-Check 21.10.2026): bricht dort um wie am Handy */
+@media (min-width:601px) and (max-width:1240px){
+  .wo-sb .wo-sb__zier span{white-space:normal;overflow:visible;line-height:1.6}
+  .wo-sb .wo-sb__zier i{display:none}
+}

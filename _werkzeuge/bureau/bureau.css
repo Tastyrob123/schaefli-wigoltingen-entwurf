@@ -1,0 +1,62 @@
+/* bureau.css · Le Bureau im Rahmen des Schäfli (21.10.2026, nach dem Vorbild des Schlössli). Kein eigenes Kleid: alles Sichtbare kommt aus dem Paket
+   (/assets/oberflaeche/grund.css, rahmen-buehne.css, kleid/schaefli.css). Kein fester Farbwert: jeder Ton ist aus den Werten des Kleids gemischt
+   (Fehlerbuch 10a: keine Farbe aus der Vorlage eines anderen Hauses). Hier stehen nur
+   1. die Brücke: die Werte, mit denen die Arbeitsfläche des Stamm-Werkzeugs zeichnet (welt.css: --blatt, --tinte, Platte, Kuhle, Knöpfe …),
+      zeigen auf die Werte des Kleids (--wo-…), in beiden Welten gleich;
+   2. die Lage von Quittung und Fenster im Rahmen «Die Bühne» (Rand 286 px, Leiste unten).
+   Wählt nie einen wo-Baustein an. */
+
+:root[data-wo-haus],:root[data-wo-haus][data-welt="land"],:root[data-wo-haus][data-welt="grand"]{
+  --blatt:var(--wo-blatt); --grund:var(--wo-papier); --zwei:var(--wo-papier2); --kante:var(--wo-g2);
+  --dunkel:var(--wo-tief); --dunkel2:var(--wo-nacht); --tief:color-mix(in srgb,var(--wo-tief) 80%,#000);
+  --tinte:var(--wo-tinte); --metall:var(--wo-g2); --strich:var(--wo-g2); --akzent:var(--wo-akzent); --klein:var(--wo-akzent); --punkt:var(--wo-punkt);
+  --linie-h:var(--wo-linie); --linie-d:var(--wo-linie-d);
+  --sans:var(--wo-sans); --mono:var(--wo-mono);
+  --titel:var(--wo-titel); --titel-g:var(--wo-titel-g); --titel-ls:0; --titel-mass:.94; --versal:var(--wo-titel); --versal-ls:.2em;
+  --r-xl:var(--wo-r1); --r-l:var(--wo-r1); --r-m:var(--wo-r2);
+  --platte-h:linear-gradient(180deg,color-mix(in srgb,var(--wo-blatt) 70%,#fff),var(--wo-blatt) 60%,color-mix(in srgb,var(--wo-blatt) 88%,var(--wo-tinte)));
+  --platte-h-s:inset 0 1px 0 #fff,inset 0 0 0 1px var(--wo-linie),0 26px 40px -30px rgba(0,0,0,.4);
+  --kuhle-h:linear-gradient(180deg,color-mix(in srgb,var(--wo-papier) 86%,var(--wo-tinte)),color-mix(in srgb,var(--wo-papier) 92%,var(--wo-tinte)) 40%,color-mix(in srgb,var(--wo-papier) 95%,var(--wo-tinte)));
+  --kuhle-h-s:inset 0 3px 6px -1px color-mix(in srgb,var(--wo-tief) 16%,transparent),inset 0 1px 0 color-mix(in srgb,var(--wo-tief) 9%,transparent),0 1px 0 #fff;
+  --platte-d:linear-gradient(180deg,var(--wo-nacht2),var(--wo-nacht) 50%,var(--wo-tief));
+  --platte-d-s:inset 0 1px 0 rgba(255,255,255,.14),inset 0 0 0 1px var(--wo-linie-d),0 26px 40px -16px rgba(0,0,0,.6);
+  --kuhle-d:linear-gradient(180deg,color-mix(in srgb,var(--wo-tief) 80%,#000),color-mix(in srgb,var(--wo-tief) 90%,#000) 34%,var(--wo-tief));
+  --kuhle-d-s:inset 0 3px 6px -1px rgba(0,0,0,.6),inset 0 1px 0 rgba(0,0,0,.5),0 1px 0 rgba(255,255,255,.08);
+  --kn-h:linear-gradient(180deg,var(--wo-g1),var(--wo-g2) 46%,var(--wo-g3));
+  --kn-h-s:inset 0 1px 0 rgba(255,255,255,.9),inset 0 -3px 0 rgba(0,0,0,.22),0 14px 24px -14px rgba(0,0,0,.55);
+  --kn-d:linear-gradient(180deg,var(--wo-nacht2),var(--wo-nacht) 50%,var(--wo-tief));
+  --kn-d-s:inset 0 1px 0 rgba(255,255,255,.2),inset 0 -3px 0 rgba(0,0,0,.3),0 14px 24px -14px rgba(0,0,0,.6);
+  --knauf-d:linear-gradient(180deg,var(--wo-nacht2),var(--wo-tief)); --knauf-d-s:inset 0 1px 0 rgba(255,255,255,.22),0 3px 6px rgba(0,0,0,.3);
+  --knauf-h:linear-gradient(180deg,var(--wo-g1),var(--wo-g3)); --knauf-h-s:inset 0 1px 0 rgba(255,255,255,.8),0 3px 6px rgba(0,0,0,.3);
+  --kn-fs:11px; --kn-ls:.16em;
+}
+body.ws.wo-app{background-color:var(--wo-papier);background-image:var(--wo-tapete);font-size:15px}
+.ws.wo-app{--ws-kopf:74px;--ws-rand:286px;--ws-leise:color-mix(in srgb,var(--wo-tinte) 64%,var(--wo-papier));--ws-leise-h:color-mix(in srgb,var(--wo-tinte) 66%,var(--wo-papier))}
+
+/* Startbild des Pakets in der Hauptfläche: Abstand nach unten wie bei den anderen Werkzeugen */
+.ws-titel--wo{display:block;max-width:none;margin:0 0 36px;text-align:left;color:inherit}   /* Fehlerbuch 10a: unter der Bühne mindestens 30 px Luft (Handy 24) */
+.ws-wo-start > .wo-lage{margin-top:0}
+.wo-raum > * + *{margin-top:22px}
+.wo-raum .ws-titel--wo + *{margin-top:0}
+
+/* Quittung über der Leiste, im Rahmen «Die Bühne» */
+.ws.wo-app .ws-quittung-ort{left:342px;right:28px;bottom:104px}
+.wo-rand__z{font-style:normal;font:400 9.5px/1 var(--wo-mono);letter-spacing:.14em;text-transform:uppercase;color:var(--wo-akzent);margin-left:auto}
+@media (max-width:900px){
+  .ws.wo-app .ws-quittung-ort{left:10px;right:10px;bottom:84px}
+  .ws.wo-app .ws-haupt,.ws.wo-app #ws-mitte{padding:0}
+  .ws-titel--wo{margin-bottom:28px}
+}
+
+/* Bereich-Kacheln der Übersicht mit Foto (Fehlerbuch 10a «Bilder in jeder Liste»): website.css setzt .ws-bk auf display:block (Stamm-Fassung),
+   damit fiel das Foto der Rahmen-Kachel .wo-bk (Raster 132 px + Text) auf Breite null. Hier gilt wieder das Raster des Rahmens. */
+.wo-app .wo-ber > .wo-bk.ws-bk{display:grid;padding:0;border-radius:var(--wo-r2)}
+.wo-app .wo-ber > .wo-bk.ws-bk .wo-bk__b{display:block}
+
+/* Knöpfe des Stamms (.kn) im Startbild einer Ansicht («Veröffentlichen» im Entwurf, Weg zur Tafel): grund.css nimmt Knöpfen im Rahmen den Innenabstand,
+   die Schrift lief bis an den linken Rand und stand grösser als die Knöpfe daneben (Demo-Check Schlössli 21.10.2026, hier nachgezogen). */
+.ws.wo-app .ws-titel--wo .kn{padding:0 6px 0 20px;font:400 var(--kn-fs)/1 var(--wo-mono);letter-spacing:var(--kn-ls);text-transform:uppercase}
+/* Kacheln gleichmässig (Fehlerbuch 10a): zwischen 701 und 1100 px stehen die neun Bereiche zwei je Reihe, die letzte allein mittig statt links. */
+@media (min-width:701px) and (max-width:1100px){
+  .ws.wo-app .wo-ber > .wo-bk:nth-child(odd):last-child{grid-column:1 / -1;justify-self:center;width:calc(50% - 8px)}
+}
