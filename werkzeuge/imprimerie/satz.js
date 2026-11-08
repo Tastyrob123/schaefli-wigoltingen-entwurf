@@ -81,7 +81,7 @@
   DS.regelSichtbar = r => String(r || '').replace(/\s*Kein Hotel, keine Zimmer\..*$/, '').trim();
   DS.LIVRE = '../livre/';
   DS.livreUrl = p => new URL(p, new URL(DS.LIVRE, location.href)).href;
-  DS.livreSeite = () => location.port === '9067' ? 'https://schaefli.tastystudios.ch/_werkzeuge/livre/' : DS.ALLEIN ? 'https://schaefli-wigoltingen-entwurf.vercel.app/werkzeuge/livre/' : DS.LIVRE;
+  DS.livreSeite = () => location.port === '9067' ? 'https://schaefli.tastystudios.ch/_werkzeuge/livre/' : DS.ALLEIN ? 'https://schaefli.tastystudios.ch/werkzeuge/livre/' : DS.LIVRE;
   /* Logo, Logo quer und Wortmarke aus Le Livre: Bildschirm SVG, Blatt und PDF PNG (bis 3000 px, mit Transparenz) */
   DS.livreDateien = M => (M.livre ? M.livre.dateien : []).filter(d => ['logo', 'quer', 'wortmarke'].includes(d.k) && d.var).flatMap(d => {
     const vb = (d.vb || '0 0 4 3').split(' ').map(Number), N = { logo: 'Logo', quer: 'Logo quer', wortmarke: 'Wortmarke' }[d.k];

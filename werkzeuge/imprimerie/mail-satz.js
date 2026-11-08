@@ -5,7 +5,7 @@
    Fotos als JPG (haeuser/schaefli/mail/, 1200 px, Outlook kann kein WebP), öffentliche Adressen auf der Studio-Seite.
    Kein Mailprogramm führt Skripte aus; alles hier ist reines HTML. DSMAIL.html(doc, {editor}) → vollständiges Dokument. */
 (function () {
-  const ONLINE = 'https://schaefli-wigoltingen-entwurf.vercel.app/werkzeuge/imprimerie/';   // öffentliche Adresse der Bilder in den Mails (Fotos, Kopf, Fuss)
+  const ONLINE = 'https://schaefli.tastystudios.ch/werkzeuge/imprimerie/';   // öffentliche Adresse der Bilder in den Mails (Fotos, Kopf, Fuss)
   const C = { navy: '#7d433a', papier: '#f0eae1', creme: '#e6ddd0', weiss: '#f5f3ef', sand: '#e6ddd0', gold: '#d3b794', messing: '#b38346', taupe: '#815e32', tief: '#64362e', tinte: '#2a292b' };
   const F = {
     serif: "Petrona,Georgia,'Times New Roman',serif",
