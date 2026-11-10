@@ -28,6 +28,30 @@
     });
   } else offen.forEach(lade);
 
+  /* Bricht ein Bild unterwegs ab (schwache Leitung), lädt es bis zu dreimal von selbst neu */
+  function frisch(t, k) {
+    return t.split(',').map(function (teil) {
+      var p = teil.trim().split(/\s+/);
+      if (p[0]) p[0] = p[0].replace(/([?&])n=\d+/, '') + (p[0].indexOf('?') < 0 ? '?' : '&') + 'n=' + k;
+      return p.join(' ');
+    }).join(', ');
+  }
+  function nochmal(img) {
+    var k = +(img.dataset.versuch || 0);
+    if (k >= 3) return;
+    img.dataset.versuch = k + 1;
+    setTimeout(function () {
+      var pic = img.closest('picture');
+      if (pic) [].forEach.call(pic.querySelectorAll('source[srcset]'), function (s) { s.srcset = frisch(s.getAttribute('srcset'), k + 1); });
+      if (img.getAttribute('srcset')) img.srcset = frisch(img.getAttribute('srcset'), k + 1);
+      if (img.getAttribute('src')) img.src = frisch(img.getAttribute('src'), k + 1);
+    }, 700 * (k + 1));
+  }
+  d.addEventListener('error', function (e) { if (e.target && e.target.tagName === 'IMG') nochmal(e.target); }, true);
+  w.addEventListener('load', function () {
+    [].forEach.call(d.images, function (img) { if (img.complete && !img.naturalWidth && (img.getAttribute('src') || img.getAttribute('srcset')) && img.decode) img.decode().catch(function () { nochmal(img); }); });
+  });
+
   /* Überschriften in Zeilen nach dem echten Umbruch zerlegen, damit jede Zeile aus ihrem Schlitz steigt */
   function zeilen(h) {
     if (h.dataset.zt == null) h.dataset.zt = h.innerHTML;
