@@ -26,7 +26,7 @@
     + '#demo-aus-h{position:fixed;left:50%;bottom:24px;transform:translate(-50%,16px);width:max-content;max-width:min(92vw,540px);padding:14px 20px;border-radius:14px;'
     + 'background:#0b1f40;color:#fbf6ea;font-family:inherit;font-size:15px;line-height:1.45;text-align:center;box-shadow:0 18px 40px -12px rgba(0,0,0,.5);'
     + 'opacity:0;pointer-events:none;transition:opacity .3s,transform .3s;z-index:2147483647}#demo-aus-h.an{opacity:1;transform:translate(-50%,0)}'
-    + '#demo-schild{position:fixed;right:8px;bottom:6px;padding:3px 8px;border-radius:6px;background:#15161c;color:#f3eee4;font:500 11px/1.3 system-ui,-apple-system,sans-serif;letter-spacing:.06em;text-transform:uppercase;pointer-events:none;z-index:2147483646}'
+    + '#demo-schild{position:fixed;right:8px;bottom:6px;padding:3px 8px;border-radius:6px;background:#15161c;color:#f3eee4;font:500 13px/1.3 system-ui,-apple-system,sans-serif;letter-spacing:.06em;text-transform:uppercase;pointer-events:none;z-index:2147483646}'
     + '@media print{#demo-schild,#demo-aus-h{display:none}}';
   (document.head || document.documentElement).appendChild(st);
   function schild() {
