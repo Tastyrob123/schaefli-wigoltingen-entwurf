@@ -423,3 +423,6 @@ h1 em,h2 em,h3 em{font-style:normal;color:var(--gold)}
 
 /* Prüfung 20.11.2026 (Leerraum-Regel 17.11.): Tafeln mit ungleich viel Inhalt stehen untereinander, jede so hoch wie ihr Inhalt; Seitennamen ungekürzt */
 .zwei--stapel{grid-template-columns:minmax(0,1fr)}
+
+/* Prüfung 20.11.2026: Zeile unter dem Ort am Handy umbrechen statt abschneiden */
+@media(max-width:600px){.besuch__n small{white-space:normal;overflow:visible;text-overflow:clip}}
