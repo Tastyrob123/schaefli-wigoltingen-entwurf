@@ -454,3 +454,63 @@
   doc.addEventListener('keydown', function (e) { if (e.key === 'Escape') zu(); });
   addEventListener('resize', function () { if (offen && !lauf) { var k = offen; klein(k, true); gross(k); } });
 })();
+
+/* ---------- Flüssigkeit auf schwachen Rechnern (09.11.2026, Messung Schlössli/Schäfli bei 6× gedrosselt, Regel 55) ----------
+   1. Endlos-Bewegungen (Glanzkante, wippendes Handy, Pfeil) ruhen, solange sie nicht im Bild sind. Sichtbar ändert sich nichts.
+   2. Ein fertig eingeblendetes Foto gibt seine Bewegung frei (es steht ohnehin voll da); das spart je Foto eine Ebene.
+   3. Nur wenn das Gerät beim Scrollen gerade nicht mitkommt (in den letzten acht Bildern mindestens fünf über 25 ms) und dabei
+      schnell gewischt wird, stehen Elemente, die hereinkommen, sofort an ihrem Platz, statt einzuschweben. Auf einem Rechner, der
+      mitkommt, schwebt alles wie vor dem 09.11.2026 ein, auch bei Mausrad und zügigem Trackpad (Robert vermisste das Einschweben).
+      Grund: Dutzende gleichzeitige Einblendungen kosteten auf schwachen Rechnern jedes zweite Bild.
+      Wörter und Buchstaben einer Zeile stellt eine einzige Klasse am Absatz hin, nicht jedes Wort einzeln (sonst ein Stocken von
+      60–80 ms beim Eintritt in Kapitel 1); die Klasse geht zwei Bilder später wieder weg. */
+(function () {
+  'use strict';
+  var doc = document;
+  if (!('IntersectionObserver' in window) || !doc.getAnimations) return;
+  var st = doc.createElement('style');
+  st.textContent = '.wb-ruht,.wb-ruht::before,.wb-ruht::after{animation-play-state:paused!important}.wb-sofort .wt,.wb-sofort .b{transition:none!important}';
+  (doc.head || doc.documentElement).appendChild(st);
+  var io = new IntersectionObserver(function (es) { es.forEach(function (e) { e.target.classList.toggle('wb-ruht', !e.isIntersecting); }); });
+  var gesehen = typeof WeakSet === 'function' ? new WeakSet() : null;
+  function beobachte(t) { if (!t || t.nodeType !== 1 || !gesehen || gesehen.has(t)) return; gesehen.add(t); io.observe(t); }
+  function endlos(a) { return a.effect && a.effect.getTiming && a.effect.getTiming().iterations === Infinity; }
+  doc.getAnimations().forEach(function (a) { if (endlos(a) && a.effect.target) beobachte(a.effect.target); });
+  doc.addEventListener('animationstart', function (e) {
+    var t = e.target; if (!t || t.nodeType !== 1 || (gesehen && gesehen.has(t))) return;
+    if (/infinite/.test(getComputedStyle(t, e.pseudoElement || null).animationIterationCount)) beobachte(t);
+  }, true);
+  doc.addEventListener('animationend', function (e) {
+    if (e.animationName === 'einblend' && e.target.classList && e.target.classList.contains('ld') && e.target.classList.contains('da')) e.target.style.animation = 'none';
+  }, true);
+  // Kommt das Gerät mit? Während gescrollt wird, zählt ein Bildtakt die verpassten Bilder: Abstand über 25 ms (unter 40 Bilder/s),
+  // gleich bei 60 und 120 Hz. «Überlastet» hält 1,5 s nach der letzten Feststellung.
+  var y0 = 0, t0 = 0, v = 0, still = 0, flink = false, schnell = false, last = 0;
+  var takt = 0, f0 = 0, reihe = [];
+  function bild(t) {
+    if (f0) {
+      var d = t - f0;
+      if (d >= 5 && d < 250) {
+        reihe.push(d > 25 ? 1 : 0); if (reihe.length > 8) reihe.shift();
+        if (reihe.length === 8 && reihe.reduce(function (s, x) { return s + x; }, 0) >= 5) last = t;
+      }
+    }
+    f0 = t; takt = requestAnimationFrame(bild);
+  }
+  addEventListener('scroll', function () {
+    var t = performance.now(), y = scrollY, dt = t - t0;
+    v = (dt > 0 && dt < 250) ? v * 0.6 + Math.abs(y - y0) / dt * 400 : 0;
+    y0 = y; t0 = t;
+    if (!takt) { f0 = 0; reihe = []; takt = requestAnimationFrame(bild); }
+    if (v > 900) flink = true; else if (v < 600) flink = false;
+    schnell = flink && last > 0 && t - last < 1500;
+    clearTimeout(still); still = setTimeout(function () { schnell = flink = false; last = 0; v = 0; cancelAnimationFrame(takt); takt = 0; }, 200);
+  }, { passive: true });
+  function weg(g) { requestAnimationFrame(function () { requestAnimationFrame(function () { g.classList.remove('wb-sofort'); }); }); }
+  doc.addEventListener('transitionrun', function (e) {
+    if (!schnell) return; var t = e.target;
+    if (!t || !t.closest || t.closest('.leiste') || !t.getAnimations) return;
+    if (t.classList.contains('wt') || t.classList.contains('b')) { var g = t.closest('[data-a]'); if (g) { if (!g.classList.contains('wb-sofort')) { g.classList.add('wb-sofort'); weg(g); } return; } }
+    t.getAnimations().forEach(function (a) { if (a.transitionProperty === e.propertyName && (a.effect.pseudoElement || '') === (e.pseudoElement || '')) { try { a.finish(); } catch (x) {} } });
+  }, true);
+})();

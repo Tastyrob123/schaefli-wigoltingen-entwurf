@@ -422,7 +422,7 @@ function start() {
       <header><h3>Besuche je Tag</h3><p>${esc(datum(d.von))} bis ${esc(datum(d.bis))} · <button class="link" type="button" data-gehe="verlauf">Verlauf</button></p></header>
       ${saeulen(d.je_tag.map(t => t.besuche), i => (viele - 1 - i) % schritt === 0 ? kurzDatum(d.je_tag[i].tag) : '', Object.assign((i, z) => tagWort(d.je_tag[i].tag) + ': ' + mal(z, 'ein Besuch', 'Besuche'), { label: 'Besuche je Tag' }))}
     </section>
-    <div class="zwei">
+    <div class="zwei zwei--stapel">
       <section class="blatt"><header><h3>Woher die Gäste kommen</h3><button class="link" type="button" data-gehe="herkunft">Alle Länder</button></header>
         ${balken(d.laender.slice(0, 6), x => esc(land(x.k) || 'Ort nicht bekannt'), null, u.besuche)}</section>
       <section class="blatt"><header><h3>Am meisten angesehen</h3><button class="link" type="button" data-gehe="seiten">Alle Seiten</button></header>
@@ -559,7 +559,7 @@ function verlauf() {
       <header><h3>Besuche je Tag</h3><p><span class="punkt"></span>dieser Zeitraum <span class="punkt punkt--hell"></span>davor</p></header>
       ${saeulen(d.je_tag.map(t => t.besuche), i => (viele - 1 - i) % schritt === 0 ? kurzDatum(d.je_tag[i].tag) : '', Object.assign((i, z) => tagWort(d.je_tag[i].tag) + ': ' + mal(z, 'ein Besuch', 'Besuche') + ' · davor ' + n(d.vor_tag[i]), { label: 'Besuche je Tag im Vergleich zum Zeitraum davor' }), 'saeulen--vgl', d.vor_tag)}
     </section>
-    <div class="zwei">
+    <div class="zwei zwei--stapel">
       <section class="blatt vergleich"><header><h3>Neben dem Zeitraum davor</h3></header>
         <div class="vz vz--kopf"><span></span><b>Jetzt</b><em>Davor</em><small></small></div>
         ${zeile('Besuche', u.besuche, v.besuche)}${zeile('Angesehene Seiten', u.seiten, v.seiten)}
@@ -606,7 +606,7 @@ function buchung() {
     ${k('chat', 'Weiter zum Schlössli', x => mal_(x.zahl) + ' angeklickt, bei ' + n(x.von) + ' ' + auf(x.von), 'Noch kein Aufruf.')}
     ${k('route', 'Partnerhotel angesehen', x => mal_(x.zahl) + ' angeklickt, bei ' + n(x.von) + ' ' + auf(x.von) + ', davon ' + n(x.weg) + ' von «Kontakt und Anreise»', 'Noch kein Aufruf.')}
   </div>
-  <div class="zwei">
+  <div class="zwei zwei--stapel">
     <section class="blatt"><header><h3>Von welcher Seite reserviert wird</h3></header>
       ${balken(d.seiten.filter(x => x.buchung).sort((a, b) => b.buchung - a.buchung).slice(0, 8).map(x => ({ k: x.s, n: x.buchung })), x => mitBild(x.k), null, d.seiten.reduce((a, x) => a + (x.buchung || 0), 0))}</section>
     <section class="blatt"><header><h3>Der Weg zum Tisch</h3></header>${trichter(w)}</section>

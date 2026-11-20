@@ -420,3 +420,6 @@ h1 em,h2 em,h3 em{font-style:normal;color:var(--gold)}
   .besuch__b,.besuch__b .sbild{width:60px;height:45px}
   .besuch__b .besuch__l{width:28px;height:28px;font-size:9.5px;right:-6px;bottom:-6px}
 }
+
+/* Prüfung 20.11.2026 (Leerraum-Regel 17.11.): Tafeln mit ungleich viel Inhalt stehen untereinander, jede so hoch wie ihr Inhalt; Seitennamen ungekürzt */
+.zwei--stapel{grid-template-columns:minmax(0,1fr)}

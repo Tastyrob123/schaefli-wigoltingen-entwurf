@@ -17,7 +17,7 @@
 @media(min-width:1040px){.stueck .in{grid-template-columns:minmax(0,.74fr) minmax(0,1.26fr)}.stueck--r .in{grid-template-columns:minmax(0,1.26fr) minmax(0,.74fr)}.stueck--r .stueck__t{order:2}}
 .stueck .t2{font-size:clamp(2rem,3.5vw,3.7rem)}
 .stueck__t .lauf{margin-top:clamp(18px,2vw,28px);max-width:44ch}
-.stueck__f{margin-top:22px;font-family:var(--mono);font-size:12px;letter-spacing:.13em;text-transform:uppercase;color:var(--taupe);line-height:1.7}
+.stueck__f{margin-top:22px;font-family:var(--mono);font-size:13px;letter-spacing:.13em;text-transform:uppercase;color:var(--taupe);line-height:1.7}
 .fl--navy .stueck__f,.fl--nacht .stueck__f,.fl--tief .stueck__f{color:var(--gold)}
 .stueck__t .kn-reihe{margin-top:26px}
 /* Karton im Mittelton, damit helle und dunkle Blätter einen Rand haben */
@@ -26,7 +26,7 @@
 .karton figure{margin:0;flex:0 1 auto;min-width:0}
 .karton img{display:block;width:100%;height:auto;filter:none}
 .karton .sch img{box-shadow:0 18px 24px -16px rgba(31,21,7,.75)}
-.karton figcaption{margin-top:10px;text-align:center;font-family:var(--mono);font-size:10.5px;letter-spacing:.13em;text-transform:uppercase;color:rgba(25,37,30,.74)}
+.karton figcaption{margin-top:10px;text-align:center;font-family:var(--mono);font-size:13px;letter-spacing:.13em;text-transform:uppercase;color:rgba(25,37,30,.74)}
 .karton--tuer{align-items:flex-start;padding-top:clamp(30px,4vw,60px)}
 .karton--tuer figure{position:relative}
 @media(max-width:700px){.karton--tuer figure{width:42%!important}.karton figure[style*="width:30%"]{width:42%!important}}
@@ -41,7 +41,7 @@
 .etk li:hover img{transform:rotate(-4deg) scale(1.06)}
 .etk h3{font-family:var(--serif);font-weight:400;font-size:1.3rem;line-height:1.2;margin-top:18px}
 .etk p{color:rgba(255,255,255,.74);font-size:.98rem;line-height:1.45;max-width:26ch;margin-top:6px}
-.etk small{font-family:var(--mono);font-size:11px;letter-spacing:.13em;text-transform:uppercase;color:var(--gold);margin-top:10px;opacity:.9}
+.etk small{font-family:var(--mono);font-size:13px;letter-spacing:.13em;text-transform:uppercase;color:var(--gold);margin-top:10px;opacity:.9}
 .bogenblick{border-radius:22px;overflow:hidden;box-shadow:0 0 0 1px rgba(25,37,30,.14),0 40px 50px -36px rgba(46,32,14,.7);background:#ffffff}
 .bogenblick img{width:100%;display:block}
 .ausklang{position:relative;background:var(--tief);padding:clamp(46px,5.6vw,90px) var(--rand);border-radius:var(--rund) var(--rund) 0 0;margin-top:calc(var(--rund)*-1)}
@@ -53,7 +53,7 @@
 .auslage--pdf{aspect-ratio:1/.72}
 .auslage--pdf img{border-radius:4px}
 .uwahl{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:clamp(24px,3vw,44px)}
-.uwahl button{height:46px;padding:0 19px;border-radius:999px;font-family:var(--mono);font-size:12px;letter-spacing:.11em;text-transform:uppercase;color:var(--tinte);white-space:nowrap;
+.uwahl button{height:46px;padding:0 19px;border-radius:999px;font-family:var(--mono);font-size:13px;letter-spacing:.11em;text-transform:uppercase;color:var(--tinte);white-space:nowrap;
   background:linear-gradient(180deg,#fefdfb,#f0ece3);box-shadow:inset 0 1px 0 #ffffff,inset 0 -2px 0 rgba(85,64,37,.22),inset 0 0 0 1px rgba(85,64,37,.16),0 8px 14px -10px rgba(57,42,22,.45);transition:transform .45s var(--e2)}
 .uwahl button:hover{transform:translateY(-1px)} .uwahl button:active{transform:translateY(1px)}
 .uwahl button[aria-pressed="true"]{color:#ffffff;background:linear-gradient(180deg,#436f55,#1f3a2a 50%,#0f1b14);box-shadow:inset 0 1px 0 rgba(255,255,255,.26),inset 0 -2px 0 rgba(0,0,0,.55),inset 0 0 0 1px rgba(197,151,90,.5),0 10px 16px -10px rgba(22,39,29,.7)}
@@ -64,7 +64,7 @@
 .ublatt__b img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;opacity:0;transform:translateX(var(--von,5%));transition:opacity .5s var(--e1),transform .8s var(--e1)}
 .ublatt__b img.an{opacity:1;transform:none}
 .ublatt__b img.weg{opacity:0}
-.ublatt figcaption{margin-top:12px;text-align:center;font-family:var(--mono);font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:rgba(25,37,30,.8)}
+.ublatt figcaption{margin-top:12px;text-align:center;font-family:var(--mono);font-size:13px;letter-spacing:.16em;text-transform:uppercase;color:rgba(25,37,30,.8)}
 .upaar .schau__p--l{left:-14px}.upaar .schau__p--r{right:-14px}
 .uschalter{display:none}
 .ufuss{display:flex;flex-wrap:wrap;gap:16px 30px;align-items:center;justify-content:space-between;max-width:1180px;margin:clamp(18px,2.4vw,34px) auto 0;color:var(--tinte)}
@@ -73,7 +73,7 @@
 @media(max-width:760px){
   .upaar{grid-template-columns:1fr}
   .uschalter{display:flex;gap:6px;justify-content:center;margin-bottom:16px}
-  .uschalter button{height:42px;padding:0 20px;border-radius:999px;font-family:var(--mono);font-size:12px;letter-spacing:.13em;text-transform:uppercase;color:var(--tinte);background:linear-gradient(180deg,#fefdfb,#f0ece3);box-shadow:inset 0 1px 0 #ffffff,inset 0 -2px 0 rgba(85,64,37,.22)}
+  .uschalter button{height:42px;padding:0 20px;border-radius:999px;font-family:var(--mono);font-size:13px;letter-spacing:.13em;text-transform:uppercase;color:var(--tinte);background:linear-gradient(180deg,#fefdfb,#f0ece3);box-shadow:inset 0 1px 0 #ffffff,inset 0 -2px 0 rgba(85,64,37,.22)}
   .uschalter button[aria-pressed="true"]{color:#ffffff;background:linear-gradient(180deg,#436f55,#1f3a2a 50%,#0f1b14);box-shadow:inset 0 1px 0 rgba(255,255,255,.26),inset 0 -2px 0 rgba(0,0,0,.55)}
   .uschau[data-s="neu"] .ublatt--alt,.uschau[data-s="alt"] .ublatt--neu{display:none}
   .ublatt figcaption{display:none}
@@ -103,10 +103,10 @@
 .kachel.gross3 .kachel__t{justify-content:center}
 .kachel.gross3 .kachel__pdf{margin-top:8px}
 .kachel__t{display:flex;flex-direction:column;gap:8px;padding:clamp(16px,1.6vw,22px) clamp(18px,1.8vw,24px) clamp(18px,1.8vw,24px);flex:1}
-.kachel__f{margin:0;font-family:var(--mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--taupe)}
+.kachel__f{margin:0;font-family:var(--mono);font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--taupe)}
 .kachel h3{margin:0;font-family:var(--serif);font-weight:inherit;font-size:clamp(20px,1.6vw,24px);line-height:1.2;color:var(--tinte)}
 .kachel__s{margin:0;font-size:16px;line-height:1.5;color:var(--tinte);opacity:.82}
-.kachel__pdf{margin-top:auto;padding-top:6px;align-self:flex-start;display:inline-flex;align-items:center;gap:8px;font-family:var(--mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--tinte);text-decoration:none;border-bottom:1px solid currentColor}
+.kachel__pdf{margin-top:auto;padding-top:6px;align-self:flex-start;display:inline-flex;align-items:center;gap:8px;font-family:var(--mono);font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--tinte);text-decoration:none;border-bottom:1px solid currentColor}
 .kachel__pdf svg{width:12px;height:12px;fill:none;stroke:currentColor;stroke-width:1.6}
 @media (max-width:980px){.raster-p{grid-template-columns:repeat(2,minmax(0,1fr))}.kachel.gross3{grid-column:auto;flex-direction:column}.kachel.gross3 .kachel__b{width:100%;min-height:0}.kachel.gross3 .kachel__t{justify-content:flex-start}.kachel.gross2{grid-column:span 2}.kachel__b,.kachel.gross3 .kachel__b{height:calc((100cqw - var(--g))/2*.6889)}}
 @media (max-width:620px){.raster-p{grid-template-columns:minmax(0,1fr)}.kachel.gross2{grid-column:auto}.kachel__b{height:calc(100cqw*.6889)}}

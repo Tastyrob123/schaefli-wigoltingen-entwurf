@@ -1,5 +1,5 @@
 {
- "reihen": 8,
+ "reihen": 20,
  "stuecke": [
   {
    "id": "stube-holz",
@@ -135,6 +135,222 @@
    "h": 1,
    "art": "foto",
    "bild": "../_quelle/website/bilder/850c49__FHF5587.jpg"
+  },
+  {
+   "id": "a-lampe",
+   "r": 9,
+   "c": 1,
+   "w": 1,
+   "h": 1,
+   "art": "foto",
+   "bild": "../_quelle/ki/geschaerft/2016_06_Bidermeierstuebli-geschaerft.jpg"
+  },
+  {
+   "id": "a-roulade",
+   "r": 9,
+   "c": 2,
+   "w": 1,
+   "h": 1,
+   "art": "foto",
+   "bild": "../_quelle/ki/geschaerft/2018_01_kreativ_15-geschaerft.jpg"
+  },
+  {
+   "id": "pass-scampi",
+   "r": 9,
+   "c": 3,
+   "w": 1,
+   "h": 1,
+   "art": "foto",
+   "bild": "../_quelle/website/bilder/57bc5c_IMG_0381.jpeg"
+  },
+  {
+   "id": "kopf-karte",
+   "r": 10,
+   "c": 1,
+   "w": 1,
+   "h": 1,
+   "art": "foto",
+   "bild": "../_quelle/website/bilder/2e5aeb_IMG_0377.jpg"
+  },
+  {
+   "id": "terrasse",
+   "r": 10,
+   "c": 2,
+   "w": 2,
+   "h": 2,
+   "art": "foto",
+   "bild": "../_quelle/website/bilder/65e583_A1565E25-1EBA-4206-8AF2-8A639895B4DD.jpeg"
+  },
+  {
+   "id": "barhocker",
+   "r": 11,
+   "c": 1,
+   "w": 1,
+   "h": 1,
+   "art": "foto",
+   "bild": "../_quelle/website/bilder/ae3366_IMG_9503.jpeg"
+  },
+  {
+   "id": "nacht",
+   "r": 12,
+   "c": 1,
+   "w": 1,
+   "h": 1,
+   "art": "foto",
+   "bild": "../_quelle/ki/geschaerft/a88046_IMG_0293-geschaerft.jpg"
+  },
+  {
+   "id": "stube-weiss",
+   "r": 12,
+   "c": 2,
+   "w": 1,
+   "h": 1,
+   "art": "foto",
+   "bild": "../_quelle/website/bilder/efffe9_94075C14-C0D2-4B09-97EA-5396B3EB56C8.jpeg"
+  },
+  {
+   "id": "k-artischocke",
+   "r": 12,
+   "c": 3,
+   "w": 1,
+   "h": 1,
+   "art": "foto",
+   "bild": "../_quelle/website/bilder/7382c6_Schaefli_Juni2025-22-12.jpeg"
+  },
+  {
+   "id": "pass-korb",
+   "r": 13,
+   "c": 1,
+   "w": 2,
+   "h": 2,
+   "art": "foto",
+   "bild": "../_quelle/website/bilder/dea6a9_Schaefli_Juni2025-7-4.jpeg"
+  },
+  {
+   "id": "a-pralinen",
+   "r": 13,
+   "c": 3,
+   "w": 1,
+   "h": 1,
+   "art": "foto",
+   "bild": "../_quelle/ki/geschaerft/2018_01_kreativ_05-geschaerft.jpg"
+  },
+  {
+   "id": "ko-menue10",
+   "r": 14,
+   "c": 3,
+   "w": 1,
+   "h": 1,
+   "art": "foto",
+   "bild": "../_quelle/ki/geschaerft/2016_06_Menue10-geschaerft.jpg"
+  },
+  {
+   "id": "a-fleisch",
+   "r": 15,
+   "c": 1,
+   "w": 1,
+   "h": 1,
+   "art": "foto",
+   "bild": "../_quelle/ki/geschaerft/2018_01_kreativ_01-geschaerft.jpg"
+  },
+  {
+   "id": "stube-ofen",
+   "r": 15,
+   "c": 2,
+   "w": 1,
+   "h": 1,
+   "art": "foto",
+   "bild": "../_quelle/website/bilder/f3f464_E3D2F627-FF4E-4BD1-963A-51B831F86150.jpeg"
+  },
+  {
+   "id": "teller-gruen",
+   "r": 15,
+   "c": 3,
+   "w": 1,
+   "h": 1,
+   "art": "foto",
+   "bild": "../_quelle/website/bilder/aaad58_Schaefli_Juni2025-9-6.jpeg"
+  },
+  {
+   "id": "k-kaviar",
+   "r": 16,
+   "c": 1,
+   "w": 1,
+   "h": 1,
+   "art": "foto",
+   "bild": "../_quelle/website/bilder/11bb5e_Schaefli_Juni2025-14-7.jpeg"
+  },
+  {
+   "id": "stube-gelb",
+   "r": 16,
+   "c": 2,
+   "w": 2,
+   "h": 2,
+   "art": "foto",
+   "bild": "../_quelle/ki/geschaerft/d2848a_8B4B94E2-0208-43B3-860D-07C87EC78022-geschaerft.jpg"
+  },
+  {
+   "id": "a-cocktail",
+   "r": 17,
+   "c": 1,
+   "w": 1,
+   "h": 1,
+   "art": "foto",
+   "bild": "../_quelle/ki/geschaerft/2023_01_leidenschaft_12-geschaerft.jpg"
+  },
+  {
+   "id": "pass-orange",
+   "r": 18,
+   "c": 1,
+   "w": 1,
+   "h": 1,
+   "art": "foto",
+   "bild": "../_quelle/website/bilder/f61ce3_Schaefli_Juni2025-21-11.jpeg"
+  },
+  {
+   "id": "kt-kreativ-24",
+   "r": 18,
+   "c": 2,
+   "w": 1,
+   "h": 1,
+   "art": "foto",
+   "bild": "../_quelle/ki/geschaerft/2018_01_kreativ_24-geschaerft.jpg"
+  },
+  {
+   "id": "k-zwei",
+   "r": 18,
+   "c": 3,
+   "w": 1,
+   "h": 1,
+   "art": "foto",
+   "bild": "../_quelle/website/bilder/344f45_Schaefli_Juni2025-5-3.jpeg"
+  },
+  {
+   "id": "aschenbecher",
+   "r": 19,
+   "c": 1,
+   "w": 2,
+   "h": 2,
+   "art": "foto",
+   "bild": "../_quelle/website/bilder/2c1ce7_IMG_9475.jpeg"
+  },
+  {
+   "id": "a-gedeck-karte",
+   "r": 19,
+   "c": 3,
+   "w": 1,
+   "h": 1,
+   "art": "foto",
+   "bild": "../_quelle/ki/geschaerft/2018_01_ambiente_08-geschaerft.jpg"
+  },
+  {
+   "id": "hand",
+   "r": 20,
+   "c": 3,
+   "w": 1,
+   "h": 1,
+   "art": "foto",
+   "bild": "../_quelle/website/bilder/6b9524_IMG_1956.jpeg"
   }
  ]
 }

@@ -2,11 +2,12 @@
 <html lang="de-CH">
 <head>
 <meta charset="utf-8">
+<script id="wb-rueckweg">(function(){var q=new URLSearchParams(location.search),y=q.get("wb");if(!/^\d+$/.test(y||""))y=q.get("wy");try{if(y&&/^\d+$/.test(y))sessionStorage.setItem("wb-rueck",y);else y=sessionStorage.getItem("wb-rueck")}catch(e){}if(!y||!/^\d+$/.test(y))return;function setze(){[].forEach.call(document.querySelectorAll("a[href]"),function(a){try{var u=new URL(a.getAttribute("href"),location.href);if(u.origin!==location.origin||!/\/werkbank\/(index\.html)?$/.test(u.pathname))return;u.hash="";u.search="?y="+y;a.href=u.toString()}catch(e){}})}if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",setze);else setze();addEventListener("load",setze);setTimeout(setze,1500)})();</script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Ein Vorschlag · Taverne zum Schäfli</title>
 <meta name="robots" content="noindex, nofollow">
 <link rel="preload" href="fonts/Petrona-var.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="werkbank.css?v=1792593325"><link rel="stylesheet" href="kapitel.css?v=1792593348">
+<link rel="stylesheet" href="werkbank.css?v=1794646543"><link rel="stylesheet" href="kapitel.css?v=1794238435p">
 <style>
 html,body{margin:0;background:var(--nacht,#0b1d3d)}
 body{min-height:100vh;display:flex;justify-content:center;align-items:flex-start;padding:clamp(20px,4vw,64px) 16px}
@@ -15,22 +16,142 @@ body{min-height:100vh;display:flex;justify-content:center;align-items:flex-start
 @page{margin:0}
 @media print{html,body{background:#fbfcfe;padding:0;display:block}.mn{width:100%;max-width:none;border-radius:0;box-shadow:none;padding:14mm 18mm;zoom:.86}.mn-ki{display:none!important}.mn-gang,.mn-l li,.mn-p{break-inside:avoid}}
 </style>
-<script src="/besuch.js?v=3c4c57a56e" defer></script><script src="/verweil.js?v=5881fd455d" defer></script></head>
+<style id="zeile-ganz">h1,h2,h3,h4,.z>span{text-wrap:balance}h1 br+em,h2 br+em{display:inline-block;text-wrap:balance}.stapel .fen__k{position:relative}.stapel .fen__k span{position:absolute;left:50%;transform:translateX(-50%);margin:0;overflow:visible}@media(max-width:860px){.stapel .fen__k span{display:none}}@media(max-width:480px){.etk{grid-template-columns:minmax(0,1fr)!important}}@media(min-width:900px) and (max-width:1279px){.brett-p{grid-template-columns:300px minmax(0,1fr)}.brett-p__k{grid-column:1/-1}}@media(max-width:1279px){.brett-p p{text-wrap:balance}}.da:not([data-drift]){will-change:auto!important}.mb-ueber__t small{display:grid;grid-template-columns:64px minmax(0,1fr);align-items:baseline}.mb-ueber__t small span{min-width:0}@media(max-width:480px){.mn-titel{font-size:clamp(1.5rem,8vw,2.2rem);letter-spacing:.03em}.mn-ende{gap:10px}.mn-ende i{width:18px}.mn-ende span{letter-spacing:.12em;white-space:nowrap}a.kn[href="../index.html#geprueft"]{letter-spacing:.04em;font-size:13px;white-space:nowrap;padding-left:14px}.stapel .tel{width:21%;right:-2%}}@media(max-width:480px){.wege__t,figcaption,.mb-ueber__t small{text-wrap:balance}.sag-h{font-size:1.32rem;letter-spacing:.03em;gap:10px}.hs2-her{grid-template-columns:repeat(2,minmax(0,1fr))!important}.hs2-her figcaption small{font-size:13px;letter-spacing:0}.ki-knoepfe{flex-direction:column;align-items:stretch}.ki-knoepfe .kn{white-space:nowrap;letter-spacing:.04em;font-size:13px}#sag-aufbau[data-a="heben"]:not(.da){transform:translateY(56px) scale(.98)!important}.faecher--2 .blattk span{flex-direction:column;gap:3px;font-size:13px;letter-spacing:.08em}}.stage>.aside h1{font-size:clamp(2rem,3.6vw,3.3rem);white-space:nowrap}.stage>.aside h1 em{display:inline}</style><style id="auftritte-seite">html.as-an .as-k{opacity:0;transform:translateY(38px)}html.as-an .as-k.as-da{opacity:1;transform:none;transition:opacity 1s cubic-bezier(.16,1,.3,1),transform 1.1s cubic-bezier(.16,1,.3,1);transition-delay:var(--as-v,0s)}@media print{html.as-an .as-k{opacity:1!important;transform:none!important}}</style><script src="/besuch.js?v=3c4c57a56e" defer></script><script src="/verweil.js?v=5881fd455d" defer></script></head>
 <body>
-<article class="mn da">
+<article class="mn da" data-a="heben">
         <header class="mn-kopf">
           <img class="mn-zeichen" src="eigen/lamm-riegel.svg" alt="" width="57" height="72">
           <p class="mn-haus">Taverne zum Schäfli · Wigoltingen</p>
-          <h3 class="mn-titel">Ein Vorschlag.</h3>
-          <p class="mn-unter">Was Ihnen gehört, was es kostet und wer sich danach kümmert. Jeder Punkt ist offen fürs Gespräch.</p>
+          <h3 class="mn-titel">Ein Vorschlag.</h3>
+          <p class="mn-unter">Was Ihnen gehört und wer sich danach kümmert. Jeder Punkt ist offen fürs Gespräch.</p>
         </header>
         <div class="sag-orn" aria-hidden="true"><i></i><b></b><i></i></div><p class="mn-gang"><span>I</span>Was Ihnen gehört</p><ul class="mn-l"><li>Was entsteht, gehört der Taverne zum Schäfli: Website, Code, Karten, Drucksachen, Beiträge und Bildarchiv.</li><li>Domain, Server und Zugänge stehen auf Ihren Namen.</li><li>Die Rechte an den Fotos bleiben bei Ihnen und Ihren Fotografen.</li><li>Wenn wir uns einmal trennen, geht alles mit Ihnen.</li></ul>
-        <div class="sag-orn" aria-hidden="true"><i></i><b></b><i></i></div><p class="mn-gang"><span>II</span>Der Preis</p><ul class="mn-l mn-preise"><li class="mn-p"><p class="mn-p__z"><b>Der Bau</b><i></i><span>Den Betrag nennen Sie</span></p><p class="mn-p__s">Einen Preis für die Website und die Werkzeuge nenne ich hier bewusst nicht. Sagen Sie mir, was Ihnen dieser Auftritt wert ist; was Sie für angemessen halten, ist der Preis, über den wir sprechen.</p></li><li class="mn-p"><p class="mn-p__z"><b>Betreuung</b><i></i><span>CHF 250 im Monat</span></p><ul class="mn-p__l"><li>Server und Domain, Sicherungen, Updates, Sicherheit und Datenschutz.</li><li>Fehler in den sieben Werkzeugen behebe ich ohne Rechnung; fällt etwas aus, geht das vor.</li><li>Wechselt eine Karte, eine Zeit oder ein Preis, weiss es auch die KI.</li><li>Sie hören spätestens am nächsten Werktag von mir. Die Inhalte pflegt Ihr Team.</li></ul></li><li class="mn-p"><p class="mn-p__z"><b>Wünsche darüber hinaus</b><i></i><span>Angebot vorher</span></p><p class="mn-p__s">Für einen neuen Bereich oder eine neue Funktion schicke ich vorher ein Angebot.</p></li></ul><p class="mn-fuss">Monatlich kündbar, Beträge netto.</p>
-        <div class="sag-orn" aria-hidden="true"><i></i><b></b><i></i></div><p class="mn-gang"><span>III</span>Laufende Betreuung</p><ul class="mn-l"><li>Bis zum Umzug wird geändert, bis Sie zufrieden sind.</li><li>Druckerei, Fotografen und Zenchef rechnen weiter direkt mit Ihnen ab.</li></ul>
-        <div class="sag-orn" aria-hidden="true"><i></i><b></b><i></i></div><p class="mn-gang"><span>IV</span>Wo die KI arbeitet</p><ul class="mn-l"><li>An vier Stellen schreibt ein Sprachmodell mit. Abgerechnet wird über ein Konto, das Ihrem Haus gehört, nach Verbrauch und mit einer Grenze je Monat, die ich einrichte. Fällt die KI weg, arbeitet jede Stelle ohne sie weiter.</li></ul><ul class="mn-l mn-preise"><li class="mn-p"><p class="mn-p__z"><b>Der Chat für Ihre Gäste</b><i></i><span>Der Gastgeber</span></p><p class="mn-p__s">Gibt Gästen Auskunft aus Ihren Seiten und Karten, auch nach Feierabend. Ausprobieren lässt er sich im Werkzeug für die Gäste.</p></li><li class="mn-p"><p class="mn-p__z"><b>Antwort auf eine Anfrage</b><i></i><span>Der Gastgeber</span></p><p class="mn-p__s">Schreibt zu jeder Anfrage einen Entwurf im Ton des Hauses. Hinaus geht er erst, wenn jemand aus dem Team ihn gelesen hat.</p></li><li class="mn-p"><p class="mn-p__z"><b>Fünf Entwürfe</b><i></i><span>Die Werkstatt</span></p><p class="mn-p__s">Aus einem Satz werden fünf Entwürfe im Kleid des Schäfli. Ohne KI nimmt das Werkzeug die nächstliegende Vorlage.</p></li><li class="mn-p"><p class="mn-p__z"><b>Eine Markenprüfung</b><i></i><span>Das Hausbuch</span></p><p class="mn-p__s">Legt den Entwurf einer Agentur neben Farben, Lamm und Schriften des Hauses. Nichts davon wird gespeichert.</p></li></ul>
+        <div class="sag-orn" aria-hidden="true"><i></i><b></b><i></i></div><p class="mn-gang"><span>II</span>Laufende Betreuung</p><ul class="mn-l"><li>Server und Domain, Sicherungen, Updates, Sicherheit und Datenschutz.</li><li>Fehler in den sieben Werkzeugen behebe ich; fällt etwas aus, geht das vor.</li><li>Wechselt eine Karte, eine Zeit oder ein Preis, weiss es auch die KI.</li><li>Sie hören spätestens am nächsten Werktag von mir. Die Inhalte pflegt Ihr Team.</li><li>Bis zum Umzug wird geändert, bis Sie zufrieden sind.</li><li>Druckerei, Fotografen und Zenchef rechnen weiter direkt mit Ihnen ab.</li></ul><ul class="mn-l mn-preise"><li class="mn-p"><p class="mn-p__z"><b>Die Website</b><i></i><span><span data-preis="website">CHF 5’000</span> netto · einmalig</span></p></li><li class="mn-p"><p class="mn-p__z"><b>Betreuung der Website</b><i></i><span><span data-preis="betreuung">CHF 350</span> netto · im Monat</span></p></li><li class="mn-p"><p class="mn-p__z"><b>Die sieben Werkzeuge im Abo</b><i></i><span><span data-preis="abo">CHF 400</span> netto · im Monat</span></p><ul class="mn-p__l"><li>Kontrollpanel</li><li>Website bearbeiten</li><li>Karten &amp; Preislisten</li><li>Anfragen &amp; Chat</li><li>Markenbuch</li><li>Besucher</li><li>Drucksachen &amp; Feed</li></ul></li></ul><p class="mn-fuss">Preise netto, zuzüglich Mehrwertsteuer. Betreuung und Werkzeuge monatlich kündbar.</p>
+        <div class="sag-orn" aria-hidden="true"><i></i><b></b><i></i></div><p class="mn-gang"><span>III</span>Wo die KI arbeitet</p><ul class="mn-l"><li>An vier Stellen arbeitet KI mit. Sie läuft über ein Konto, das Ihrem Haus gehört, mit einer Grenze je Monat, die ich einrichte. Fällt die KI weg, arbeitet jede Stelle ohne sie weiter. Im Entwurf antworten die Stellen mit beschrifteten Proben.</li></ul><ul class="mn-l mn-preise"><li class="mn-p"><p class="mn-p__z"><b>Der Chat für Ihre Gäste</b><i></i><span>Anfragen &amp; Chat</span></p><p class="mn-p__s">Gibt Gästen Auskunft aus Ihren Seiten und Karten, auch nach Feierabend. Ausprobieren lässt er sich im Werkzeug für die Gäste.</p></li><li class="mn-p"><p class="mn-p__z"><b>Antwort auf eine Anfrage</b><i></i><span>Anfragen &amp; Chat</span></p><p class="mn-p__s">Schreibt zu jeder Anfrage einen Entwurf im Ton des Hauses. Hinaus geht er erst, wenn jemand aus dem Team ihn gelesen hat.</p></li><li class="mn-p"><p class="mn-p__z"><b>Fünf Entwürfe</b><i></i><span>Drucksachen &amp; Feed</span></p><p class="mn-p__s">Aus einem Satz werden fünf Entwürfe im Kleid des Schäfli. Ohne KI nimmt das Werkzeug die nächstliegende Vorlage.</p></li><li class="mn-p"><p class="mn-p__z"><b>Eine Markenprüfung</b><i></i><span>Markenbuch</span></p><p class="mn-p__s">Legt den Entwurf einer Agentur neben Farben, Lamm und Schriften des Hauses. Nichts davon wird gespeichert.</p></li></ul>
         <p class="mn-ki"><a class="kn kn--klein" href="ki.html">Mehr zu KI und Ihren Daten<i><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 12 12 4M5.5 4H12v6.5"/></svg></i></a></p>
         <footer class="mn-ende"><i></i><span>Hamburg, 21. Oktober 2026</span><i></i></footer>
-        <p class="mn-pdf"><a class="kn kn--klein" href="vorschlag-taverne-zum-schaefli.pdf" download>Als PDF speichern<i><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 12 12 4M5.5 4H12v6.5"/></svg></i></a></p>
+        
       </article>
+<style id="nur-bewegung">@media screen{html.bew .mn-kopf>*,html.bew .mn-gang,html.bew .mn-l li,html.bew .sag-orn{opacity:0;transform:translateY(22px);transition:opacity .9s cubic-bezier(.16,1,.3,1),transform 1.1s cubic-bezier(.16,1,.3,1);transition-delay:calc(var(--bi,0)*70ms)}html.bew .hoch{opacity:1!important;transform:none!important}}@media (prefers-reduced-motion:reduce){html.bew .mn-kopf>*,html.bew .mn-gang,html.bew .mn-l li,html.bew .sag-orn{opacity:1;transform:none;transition:none}}</style><script id="nur-bewegung-js">(function(){if(matchMedia("print").matches||!("IntersectionObserver" in window))return;var d=document.documentElement;d.classList.add("bew");var z=[].slice.call(document.querySelectorAll(".mn-kopf>*,.mn-gang,.mn-l li,.sag-orn")),n=0;var io=new IntersectionObserver(function(es){n=0;es.forEach(function(e){if(e.isIntersecting){e.target.style.setProperty("--bi",n++);e.target.classList.add("hoch");io.unobserve(e.target)}})},{rootMargin:"0px 0px -6% 0px"});z.forEach(function(e){io.observe(e)});addEventListener("beforeprint",function(){z.forEach(function(e){e.classList.add("hoch")})})})();</script><script id="ruecksprung">/* Rücksprung (Robert 1.11.2026): Zurück/Vor im Browser landet auf der alten Höhe der Seite, nie ganz oben.
+   Merkt je Seite in sessionStorage (rs:<Pfad>) die Höhe und das Inhaltsstück am oberen Fensterrand (beim Scrollen, beim Klick auf einen Link, bei pagehide).
+   Kommt man mit Zurück/Vor wieder (Navigation «back_forward»), richtet sich die Seite nach dem Aufbau an diesem Stück aus, nicht nur an der Pixelzahl:
+   Abschnitte mit content-visibility:auto stehen nach dem Laden als 1400-px-Platzhalter da, dieselbe Pixelhöhe zeigt sonst anderen Inhalt.
+   Für den Moment des Sprungs: alles einmal gezeichnet, keine Übergänge, keine Auftakt-Bewegung (rs-sofort); alles bis zum Fensterrand gilt als gezeigt (.da).
+   Aus dem bfcache (Seite aus dem Speicher des Browsers) richtet pageshow die Seite ebenso aus (Safari stellt die Höhe dort nicht selbst her). Keine unload-Handler. Seiten mit eigenem Rückweg (#rh-zurueck, «wb-y») und Rahmen bleiben unberührt, ausser der Rückweg trägt data-rs (dann führt er nur ?y= aus, Zurück/Vor macht der Rücksprung).
+   Merkpunkt: das nächste feststehende Stück auf einem Drittel der Höhe; liegt dort eine mitlaufende Bühne (sticky), gilt der Abschnitt, der sie trägt (Robert 1.11.2026, Werkbänke mit Handy-/Laptop-Bühnen). */
+(function () {
+  var RH = document.getElementById('rh-zurueck');   /* eigener Rückweg: nur wenn er Zurück/Vor ausdrücklich dem Rücksprung überlässt (data-rs) */
+  if (RH && !RH.hasAttribute('data-rs')) return;
+  try { if (window.top !== window) return; } catch (e) { return; }
+  var K = 'rs:' + location.pathname, H = document.documentElement, sperre = false, t = 0;
+  var SEL = 'h1,h2,h3,h4,h5,p,li,figure,img,picture,video,blockquote,table,tr,section,article,header,footer,div';
+  function festAb(e) {   /* das äusserste mitlaufende (fixed/sticky) Element über e, sonst null */
+    var f = null; for (; e && e !== document.body && e !== H; e = e.parentElement) { var p = getComputedStyle(e).position; if (p === 'fixed' || p === 'sticky') f = e; } return f;
+  }
+  function stand(e) {   /* das nächste feststehende Inhaltsstück: in einer mitlaufenden Bühne (sticky) gilt der Abschnitt, der sie trägt; schwebende Leisten (fixed) nie */
+    for (var n = 0; e && n < 30; n++) {
+      var c = e.closest && e.closest(SEL); if (!c || c === document.body || c === H) return null;
+      var f = festAb(c); if (!f) return c;
+      if (getComputedStyle(f).position === 'fixed') return null;
+      e = f.parentElement;
+    }
+    return null;
+  }
+  function text(e) { return (e.textContent || e.getAttribute('src') || '').replace(/\s+/g, ' ').trim().slice(0, 40); }
+  function anker() {   /* das Inhaltsstück auf einem Drittel der Fensterhöhe (nicht die schwebende Leiste) */
+    if (!document.elementsFromPoint) return null;
+    var l = null, xs = [.5, .25, .75];
+    for (var k = 0; k < xs.length; k++) {
+      var st = document.elementsFromPoint(innerWidth * xs[k], innerHeight * .3);
+      for (var j = 0; j < st.length; j++) { var c = stand(st[j]); if (c) { l = c; break; } }
+      if (l) break;
+    }
+    if (!l) return null;
+    /* lieber der Abschnitt drumherum (section, article, Kopf, Fuss, Stück mit id): bewegte Teile darin (Chat, Film, Bühne) verrutschen, der Abschnitt nicht */
+    var g = l.closest('section,article,header,footer,[id]');
+    if (g && g !== document.body && g !== H && g.tagName !== 'MAIN' && g.matches(SEL) && !festAb(g) && g.getBoundingClientRect().height <= innerHeight * 4) l = g;
+    var alle = document.querySelectorAll(SEL), i = [].indexOf.call(alle, l);
+    return i < 0 ? null : { i: i, d: l.id || '', n: l.tagName, t: text(l), o: Math.round(l.getBoundingClientRect().top) };
+  }
+  function merk(mitAnker) {
+    if (sperre) return;
+    var w = { y: Math.round(window.scrollY || 0) };
+    if (mitAnker) { try { var a = anker(); if (a) w.a = a; } catch (e) {} }
+    else { try { var alt = JSON.parse(sessionStorage.getItem(K) || '{}'); if (alt.a && Math.abs(alt.y - w.y) < 2) w.a = alt.a; } catch (e) {} }
+    try { sessionStorage.setItem(K, JSON.stringify(w)); } catch (e) {}
+  }
+  addEventListener('scroll', function () { if (!t) t = setTimeout(function () { t = 0; merk(false); }, 150); }, { passive: true });
+  document.addEventListener('click', function (ev) { if (ev.target.closest && ev.target.closest('a[href]')) merk(true); }, true);
+  addEventListener('pagehide', function () {   /* beim Verlassen übernimmt der Rücksprung die Höhe ganz: sonst setzt Chrome beim Zurück die alte Pixelhöhe noch mehrmals nach */
+    try { history.scrollRestoration = 'manual'; } catch (e) {}
+    merk(true);
+  });
+
+  /* Zurück aus dem Speicher des Browsers (bfcache): Safari stellt die Höhe dann nicht selbst her, weil pagehide oben scrollRestoration
+     auf «manual» setzt, und es läuft kein Skript neu; die Seite stand ganz oben (Robert 09.11.2026, Schlössli: Speisekarten, Zurück-Pfeil).
+     Darum richtet pageshow mit persisted die Seite genauso am gemerkten Stück aus wie ein neues Laden mit Zurück/Vor. */
+  var w = null, weg = false, st = null;
+  function lies() { try { var x = JSON.parse(sessionStorage.getItem(K)); return x && typeof x.y === 'number' && x.y >= 2 ? x : null; } catch (e) { return null; } }
+  function fertig() { sperre = false; H.classList.remove('rs-ganz'); }
+  ['wheel', 'touchstart', 'keydown', 'mousedown'].forEach(function (k) { addEventListener(k, function () { if (sperre) { weg = true; fertig(); } }, { passive: true }); });
+  function stueck() {   /* das gemerkte Stück wiederfinden: über seine id, sonst gleiche Stelle, sonst gleiche Art mit gleichem Anfang, die nächste zur alten Stelle
+                           (Seiten bauen nach dem Laden noch Teile dazu, z. B. Chat-Vorführungen: die Stelle im Aufbau verschiebt sich) */
+    var a = w.a; if (!a) return null;
+    if (stueck.e && stueck.e.isConnected) return stueck.e;
+    var e = a.d && document.getElementById(a.d);
+    if (e && e.tagName === a.n) return e;
+    var alle = document.querySelectorAll(SEL); e = alle[a.i];
+    if (e && e.tagName === a.n && text(e) === a.t) return e;
+    var best = null, bd = 1e9;
+    for (var k = 0; k < alle.length; k++) { var x = alle[k]; if (x.tagName === a.n && Math.abs(k - a.i) < bd && text(x) === a.t) { best = x; bd = Math.abs(k - a.i); } }
+    return (stueck.e = best);
+  }
+  function ziel() { var e = stueck(); return e ? Math.max(0, Math.round(window.scrollY + e.getBoundingClientRect().top - w.a.o)) : w.y; }
+  function zeig() {
+    var g = window.scrollY + innerHeight;
+    [].forEach.call(document.querySelectorAll('[data-a],.odo,.zt,.roll,img.ld'), function (e) {
+      if (!e.classList.contains('da') && e.getBoundingClientRect().top + window.scrollY < g) e.classList.add('da');
+    });
+  }
+  function geh() { if (weg) return; var y = ziel(); if (Math.abs(window.scrollY - y) > 2) window.scrollTo(0, y); zeig(); }
+  function los() {
+    geh();
+    requestAnimationFrame(function () { geh(); requestAnimationFrame(function () { geh(); H.classList.remove('rs-sofort'); }); });
+    var n = 0, iv = setInterval(function () {
+      n++; geh();
+      if (n >= 16 || weg) { clearInterval(iv); geh(); fertig(); requestAnimationFrame(function () { geh(); merk(true); }); }
+    }, 150);
+  }
+  function zurueck(x) {
+    w = x; weg = false; stueck.e = null; sperre = true;
+    try { history.scrollRestoration = 'manual'; } catch (e) {}
+    if (!st) {
+      st = document.createElement('style');
+      st.textContent = 'html.rs-sofort,html.rs-sofort *{transition:none!important;animation-duration:0s!important;animation-delay:0s!important;scroll-behavior:auto!important}'
+        + 'html.rs-ganz *{content-visibility:visible!important}';
+      (document.head || H).appendChild(st);
+    }
+    H.classList.add('rs-sofort', 'rs-ganz');
+    if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', los); else los();
+  }
+  addEventListener('pageshow', function (e) { if (!e.persisted) return; var x = lies(); if (x) zurueck(x); });
+  addEventListener('load', function () { if (sperre) geh(); });
+
+  var nav; try { nav = performance.getEntriesByType('navigation')[0]; } catch (e) {}
+  if (!nav || (nav.type !== 'back_forward' && nav.type !== 'reload')) return;   /* Zurück/Vor und Neuladen landen an der alten Stelle */
+  var x0 = lies(); if (x0) zurueck(x0);
+})();</script>
+<script id="auftritte-seite-js">(function(){if(!("IntersectionObserver" in window)||matchMedia("(prefers-reduced-motion: reduce)").matches)return;var d=document.documentElement;function los(){var H=innerHeight,n=0,io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add("as-da");io.unobserve(e.target)}})},{rootMargin:"0px 0px -6% 0px"});[].forEach.call(document.querySelectorAll('article.mn>*'),function(e){var r=e.getBoundingClientRect();if(r.top+scrollY>H*1.02&&r.height>8&&!e.hasAttribute("data-a")&&!e.closest(".as-k")){e.classList.add("as-k");e.style.setProperty("--as-v",(n++%3)*90+"ms");io.observe(e)}});d.classList.add("as-an")}if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",los);else los()})();</script><style id="text-mitte">.tm{position:relative}
+@supports not (font:-apple-system-body){
+  .kn>.tm{top:.7px}.kn.kn--klein>.tm{top:0}
+  .wahl button>.tm,.vh-wahl button>.tm,.uwahl button>.tm,.uschalter button>.tm{top:1px;left:.065em}
+  .mb-kn>span{position:relative;top:.9px}
+  .sbf-z>.tm{top:.6px}
+}
+.rund[aria-label^="Zur"] svg,.rund[aria-label^="Vorig"] svg,.pf[aria-label^="Vorig"] svg{position:relative;left:.5px}
+.rund[aria-label^="Weiter"] svg,.rund[aria-label^="Nächst"] svg,.pf[aria-label^="Nächst"] svg{position:relative;left:-.5px}
+@supports (font:-apple-system-body){.pf[aria-label^="Vorig"] svg{left:.6px;top:.5px}.pf[aria-label^="Nächst"] svg{left:-.6px;top:.5px}}
+@supports not (font:-apple-system-body){.pf[aria-label^="Vorig"] svg{left:.6px}.pf[aria-label^="Nächst"] svg{left:-.6px}}
+.rund[disabled],.pf[disabled]{transition:none}</style><script id="text-mitte-js">(function(){function t(){document.querySelectorAll('.kn,.sbf-z,.wahl button,.vh-wahl button,.uwahl button,.uschalter button').forEach(function(k){var n=k.firstChild;if(n&&n.nodeType===3&&n.textContent.trim()){var s=document.createElement('span');s.className='tm';s.textContent=n.textContent;k.replaceChild(s,n)}})}t();addEventListener('load',t)})();</script>
 </body>
 </html>
