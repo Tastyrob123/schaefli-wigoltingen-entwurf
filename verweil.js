@@ -9,7 +9,8 @@
   try {
     var w = window, n = navigator, d = document;
     if (w.__verweil || !n.sendBeacon || n.webdriver || w.self !== w.top || !w.IntersectionObserver) return;
-    var host = location.hostname, ZIEL = w.__verweilZiel || 'https://tasty-besuche.vercel.app/api/b?w=1';
+    if (!w.__verweilZiel) return;   /* 20.11.2026: kein Aufruf mehr an Vercel (Robert: «kein einziger Cent mehr für Vercel»); der Besuchs-Melder besuch.js zählt weiter */
+    var host = location.hostname, ZIEL = w.__verweilZiel;
     if (!/(\.vercel\.app|(^|\.)tasty-studios\.de|(^|\.)tastystudios\.ch)$/.test(host) && !w.__verweilZiel) return;
     if (localStorage.getItem('tasty-ich')) return;
     w.__verweil = 1;
