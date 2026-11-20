@@ -1,11 +1,11 @@
-/* Der Gastgeber (La Réception) · Landgasthof Ruedihus: übernommen aus La Réception des Carlton-Europe (dort aus control/zur-werkbank.js, Le Bureau), dort aus dem Grand Beau-Rivage (assets/js/zur-werkbank.js dort, 16.10.2026), Schlüssel des Hauses «rh-wb». */
+/* Anfragen & Chat · Landgasthof Ruedihus: übernommen aus «Anfragen & Chat» des Carlton-Europe (dort aus control/zur-werkbank.js, Website bearbeiten), dort aus dem Grand Beau-Rivage (assets/js/zur-werkbank.js dort, 16.10.2026), Schlüssel des Hauses «rh-wb». */
 /* «Zur Werkbank» (Robert 12.10.2026): ein Knopf unten links auf jeder Seite, die man aus der Werkbank heraus öffnet.
    Eine Datei für alle Seiten, sie bringt Aussehen und Verhalten selbst mit (eigener Schattenbaum, kein Stylesheet der Seite greift hinein).
 
    In der Werkbank selbst (werkbank/, werkbank/en/ …) zeigt sie nichts, sondern hängt an jeden Link, der hinausführt, die Herkunft:
    ?wb=<Sprache>.<Abschnitt>. Die Zielseite merkt sich das für die Sitzung (sessionStorage «rh-wb»), nimmt den Zusatz wieder aus der Adresse
    und zeigt den Knopf, auch über alle weiteren Klicks. Ohne diese Herkunft erscheint nichts: ein Gast des Hauses sieht den Knopf nie.
-   Eingebettet (Laptop der Werkbank, Vorschau in Le Bureau) erscheint er auch nicht.
+   Eingebettet (Laptop der Werkbank, Vorschau in «Website bearbeiten») erscheint er auch nicht.
 
    Verhalten wie die Sprachleiste unten links: weg beim Hinunterscrollen, zurück beim Hochscrollen, nur transform und opacity.
    Auf den Seiten der Website folgt er der Leiste oben (Klasse «weg» an .nav), sonst zählt er selbst (auch in Werkzeugen, die innen scrollen).
@@ -14,7 +14,7 @@
    data-z="…" hebt ihn über Flächen der Seite, die selbst weit oben liegen (Chat der Zimmermappe).
 
    Einbinden: <script src="…/assets/js/zur-werkbank.js" defer></script>   (zur_werkbank.py trägt das überall ein)
-   Auf fremder Adresse (L’Imprimerie): data-fremd am Skript-Tag, die Werkbank-Adresse kommt dann aus dem Link (wbo). */
+   Auf fremder Adresse (Drucksachen & Feed): data-fremd am Skript-Tag, die Werkbank-Adresse kommt dann aus dem Link (wbo). */
 /* Bild noch einmal holen (14.10.2026): Bleibt ein Bild beim ersten Versuch aus (kurzer Aussetzer der Leitung oder des Netzes von Vercel beim
    Umschalten einer Auslieferung), holt die Seite es einmal nach 1,5 s mit einem Zusatz an der Adresse neu, damit der Browser nicht die
    gescheiterte Antwort wiederverwendet. Gilt für jedes <img> der Seite, läuft nur einmal je Bild. */
@@ -36,18 +36,26 @@
   window.addEventListener('load', nachsehen);
 })();
 
-/* Besuche: die Zählung des Rivage (tasty-besuche, nur auf dessen Online-Adresse) gehört nicht in Le Bureau des Carlton und ist hier
-   herausgenommen (Prüfung 16.10.2026). Besuche der Website zählt Le Registre. */
+/* Besuche: die Zählung des Rivage (tasty-besuche, nur auf dessen Online-Adresse) gehört nicht in «Website bearbeiten» des Carlton und ist hier
+   herausgenommen (Prüfung 16.10.2026). Besuche der Website zählt Besucher. */
 
 (function () {
   'use strict';
+  /* Rückweg an die genaue Stelle (Robert 08.11.2026: «egal, wo ich gerade bin … wenn ich zurückgehe, bin ich wieder da, wo ich bei der Werkbank aufgehört habe»):
+     die Werkbank gibt ihren Pfad als ?wbu= und ihre Höhe als ?wy= mit; lokal gilt sonst die feste Adresse über den Kette-Server, nie ein fester Port. */
+  var WBU = null, WY = null;
+  try { var _q = new URLSearchParams(location.search), _u = _q.get('wbu');
+    if (_u) { var _x = new URL(_u); if (/^(127\.0\.0\.1|localhost)$/.test(_x.hostname) && /\/$/.test(_x.pathname)) sessionStorage.setItem('ws-wbu', _x.href); }
+    var _y = _q.get('wy'); if (/^\d{1,6}$/.test(_y || '')) sessionStorage.setItem('ws-wy', _y);
+    WBU = sessionStorage.getItem('ws-wbu'); WY = sessionStorage.getItem('ws-wy'); } catch (e) {}
+  var LOKAL_WERKBANK = WBU || 'https://schaefli.tastystudios.ch/';
   if (window.__zurWerkbank) return; window.__zurWerkbank = 1;
 
   var SPRACHEN = ['de', 'en', 'fr', 'zh', 'ko', 'ar'];
   var TEXT = { de: 'Zur Werkbank', en: 'To the workbench', fr: 'Vers l’atelier',   /* Demo-Check Schäfli 21.10.2026: wie die anderen sechs Werkzeuge des Hauses */
                 zh: '前往工作台', ko: '작업대로', ar: 'إلى منضدة العمل' };
   var OHNE_SPRACHE = /^(control|_?werkzeuge|studio|mission-control|reception|marke|maison|imprimerie|mails|werkbank\/anleitung)\/|^mappe/;   // gibt es nur deutsch: Sprache der Werkbank gilt
-  var FREMD_ZIEL = /^https:\/\/drucksachen-studio\.vercel\.app$|^http:\/\/(127\.0\.0\.1|localhost):8963$/;   // L’Imprimerie auf eigener Adresse
+  var FREMD_ZIEL = /^https:\/\/drucksachen-studio\.vercel\.app$|^http:\/\/(127\.0\.0\.1|localhost):8963$/;   // Drucksachen & Feed auf eigener Adresse
   var HERKUNFT = /^https:\/\/[a-z0-9-]+\.vercel\.app$|^http:\/\/(127\.0\.0\.1|localhost):\d{2,5}$/;   // von wo eine Werkbank herkommen darf
   var SCHL = 'schaefli-wb';
 
@@ -109,7 +117,7 @@
     var t = /^(de|en|fr|zh|ko|ar)(?:\.([a-z0-9-]{1,40}))?$/.exec(roh);
     var o = q.get('wbo') || '';
     if (t && (!fremd || HERKUNFT.test(o) || /^\/imprimerie\//.test(location.pathname))) merke({ sp: t[1], anker: t[2] || '', o: HERKUNFT.test(o) && (fremd || o !== location.origin) ? o : '', y: /^\d{1,6}$/.test(q.get('wy') || '') ? q.get('wy') : '' });
-    try { q.delete('wb'); q.delete('wbo'); q.delete('wy'); var rest = q.toString(); history.replaceState(history.state, '', location.pathname + (rest ? '?' + rest : '') + location.hash); } catch (e) {}
+    try { q.delete('wb'); q.delete('wbu'); q.delete('wbo'); q.delete('wy'); var rest = q.toString(); history.replaceState(history.state, '', location.pathname + (rest ? '?' + rest : '') + location.hash); } catch (e) {}
   }
   var von = lies();
   if (!von) return;                       // kein Besuch aus der Werkbank: nichts zeigen
@@ -123,7 +131,9 @@
   var imPfad = /(?:^|\/)(en|fr|zh|ko|ar)\//.exec(pfad);
   var sp = fremd || OHNE_SPRACHE.test(pfad) ? von.sp : (imPfad ? imPfad[1] : 'de');
   if (sp !== von.sp) { von.sp = sp; merke(von); }
-  var ziel = basis + 'werkbank/' + (sp === 'de' ? '' : sp + '/') + 'index.html' + (von.y ? '?y=' + von.y : (von.anker ? '#' + von.anker : ''));
+  if (location.port && /^(127\.0\.0\.1|localhost)$/.test(location.hostname)) basis = WBU || (location.port === '8978' && basis ? basis : LOKAL_WERKBANK);
+  var _wy = /^\d{1,6}$/.test(String(von.y || '')) ? String(von.y) : (WY || '');
+  var ziel = basis + 'werkbank/' + (sp === 'de' ? '' : sp + '/') + 'index.html' + (_wy ? '?y=' + _wy : (von.anker ? '#' + von.anker : ''));
   /* wie die Stube (Robert 19.10.2026 01:18): ein Werkzeug öffnet im neuen Tab; «Zur Werkbank» schliesst ihn wieder, die Werkbank steht im ersten Tab noch an derselben Stelle */
   document.addEventListener('click', function (ev) { var w = document.getElementById('zur-werkbank'); if (!w || !ev.composedPath || ev.composedPath().indexOf(w) < 0) return; if (history.length <= 1) { ev.preventDefault(); ev.stopPropagation(); try { window.close(); } catch (x) {} setTimeout(function () { location.href = ziel; }, 400); } }, true);
 
@@ -156,7 +166,7 @@
     [['position', 'fixed'], ['z-index', String(parseInt(tag && tag.getAttribute('data-z'), 10) || 61)], ['left', 'clamp(14px,2vw,32px)'], ['bottom', 'clamp(14px,2vw,32px)'],
      ['top', 'auto'], ['right', 'auto'], ['width', 'auto'], ['height', 'auto'], ['margin', '0'], ['padding', '0'], ['border', '0'], ['background', 'none'], ['float', 'none'],
      ['visibility', 'visible'], ['filter', 'none'], ['clip-path', 'none'], ['direction', 'ltr'], ['line-height', 'normal'],
-     /* Regeln der Seite, die jedes Kind von body hereinschweben lassen (L’Imprimerie: Animation «auf»), dürfen den Knopf nicht festhalten:
+     /* Regeln der Seite, die jedes Kind von body hereinschweben lassen (Drucksachen & Feed: Animation «auf»), dürfen den Knopf nicht festhalten:
         in Safari überstimmt eine zu Ende gelaufene Animation sonst Deckkraft und Lage */
      ['animation', 'none'], ['translate', 'none'], ['rotate', 'none'], ['scale', 'none'], ['mask', 'none'], ['mix-blend-mode', 'normal'],
      ['max-width', 'none'], ['min-width', '0'], ['max-height', 'none'], ['min-height', '0'], ['overflow', 'visible'], ['box-shadow', 'none'], ['outline', '0'],
@@ -175,7 +185,7 @@
       '<style>' +
       ':host{direction:ltr}' +
       'a{position:relative;overflow:hidden;isolation:isolate;box-sizing:border-box;display:inline-flex;align-items:center;gap:11px;height:44px;padding:0 20px 0 5px;border-radius:999px;' +
-      'font:400 11.5px/1 "ZW Mono","DM Mono",ui-monospace,"SF Mono",Menlo,"PingFang SC","Apple SD Gothic Neo","Geeza Pro",monospace;letter-spacing:.13em;text-transform:uppercase;white-space:nowrap;text-decoration:none;' +
+      'font:400 13px/1 "ZW Mono","DM Mono",ui-monospace,"SF Mono",Menlo,"PingFang SC","Apple SD Gothic Neo","Geeza Pro",monospace;letter-spacing:.13em;text-transform:uppercase;white-space:nowrap;text-decoration:none;' +
       'color:#1f110f;background:linear-gradient(180deg,#faf8f4 0%,#e6e0d8 46%,#d3c5b2 100%);cursor:pointer;-webkit-tap-highlight-color:transparent;' +
       'box-shadow:inset 0 1px 0 #fff,inset 0 -3px 0 rgba(129,72,63,.32),inset 0 0 0 1px rgba(166,133,89,.62),0 0 0 1px rgba(33,17,15,.28),0 12px 22px -12px rgba(33,17,15,.6);' +
       'transition:transform .55s cubic-bezier(.32,.72,0,1)}' +
@@ -188,7 +198,7 @@
       '@media (hover:hover){a:hover{transform:translateY(-2px)}a:hover i{transform:translateX(-2px) scale(1.05)}a:hover::after{transform:translateX(360%) skewX(-18deg);transition:transform 1s cubic-bezier(.16,1,.3,1)}}' +
       'a:active{transform:translateY(1px) scale(.985)}' +
       'a:focus-visible{outline:2px solid #dec7aa;outline-offset:3px}' +
-      '@media (max-width:560px){a{height:40px;gap:9px;padding:0 16px 0 4px;font-size:10.5px}i{width:32px;height:32px}:host([lang="zh"]) a,:host([lang="ko"]) a,:host([lang="ar"]) a{font-size:12px}}' +
+      '@media (max-width:560px){a{height:40px;gap:9px;padding:0 16px 0 4px;font-size:13px}i{width:32px;height:32px}:host([lang="zh"]) a,:host([lang="ko"]) a,:host([lang="ar"]) a{font-size:13px}}' +
       '@media (prefers-reduced-motion:reduce){a,i,a::after{transition:none!important}}' +
       '</style>' +
       '<a part="knopf" href="' + ziel.replace(/"/g, '&quot;') + '"><i aria-hidden="true"><svg viewBox="0 0 16 16"><path d="M13 8H3.5M7.5 4 3.5 8l4 4"/></svg></i><span' + (sp === 'ar' ? ' dir="rtl"' : '') + '>' + TEXT[sp] + '</span></a>';
@@ -230,7 +240,7 @@
         var o;
         if (c.position === 'fixed' && c.bottom !== 'auto') o = parseFloat(c.bottom) + el.offsetHeight;
         else if (c.position === 'fixed' || c.position === 'sticky') o = r.bottom > H - unten - hoehe ? H - r.top : 0;
-        else {   // Inhalt, der mitscrollt (Eingabefeld der Zimmermappe, erste Tür von La Maison): zählt, solange er gerade in der Zeile des Knopfs steht
+        else {   // Inhalt, der mitscrollt (Eingabefeld der Zimmermappe, erste Tür von «Kontrollpanel»): zählt, solange er gerade in der Zeile des Knopfs steht
           lebend = true;
           o = r.bottom > H - unten - hoehe && r.top < H - unten ? H - r.top : 0;
           if (o > H * 0.4) o = 0;

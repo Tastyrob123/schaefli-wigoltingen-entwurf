@@ -1,9 +1,9 @@
-/* Rundgang (R18, M11): Kopie des Werkzeugs der Häuser, Gang für Die Stube der Taverne zum Schäfli; gebaut von _werkzeuge/maison/bau.py */
+/* Rundgang (R18, M11): Kopie des Werkzeugs der Häuser, Gang für Kontrollpanel der Taverne zum Schäfli; gebaut von _werkzeuge/maison/bau.py */
 /* Kurzer Rundgang beim ersten Öffnen eines Werkzeugs (Robert 16.10.2026: «einmal ganz kurz zeigen, hier kannst du das machen,
    da das, damit man weiss, wo man gelandet ist»). Ein Lichtkegel liegt auf dem echten Bedienelement, daneben eine Karte mit
    zwei, drei Sätzen. Je Werkzeug und Browser einmal; wieder aufrufen über «Kurzer Rundgang» im Rand oder ?rundgang.
    Einbinden: <script src="../assets/js/rundgang.js?v=1" defer data-werkzeug="bureau"></script>
-   L’Imprimerie hat ihre eigene Begrüssung mit Führung (fuehrung.js im Drucksachen-Studio) und braucht diese Datei nicht.
+   Drucksachen & Feed hat ihre eigene Begrüssung mit Führung (fuehrung.js im Drucksachen-Studio) und braucht diese Datei nicht.
    Automatische Prüfungen (navigator.webdriver) und eingebettete Ansichten (Werkbank, Bildschirm-Aufnahmen) sehen nichts. */
 (function () {
   var S = document.currentScript, WZ = (S && S.dataset.werkzeug) || '';
@@ -12,11 +12,11 @@
 
   /* ziel: Liste von Wahlorten, der erste sichtbare gilt (Handy hat andere Flächen). */
   var GAENGE = {
-    maison: { name: 'Die Stube', schritte: [
-      { ziel: ['.rw-kopf', '#oben'], oben: true, titel: 'Das ist Die Stube',
+    maison: { name: 'Kontrollpanel', schritte: [
+      { ziel: ['.rw-kopf', '#oben'], oben: true, titel: 'Das ist Kontrollpanel',
         text: 'Der Eingang zu allen Werkzeugen des Hauses. Von hier aus pflegen Sie Website, Karten, Drucksachen, den Chat und die Marke selbst.' },
       { ziel: ['.hz-z:first-child a', '.hz-tafel'], titel: 'Jedes Feld ist ein Werkzeug',
-        text: 'Der Schreibtisch, Die Tafel, Die Werkstatt, Der Gastgeber, Das Hausbuch, Das Besucherbuch. Darunter steht, was dort gerade ansteht.' },
+        text: 'Website bearbeiten, Karten & Preislisten, Drucksachen & Feed, Anfragen & Chat, Markenbuch, Besucher. Darunter steht, was dort gerade ansteht.' },
       { ziel: ['.hz-rahmen', '.hz-tafel'], titel: 'Erst ansehen, dann öffnen',
         text: 'Am Rechner zeigt das grosse Bild links, wie das Werkzeug aussieht, sobald Sie über eine Kachel fahren. So wissen Sie vorher, wohin es geht.' },
       { ziel: ['.m-insel', '.m-oben'], oben: true, titel: 'Immer erreichbar',
@@ -26,8 +26,8 @@
     ] }
   };;;
 
-  /* La Réception: «Das weiss der Chat» bekommt seinen eigenen Rundgang, sobald man dorthin wechselt. */
-  function aktuell() { return WZ === 'reception' && (document.querySelector('#ansicht .wi-oben, #w-ein') || /^#wissen/.test(location.hash)) ? 'savoir' : WZ; }   /* La Réception merkt sich die letzte Ansicht, darum nach dem Inhalt fragen */
+  /* Anfragen & Chat: «Das weiss der Chat» bekommt seinen eigenen Rundgang, sobald man dorthin wechselt. */
+  function aktuell() { return WZ === 'reception' && (document.querySelector('#ansicht .wi-oben, #w-ein') || /^#wissen/.test(location.hash)) ? 'savoir' : WZ; }   /* Anfragen & Chat merkt sich die letzte Ansicht, darum nach dem Inhalt fragen */
   function schluessel(w) { return 'rundgang-schaefli-' + w; }
   function gesehen(w) { try { return localStorage.getItem(schluessel(w)) === '1'; } catch (e) { return true; } }
   function merk(w) { try { localStorage.setItem(schluessel(w), '1'); } catch (e) { } }
@@ -42,28 +42,28 @@
       'font:15px/1.55 "Instrument Sans",system-ui,sans-serif;animation:rdg-auf .42s cubic-bezier(.2,.8,.2,1) both}' +
     '@keyframes rdg-auf{from{transform:translate3d(var(--rx,0),calc(var(--ry,0px) + 14px),0)}to{transform:translate3d(var(--rx,0),var(--ry,0),0)}}' +
     '.rdg-karte{transform:translate3d(var(--rx,0),var(--ry,0),0)}' +
-    '.rdg-zier{display:flex;align-items:center;gap:10px;font:500 10px/1 "DM Mono",ui-monospace,monospace;letter-spacing:.2em;text-transform:uppercase;color:#7D433A}' +
+    '.rdg-zier{display:flex;align-items:center;gap:10px;font:500 13px/1 "DM Mono",ui-monospace,monospace;letter-spacing:.2em;text-transform:uppercase;color:#7D433A}' +
     '.rdg-zier i{flex:1;height:1px;background:linear-gradient(90deg,#D3B794,rgba(211,183,148,0))}' +
     '.rdg-karte h3{margin:12px 0 6px;font:460 26px/1.12 Petrona,Georgia,serif;color:#452520;letter-spacing:0}' +
     '.rdg-karte p{margin:0;color:rgba(48,25,22,.78)}' +
     '.rdg-fuss{display:flex;align-items:center;gap:14px;margin-top:20px}' +
     '.rdg-karte .rdg-weg{display:flex;gap:5px;flex:1 1 auto;min-width:64px}.rdg-karte .rdg-weg b{display:block;height:3px;flex:1 1 0;min-width:6px;max-width:26px;border-radius:2px;background:rgba(48,25,22,.14)}.rdg-karte .rdg-weg b.da{background:#B38346}' +
-    '.rdg-karte .rdg-zu{flex:none;margin:0;border:0;background:none;padding:6px 2px;font:500 10px/1 "DM Mono",ui-monospace,monospace;letter-spacing:.14em;text-transform:uppercase;color:#7D433A;cursor:pointer}' +
+    '.rdg-karte .rdg-zu{flex:none;margin:0;border:0;background:none;padding:6px 2px;font:500 13px/1 "DM Mono",ui-monospace,monospace;letter-spacing:.14em;text-transform:uppercase;color:#7D433A;cursor:pointer}' +
     '.rdg-karte .rdg-zu:hover{color:#452520}' +
     '.rdg-karte .rdg-los{flex:none;margin:0;display:inline-flex;align-items:center;gap:12px;height:42px;padding:0 6px 0 18px;border:0;border-radius:999px;cursor:pointer;' +
-      'font:500 10px/1 "DM Mono",ui-monospace,monospace;letter-spacing:.16em;text-transform:uppercase;color:#FBFAF7!important;' +
+      'font:500 13px/1 "DM Mono",ui-monospace,monospace;letter-spacing:.16em;text-transform:uppercase;color:#FBFAF7!important;' +
       'background:linear-gradient(180deg,#7D433A,#452520 55%,#301916);box-shadow:0 1px 0 rgba(255,255,255,.18) inset,0 10px 18px -10px rgba(48,25,22,.8)}' +
     '.rdg-karte .rdg-los i{display:grid;margin:0;place-items:center;width:30px;height:30px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#F4EADB,#D3B794 55%,#B38346);' +
       'box-shadow:0 1px 0 rgba(255,255,255,.6) inset,0 3px 6px -2px rgba(0,0,0,.45)}' +
     '.rdg-karte .rdg-los svg{width:14px;height:14px;fill:none;stroke:#452520;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}' +
     '.rdg-karte .rdg-los:hover i{transform:translateX(2px)}.rdg-karte .rdg-los i{transition:transform .2s}' +
     '.rdg-los:focus-visible,.rdg-zu:focus-visible{outline:2px solid #B38346;outline-offset:3px}' +
-    /* Werkzeug-Stile (La Carte vergrössert Knöpfe und Schrift) dürfen die Karte nicht verändern */
+    /* Werkzeug-Stile (Karten & Preislisten vergrössert Knöpfe und Schrift) dürfen die Karte nicht verändern */
     '.rdg-karte,.rdg-karte *{box-sizing:border-box!important}' +
     '.rdg-karte p{font:15px/1.55 "Instrument Sans",system-ui,sans-serif!important;letter-spacing:0!important;text-transform:none!important}' +
     '.rdg-karte h3{font:460 26px/1.12 Petrona,Georgia,serif!important;letter-spacing:0!important;text-transform:none!important}' +
     '.rdg-karte .rdg-fuss{flex-wrap:nowrap!important}' +
-    '.rdg-karte .rdg-zu,.rdg-karte .rdg-los{font:500 10px/1 "DM Mono",ui-monospace,monospace!important;letter-spacing:.14em!important;text-transform:uppercase!important;min-width:0!important;width:auto!important;outline:0;border:0!important;margin:0!important}' +
+    '.rdg-karte .rdg-zu,.rdg-karte .rdg-los{font:500 13px/1 "DM Mono",ui-monospace,monospace!important;letter-spacing:.14em!important;text-transform:uppercase!important;min-width:0!important;width:auto!important;outline:0;border:0!important;margin:0!important}' +
     '.rdg-karte .rdg-zu{height:auto!important;padding:6px 2px!important;background:none!important;box-shadow:none!important;color:#7D433A!important}' +
     '.rdg-karte .rdg-los{height:42px!important;padding:0 6px 0 18px!important;letter-spacing:.16em!important;border-radius:999px!important}' +
     '.rdg-karte .rdg-los i{width:30px!important;height:30px!important;flex:none!important}' +
@@ -196,10 +196,10 @@
     '@keyframes rdg-schild-auf{from{transform:translate3d(0,calc(100% + 40px),0)}to{transform:translate3d(0,0,0)}}' +
     '.rdg-schild.weg{animation:none;transform:translate3d(0,calc(100% + 60px),0)}' +
     '.rdg-schild__t{display:flex;flex-direction:column;gap:4px;line-height:1}' +
-    '.rdg-schild__t small{font:500 9px/1 "DM Mono",ui-monospace,monospace!important;letter-spacing:.2em!important;text-transform:uppercase;color:#7D433A}' +
+    '.rdg-schild__t small{font:500 13px/1 "DM Mono",ui-monospace,monospace!important;letter-spacing:.2em!important;text-transform:uppercase;color:#7D433A}' +
     '.rdg-schild__t b{font:460 18px/1 Petrona,Georgia,serif!important;letter-spacing:0!important;color:#452520}' +
     '.rdg-schild .rdg-los{flex:none;margin:0!important;display:inline-flex;align-items:center;gap:10px;height:38px!important;padding:0 5px 0 15px!important;border:0!important;border-radius:999px!important;cursor:pointer;' +
-      'font:500 9.5px/1 "DM Mono",ui-monospace,monospace!important;letter-spacing:.16em!important;text-transform:uppercase!important;color:#FBFAF7!important;' +
+      'font:500 13px/1 "DM Mono",ui-monospace,monospace!important;letter-spacing:.16em!important;text-transform:uppercase!important;color:#FBFAF7!important;' +
       'background:linear-gradient(180deg,#7D433A,#452520 55%,#301916)!important;box-shadow:0 1px 0 rgba(255,255,255,.18) inset,0 8px 16px -10px rgba(48,25,22,.8)!important}' +
     '.rdg-schild .rdg-los i{display:grid;place-items:center;width:28px!important;height:28px!important;border-radius:50%;background:radial-gradient(circle at 35% 30%,#F4EADB,#D3B794 55%,#B38346);box-shadow:0 1px 0 rgba(255,255,255,.6) inset,0 3px 6px -2px rgba(0,0,0,.45);transition:transform .2s}' +
     '.rdg-schild .rdg-los:hover i{transform:translateX(2px)}' +

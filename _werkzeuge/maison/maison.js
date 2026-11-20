@@ -1,4 +1,4 @@
-/* La Maison · Taverne zum Schäfli (21.10.2026). Quelle für bau.py, nicht die Ausgabe. Vorlage: La Maison der Häuser.
+/* Kontrollpanel · Taverne zum Schäfli (21.10.2026). Quelle für bau.py, nicht die Ausgabe. Vorlage: Kontrollpanel der Häuser.
    Gruss, Datum, Empfang «Die Riegelwand» (Vorschau statt Foto, M23), Auftritte, Leiste und der Stand je Werkzeug.
    Stand nur aus den Werkzeugen selbst (nichts geschätzt): Wege als Daten in der Seite (#maison-wege); ein Weg darf eine Liste sein
    (antwortet der erste nicht, gilt der nächste). Werte gehen nur als Zahl in die Seite. Antwortet ein Werkzeug nicht: Satz ohne Zahl. */
@@ -53,7 +53,7 @@
   })();
 
   /* M23: in Ruhe das Haus unter dem Himmel; Zeiger oder Tastatur-Fokus auf einer Zeile zeigt links die echte Vorschau dieses Werkzeugs.
-     Erst entpacken, dann zeigen (M16). Verlässt der Zeiger die Tafel, kommt die Ruhe-Ansicht zurück. Nichts bewegt sich, nur Deckkraft. */
+     Erst entpacken, dann zeigen (M16). Verlässt der Zeiger «Karten & Preislisten», kommt die Ruhe-Ansicht zurück. Nichts bewegt sich, nur Deckkraft. */
   var Z = $$('.hz-z a'), B = $$('[data-vorschau]'), U = $$('.hz-unter span'), jetzt = 'ruhe', will = 'ruhe';
   var stueck = function (i) { return B.filter(function (b) { return b.getAttribute('data-vorschau') === String(i); })[0]; };
   var zeige = function (i) {
@@ -125,7 +125,7 @@
   var BSP = '<span class="bsp">Beispiel</span>';
   var BEISPIEL = []; try { BEISPIEL = JSON.parse($('#maison-beispiel').textContent) || []; } catch (e) {}   /* Werkzeuge, die in der Demo Beispieldaten zeigen (R20) */
 
-  /* Le Bureau: {aenderungen, zuletzt:{zeit}, bereiche, seiten} oder Stand des Stamms */
+  /* Website bearbeiten: {aenderungen, zuletzt:{zeit}, bereiche, seiten} oder Stand des Stamms */
   hole('bureau').then(function (u) {
     var s = stamm(u), a = s ? (s.offen ? ganz(s.offen) || 1 : 0) : ganz(u.aenderungen), zul = !s && u.zuletzt && u.zuletzt.zeit ? tag(u.zuletzt.zeit) : '';
     if (!s && Array.isArray(u.bereiche) && u.bereiche.length) zahl('bereiche', u.bereiche.length);
@@ -134,7 +134,7 @@
     setze('bureau', (a ? '<b>' + a + (a > 1 ? ' Änderungen' : ' Änderung') + ' im Entwurf.</b> ' : 'Nichts offen im Entwurf. ') + (zul ? 'Zuletzt veröffentlicht am ' + esc(zul) + '.' : ''));
   }).catch(function () { setze('bureau-kurz', 'Website des Hauses'); setze('bureau', 'Der Stand ist gerade nicht abrufbar.'); });
 
-  /* La Carte: {karten:[{entwurf, pdf_zeit}]} oder Stand des Stamms */
+  /* Karten & Preislisten: {karten:[{entwurf, pdf_zeit}]} oder Stand des Stamms */
   hole('carte').then(function (d) {
     var s = stamm(d);
     if (s) { var o = ganz(s.offen); setze('carte-kurz', o || s.offen === true ? '<b>Entwurf wartet</b>' : 'Alle Karten veröffentlicht'); return; }
@@ -144,7 +144,7 @@
     setze('carte-kurz', e ? '<b>' + e + ' im Entwurf</b>' : k.length + (k.length === 1 ? ' Karte, veröffentlicht' : ' Karten, alle veröffentlicht'));
   }).catch(function () { setze('carte-kurz', 'Karten des Hauses'); });
 
-  /* L’Imprimerie: Liste der Vorlagen [{art, zahl}] (M17) */
+  /* Drucksachen & Feed: Liste der Vorlagen [{art, zahl}] (M17) */
   hole('imprimerie').then(function (l) {
     var liste = Array.isArray(l) ? l : Array.isArray(l.vorlagen) ? l.vorlagen : null; if (!liste || !liste.length) throw new Error('leer');
     var z = 0, arten = {}; liste.forEach(function (x) { z += ganz(x && x.zahl) || 1; if (x && x.art) arten[String(x.art)] = 1; });
@@ -152,7 +152,7 @@
     setze('imprimerie-kurz', z + ' Vorlagen' + (a ? ' in ' + a + (a === 1 ? ' Art' : ' Arten') : ''));
   }).catch(function () { setze('imprimerie-kurz', 'Vorlagen, druckfertig'); });
 
-  /* La Réception: {anfragen_neu, anfragen_offen, ohne_antwort, fragen_gesamt} */
+  /* Anfragen & Chat: {anfragen_neu, anfragen_offen, ohne_antwort, fragen_gesamt} */
   hole('reception').then(function (r) {
     var u = {}; ['anfragen_neu', 'anfragen_offen', 'ohne_antwort', 'fragen_gesamt'].forEach(function (k) { u[k] = ganz(r[k]); });
     var t = [];
@@ -164,7 +164,7 @@
     setze('reception', t.length ? kurz : 'Nichts offen · ' + u.fragen_gesamt + (u.fragen_gesamt === 1 ? ' Frage' : ' Fragen') + ' bisher');
   }).catch(function () { setze('reception-kurz', 'Chat auf der Website'); setze('reception', '&nbsp;'); });
 
-  /* Le Livre: stand:{fotos, dateien, ki, ue} */
+  /* Markenbuch: stand:{fotos, dateien, ki, ue} */
   hole('livre').then(function (d) {
     var s = d.stand || {}, f = ganz(s.fotos), da = ganz(s.dateien), ki = ganz(s.ki), ue = ganz(s.ue);
     if (!f && !da) throw new Error('leer');
@@ -173,7 +173,7 @@
     setze('livre', f + ' Fotos in fertigen Grössen' + (dazu.length ? ', davon ' + dazu.join(' und ') + ', alle gekennzeichnet' : '') + '. ' + da + ' Dateien für Agenturen und Druckereien.');
   }).catch(function () { setze('livre-kurz', 'Fotos, Dateien, Markenprüfung'); setze('livre', '&nbsp;'); });
 
-  /* Le Registre: {summe:{heute, besuche, seiten, laender, buchung}, je_tag:[…], tage, beispiel, leer} */
+  /* Besucher: {summe:{heute, besuche, seiten, laender, buchung}, je_tag:[…], tage, beispiel, leer} */
   hole('registre').then(function (m) {
     var u = m.summe || {}, bs = ganz(u.besuche), jt = Array.isArray(m.je_tag) && m.je_tag.length ? m.je_tag[m.je_tag.length - 1] : null;
     var heute = jt && isFinite(Number(jt.besuche)) ? Number(jt.besuche) : (isFinite(Number(u.heute)) ? Number(u.heute) : null);
@@ -184,7 +184,7 @@
     setze('registre-kurz', m.leer || !bs ? 'Noch keine Besuche gezählt' : n(bs) + (bs === 1 ? ' Besuch' : ' Besuche') + ' in ' + n(ganz(m.tage)) + ' Tagen' + (m.beispiel ? '\u00a0· ' + BSP : ''));
     zahl('reg-besuche', bs ? n(bs) : '–'); zahl('reg-seiten', ganz(u.seiten) ? n(u.seiten) : '–'); zahl('reg-laender', ganz(u.laender) ? n(u.laender) : '–');
     /* Der Weg zum Tisch (Weg des Gastes, Robert 18.10.2026 Fassung C): Besuche → Fenster «Reservation» → Zenchef oder Anfrage ans Haus → reserviert */
-    /* Demo-Check 21.10.2026: dieselbe Rechnung wie «Der Weg zum Tisch» im Besucherbuch (registre.js trichter): abbruch.von = «Ihr Abend» begonnen,
+    /* Demo-Check 21.10.2026: dieselbe Rechnung wie «Der Weg zum Tisch» in «Besucher» (registre.js trichter): abbruch.von = «Ihr Abend» begonnen,
        davon ohne Abbruch = Tischkarte angefragt oder reserviert; wer gleich «Tisch reservieren» wählt (booking.zahl), geht an «Ihr Abend» vorbei */
     var w = m.werte || {}, ab = w.abbruch || {}, fen = ganz(ab.von), wei = Math.max(0, fen - ganz(ab.zahl)), bk = ganz((w.booking || {}).zahl);
     var ant = function (t, g) { return g ? Math.round(100 * t / g) + ' % davon' : ''; };

@@ -1,4 +1,4 @@
-/* Anleitung Le Livre · Bild gross: Klick macht das Bild gross, ein zweiter Klick oder Esc schliesst (eigene Datei, keine eingebetteten Skripte, Falle 9). */
+/* Anleitung Markenbuch · Bild gross: Klick macht das Bild gross, ein zweiter Klick oder Esc schliesst (eigene Datei, keine eingebetteten Skripte, Falle 9). */
 'use strict';
 (function () {
   var g = document.getElementById('gross'), im = g.querySelector('img');

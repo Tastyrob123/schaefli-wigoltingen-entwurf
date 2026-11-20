@@ -10,7 +10,7 @@
 .wo-kopf__wz{display:none}
 .wo-kopf__mitte{display:flex;flex-direction:column;align-items:center;color:var(--wo-weiss)}
 .wo-kopf__mitte b{font:var(--wo-titel-g) 22px/1.1 var(--wo-titel)}
-.wo-kopf__mitte small{font:400 9.5px/1.4 var(--wo-mono);letter-spacing:.24em;text-transform:uppercase;color:var(--wo-gold);margin-top:4px}
+.wo-kopf__mitte small{font:400 13px/1.4 var(--wo-mono);letter-spacing:.24em;text-transform:uppercase;color:var(--wo-gold);margin-top:4px}
 .wo-kopf .wo-kopf__r{justify-self:end}
 
 .wo-rand{grid-area:rand;align-self:start;padding:16px 12px 18px;border-radius:var(--wo-r1);background:var(--wo-weiss);box-shadow:inset 0 1px 0 #fff,inset 0 0 0 1px var(--wo-linie),0 26px 40px -30px rgba(0,0,0,.4)}
@@ -31,7 +31,7 @@
   .wo-kopf{grid-template-columns:minmax(0,1fr) auto;height:64px;padding:0 12px 0 16px;margin-bottom:14px}
   .wo-kopf__mitte,.wo-kopf .wo-kopf__r{display:none}
   .wo-marke-w .wo-zeichen{height:26px} .wo-marke-w b{font-size:17px}
-  .wo-kopf__ber{display:inline-flex;align-items:center;gap:8px;height:40px;padding:0 16px;border:0;border-radius:var(--wo-rk);cursor:pointer;font:400 10.5px/1 var(--wo-mono);letter-spacing:.16em;text-transform:uppercase;
+  .wo-kopf__ber{display:inline-flex;align-items:center;gap:8px;height:40px;padding:0 16px;border:0;border-radius:var(--wo-rk);cursor:pointer;font:400 13px/1 var(--wo-mono);letter-spacing:.16em;text-transform:uppercase;
     color:var(--wo-tief);background:linear-gradient(180deg,var(--wo-g1),var(--wo-g2) 50%,var(--wo-g3));box-shadow:inset 0 1px 0 rgba(255,255,255,.8),inset 0 -2px 0 rgba(0,0,0,.2)}
   .wo-kopf__ber .wo-ic{width:16px;height:16px}
   .wo-rand{display:none;margin:0 16px 16px}

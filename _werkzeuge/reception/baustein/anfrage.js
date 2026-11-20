@@ -1,9 +1,9 @@
-/* Anschluss der Formulare der Website an La Réception · Taverne zum Schäfli, Wigoltingen (21.10.2026, Master Werkzeug-Bau E12/E24/E33, Muster: Reservationsbuch
+/* Anschluss der Formulare der Website an Anfragen & Chat · Taverne zum Schäfli, Wigoltingen (21.10.2026, Master Werkzeug-Bau E12/E24/E33, Muster: Anfragen & Chat
    des Schlössli). Die Website hat sechs Formulare: die Tischkarte «Ihr Abend» (#abend-form, abend.html, mit Allergien, vegetarisch und Hund), «Ihre Feier»
    (dialog#anfrage, feiern.html, dazu das gewählte Menü aus «Menüvorschläge»), «Ihr Gutschein» (dialog#gutschein-fenster, gutschein.html, dazu Betrag, Widmung und Haus
    von der Karte), «Einen Platz vormerken» (dialog#vormerken, anlaesse.html), «Ihre Nachricht» (dialog#kontakt-fenster, kontakt.html) und «Deine Bewerbung»
    (dialog#bewerbung, jobs.html). Bisher zeigten sie nur «Danke» (Studie, nichts ging weg).
-   Mit diesem Baustein geht jede Anfrage in den Eingang von La Réception, mit allen Angaben; erst wenn La Réception sie angenommen hat, zeigt das Fenster «Danke».
+   Mit diesem Baustein geht jede Anfrage in den Eingang von «Anfragen & Chat», mit allen Angaben; erst wenn Anfragen & Chat sie angenommen hat, zeigt das Fenster «Danke».
    Geht etwas schief, steht im Fenster eine Meldung mit der Telefonnummer des Hauses, die Eingaben bleiben. Nie mailto, nie ein Mailprogramm.
    Eigene Fenster braucht es nicht: die Skripte der Website (schaefli.js, funktionen.js) bleiben unverändert. Der Baustein fängt das Abschicken im Fang-Durchlauf
    am Dokument ab, bevor die Website «Danke» setzt, und setzt es selbst, wenn die Anfrage angekommen ist.
@@ -81,7 +81,7 @@
       personen: personen, platz: festsaal ? 'Festsaal' : '', allergene: al, hund: hund, name: wert(f, 'name'), kontakt: kontakt(f), zeilen: z };
   }
 
-  /* Feld, das Menschen nicht sehen: nur Maschinen füllen es aus (La Réception nimmt solche Anfragen still an und legt nichts ab) */
+  /* Feld, das Menschen nicht sehen: nur Maschinen füllen es aus (Anfragen & Chat nimmt solche Anfragen still an und legt nichts ab) */
   function falle(f) {
     if (f.querySelector('[name=website]')) return;
     var i = D.createElement('input'); i.type = 'text'; i.name = 'website'; i.tabIndex = -1; i.autocomplete = 'off'; i.setAttribute('aria-hidden', 'true');

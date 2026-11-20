@@ -1,6 +1,6 @@
-/* Das Hausbuch (Le Livre) · Taverne zum Schäfli, Wigoltingen. Die Marke des Hauses zum Arbeiten (Nachbau von Le Livre der Wirtschaft am Schlössli, dahinter
+/* Markenbuch · Taverne zum Schäfli, Wigoltingen. Die Marke des Hauses zum Arbeiten (Nachbau von «Markenbuch» der Wirtschaft am Schlössli, dahinter
    Grand Beau-Rivage, dort nur gelesen): Bildarchiv mit fertigen Grössen, Dateien (Lamm, Wappen, Wortmarke, Name, Tapete, Auszeichnungen, Farben, Schriften), Markenprüfung, Markenbuch (buch.html).
-   Namen der Welt Landhaus (_Werkzeuge/stamm/welt.js): Das Hausbuch, Die Stube, Die Werkstatt.
+   Namen der Welt Landhaus (_Werkzeuge/stamm/welt.js): Markenbuch, Kontrollpanel, Drucksachen & Feed.
    Daten: livre.json (gebaut von bau.py), Downloads und Prüfung über den Server-Teil (server.py lokal, online/livre_online.py). Gespeichert wird nichts,
    ausser «Ergebnis sichern» legt auf Wunsch eine Datei auf diesem Rechner ab. Fehlermelder, Ladezeichen und Startfehler laufen vorher in start.js. */
 'use strict';
@@ -20,7 +20,7 @@ const S_ = 'taverne-zum-schaefli';
 const ZEICHEN = `<img src="dateien/${S_}-lamm-gold.svg" alt="" width="32" height="40" decoding="async">`;
 const ZEICHEN_N = `<img src="dateien/${S_}-lamm-riegel.svg" alt="" width="32" height="40" decoding="async">`;
 const MARKE = 'buch.html', DAT = 'dateien/', ORIG = 'original/';
-const MAISON = /\/_werkzeuge\//.test(location.pathname) ? '../maison/' : '/maison/';   // lokal _werkzeuge/maison/, online /maison/ (nach Adresse, nie fest; Notiz La Maison 17.10.2026)
+const MAISON = /\/_werkzeuge\//.test(location.pathname) ? '../maison/' : '/maison/';   // lokal _werkzeuge/maison/, online /maison/ (nach Adresse, nie fest; Notiz Kontrollpanel 17.10.2026)
 const WEBSITE = '/';
 const IMPRIMERIE = '../imprimerie/';      // immer relativ, nie nach Port (F18): lokal _werkzeuge/imprimerie/, online werkzeuge/imprimerie/
 const okey = k => k.replace(/\//g, '-');
@@ -47,7 +47,7 @@ de: {
   recht_t: 'Bildrechte', recht: 'Die Fotos gehören der Taverne zum Schäfli und den jeweiligen Fotografen. Frei lizenzierte Fotos nur mit dem genannten Namen und der Lizenz. Fotos mit fremden Rechten nur mit Erlaubnis der Rechteinhaber.',
   alles_zip: 'Alle Dateien (ZIP)',
   b_titel: 'Alle Fotos', b_satz: 'Ein Klick auf ein Foto öffnet es. Dort laden Sie es in der Grösse, die Sie brauchen, und wählen bei Beitrag und Story den Ausschnitt.',
-  suchen: 'Suchen, zum Beispiel «Stube» oder «Kaviar»', bereich: 'Bereich', saison: 'Saison', format: 'Format', herkunft: 'Herkunft', alle: 'Alle',
+  suchen: 'Suchen, zum Beispiel «Kontrollpanel» oder «Kaviar»', bereich: 'Bereich', saison: 'Saison', format: 'Format', herkunft: 'Herkunft', alle: 'Alle',
   b_haus: 'Haus & Fassade', b_stuben: 'Stuben & Säle', b_teller: 'Teller', b_kueche: 'In der Küche', b_team: 'Familie & Team', b_bar: 'Bar & Smokers Lounge', b_wein: 'Wein & Champagner', b_feste: 'Anlässe & Feste', b_dorf: 'Dorf & Thurtal', b_geschichte: 'Geschichte', b_familie: 'Schwesterhaus',
   s_sommer: 'Sommer', s_winter: 'Winter', s_jahr: 'Ganzjährig', f_hoch: 'Hochformat', f_quer: 'Querformat', f_quadrat: 'Quadrat',
   h_haus: 'Fotos des Hauses', h_frei: 'Frei lizenziert', h_ki: 'Mit KI verändert', h_fremd: 'Fremde Rechte',
@@ -195,12 +195,16 @@ function zeichne(still = false) {
 let IO = null, IO2 = null;
 const RUHIG = () => matchMedia('(prefers-reduced-motion: reduce)').matches;
 function auftritte(r, still) {
-  /* R17 (Robert 14./15.10.: «nicht von meiner Geschwindigkeit abhängig … nicht erst warten»): beim Ansichtswechsel federt nur, was im ersten Bild steht,
-     der Reihe nach, höchstens 22; alles darunter und alles, was beim Scrollen nachkommt, steht sofort. Nur transform, deckend ab dem ersten Bild. */
+  /* R17 (Robert 14./15.10.: «nicht von meiner Geschwindigkeit abhängig … nicht erst warten»): beim Ansichtswechsel federt, was im ersten Bild steht,
+     der Reihe nach, höchstens 22. Robert 09.11.2026 («diese Animationen, dieses luxuriöse, edle, überall … zum Hochscrollen»): alles darunter federt herein,
+     sobald es am unteren Rand auftaucht. Nur transform, deckend ab dem ersten Bild, nichts wartet. */
   const alle = $$('[data-r]', r).filter(x => !x.classList.contains('da'));
   if (still || RUHIG()) { alle.forEach(x => x.classList.add('da', 'steht')); return; }
-  const H = innerHeight; let n = 0;
-  alle.forEach(x => { const b = x.getBoundingClientRect(); if (b.top < H && b.bottom > 0 && n < 22) { x.style.setProperty('--i', Math.min(n++, 6)); requestAnimationFrame(() => requestAnimationFrame(() => x.classList.add('da'))); } else x.classList.add('da', 'steht'); });
+  const H = innerHeight; let n = 0; const spaeter = [];
+  alle.forEach(x => { const b = x.getBoundingClientRect(); if (b.top < H && b.bottom > 0 && n < 22) { x.style.setProperty('--i', Math.min(n++, 6)); requestAnimationFrame(() => requestAnimationFrame(() => x.classList.add('da'))); } else if (b.top >= H && 'IntersectionObserver' in window) spaeter.push(x); else x.classList.add('da', 'steht'); });
+  if (!spaeter.length) return;
+  const io = new IntersectionObserver(es => { let k = 0; es.forEach(e => { if (e.isIntersecting) { e.target.style.setProperty('--i', Math.min(k++, 3)); e.target.classList.add('da'); io.unobserve(e.target); } }); }, { rootMargin: '0px 0px -6% 0px' });
+  spaeter.forEach(x => io.observe(x));
 }
 
 /* ---------------------------------------------------------------- Übersicht */
@@ -547,6 +551,7 @@ function ergebnis(j, ziel) {
       ${k.text ? `<details class="li-gelesen"><summary class="mono">${esc(t('p_text'))}</summary><p>${esc(k.text)}</p></details>` : ''}`}
       <div class="li-erg__kn"><button class="kn" type="button" data-neu>${esc(t('p_neu'))}<i>${PO}</i></button><button class="kn kn--linie" type="button" data-kopie-erg>${esc(t('p_kopie'))}<i>${KOPIE}</i></button><button class="kn kn--linie" type="button" data-sichern>${esc(t('p_sichern'))}<i>${PU}</i></button></div>
     </div></div>`;
+  { const lg = Z.querySelector('.li-erg__l'); if (lg && window.ResizeObserver) { const setz = () => { lg.style.top = Math.min(94, innerHeight - lg.offsetHeight - 100) + 'px'; }; setz(); new ResizeObserver(setz).observe(lg); } }   /* linke Spalte läuft mit (Robert 09.11.2026: keine Leerfläche), höher als der Bildschirm: erst ganz zeigen, dann halten */
   auftritte(Z);
   const kn = x => Z.querySelector(x);
   kn('[data-neu]').onclick = () => { S.ergebnis = null; S.datei = null; feld(); scrollTo({ top: 0, behavior: RUHIG() ? 'auto' : 'smooth' }); };
@@ -569,7 +574,7 @@ function sichere(j) {
   // nur auf ausdrücklichen Wunsch: eine Datei auf diesem Rechner, nichts auf dem Server
   const html = `<!doctype html><meta charset="utf-8"><title>${esc(t('name'))} · ${esc(j.name)}</title><body style="font:15px/1.6 system-ui;max-width:820px;margin:40px auto;color:#2a292b;background:#f0eae1;padding:0 20px">
     <h1 style="font:460 28px/1.2 Petrona,Georgia,serif;color:#64362e">${esc(t('pruefung'))}: ${esc(j.name)}</h1><img src="${j.vorschau}" style="max-width:360px;border-radius:12px"><pre style="white-space:pre-wrap;font:14px/1.6 system-ui">${esc(alsText(j))}</pre>
-    <p style="color:#815e32;font-size:12px">${esc(t('name'))} · Taverne zum Schäfli, Wigoltingen · ${new Date().toLocaleString('de-CH')}</p></body>`;
+    <p style="color:#815e32;font-size:13px">${esc(t('name'))} · Taverne zum Schäfli, Wigoltingen · ${new Date().toLocaleString('de-CH')}</p></body>`;
   const a = document.createElement('a');
   a.href = URL.createObjectURL(new Blob([html], { type: 'text/html' }));
   a.download = 'markenpruefung-schaefli-' + (j.name.replace(/\.[a-z0-9]+$/i, '').replace(/[^a-z0-9äöü_-]+/gi, '-').toLowerCase().slice(0, 60) || 'entwurf') + '.html';
@@ -604,7 +609,7 @@ function melde(text, fehl = false) {
 }
 
 /* ---------------------------------------------------------------- Start */
-/* Startfehler-Tür (R04): statt einer leeren Fläche sagt das Hausbuch, dass und warum es nicht startet */
+/* Startfehler-Tür (R04): statt einer leeren Fläche sagt «Markenbuch», dass und warum es nicht startet */
 function startfehler(grund) {
   window.LIVRE_BEREIT = true; clearTimeout(window.LIVRE_LADE);
   $('#ansicht').innerHTML = `<div class="platte li-tuer" role="alert"><span class="li-tuer__z">${ZEICHEN_N}</span><h1>${esc(t('tuer_t'))}</h1>
@@ -634,7 +639,7 @@ function bereit(ansicht) {
       if (!S.d || !Array.isArray(S.d.fotos) || !S.d.stand || !Array.isArray(S.d.farben)) throw new Error('Form');
       NAMEN = Object.assign({}, S.d.namen || {}, (window.WO_HAUS && WO_HAUS.namen) || {});
       window.LIVRE_NAMEN = NAMEN;
-      document.title = `${NAMEN.marke || 'Das Hausbuch'} · Taverne zum Schäfli`;
+      document.title = `${NAMEN.marke || 'Markenbuch'} · Taverne zum Schäfli`;
     } catch (e) { return startfehler(t('fehler_json') + ' (' + (/Failed to fetch|Load failed|NetworkError/.test(e.message) ? 'offline' : e.message) + ')'); }
     const h = location.hash.slice(1);
     try {

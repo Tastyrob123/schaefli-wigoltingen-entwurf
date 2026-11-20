@@ -1,5 +1,5 @@
 /* Auswahl und Kalender im Stil des Hauses (feste Regel, Robert 11./12.10.2026: «Auswahlmöglichkeiten auch immer im Stil des Hauses»).
-   Jede <select class="sel"> und jedes <input type="date"> im Reservationsbuch bekommt eine eigene Auswahl; das echte Feld bleibt als Wertträger
+   Jede <select class="sel"> und jedes <input type="date"> in «Anfragen & Chat» bekommt eine eigene Auswahl; das echte Feld bleibt als Wertträger
    (Code liest weiter .value, «change» wird ausgelöst). Neu gezeichnete Ansichten und Fenster werden von selbst erfasst. Bewegung nur opacity/transform. */
 (function () {
   'use strict';

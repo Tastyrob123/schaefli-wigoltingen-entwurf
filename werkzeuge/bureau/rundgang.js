@@ -1,4 +1,4 @@
-/* Kurzer Rundgang durch Le Bureau · Taverne zum Schäfli (21.10.2026). Kopie aus dem Kartenpult des Schwesterhauses Schlössli (dort aus dem Gasterntal,
+/* Kurzer Rundgang durch Website bearbeiten · Taverne zum Schäfli (21.10.2026). Kopie aus «Karten & Preislisten» des Schwesterhauses Schlössli (dort aus dem Gasterntal,
    Ruedihus, Doldenhorn, Carlton-Europe; Vorlage assets/js/rundgang.js des Vorbilds). Master Werkzeug-Bau R18, Fehlerbuch 10a:
    Robert 16.10.2026: «einmal ganz kurz zeigen, hier kannst du das machen, da das, damit man weiss, wo man gelandet ist». Erklärt was und wozu, nie die Bedienung.
    Kein Start von selbst: beim ersten Öffnen erscheint unten rechts ein Schild «Kurzer Rundgang», fest über der Leiste (Fehlerbuch 10a, Schlössli 20.10.2026:
@@ -7,7 +7,7 @@
 (function () {
   var Q = new URLSearchParams(location.search), ERZWINGEN = Q.has('rundgang');
   if (window.self !== window.top && !ERZWINGEN) return;
-  var NAME = (window.WO && WO.name('website')) || 'Der Schreibtisch';
+  var NAME = (window.WO && WO.name('website')) || 'Website bearbeiten';
   var G = { name: NAME, schritte: [
     { ziel: ['#ws-mitte .wo-sb', '#ws-kopf'], titel: 'Das ist ' + NAME,
       text: 'Hier pflegen Sie die Website der Taverne zum Schäfli selbst: jeden Text, jedes Foto, die Öffnungszeiten, Telefon und Adresse, die Texte für Google. Ohne Agentur, ohne Wartezeit.' },
@@ -34,16 +34,16 @@
       'font:15px/1.55 var(--wo-sans);animation:rdg-auf .42s cubic-bezier(.2,.8,.2,1) both}' +
     '@keyframes rdg-auf{from{transform:translate3d(var(--rx,0),calc(var(--ry,0px) + 14px),0)}to{transform:translate3d(var(--rx,0),var(--ry,0),0)}}' +
     '.rdg-karte{transform:translate3d(var(--rx,0),var(--ry,0),0)}' +
-    '.rdg-zier{display:flex;align-items:center;gap:10px;font:500 10px/1 var(--wo-mono);letter-spacing:.22em;text-transform:uppercase;color:var(--wo-akzent)}' +
+    '.rdg-zier{display:flex;align-items:center;gap:10px;font:500 13px/1 var(--wo-mono);letter-spacing:.22em;text-transform:uppercase;color:var(--wo-akzent)}' +
     '.rdg-zier i{flex:1;height:1px;background:linear-gradient(90deg,var(--wo-g2),transparent)}' +
     '.rdg-karte h3{margin:12px 0 6px;font:460 25px/1.15 var(--wo-titel);color:var(--wo-tief);letter-spacing:0}' +
     '.rdg-karte p{margin:0;color:color-mix(in srgb,var(--wo-tinte) 80%,transparent)}' +
     '.rdg-fuss{display:flex;align-items:center;gap:14px;margin-top:20px}' +
     '.rdg-karte .rdg-weg{display:flex;gap:5px;flex:1 1 auto;min-width:64px}.rdg-karte .rdg-weg b{display:block;height:3px;flex:1 1 0;min-width:6px;max-width:26px;border-radius:2px;background:color-mix(in srgb,var(--wo-tinte) 14%,transparent)}.rdg-karte .rdg-weg b.da{background:var(--wo-g3)}' +
-    '.rdg-karte .rdg-zu{flex:none;margin:0;border:0;background:none;padding:6px 2px;font:500 10px/1 var(--wo-mono);letter-spacing:.14em;text-transform:uppercase;color:var(--wo-akzent);cursor:pointer}' +
+    '.rdg-karte .rdg-zu{flex:none;margin:0;border:0;background:none;padding:6px 2px;font:500 13px/1 var(--wo-mono);letter-spacing:.14em;text-transform:uppercase;color:var(--wo-akzent);cursor:pointer}' +
     '.rdg-karte .rdg-zu:hover{color:var(--wo-tinte)}' +
     '.rdg-karte .rdg-los,.rdg-schild .rdg-los{flex:none;margin:0;display:inline-flex;align-items:center;gap:12px;height:42px;padding:0 6px 0 18px;border:0;border-radius:999px;cursor:pointer;' +
-      'font:500 10px/1 var(--wo-mono);letter-spacing:.16em;text-transform:uppercase;color:var(--wo-blatt);' +
+      'font:500 13px/1 var(--wo-mono);letter-spacing:.16em;text-transform:uppercase;color:var(--wo-blatt);' +
       'background:linear-gradient(180deg,var(--wo-nacht2),var(--wo-nacht) 46%,var(--wo-tief));box-shadow:0 1px 0 rgba(255,255,255,.26) inset,0 -3px 0 rgba(0,0,0,.5) inset,0 10px 18px -10px color-mix(in srgb,var(--wo-tief) 80%,transparent)}' +
     '.rdg-karte .rdg-los i,.rdg-schild .rdg-los i{display:grid;margin:0;place-items:center;width:30px;height:30px;border-radius:50%;background:linear-gradient(180deg,var(--wo-g1),var(--wo-g2));' +
       'box-shadow:0 1px 0 rgba(255,255,255,.9) inset,0 -2px 0 rgba(0,0,0,.22) inset;transition:transform .2s}' +
@@ -60,9 +60,9 @@
     '@keyframes rdg-schild-auf{from{transform:translate3d(0,calc(100% + 40px),0)}to{transform:translate3d(0,0,0)}}' +
     '.rdg-schild.weg{animation:none;transform:translate3d(0,calc(100% + 60px),0)}' +
     '.rdg-schild__t{display:flex;flex-direction:column;gap:4px;line-height:1}' +
-    '.rdg-schild__t small{font:500 9px/1 var(--wo-mono);letter-spacing:.22em;text-transform:uppercase;color:var(--wo-akzent)}' +
+    '.rdg-schild__t small{font:500 13px/1 var(--wo-mono);letter-spacing:.22em;text-transform:uppercase;color:var(--wo-akzent)}' +
     '.rdg-schild__t b{font:460 18px/1 var(--wo-titel);color:var(--wo-tief)}' +
-    '.rdg-schild .rdg-los{height:38px;padding:0 5px 0 15px;font-size:9.5px}.rdg-schild .rdg-los i{width:28px;height:28px}' +
+    '.rdg-schild .rdg-los{height:38px;padding:0 5px 0 15px;font-size:13px}.rdg-schild .rdg-los i{width:28px;height:28px}' +
     '.rdg-schild__zu{flex:none;width:26px;height:26px;margin:0 2px 0 -4px;padding:0;border:0;border-radius:50%;background:none;cursor:pointer;color:var(--wo-akzent);font:16px/1 system-ui}' +
     '.rdg-schild__zu:hover{color:var(--wo-tinte)}' +
     '@media (max-width:700px){.rdg-schild{right:16px;left:auto}}' +

@@ -1,4 +1,4 @@
-/* Auftakt des Besucherbuchs · Taverne zum Schäfli (Kopie des Schwesterhauses Schlössli, dort des Gasterntal, Doldenhorn und Carlton-Europe) (Vorlage: studio/auftakt.js des Le Registre im Grand Beau-Rivage, Robert 16.10.2026: «wenn ich sie öffne, laden die sehr unschön rein,
+/* Auftakt «Besucher» · Taverne zum Schäfli (Kopie des Schwesterhauses Schlössli, dort des Gasterntal, Doldenhorn und Carlton-Europe) (Vorlage: studio/auftakt.js des Besucher im Grand Beau-Rivage, Robert 16.10.2026: «wenn ich sie öffne, laden die sehr unschön rein,
    der Bildschirm halb weiss, die meisten Sachen nicht zu sehen»). Die Seite bleibt beim Öffnen ruhig, bis Daten, Schriften und die Fotos im ersten Bild da sind
    (höchstens 2,5 s), dann erscheint alles auf einmal, und die Auftritte (Bühne, Blätter) laufen erst ab diesem Moment. Steht als erstes Skript im <head>. */
 (function () {

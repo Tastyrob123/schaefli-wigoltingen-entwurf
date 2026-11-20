@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-/* Bildschirme der Werkzeuge für La Maison · Taverne zum Schäfli (M08, M23): unsichtbar im Safari-Kern, 1440 × 900 @2x, nach roh/<name>.png.
+/* Bildschirme der Werkzeuge für «Kontrollpanel» · Taverne zum Schäfli (M08, M23): unsichtbar im Safari-Kern, 1440 × 900 @2x, nach roh/<name>.png.
    Adresse je Werkzeug aus stand_wege.json; nur Werkzeuge, deren Server antwortet. Jede Anfrage ausser GET/HEAD wird abgewiesen (nichts wird geschrieben),
    ebenso jeder KI-Weg. Weitere Ansichten je Werkzeug (zweiter Bildschirm) über ansichten.json: {"livre-marke": {"von": "livre", "klick": "Text"}}.
    node _werkzeuge/maison/schirme.js [werkzeug …] */

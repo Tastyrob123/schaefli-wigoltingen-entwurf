@@ -3,8 +3,8 @@
 <head><!--demo-weiche--><script src="/_demo/karte.js"></script><script src="/_demo/shim.js"></script>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Die Tafel · Anleitung · Taverne zum Schäfli</title>
-<script src="/assets/oberflaeche/kleid/schaefli.js?v=a0cc990f4a"></script>
+<title>Karten & Preislisten · Anleitung · Taverne zum Schäfli</title>
+<script src="/assets/oberflaeche/kleid/schaefli.js?v=1"></script>
 <script src="/_werkzeuge/carte/namen.js?v=1" defer></script>
 
 <meta name="robots" content="noindex, nofollow">
@@ -21,7 +21,7 @@ body.anl{padding:0}
 .anl ol,.anl ul{padding-left:20px;display:grid;gap:8px}
 .anl .stich{display:grid;gap:10px;margin-top:14px}
 .anl .stich div{padding:14px 18px;border-radius:16px;background:var(--platte);box-shadow:var(--platte-s)}
-.anl .stich b{font-family:var(--mono);font-weight:500;font-size:11px;letter-spacing:.16em;color:var(--tief)}
+.anl .stich b{font-family:var(--mono);font-weight:500;font-size:13px;letter-spacing:.16em;color:var(--tief)}
 .anl .stich div:target{box-shadow:0 0 0 2px var(--messing),var(--platte-s)}
 .anl .zuruck{display:inline-flex;margin-bottom:26px}
 </style>
@@ -29,8 +29,8 @@ body.anl{padding:0}
 </head>
 <body class="lc anl">
 <main>
-<a class="kn kn--klein kn--hell zuruck" href="/_werkzeuge/carte/">Zurück: <span data-wo-name="karten">Die Tafel</span></a>
-<h1><span data-wo-name="karten">Die Tafel</span> <em>der Taverne zum Schäfli.</em></h1>
+<a class="kn kn--klein kn--hell zuruck" href="/_werkzeuge/carte/">Zurück: <span data-wo-name="karten">Karten & Preislisten</span></a>
+<h1><span data-wo-name="karten">Karten & Preislisten</span> <em>der Taverne zum Schäfli.</em></h1>
 <p style="margin-top:16px">Hier pflegt das Haus seine Karten selbst: die Speisekarte mit dem Menu Degustation und den Klassikern, das Mittagsmenü der Woche, das Trüffelmenü, das English Menu, die Menüvorschläge für Gruppen, die Barkarte und die ganze Weinkarte nach Ländern. Jedes Wort und jeder Preis kommt aus den Karten des Hauses. Aus denselben Daten entstehen die Vorschau und die PDF. </p>
 <h2>So geht es</h2>
 <ol>
@@ -52,7 +52,7 @@ body.anl{padding:0}
 </ul>
 <p>«Kurzer Rundgang» links unter «Wege» zeigt in vier Schritten, wo was ist.</p>
 <h2>Was auf der Website passiert</h2>
-<p><b>Demo.</b> Bis zum Auftrag arbeitet <span data-wo-name="karten">Die Tafel</span> für sich: «Veröffentlichen» setzt die Karte und ihre PDF hier im Werkzeug, die Website bleibt, wie sie ist. Mit dem Auftrag wird der Anschluss eingeschaltet. Dann liest die Website ihre Karten aus diesem Werkzeug: Menu Degustation, Klassiker, Mittags- und Trüffelmenü auf «Karte», die Menüvorschläge auf «Feiern», die Barkarte auf «Bar»; die Weinkarte auf «Wein» kommt noch aus der Weinliste der Website, ihre PDF entsteht hier. «Veröffentlichen» legt dann die neue PDF unter unterlagen/pdf/ auf die Website (die vorige wird gesichert) und schreibt die Zeilen der Karte für die Website (inhalt/karten.json); beim nächsten Bau der Website stehen sie auf den Seiten.</p>
+<p><b>Demo.</b> Bis zum Auftrag arbeitet <span data-wo-name="karten">Karten & Preislisten</span> für sich: «Veröffentlichen» setzt die Karte und ihre PDF hier im Werkzeug, die Website bleibt, wie sie ist. Mit dem Auftrag wird der Anschluss eingeschaltet. Dann liest die Website ihre Karten aus diesem Werkzeug: Menu Degustation, Klassiker, Mittags- und Trüffelmenü auf «Karte», die Menüvorschläge auf «Feiern», die Barkarte auf «Bar»; die Weinkarte auf «Wein» kommt noch aus der Weinliste der Website, ihre PDF entsteht hier. «Veröffentlichen» legt dann die neue PDF unter unterlagen/pdf/ auf die Website (die vorige wird gesichert) und schreibt die Zeilen der Karte für die Website (inhalt/karten.json); beim nächsten Bau der Website stehen sie auf den Seiten.</p>
 <h2 id="was-tun">Was tun, wenn …</h2>
 <p>Jede Meldung trägt ein Stichwort. Hier steht, was es bedeutet und was zu tun ist. Den Zustand von Browser, Server, Karten und Sicherungen zeigt die <a href="/_werkzeuge/carte/pruefung.html">Prüfung</a>.</p>
 <div class="stich">
@@ -68,7 +68,7 @@ body.anl{padding:0}
 <div id="BAU"><b>BAU</b><p>Es wird gerade eine andere Karte veröffentlicht. Kurz warten.</p></div>
 <div id="VERBINDUNG"><b>VERBINDUNG</b><p>Der Browser erreicht das Werkzeug gerade nicht (Netz weg oder der Server ist aus). Ihre Eingaben sind noch da. Wenn das Netz wieder steht, einfach noch einmal auf «Speichern» drücken; nicht neu laden, sonst sind ungespeicherte Eingaben weg.</p></div>
 <div id="HERKUNFT"><b>HERKUNFT</b><p>Die Änderung kam nicht aus dem Werkzeug selbst, zum Beispiel aus einer fremden Seite. Sie wurde abgewiesen. Das Werkzeug direkt öffnen und dort ändern.</p></div>
-<div id="HOST"><b>HOST</b><p>Das Werkzeug wurde über eine fremde Adresse aufgerufen und hat nicht geantwortet. Die Adresse aus der Werkbank oder aus <span data-wo-name="zentrale">Die Stube</span> nehmen.</p></div>
+<div id="HOST"><b>HOST</b><p>Das Werkzeug wurde über eine fremde Adresse aufgerufen und hat nicht geantwortet. Die Adresse aus der Werkbank oder aus <span data-wo-name="zentrale">Kontrollpanel</span> nehmen.</p></div>
 <div id="FORM"><b>FORM</b><p>Die Anfrage hatte nicht die erwartete Form. Seite neu laden; bleibt es, die Betreuung rufen.</p></div>
 <div id="GROSS"><b>GROSS</b><p>Die Daten sind grösser als 3 MB und wurden nicht angenommen. Meist ein sehr langer eingefügter Text: kürzen und noch einmal speichern.</p></div>
 <div id="ZIEL"><b>ZIEL</b><p>Diese Karte gibt es nicht. Links die Karte des Hauses wählen.</p></div>
@@ -86,6 +86,5 @@ body.anl{padding:0}
 </div>
 </main>
 <script src="/_werkzeuge/carte/auftritte.js?v=1" data-alles></script>
-<script src="/_werkzeuge/carte/zur-werkbank.js?v=5" defer data-zw data-hoehe></script><script src="/werkzeuge/demo-aus.js?v=fbdcf4671b" defer></script><script src="../../besuch.js" defer></script>
-</body>
+<script src="/_werkzeuge/carte/zur-werkbank.js?v=5" defer data-zw data-hoehe></script></body>
 </html>

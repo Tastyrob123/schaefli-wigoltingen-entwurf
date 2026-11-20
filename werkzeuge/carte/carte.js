@@ -1,9 +1,9 @@
-/* La Carte · Taverne zum Schäfli Wigoltingen — Bedienung (21.10.2026, Kopie aus der Tafel der Wirtschaft am Schlössli, dort aus Gasterntal,
+/* Karten & Preislisten · Taverne zum Schäfli Wigoltingen — Bedienung (21.10.2026, Kopie aus «Karten & Preislisten» der Wirtschaft am Schlössli, dort aus Gasterntal,
    Ruedihus, Doldenhorn, Carlton-Europe und mc.js des Grand Beau-Rivage). Die Karte ist ein Baum aus dem Satz (satz/satz.js, gesetzt von satz_bau.py
    aus den Daten des Hauses, karten_lesen.py); Einträge, Rubriken und Texte erkennt SATZ.art(), die Felder eines Eintrags SATZ.felder(). Zwei Wege «Einfach»
    (Liste und Fenster) und «Fortgeschritten» (direkt in der Karte schreiben), jede Änderung zuerst als Entwurf, Veröffentlichen druckt PDF und prüft
    sie gegen die Daten. Rahmen (Kopf, Rand, Startbild, Leiste) aus der gemeinsamen Werkzeug-Oberfläche (/assets/oberflaeche/, Rahmen «Die Bühne»,
-   Kleid schaefli); der Arbeitsbereich (Liste, Vorschau, Gestalten) bleibt der der Tafel. Mittagsmenü der Woche: Prolog und vier Gänge (C08 in der
+   Kleid schaefli); der Arbeitsbereich (Liste, Vorschau, Gestalten) bleibt der «Karten & Preislisten». Mittagsmenü der Woche: Prolog und vier Gänge (C08 in der
    Form des Hauses). Server: carte.py über serve.py. Ohne Bibliothek. Kein Auswahlfeld des Betriebssystems. */
 (() => {
 'use strict';
@@ -28,10 +28,10 @@ const FOTO = { speisekarte: ['pass-dessert', 800], mittag: ['pass-schnitzel', 80
 const fotoKlein = z => `/_werkzeuge/carte/bilder/z/${(FOTO[z] || FOTO.speisekarte)[0]}.webp`;   // 112 px (einlesen.py vorschaubilder)
 const fotoGross = z => `/assets/img/${(FOTO[z] || FOTO.speisekarte)[0]}-${(FOTO[z] || FOTO.speisekarte)[1]}.webp`;
 const ROLLEN = { kueche: 'Küche', service: 'Service', direktion: 'Direktion' };
-/* Namen der Landhaus-Welt (_Werkzeuge/stamm/welt.js, Welt «land» aus marke.json): La Carte heisst hier «Die Tafel», La Maison «Die Stube», Le Bureau «Der Schreibtisch» */
-const NAME = (window.WO && WO.name('karten')) || 'Die Tafel', STUBE = (window.WO && WO.name('zentrale')) || 'Die Stube', SCHREIBTISCH = (window.WO && WO.name('website')) || 'Der Schreibtisch';   // Namen aus kleid/schaefli.js (WO_HAUS.namen, eine Stelle)
+/* Namen der Landhaus-Welt (_Werkzeuge/stamm/welt.js, Welt «land» aus marke.json): Karten & Preislisten heisst hier «Karten & Preislisten», Kontrollpanel «Kontrollpanel», Website bearbeiten «Website bearbeiten» */
+const NAME = (window.WO && WO.name('karten')) || 'Karten & Preislisten', STUBE = (window.WO && WO.name('zentrale')) || 'Kontrollpanel', SCHREIBTISCH = (window.WO && WO.name('website')) || 'Website bearbeiten';   // Namen aus kleid/schaefli.js (WO_HAUS.namen, eine Stelle)
 /* Die Website und die anderen Werkzeuge des Hauses: lokal die Website auf 8953 (website/serve.py), die Werkzeuge je auf ihrem Port (Zentrale 9061 …),
-   online auf derselben Adresse wie La Carte */
+   online auf derselben Adresse wie Karten & Preislisten */
 const HAUS = location.port ? location.protocol + '//' + location.hostname + ':8953/' : '/';
 const PORT_WERKZEUG = { zentrale: 9061, website: 9062, karten: 9063, gaeste: 9064, marke: 9065, besuche: 9066, druck: 9067 };
 const API = '/_werkzeuge/carte/api/';   // lokal (serve.py) und online (vercel.json → api/carte.py) derselbe Weg
@@ -46,7 +46,7 @@ const webAdresse = z => `${HAUS}${SEITE_DER_KARTE[z] || 'karte.html'}#${ABSCHNIT
 const SYMBOLE = [];
 /* Die Website verlinkt keine Karte als PDF */
 const PDF_DER_WEBSITE = {};
-/* Wege der Oberfläche: lokal liegen Die Stube, Der Schreibtisch und die anderen Werkzeuge auf dem Server der Website */
+/* Wege der Oberfläche: lokal liegen Kontrollpanel, Website bearbeiten und die anderen Werkzeuge auf dem Server der Website */
 if (window.WO && WO.haus && WO.haus.wege && location.port) Object.keys(WO.haus.wege).forEach(k => { if (k !== 'karten' && PORT_WERKZEUG[k]) WO.haus.wege[k] = location.protocol + '//' + location.hostname + ':' + PORT_WERKZEUG[k] + WO.haus.wege[k]; });
 
 let NEU_KARTE = false, ANSICHT = 'karte';
@@ -192,7 +192,7 @@ function oben() {
   el.innerHTML = WO.kopf({ werkzeug: 'karten', unter: 'Karte', titel: k.name || NAME, markeHref: '/_werkzeuge/carte/',
     stand: OFFEN ? 'Nicht gespeichert' : g ? 'Entwurf wartet' : k.pdf_zeit ? 'PDF vom ' + k.pdf_zeit : 'Noch keine PDF veröffentlicht',
     pruefung: '/_werkzeuge/carte/pruefung.html', anleitung: '/_werkzeuge/carte/anleitung.html', website: webAdresse(Z) });
-  /* dazu wie in jeder Tafel: Protokoll, Zustand und wer gerade arbeitet (R05, Rollen); Der Schreibtisch steht im Rand unter «Wege» */
+  /* dazu wie in jeder Tafel: Protokoll, Zustand und wer gerade arbeitet (R05, Rollen); Website bearbeiten steht im Rand unter «Wege» */
   const r = $('.wo-kopf__r', el), tr = r && $('.wo-trenn', r);
   if (tr) tr.insertAdjacentHTML('beforebegin', `<button class="wo-kn wo-kn--rund" type="button" data-akt="protokoll" title="Protokoll" aria-label="Protokoll">${WO.ic('verlauf')}</button><button class="zustand${STATUS_ROT ? ' rot' : ''}" type="button" data-akt="gesund"><span>${STATUS_ROT ? 'Prüfen' : 'Alles in Ordnung'}</span></button>`);
   const m = $('.wo-marke-w', el); if (m) m.setAttribute('aria-label', NAME + ' · Übersicht');
@@ -315,7 +315,7 @@ function bilderZeigen() {
 
 // ---------------------------------------------------------------- Vorschau (Rahmen blatt.html)
 /* Ansicht «Website» (wie GBR): die Seiten der Website, auf denen die Karte steht (Karte, Weinkarte, Banketts, Events, Startseite). Liest der Bau des Hauses
-   die Tafel (Patch im Bau), zeigt sie die Seite mit dem Entwurf; sonst die Seite, wie sie heute ist, und die Stelle der Karte blinkt. */
+   «Karten & Preislisten» (Patch im Bau), zeigt sie die Seite mit dem Entwurf; sonst die Seite, wie sie heute ist, und die Stelle der Karte blinkt. */
 function website() {
   const an = ANSICHT === 'website';
   $('#vf').hidden = an; $('#web').hidden = !an; $('#webwahl').hidden = !an; $('.vorschau__z').hidden = an;   // Zoom gilt nur für die Karte
@@ -412,7 +412,7 @@ function waehleAusVorschau(pfad) {   // aus der Karte: Liste links springt hin, 
   const r = markiere(np); if (!r) return;
   blitzRechts(np, linksMitte(r));
 }
-/* ---------------------------------------------------------------- Freie Anordnung und Gestalten (Fortgeschritten), 1:1 nach La Carte des Grand Beau-Rivage
+/* ---------------------------------------------------------------- Freie Anordnung und Gestalten (Fortgeschritten), 1:1 nach «Karten & Preislisten» des Grand Beau-Rivage
    (anordnen.js, 15./16.10.2026). Gewählt, gezogen und gezeigt wird in der Vorschau (blatt.js, ANR); hier liegen die Daten, der Verlauf für ⌘Z / ⌘⇧Z
    und die Seitenleiste «Gestalten» rechts (öffnet beim Wählen, × oder Esc schliesst, nie über der Karte).
    Wo die lage steht: Eintrag (Pfad «seiten.…») → n.lage, seine Linie («…:lin») → n.lage.lin; Bankett-Zeile → u.lage; Teile der Seite
@@ -472,7 +472,7 @@ function entf(id) {   // Entf: Einträge gehen von der Karte (wie «Ausblenden»
 }
 function abwaehlen() { WAHLID = null; WAHLINFO = null; GST_OFFEN = false; seitenleiste(); const f = $('#vf'); if (f && f.contentWindow) f.contentWindow.postMessage({ carte: 'abwaehlen' }, location.origin); }
 
-/* Seitenleiste «Gestalten» (GBR: «Schriftarten, Schriftgrösse und Textart ändern … so ein kleines Side-Menü»), Begriffe wie in L’Imprimerie */
+/* Seitenleiste «Gestalten» (GBR: «Schriftarten, Schriftgrösse und Textart ändern … so ein kleines Side-Menü»), Begriffe wie in «Drucksachen & Feed» */
 const SCHRIFTEN = [['titel', 'Petrona'], ['instrument', 'Instrument Sans'], ['mono', 'DM Mono']];
 const TEXTART = [['normal', 'Normal'], ['kursiv', 'Kursiv'], ['versal', 'Versalien'], ['medium', 'Medium']];
 const AUSR = [['links', 'Links'], ['mitte', 'Mitte'], ['rechts', 'Rechts']];

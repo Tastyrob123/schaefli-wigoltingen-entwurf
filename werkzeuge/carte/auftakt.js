@@ -1,4 +1,4 @@
-/* Die Tafel · Berghotel Gasterntal (über die Tafeln des Ruedihus und des Doldenhorn und La Carte des Carlton-Europe): Kopie von studio/auftakt.js des Grand Beau-Rivage (16.10.2026); wartet auch auf das Foto der Bühne (.buehne__foto.da). */
+/* Karten & Preislisten · Berghotel Gasterntal (über die Tafeln des Ruedihus und des Doldenhorn und Karten & Preislisten des Carlton-Europe): Kopie von studio/auftakt.js des Grand Beau-Rivage (16.10.2026); wartet auch auf das Foto der Bühne (.buehne__foto.da). */
 /* Auftakt der Werkzeuge (Robert 16.10.2026: «wenn ich sie öffne, laden die sehr unschön rein, der Bildschirm halb weiss, die meisten Sachen nicht zu sehen»).
    Die Seite bleibt beim Öffnen ruhig, bis Daten, Schriften und die Fotos im ersten Bild da sind (höchstens 2,5 s),
    dann erscheint alles auf einmal und die Auftritte (Bühne, Kacheln) laufen erst ab diesem Moment. Steht als erstes Skript im <head>. */
@@ -23,7 +23,7 @@
       if (!im.getAttribute('src') && !im.currentSrc) continue;
       if (!im.complete) return false;
     }
-    if (document.querySelector('header:empty')) return false;   // Kopfleisten, die das Werkzeug erst füllt (La Carte)
+    if (document.querySelector('header:empty')) return false;   // Kopfleisten, die das Werkzeug erst füllt (Karten & Preislisten)
     return !document.querySelector('.buehne__foto:not(.da)');
   }
   var schrift = false;

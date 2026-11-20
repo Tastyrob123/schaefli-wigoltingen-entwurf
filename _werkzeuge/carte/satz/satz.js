@@ -1,4 +1,4 @@
-/* La Carte · Taverne zum Schäfli Wigoltingen — Satz der Karte (21.10.2026, Kopie aus der Tafel der Wirtschaft am Schlössli, dort aus Gasterntal,
+/* Karten & Preislisten · Taverne zum Schäfli Wigoltingen — Satz der Karte (21.10.2026, Kopie aus «Karten & Preislisten» der Wirtschaft am Schlössli, dort aus Gasterntal,
    Ruedihus und Doldenhorn). Eine Datei für drei Stellen: die Vorschau im Werkzeug, die Druckseite (PDF) und die Prüfung im Rundlauf (node).
    Die Karte liegt als Baum aus dem Satz vor, den satz_bau.py aus den Daten des Hauses setzt (einlesen.py): Seiten, Elemente mit ihren Merkmalen,
    Texte und feste Teile (Lamm, Flaggen). Aus denselben Daten entsteht hier Zeichen für Zeichen dasselbe HTML wie in satz/u-<karte>.html
@@ -14,7 +14,7 @@
   function esc(x) { return String(x).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#x27;'); }   // html.escape()
   function wahr(x) { return !(x === null || x === undefined || x === false || x === '' || x === 0 || (Array.isArray(x) && !x.length)); }
 
-  /* ---------------------------------------------------------------- Gestalten (Fortgeschritten), wie La Carte des Grand Beau-Rivage und des Carlton:
+  /* ---------------------------------------------------------------- Gestalten (Fortgeschritten), wie Karten & Preislisten des Grand Beau-Rivage und des Carlton:
      lage = { x, y (mm), s (Faktor) · f Schrift · t Schriftgrösse (Faktor) · a Textart · c Farbe · al Ausrichtung · z Zeilenabstand · mt, mb (mm) · aus ·
      lin {x, y, b, d, c, aus} } an einem Element. Verschoben per transform (Ursprung oben links), der Satz bleibt. Ohne lage ist das HTML das alte. */
   function zahl(x) { return String(Math.round((+x || 0) * 100) / 100); }

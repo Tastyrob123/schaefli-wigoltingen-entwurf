@@ -1,5 +1,5 @@
-/* Die Tafel · Berghotel Gasterntal (über die Tafeln des Ruedihus und des Doldenhorn und La Carte des Carlton-Europe): Kopie von studio/schweben.js des Grand Beau-Rivage (16.10.2026). */
-/* Schweben für die Werkzeuge (Gefühl der Carlton-Seiten, wie in Le Registre). Gehört zu schweben.css.
+/* Karten & Preislisten · Berghotel Gasterntal (über die Tafeln des Ruedihus und des Doldenhorn und Karten & Preislisten des Carlton-Europe): Kopie von studio/schweben.js des Grand Beau-Rivage (16.10.2026). */
+/* Schweben für die Werkzeuge (Gefühl der Carlton-Seiten, wie in «Besucher»). Gehört zu schweben.css.
    Einbinden am Ende der Seite: <script src="../studio/schweben.js" data-wurzel="#ansicht" data-blaetter="…" data-kacheln="…" data-zeilen="…" data-zahlen="…"></script>
    blaetter: einzelne Blätter, kacheln: Reihen von Kacheln (Staffel), zeilen: viele gleiche Zeilen (nur einblenden), zahlen: grosse Zahlen (Zoom).
    Tut etwas nur kurz nach dem Laden und nach einem Klick (Ansichtswechsel); alles, was beim Tippen oder Neuzeichnen später dazukommt, steht sofort ruhig da. */

@@ -10,7 +10,7 @@
 .rg .wo-raum{min-height:60vh}
 
 /* Rand: Titel und Haus unten, sonst wie das Paket */
-.rg .rand__titel{margin:4px 8px 10px;font-size:9.5px}
+.rg .rand__titel{margin:4px 8px 10px;font-size:13px}
 .rg .rand__titel::before{display:none}
 .rg .rand__haus{margin:14px 10px 2px;padding-top:12px}
 
@@ -20,7 +20,7 @@
 .wo-sb .buehne__chips{display:flex;flex-wrap:wrap;gap:26px;margin:0 0 0 12px;padding:0;list-style:none}
 .wo-sb .buehne__chips li{display:flex;flex-direction:column;list-style:none}
 .wo-sb .buehne__chips b{order:1;font:var(--wo-titel-g) 24px/1 var(--wo-titel);color:var(--wo-weiss);font-feature-settings:"lnum","tnum"}
-.wo-sb .buehne__chips span{order:2;margin-top:6px;font:400 9.5px/1.2 var(--wo-mono);letter-spacing:.18em;text-transform:uppercase;color:var(--wo-gold)}
+.wo-sb .buehne__chips span{order:2;margin-top:6px;font:400 13px/1.2 var(--wo-mono);letter-spacing:.18em;text-transform:uppercase;color:var(--wo-gold)}
 .wo-sb .zeitraum{order:3}
 .wo-sb .zeitraum button{color:var(--wo-leise)}
 .wo-sb .zeitraum button[aria-pressed="true"]{color:var(--wo-tinte)}

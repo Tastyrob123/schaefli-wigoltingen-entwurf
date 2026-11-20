@@ -17,7 +17,7 @@
 #ansicht :is(h1,h2,h3) em,.fenster h2 em{font-style:normal}
 
 /* Handy: «Chat ausprobieren» schmaler (Carlton 17.10.2026) */
-@media (max-width:480px){#k-probe{letter-spacing:.07em;font-size:10px;padding-left:12px}}
+@media (max-width:480px){#k-probe{letter-spacing:.07em;font-size:13px;padding-left:12px}}
 /* 320 px: «Chat ausprobieren» ragte 8 px aus dem Bild; dort nur der Knauf (der Name bleibt für Vorleser im Knopf) */
 @media (max-width:360px){#k-probe{font-size:0;letter-spacing:0;padding-left:5px;gap:0}}
 /* Handy in Safari: lange Zeilen in den Karten drückten die Seite breiter als den Bildschirm (Fund Carlton 16.10.2026, gilt auch im Rivage) */
@@ -27,7 +27,7 @@
 /* ---------- Eingang: Abteilungen (E15/E22 aus dem Doldenhorn): Rezeption, Event, Personal ---------- */
 .re-abt{display:grid;grid-template-columns:repeat(auto-fit,minmax(82px,1fr));gap:6px;margin:0 0 12px;padding:6px;border-radius:18px;background:#faf8f5;box-shadow:inset 0 0 0 1px rgba(37,21,19,.1),0 14px 26px -22px rgba(44,25,22,.5)}
 .re-abt button{display:flex;align-items:baseline;justify-content:space-between;gap:10px;min-width:0;padding:10px 12px 9px;border:0;border-radius:13px;background:none;text-align:left;color:var(--tinte);cursor:pointer;transition:background-color .3s var(--e1),color .3s var(--e1),transform .4s var(--e2)}
-.re-abt button span{white-space:nowrap;font:500 10px/1 var(--mono);letter-spacing:.14em;text-transform:uppercase}
+.re-abt button span{white-space:nowrap;font:500 13px/1 var(--mono);letter-spacing:.14em;text-transform:uppercase}
 .re-abt button i{font:700 19px/1 var(--serif);font-style:normal;color:rgba(37,21,19,.32)}
 .re-abt button i.da{color:var(--tinte)}
 .re-abt button:hover{background:rgba(37,21,19,.04)}
@@ -56,20 +56,20 @@
 .brief__kopf b,.gs--haus{font-family:var(--serif);font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:#2c1916;padding-left:.2em}
 .gs--haus{--fs:17px}
 .brief__kopf b{font-size:17px}
-.brief__kopf span,.gs--zeile{font-family:var(--sans);font-style:normal;font-size:10px;letter-spacing:.24em;white-space:nowrap;text-transform:uppercase;color:#bb8d52}
+.brief__kopf span,.gs--zeile{font-family:var(--sans);font-style:normal;font-size:13px;letter-spacing:.24em;white-space:nowrap;text-transform:uppercase;color:#bb8d52}
 .gs--zeile{--fs:9.5px;margin-top:8px}
 /* Linien: fein in Gold */
 .gs--linie i{height:var(--lst,1px);background:var(--lfb,linear-gradient(90deg,rgba(172,137,92,0),rgba(172,137,92,.62) 16%,rgba(172,137,92,.62) 84%,rgba(172,137,92,0)))}
 .brief__linie{background:linear-gradient(90deg,rgba(172,137,92,0),rgba(172,137,92,.55),rgba(172,137,92,0))}
 /* An / Von */
 .brief__an{gap:10px 36px;margin:2px 0 26px}
-.brief__an dt,.gs--an dt{font:500 9.5px/1.2 var(--mono);letter-spacing:.2em;text-transform:uppercase;color:#81483f}
+.brief__an dt,.gs--an dt{font:500 13px/1.2 var(--mono);letter-spacing:.2em;text-transform:uppercase;color:#81483f}
 .brief__an dd,.gs--an dd{margin-top:5px;font:400 14.5px/1.4 var(--sans);color:#2c1916}
 .brief__an dd small{font:400 12.5px/1.4 var(--sans);color:#5e352f}
 .brief__an a{color:inherit;text-decoration:none;border-bottom:1px solid rgba(172,137,92,.55)}
 /* Betreff: kleines Etikett in Mono, Betreff in Gelasio fett */
 .brief__betreff{padding-top:16px;border-top:0;background:linear-gradient(90deg,rgba(172,137,92,.5),rgba(172,137,92,0) 70%) top left/100% 1px no-repeat}
-.brief__betreff dt,.gs-mono{display:block;margin-bottom:6px;font:500 9.5px/1.2 var(--mono);letter-spacing:.2em;text-transform:uppercase;color:#81483f}
+.brief__betreff dt,.gs-mono{display:block;margin-bottom:6px;font:500 13px/1.2 var(--mono);letter-spacing:.2em;text-transform:uppercase;color:#81483f}
 .brief__betreff dd{font:700 21px/1.2 var(--serif);letter-spacing:0;text-transform:none;color:#2c1916}
 .gs--betreff{--fs:21px;font-family:var(--serif);font-weight:700;letter-spacing:0;text-transform:none;line-height:1.2;color:#2c1916}
 .brief--gestalt .brief__betreff{margin:0 0 28px;padding-top:16px;background:linear-gradient(90deg,rgba(172,137,92,.5),rgba(172,137,92,0) 70%) top left/100% 1px no-repeat}
@@ -93,7 +93,7 @@
 /* Siegel: das Zeichen auf einer kleinen Scheibe aus Wandholz; Fusszeile in Mono */
 .brief__siegel{display:flex;align-items:center;justify-content:center;width:46px;height:46px;margin:30px auto 4px;border-radius:50%;pointer-events:none;background:#2c1916;box-shadow:0 0 0 1px rgba(172,137,92,.7),0 0 0 4px #f6f3ef,0 0 0 5px rgba(172,137,92,.35)}
 .brief__siegel img{width:18px;height:auto}
-.brief__fuss,.gs--fuss{font-family:var(--mono);font-size:10px;line-height:1.9;letter-spacing:.14em;text-transform:uppercase;color:#5e352f}
+.brief__fuss,.gs--fuss{font-family:var(--mono);font-size:13px;line-height:1.9;letter-spacing:.14em;text-transform:uppercase;color:#5e352f}
 .brief__fuss{margin-top:16px;padding-top:14px;border-top:0;background:linear-gradient(90deg,rgba(172,137,92,0),rgba(172,137,92,.5),rgba(172,137,92,0)) top center/100% 1px no-repeat}
 .gs--fuss{--fs:10px;margin-top:0;padding-top:14px}
 .brief--leer .brief__kopf{margin-bottom:22px}
@@ -101,8 +101,8 @@
   .brief{--ri:9px;padding:44px 24px 34px}
   .brief__kopf b{font-size:15px}.gs--haus{--fs:15px}.brief__text,.gs--p,.brief__text textarea{font-size:15px}
   .brief__betreff dd,.gs--betreff,.brief__betreff input{font-size:18px}
-  .brief__kopf span{font-size:8.5px;letter-spacing:.16em;white-space:normal}.gs--zeile{--fs:8.5px;letter-spacing:.16em;white-space:normal}
-  .brief__an{grid-template-columns:1fr}.gs--fuss,.brief__fuss{font-size:9.5px;letter-spacing:.08em}
+  .brief__kopf span{font-size:13px;letter-spacing:.16em;white-space:normal}.gs--zeile{--fs:8.5px;letter-spacing:.16em;white-space:normal}
+  .brief__an{grid-template-columns:1fr}.gs--fuss,.brief__fuss{font-size:13px;letter-spacing:.08em}
 }
 .gs-flaeche .brief{box-shadow:0 1px 0 rgba(255,255,255,.9) inset,0 0 0 1px rgba(78,43,38,.18),0 2px 3px rgba(20,11,9,.22),0 22px 40px -18px rgba(44,25,22,.5)}
 
@@ -169,7 +169,7 @@ html:has(body.re),body.re{overflow-anchor:none}
 .re-hinw__p svg{flex:none;width:16px;height:16px;fill:none;stroke:#6d352c;stroke-width:1.5}
 .re-hinw--ruhetag,.re-hinw--ferien{box-shadow:inset 0 0 0 1px rgba(253,153,100,.75)}
 .re-hinw--ruhetag::before,.re-hinw--ferien::before{content:'';flex:none;width:7px;height:7px;border-radius:50%;background:#FD9964}
-.re-a__hinw{display:block;margin-top:4px;font:500 10px/1.2 var(--mono);font-style:normal;letter-spacing:.14em;text-transform:uppercase;color:#602f27}
+.re-a__hinw{display:block;margin-top:4px;font:500 13px/1.2 var(--mono);font-style:normal;letter-spacing:.14em;text-transform:uppercase;color:#602f27}
 /* Chat ausprobieren: das Handy des Gastes, im Kleid des Hauses (Ochsenblut, Kalk), nur transform beim Auftritt */
 .probe__rechts{display:grid;place-items:center;padding:28px;background:#3d1e19 url('../../assets/zeichen/tapete-a-dunkel.svg') 0 0/168px 168px}
 .ws-handy{display:grid;grid-template-rows:auto minmax(0,1fr) auto;width:min(390px,100%);height:min(720px,100%);border-radius:38px;overflow:hidden;background:#f9f7f4;
@@ -178,14 +178,14 @@ html:has(body.re),body.re{overflow-anchor:none}
 @media (prefers-reduced-motion:reduce){.ws-handy{animation:none}}
 .ws-handy__kopf{display:flex;align-items:center;gap:12px;padding:22px 20px 16px;background:#3d1e19;color:#fdfcfb}
 .ws-handy__kopf img{width:26px;height:auto;filter:brightness(0) invert(.86) sepia(.2) hue-rotate(160deg)}
-.ws-handy__kopf b{display:block;font:400 12px/1.2 'Petrona',system-ui,sans-serif;letter-spacing:.24em;text-transform:uppercase}
-.ws-handy__kopf small{display:block;margin-top:4px;font:400 10px/1 var(--mono);letter-spacing:.16em;text-transform:uppercase;color:#d5bc9c}
+.ws-handy__kopf b{display:block;font:400 13px/1.2 'Petrona',system-ui,sans-serif;letter-spacing:.24em;text-transform:uppercase}
+.ws-handy__kopf small{display:block;margin-top:4px;font:400 13px/1 var(--mono);letter-spacing:.16em;text-transform:uppercase;color:#d5bc9c}
 .ws-handy__l{display:flex;flex-direction:column;gap:10px;padding:18px 16px;overflow:auto;overscroll-behavior:contain}
 .probe .ws-handy .ws-bl{max-width:86%;margin:0;padding:11px 14px;border-radius:18px;font:400 14.5px/1.45 var(--sans);white-space:pre-line;overflow-wrap:anywhere}
 .probe .ws-handy .ws-bl--haus{align-self:flex-start;background:#fff;color:#1c0d0b;box-shadow:inset 0 0 0 1px rgba(28,13,11,.08);border-bottom-left-radius:6px}
 .probe .ws-handy .ws-bl--gast{align-self:flex-end;background:#6d352c;color:#fdfcfb;border-bottom-right-radius:6px}
 .probe .ws-handy .ws-bl--wartet{color:#747B7B}
-.probe .ws-handy .ws-bl--weg{align-self:flex-start;background:#3d1e19;color:#fdfcfb;text-decoration:none;font:500 11px/1 var(--mono);letter-spacing:.16em;text-transform:uppercase;padding:13px 16px}
+.probe .ws-handy .ws-bl--weg{align-self:flex-start;background:#3d1e19;color:#fdfcfb;text-decoration:none;font:500 13px/1 var(--mono);letter-spacing:.16em;text-transform:uppercase;padding:13px 16px}
 .ws-handy__feld{display:flex;align-items:flex-end;gap:8px;padding:12px;border-top:1px solid rgba(28,13,11,.1);background:#fff}
 .ws-handy__feld textarea{flex:1;min-width:0;min-height:42px;max-height:120px;resize:none;padding:11px 14px;border:0;border-radius:21px;background:#f3eee7;font:400 15px/1.35 var(--sans);color:#1c0d0b;overflow-wrap:anywhere}
 .ws-handy__feld textarea:focus{outline:2px solid #d5bc9c;outline-offset:0}
@@ -214,13 +214,13 @@ html:has(body.re),body.re{overflow-anchor:none}
 .ws-wahl__l>button[aria-selected="true"]{background:#3d1e19;color:#fdfcfb}
 .ws-kal{width:252px;padding:6px}
 .ws-kal__k{display:flex;align-items:center;justify-content:space-between;margin-bottom:8px}
-.ws-kal__k b{font:400 12px/1 var(--mono);letter-spacing:.16em;text-transform:uppercase;color:#3d1e19}
+.ws-kal__k b{font:400 13px/1 var(--mono);letter-spacing:.16em;text-transform:uppercase;color:#3d1e19}
 .ws-kal__k button{width:32px;height:32px;border:0;border-radius:50%;background:#f3eee7;color:#3d1e19;font-size:18px;cursor:pointer}
 .ws-kal__g{display:grid;grid-template-columns:repeat(7,1fr);gap:3px}
-.ws-kal__g i{font:400 9.5px/2 var(--mono);font-style:normal;letter-spacing:.1em;text-transform:uppercase;text-align:center;color:#515656}
+.ws-kal__g i{font:400 13px/2 var(--mono);font-style:normal;letter-spacing:.1em;text-transform:uppercase;text-align:center;color:#515656}
 .ws-kal__g button{height:32px;border:0;border-radius:50%;background:none;font:400 13.5px/1 var(--sans);color:#1c0d0b;cursor:pointer}
 .ws-kal__g button[aria-selected="true"]{background:#6d352c;color:#fff}
-.ws-kal__leer{display:block;width:100%;margin-top:8px;padding:9px;border:0;border-radius:10px;background:#f3eee7;font:400 11px/1 var(--mono);letter-spacing:.14em;text-transform:uppercase;color:#3d1e19;cursor:pointer}
+.ws-kal__leer{display:block;width:100%;margin-top:8px;padding:9px;border:0;border-radius:10px;background:#f3eee7;font:400 13px/1 var(--mono);letter-spacing:.14em;text-transform:uppercase;color:#3d1e19;cursor:pointer}
 /* Bilder in jeder Liste (Robert 19.10.2026): Fragen, Nachträge, Angaben des Wissens, Offenes, Links und Verlauf je mit Foto des Hauses, gross genug zum Erkennen */
 .re-f__bild,.sb-z__bild,.sb-offen__bild,.wi-l__bild,.sb-verlauf__bild{display:block;flex:none;overflow:hidden;border-radius:12px;background:#e7ded0;box-shadow:inset 0 0 0 1px rgba(109,53,44,.18)}
 .re-f__bild img,.sb-z__bild img,.sb-offen__bild img,.wi-l__bild img,.sb-verlauf__bild img,.re-n__bild img{display:block;width:100%;height:100%;object-fit:cover}
@@ -255,12 +255,12 @@ html:has(body.re),body.re{overflow-anchor:none}
 /* Robert 20.10.2026 (Bildschirmfotos Eingang, Nachtrag, Wissen): «viel zu nah an der Schrift», «super unübersichtlich … nicht richtig formatiert»,
    «so viel Leerraum», «Antwortfelder des Chats schöner». Regel für jedes Werkzeug: zwischen Schrift und Kachel/Knopf mindestens 16 px, Angaben in Gruppen
    mit gleichem Raster, kein leerer Raum zwischen zusammengehörigen Teilen, Antworten als gesetzte Antwort statt Rohtext. */
-.re-d .re-woher{margin:16px 0 0!important;padding:0!important;font:400 10px/1.5 var(--mono);letter-spacing:.18em;text-transform:uppercase;color:rgba(225,214,197,.78)}
+.re-d .re-woher{margin:16px 0 0!important;padding:0!important;font:400 13px/1.5 var(--mono);letter-spacing:.18em;text-transform:uppercase;color:rgba(225,214,197,.78)}
 .re-d .re-angaben{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0;margin:14px 0 0;padding:0;border:0;border-radius:16px;background:rgba(255,255,255,.05);box-shadow:inset 0 0 0 1px rgba(213,188,156,.2);overflow:hidden}
 .re-d .re-angaben--gast{grid-template-columns:minmax(0,2fr) minmax(0,1fr) minmax(0,1fr);margin-top:10px}
 .re-d .re-angaben>div,.re-d .re-angaben>div+div{min-width:0;padding:14px 18px 15px;box-shadow:none;border-left:1px solid rgba(213,188,156,.16);margin:0}
 .re-d .re-angaben>div:first-child{border-left:0}
-.re-d .re-angaben dt{font:400 9.5px/1 var(--mono);letter-spacing:.2em;text-transform:uppercase;color:rgba(225,214,197,.75)}
+.re-d .re-angaben dt{font:400 13px/1 var(--mono);letter-spacing:.2em;text-transform:uppercase;color:rgba(225,214,197,.75)}
 .re-d .re-angaben dd{margin:8px 0 0;font:500 15.5px/1.35 var(--sans);color:#f6f3ee;overflow-wrap:normal;word-break:normal}
 .re-d .re-angaben .re-mail,.re-d .re-angaben a{overflow-wrap:anywhere}
 .re-d .re-hinw{margin:18px 0 0}
@@ -271,7 +271,7 @@ html:has(body.re),body.re{overflow-anchor:none}
 @media (max-width:900px){.re-d .re-angaben,.re-d .re-angaben--gast{grid-template-columns:1fr 1fr}.re-d .re-angaben>div:nth-child(odd){border-left:0}.re-d .re-angaben>div:nth-child(n+3){border-top:1px solid rgba(213,188,156,.16)}.re-d .re-angaben--gast>div:first-child{grid-column:1/-1}.re-d .re-angaben--gast>div:nth-child(2){border-left:0;border-top:1px solid rgba(213,188,156,.16)}.re-d .re-angaben--gast>div:nth-child(3){border-left:1px solid rgba(213,188,156,.16)}}
 /* Die Nachricht über die Website: Felder des Formulars als ruhige Liste auf Papier */
 .re-formular{align-self:stretch;margin:4px 0 0;padding:18px 22px 8px;border-radius:18px;background:linear-gradient(180deg,#f9f7f4,#f3eee7);color:#1c0d0b}
-.re-gespraech .re-formular__k{max-width:none;margin:0 0 10px;padding:0;border-radius:0;background:none;box-shadow:none;font:400 9.5px/1.4 var(--mono);letter-spacing:.2em;text-transform:uppercase;color:#602f27}
+.re-gespraech .re-formular__k{max-width:none;margin:0 0 10px;padding:0;border-radius:0;background:none;box-shadow:none;font:400 13px/1.4 var(--mono);letter-spacing:.2em;text-transform:uppercase;color:#602f27}
 .re-formular dl{margin:0}
 .re-formular dl>div{display:grid;grid-template-columns:minmax(110px,30%) minmax(0,1fr);gap:16px;padding:11px 0;border-top:1px solid rgba(28,13,11,.09)}
 .re-formular dt{font:400 13px/1.45 var(--sans);color:#515656}
@@ -280,7 +280,7 @@ html:has(body.re),body.re{overflow-anchor:none}
 /* Antwort des Chats: als gesetzte Antwort mit Absender, Liste mit Punkten statt Bindestrichen */
 .re-f__antw summary{margin-top:10px}
 .re-chat-antwort{margin:12px 0 4px;padding:16px 20px 14px;border-radius:18px 18px 18px 6px;background:#FBFDFD;box-shadow:inset 0 0 0 1px rgba(109,53,44,.14),0 10px 22px -18px rgba(28,13,11,.5);color:#1c0d0b;font:400 15px/1.55 var(--sans);max-width:68ch}
-.re-chat-antwort__k{display:flex;align-items:center;gap:8px;margin:0 0 10px;font:400 9.5px/1 var(--mono);letter-spacing:.2em;text-transform:uppercase;color:#602f27}
+.re-chat-antwort__k{display:flex;align-items:center;gap:8px;margin:0 0 10px;font:400 13px/1 var(--mono);letter-spacing:.2em;text-transform:uppercase;color:#602f27}
 .re-chat-antwort__k img{width:12px;height:auto}
 .re-chat-antwort p{margin:0 0 8px}
 .re-chat-antwort ul{list-style:none;margin:4px 0 6px;padding:0}
@@ -316,3 +316,15 @@ html:has(body.re),body.re{overflow-anchor:none}
    mit jeder Antwort mit, die linke Spalte rutschte nach oben weg und das Eingabefeld lag nach einigen Fragen unter dem Rand. Die Antworten rollen im Handy selbst. */
 .probe__k{grid-template-rows:minmax(0,1fr)}.probe__rechts{grid-template:minmax(0,1fr)/minmax(0,1fr);min-height:0}
 @media (max-width:900px){.probe__k{grid-template-rows:auto minmax(0,1fr)}}
+
+/* Übersicht: «Zuletzt gefragt» (rechte Spalte, Robert 10.11.2026 16:10) auf eigener Fläche in der dunklen Hausfarbe, mit Luft zu den Arten darüber; beide Spalten mit gleichem Innenabstand, die Titel auf gleicher Höhe (Vorlage Monte-Moro) */
+.re-start{margin-top:clamp(40px,4vw,64px)}
+.re-start > .re-start__sp{padding:clamp(24px,2.4vw,36px)}
+.re-start > .re-start__sp:last-child{border-radius:var(--wo-r1,12px);background:linear-gradient(180deg,var(--wo-nacht2),var(--wo-nacht) 70%);box-shadow:inset 0 1px 0 rgba(255,255,255,.08),0 30px 50px -30px rgba(48,25,22,.6)}
+.re-start > .re-start__sp:last-child .wo-zw{margin-top:0;color:var(--wo-weiss)!important}
+.re-start > .re-start__sp:last-child .wo-zw em{color:var(--wo-g2)!important}
+.re-start > .re-start__sp:last-child .wo-zw::before{background:var(--wo-g3)}
+.re-start > .re-start__sp:last-child .re-mehr{color:var(--wo-weiss)}
+.re-start > .re-start__sp:first-child .wo-zw{margin-top:0}
+/* Keine abgeschnittenen Zeilen (Robert 10.11.2026): auf der schmaleren Fläche «Zuletzt gefragt» steht die Frage ganz, nicht nach zwei Zeilen gekappt */
+.re-start > .re-start__sp:last-child .re-q .re-a__n b{display:block;-webkit-line-clamp:unset;overflow:visible}

@@ -8,15 +8,15 @@
    WO.rand([{titel:'', eintraege:[{text:'Übersicht', zahl:0, an:true, attr:'data-gehe="start"'}]}], {website:'/', anleitung:'…', pruefung:'…'})
    WO.leiste({titel:'Alles ist veröffentlicht', satz:'…', entwurf:false, knoepfe:'…'})
    WO.knopf(text, zeichen, art('gold'|'hell'|'dunkel'|'glas'), {href, id, klein, disabled, attr})
-   WO.gruss()  → 'Guten Morgen.' | 'Guten Tag.' | 'Guten Abend.'   WO.name('karten') → 'La Carte' | 'Die Tafel' */
+   WO.gruss()  → 'Guten Morgen.' | 'Guten Tag.' | 'Guten Abend.'   WO.name('karten') → 'Karten & Preislisten' | 'Karten & Preislisten' */
 (function () {
   var H = window.WO_HAUS || {};
   var NAMEN = {
-    zentrale: ['La Maison', 'Die Stube', 'haus'], website: ['Le Bureau', 'Der Schreibtisch', 'welt'], karten: ['La Carte', 'Die Tafel', 'karte'],
-    gaeste: ['La Réception', 'Der Gastgeber', 'chat'], marke: ['Le Livre', 'Das Hausbuch', 'siegel'], besuche: ['Le Registre', 'Das Besucherbuch', 'balken'],
-    druck: ['L’Imprimerie', 'Die Werkstatt', 'druck']
+    zentrale: ['Kontrollpanel', 'Kontrollpanel', 'haus'], website: ['Website bearbeiten', 'Website bearbeiten', 'welt'], karten: ['Karten & Preislisten', 'Karten & Preislisten', 'karte'],
+    gaeste: ['Anfragen & Chat', 'Anfragen & Chat', 'chat'], marke: ['Markenbuch', 'Markenbuch', 'siegel'], besuche: ['Besucher', 'Besucher', 'balken'],
+    druck: ['Drucksachen & Feed', 'Drucksachen & Feed', 'druck']
   };
-  var REIHE = ['website', 'karten', 'gaeste', 'marke', 'besuche', 'druck'];   // La Maison bleibt je Haus eigen (Robert 17.10.2026)
+  var REIHE = ['website', 'karten', 'gaeste', 'marke', 'besuche', 'druck'];   // Kontrollpanel bleibt je Haus eigen (Robert 17.10.2026)
   var I = {
     stift: 'M4 20h4L19 9l-4-4L4 16v4zM14 6l4 4', welt: 'M12 3a9 9 0 1 0 0 18a9 9 0 1 0 0-18zM3 12h18M12 3c3 3.5 3 14.5 0 18M12 3c-3 3.5-3 14.5 0 18',
     karte: 'M6 3h9l3 3v15H6zM9 9h6M9 13h6M9 17h4', uhr: 'M12 3a9 9 0 1 0 0 18a9 9 0 1 0 0-18zM12 7v5l3 2',

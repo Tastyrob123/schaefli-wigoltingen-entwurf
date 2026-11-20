@@ -1,4 +1,4 @@
-/* Anleitung Das Besucherbuch · Taverne zum Schäfli: Bild gross mit Klick, Esc schliesst; das Zeichen des Hauses (das Lamm, assets/zeichen/lamm.svg der Website)
+/* Anleitung Besucher · Taverne zum Schäfli: Bild gross mit Klick, Esc schliesst; das Zeichen des Hauses (das Lamm, assets/zeichen/lamm.svg der Website)
    (eigene Datei: online laufen eingebettete Skripte ohne Prüfsumme nicht). */
 (function () {
   var g = document.getElementById('gross'), im = g.querySelector('img');

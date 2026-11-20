@@ -1,4 +1,4 @@
-/* Le Livre · Taverne zum Schäfli · läuft vor allem anderen (Master R03, R04, R15).
+/* Markenbuch · Taverne zum Schäfli · läuft vor allem anderen (Master R03, R04, R15).
    Fehlermelder: Skriptfehler nach localStorage «sf-livre-fehler» (letzte 20) und an api/fehler; Netzfehler und fehlende Dateien nie, höchstens 20 je Seite,
    ein eigener Fehlschlag schaltet ab (Safari-Schleife 15.10.2026). Ladezeichen erst nach 280 ms. Kommt livre.js nach 12 s nicht hoch: ein Satz statt leerer Fläche. */
 'use strict';
@@ -19,7 +19,7 @@
   window.LIVRE_TUER = setTimeout(() => {
     if (window.LIVRE_BEREIT) return;
     const a = document.getElementById('ansicht'); if (!a) return;
-    const n = (window.WO_HAUS && WO_HAUS.namen && WO_HAUS.namen.marke) || 'Das Hausbuch';
+    const n = (window.WO_HAUS && WO_HAUS.namen && WO_HAUS.namen.marke) || 'Markenbuch';
     a.innerHTML = '<div class="platte li-tuer" role="alert"><h1>' + n.replace(/[<>&]/g, '') + ' startet nicht.</h1><p class="li-tuer__g">Das Programm der Seite ist nicht geladen worden (Netz oder blockiertes Skript).</p><p>Hilft «Neu laden» nicht: die Anleitung öffnen oder Tasty Studios Bescheid geben.</p><div class="titel__kn"><a class="kn" href="./">Neu laden<i></i></a><a class="kn kn--linie" href="anleitung.html" target="_blank" rel="noopener">Anleitung<i></i></a></div></div>';
   }, 12000);
 })();

@@ -4,10 +4,10 @@
    Fotos und Schriften kommen aus der Website des Hauses (/assets/img/, /assets/schrift/), das Lamm aus /assets/zeichen/lamm.svg. */
 window.WO_HAUS = { kurz: 'schaefli', name: 'Taverne zum Schäfli', voll: 'Taverne zum Schäfli Wigoltingen', ort: 'Wigoltingen', welt: 'land', rahmen: 'buehne',
   foto: '/assets/img/haus-tag-1200.webp', zeichen: '/assets/oberflaeche/kleid/schaefli-zeichen.svg', zeichenMass: 0.788,
-  /* Namen der sieben Werkzeuge im Schäfli (Robert 21.10.2026, nach drei abgelehnten eigenen Runden: «Ja, dann ist hier auch so die Stube und der Schreibtisch
+  /* Namen der sieben Werkzeuge im Schäfli (Robert 21.10.2026, nach drei abgelehnten eigenen Runden: «Ja, dann ist hier auch so die Stube und «Website bearbeiten»
      und so» = die Landhaus-Namen wie Ruedihus und Gasterntal): die EINE Stelle. Dateien, Schlüssel und Adressen bleiben. */
-  namen: { zentrale: 'Die Stube', website: 'Der Schreibtisch', karten: 'Die Tafel', gaeste: 'Der Gastgeber', marke: 'Das Hausbuch', besuche: 'Das Besucherbuch', druck: 'Die Werkstatt' },
-  wege: { zentrale: '/_werkzeuge/maison/', website: '/_werkzeuge/bureau/', karten: '/_werkzeuge/carte/', gaeste: '/_werkzeuge/reception/', marke: '/_werkzeuge/livre/', besuche: '/_werkzeuge/registre/', druck: '/werkzeuge/imprimerie/' } };
+  namen: { zentrale: 'Kontrollpanel', website: 'Website bearbeiten', karten: 'Karten & Preislisten', gaeste: 'Anfragen & Chat', marke: 'Markenbuch', besuche: 'Besucher', druck: 'Drucksachen & Feed' },
+  wege: { zentrale: '/_werkzeuge/maison/', website: '/_werkzeuge/bureau/', karten: '/_werkzeuge/carte/', gaeste: '/_werkzeuge/reception/', marke: '/_werkzeuge/livre/', besuche: '/_werkzeuge/registre/', druck: '/_werkzeuge/imprimerie/' } };
 document.documentElement.setAttribute('data-wo-haus', WO_HAUS.kurz);
 document.documentElement.setAttribute('data-wo-rahmen', WO_HAUS.rahmen);
 try { if ('scrollRestoration' in history) history.scrollRestoration = 'manual'; } catch (e) {}

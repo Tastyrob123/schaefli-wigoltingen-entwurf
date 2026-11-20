@@ -35,7 +35,7 @@ body.lc.wo-app{background:var(--wo-papier) url("data:image/svg+xml,%3Csvg xmlns=
 .lc .kopf__zahlen{display:flex;gap:26px;margin:0 0 0 12px;flex-wrap:wrap}
 .lc .kopf__zahlen div{display:flex;flex-direction:column-reverse}
 .lc .kopf__zahlen dd{margin:0;font:var(--wo-titel-g) 24px/1 var(--wo-titel);color:var(--wo-weiss);font-feature-settings:"lnum","tnum"}
-.lc .kopf__zahlen dt{margin-top:6px;font:400 9.5px/1.2 var(--wo-mono);letter-spacing:.18em;text-transform:uppercase;color:var(--wo-gold)}
+.lc .kopf__zahlen dt{margin-top:6px;font:400 13px/1.2 var(--wo-mono);letter-spacing:.18em;text-transform:uppercase;color:var(--wo-gold)}
 .lc .wo-sb.auftritt .wo-sb__foto img{animation:tfoto 2.6s var(--wo-e1) both}
 .lc .wo-sb.auftritt .wo-sb__text{animation:ttext 1.3s var(--wo-e1) .08s both}
 @keyframes tfoto{from{transform:scale(1.1)}to{transform:none}}
@@ -52,7 +52,7 @@ body.lc.wo-app{background:var(--wo-papier) url("data:image/svg+xml,%3Csvg xmlns=
 .lc .r.gewaehlt{box-shadow:inset 3px 0 0 var(--wo-akzent)}
 .lc .vorschau{background:#D8DFDF}
 .lc .ansicht{flex-wrap:wrap}
-.lc .webwahl button{font-size:11.5px}
+.lc .webwahl button{font-size:13px}
 .lc .ansicht button[aria-pressed="true"]{background:var(--wo-nacht)}
 /* Knöpfe im Arbeitsbereich: Pille in Stuhlblau mit rundem Knauf in Seehimmel (wie auf der Website) */
 .lc .kn{--o:#7D433A;--m:#452520;--u:#2a1512;--ko:#F0EAE1;--ku:#B38346;--kt:var(--tinte)}

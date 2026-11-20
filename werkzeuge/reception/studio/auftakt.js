@@ -22,7 +22,7 @@
       if (!im.getAttribute('src') && !im.currentSrc) continue;
       if (!im.complete) return false;
     }
-    if (document.querySelector('header:empty')) return false;   // Kopfleisten, die das Werkzeug erst füllt (La Carte)
+    if (document.querySelector('header:empty')) return false;   // Kopfleisten, die das Werkzeug erst füllt (Karten & Preislisten)
     return !document.querySelector('.buehne__foto:not(.da)');
   }
   var schrift = false;

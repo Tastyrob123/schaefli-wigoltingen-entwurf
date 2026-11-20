@@ -108,3 +108,6 @@
 .wo-re .wo-zahl{display:block;height:auto;padding:7px;line-height:1;text-align:center;text-box:trim-both cap alphabetic}
 .ansicht>button,.wahl3>button{text-box:trim-both cap alphabetic}
 @supports not (text-box:trim-both cap alphabetic){.wo-kn>span,.wo-re>span,.wo-kopf__ber>span{position:relative;top:.05em}}
+
+/* Prüfung 20.11.2026: Werkzeugname im Kopf am Handy passt neben «Bereiche» */
+@media(max-width:600px){.wo-marke-w b{font-size:15px}}

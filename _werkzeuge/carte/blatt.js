@@ -1,9 +1,9 @@
-/* La Carte · Blatt: setzt eine Karte mit satz.js. Zwei Arten:
+/* Karten & Preislisten · Blatt: setzt eine Karte mit satz.js. Zwei Arten:
    Druck   blatt.html?z=<karte>&q=stand|entwurf|grundstand|verlauf:<datei>&druck=1 → window.CARTE_FERTIG für drucke.js
    Vorschau (im Werkzeug, als Rahmen): Daten kommen per postMessage, Text ist markiert (data-k), Klicks und Geschriebenes gehen zurück.
    Danach wird jede Seite so gross gesetzt, wie ihr Inhalt es zulässt (wie _werkbank/satz_druck_datei.js, mit dem die PDFs der Website gedruckt sind).
-   Doldenhorn 17.10.2026: Kopie aus La Carte des Carlton-Europe, auf den Satz der Unterlagen des Waldhotel Doldenhorn umgestellt.
-   Gasterntal 17.10.2026: Kopie aus der Tafel des Ruedihus. Schäfli 21.10.2026: Schriften des Hauses (Petrona, Instrument Sans, DM Mono). */
+   Doldenhorn 17.10.2026: Kopie aus «Karten & Preislisten» des Carlton-Europe, auf den Satz der Unterlagen des Waldhotel Doldenhorn umgestellt.
+   Gasterntal 17.10.2026: Kopie aus «Karten & Preislisten» des Ruedihus. Schäfli 21.10.2026: Schriften des Hauses (Petrona, Instrument Sans, DM Mono). */
 (function () {
   'use strict';
   var q = new URLSearchParams(location.search), ZEICHEN = null, D = null, MODUS = 'einfach', ZOOM = 0.62, ZOOM_EIGEN = false, N = 0, DATEN = null;
@@ -247,7 +247,7 @@
     document.execCommand('insertText', false, (ev.clipboardData.getData('text/plain') || '').replace(/\s+/g, ' '));
   });
   document.addEventListener('focusout', function (ev) { if (ev.target.closest && ev.target.closest('[data-k]')) an('fertig-geschrieben', {}); });
-  /* ---------------------------------------------------------------- Freie Anordnung im Modus «Fortgeschritten» (1:1 nach La Carte des Grand Beau-Rivage,
+  /* ---------------------------------------------------------------- Freie Anordnung im Modus «Fortgeschritten» (1:1 nach «Karten & Preislisten» des Grand Beau-Rivage,
      anordnen.js 15./16.10.2026). Ein Klick wählt ein Element der Seite (Rubrik, Gericht, Zeile, Hinweis, Text, Linie, Logo, Band, Kopfzeile, Zeichen,
      Fusszeile). Ziehen verschiebt es, mit Einrasten an Seitenmitte, Satzspiegel, Seitenrand und den anderen Elementen (rote Hilfslinien, Alt hält es an).
      Die vier Ecken machen es grösser oder kleiner im Verhältnis (40–300 %), die gegenüberliegende Ecke bleibt stehen; Linien haben Griffe an den Enden
