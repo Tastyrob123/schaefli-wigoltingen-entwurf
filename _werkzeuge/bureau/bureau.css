@@ -60,3 +60,9 @@ body.ws.wo-app{background-color:var(--wo-papier);background-image:var(--wo-tapet
 @media (min-width:701px) and (max-width:1100px){
   .ws.wo-app .wo-ber > .wo-bk:nth-child(odd):last-child{grid-column:1 / -1;justify-self:center;width:calc(50% - 8px)}
 }
+
+/* Prüfung 20.11.2026 (Leerraum-Regel): feste Spalten nach Stückzahl statt auto-fill. 8 Aufgaben = 4+4 bzw. 2×4, 9 Bereiche = 3+3+3 */
+#ws-mitte .ws-aufgaben{grid-template-columns:repeat(4,minmax(0,1fr))}
+#ws-mitte .ws-bereiche{grid-template-columns:repeat(3,minmax(0,1fr))}
+@media(max-width:1199px){#ws-mitte .ws-aufgaben{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:600px){#ws-mitte .ws-aufgaben,#ws-mitte .ws-bereiche{grid-template-columns:minmax(0,1fr)}}
