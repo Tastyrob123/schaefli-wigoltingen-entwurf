@@ -110,4 +110,7 @@
 @supports not (text-box:trim-both cap alphabetic){.wo-kn>span,.wo-re>span,.wo-kopf__ber>span{position:relative;top:.05em}}
 
 /* Prüfung 20.11.2026: Werkzeugname im Kopf am Handy passt neben «Bereiche» */
-@media(max-width:600px){.wo-marke-w b{font-size:15px}}
+@media(max-width:600px){.wo-marke-w b{font-size:15px!important;white-space:normal!important;line-height:1.1}}
+
+/* Prüfung 20.11.2026: Stand-Zeile in der Kopfmitte bei 1280 px ungekürzt */
+@media(max-width:1366px){.wo-kopf__mitte small{letter-spacing:.12em}}

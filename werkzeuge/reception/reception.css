@@ -725,3 +725,7 @@ html.probe-offen{overflow:hidden}
 
 /* Prüfung 20.11.2026: Art, Zeit und Vorschau der Anfrage brechen um statt abgeschnitten zu werden */
 .re-a__k,.re-a__n small{white-space:normal!important;overflow:visible!important;text-overflow:clip!important}
+
+/* Prüfung 20.11.2026 (Leerraum-Regel): die zwei Listen der Startansicht haben ungleich viel Inhalt, darum untereinander */
+.re-start{grid-template-columns:minmax(0,1fr)!important}
+.re-start__sp>.re-liste{padding-top:32px}
